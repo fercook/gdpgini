@@ -1,0 +1,60 @@
+<html>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/colorbrewer.js"></script>
+<script src="data/countries.js"></script>    
+    
+<style>
+
+body {margin:0px}
+
+.main {
+  align-content: flex-end;
+ }
+.main text {
+    fill: grey;
+    font: 10px sans-serif;
+    text-anchor: start;
+}
+.second text {
+    fill: grey;
+    font: 12px sans-serif;
+}
+
+.highlight {
+    stroke: white;
+    stroke-width: 3px;
+}
+
+.passive {
+    opacity: 0.1;
+}
+.second .years {
+    fill: grey;
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #555;
+    shape-rendering: crispEdges;
+}
+.axis text {
+        fill: grey;
+    font: 10px sans-serif;
+}
+
+</style>
+
+<head>
+</head>
+
+<body>
+    <div class="main"></div>
+    <div class="second"></div>
+    <script src="ginis.js"></script>
+
+</body>
