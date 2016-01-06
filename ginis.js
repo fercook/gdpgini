@@ -1,46 +1,213 @@
-var margin = {
-    left: 30,
-    right: 30,
-    top: 30,
-    bottom: 20
-};
-var height = 600 - margin.left - margin.right,
-    width = 1000 - margin.top - margin.bottom;
-
 var options = {
     normalize: true,
     percent: false,
     lines: true,
     textdist: {
-        x: 17,
-        y: 10
+        a: 17,
+        b: 10
     },
-    colorBy: "country" // "president"
+    referenceYear: 2000,
+    colorBy: "country", // "president"
+    margin: {
+        left: 30,
+        right: 30,
+        top: 30,
+        bottom: 20
+    },
+    height: function () {
+        return 600 - this.margin.left - this.margin.right
+    },
+    width: function () {
+        return 1000 - this.margin.top - this.margin.bottom
+    }
 };
 
-svg = d3.select(".main").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", function (d) {
-        return "translate(" + margin.left + "," + margin.top + ")";
-    });
+
+function makeCairoChart(flatdata, options) {
+
+    svg = d3.select(".main").append("svg")
+        .attr("width", options.width() + options.margin.left + options.margin.right)
+        .attr("height", options.height() + options.margin.top + options.margin.bottom)
+        .append("g")
+        .attr("transform", function (d) {
+            return "translate(" + options.margin.left + "," + options.margin.top + ")";
+        });
 
 
-x = d3.scale.linear()
-    .range([0, width]);
+    x = d3.scale.linear()
+        .range([0, options.width()]);
 
-y = d3.scale.linear()
-    .range([height, 0]);
+    y = d3.scale.linear()
+        .range([options.height(), 0]);
 
 
-xaxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
+    xaxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
 
-yaxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
+    yaxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+
+
+    var offset = 0.02;
+    x.domain([
+        (1 - offset) * d3.min(flatdata, function (d) {
+            return d.x;
+        }),
+        (1 + offset) * d3.max(flatdata, function (d) {
+            return d.x;
+        })
+                    ]);
+    y.domain([
+        (1 - offset) * d3.min(flatdata, function (d) {
+            return d.y;
+        }),
+        (1 + offset) * d3.max(flatdata, function (d) {
+            return d.y;
+        })
+                    ]);
+
+    if (options.lines) {
+
+        var lineFunction = d3.svg.line()
+            .x(function (d) {
+                return x(d.x);
+            })
+            .y(function (d) {
+                return y(d.y);
+            })
+            .interpolate("cardinal");
+
+        for (var country in countries) {
+            var countryData = flatdata.filter(function (d) {
+                return d.country == country;
+            });
+            var segments = splitLineIntoSegments(countryData);
+            segments.forEach(function (segment) {
+                if (segment.length > 0) {
+                    svg.append("g").append("path")
+                        .attr("d", lineFunction(segment))
+                        .attr("stroke", function () {
+                            if (options.colorBy == "president") {
+                                return countryColor(country, segment[1].year);
+                            } else {
+                                return countries[country].color;
+                            }
+                        })
+                        .classed(country, true)
+                        .classed("passive", false)
+                        .attr("stroke-width", 3)
+                        .attr("fill", "none")
+                        .on("mouseover", function (d) {
+
+                        });
+                }
+
+            });
+
+        }
+    }
+
+
+    svg.append("g")
+    //.attr("class", "axis")
+    .attr("transform", "translate(0," + (options.height()) + ")")
+        .attr("fill", "none")
+        .attr("stroke", "#555")
+        .call(xaxis);
+
+    svg.append("g")
+    //.attr("class", "axis")
+    .attr("fill", "none")
+        .attr("stroke", "#555")
+        .call(yaxis);
+
+    groups = svg.selectAll(".datagroups")
+        .data(flatdata)
+        .enter().append("g")
+        .attr("transform", function (d) {
+            return "translate(" + x(d.x) + "," + y(d.y) + ")";
+        });
+
+    groups.append("circle")
+        .attr("id", function (d) {
+            return "circle_" + d.country + d.year
+        })
+        .attr("class", function (d) {
+            d.country;
+        })
+        .classed("passive", false)
+        .attr("cx", 0)
+        .attr("cy", 0)
+        .attr("r", 3)
+        .style("fill", function (d) {
+            var color;
+            if (options.colorBy == "president") {
+                color = countryColor(d.country, d.year);
+            } else {
+                color = countries[d.country].color;
+            }
+            return d.category == "Original" ? color : "white";
+            //return d.category == "Original" ? "black" : "white";
+        })
+        .style("stroke", function (d) {
+            if (options.colorBy == "president") {
+                return countryColor(d.country, d.year);
+            } else {
+                return countries[d.country].color;
+            }
+
+        })
+        .style("stroke-width", 2)
+    /*      .on("mouseover",function(d) {
+                    chart.selectAll("#rect_"+d.country + d.year)
+                        .classed("highlight",true);
+                    d3.select(this)
+                        .transition(250)
+                        .attr("r",6);
+                })
+            */
+    .on("mouseout", function (d) {
+        d3.selectAll("#rect_" + d.country + d.year)
+            .classed("highlight", false);
+        d3.select(this).transition(250)
+            .attr("r", 3);
+    })
+        .on("mouseover", function (d) {
+            var classes = Object.keys(countries).filter(function (k) {
+                return d.country != k
+            }).map(function (k) {
+                return "." + k
+            }).join(" ");
+            console.log(classes);
+            d3.selectAll(classes)
+                .classed("passive", true);
+        });;
+
+    options.textdist.x = x;
+    options.textdist.y = y;
+    positionLabels(flatdata, "country", options.textdist);
+    groups.append("text")
+        .attr("x", function (d) {
+            return d.text.x
+        })
+        .attr("y", function (d) {
+            return d.text.y
+        })
+        .attr("class", function (d) {
+            d.country;
+        })
+        .classed("passive", false)
+        .attr("dx", 0)
+        .attr("dy", "0.35em")
+        .style("text-anchor", "middle")
+        .text(function (d) {
+            return d.year;
+        });
+
+}
 
 queue()
     .defer(d3.csv, "data/GDP.csv")
@@ -60,156 +227,15 @@ queue()
 
         flatdata = prepareData(gdps, ginis, options);
 
-        positionLabels(flatdata, "country", options.textdist);
-
         //console.log(flatdata);
 
         flatdata = flatdata.filter(function (d) {
             return d.year >= 1986
         });
 
-        var offset = 0.02;
-        x.domain([
-            (1 - offset) * d3.min(flatdata, function (d) {
-                return d.x;
-            }),
-            (1 + offset) * d3.max(flatdata, function (d) {
-                return d.x;
-            })
-                ]);
-        y.domain([
-            (1 - offset) * d3.min(flatdata, function (d) {
-                return d.y;
-            }),
-            (1 + offset) * d3.max(flatdata, function (d) {
-                return d.y;
-            })
-                ]);
-
-
-        if (options.lines) {
-
-            var lineFunction = d3.svg.line()
-                .x(function (d) {
-                    return x(d.x);
-                })
-                .y(function (d) {
-                    return y(d.y);
-                })
-                .interpolate("cardinal");
-
-            for (var country in countries) {
-                var countryData = flatdata.filter(function (d) {
-                    return d.country == country;
-                });
-                var segments = splitLineIntoSegments(countryData);
-                segments.forEach(function (segment) {
-                    if (segment.length > 0) {
-                        svg.append("g").append("path")
-                            .attr("d", lineFunction(segment))
-                            .attr("stroke", function() {
-                                if (options.colorBy=="president") {return countryColor(country, segment[1].year);}
-                                else { return countries[country].color; }
-                            })
-                            .classed(country,true)
-                            .classed("passive",false)
-                            .attr("stroke-width", 3)
-                            .attr("fill", "none")
-                            .on("mouseover", function (d) {
-                                
-                            });
-                    }
-
-                });
-
-            }
-        }
-
-
-        svg.append("g")
-        //.attr("class", "axis")
-        .attr("transform", "translate(0," + (height) + ")")
-            .attr("fill", "none")
-            .attr("stroke", "#555")
-            .call(xaxis);
-
-        svg.append("g")
-        //.attr("class", "axis")
-        .attr("fill", "none")
-            .attr("stroke", "#555")
-            .call(yaxis);
-
-        groups = svg.selectAll(".datagroups")
-            .data(flatdata)
-            .enter().append("g")
-            .attr("transform", function (d) {
-                return "translate(" + x(d.x) + "," + y(d.y) + ")";
-            });
-
-        groups.append("circle")
-            .attr("id", function (d) {
-                return "circle_"+d.country + d.year
-            })
-            .attr("class",function(d){ d.country;})
-            .classed("passive",false)
-            .attr("cx", 0)
-            .attr("cy", 0)
-            .attr("r", 3)
-            .style("fill", function (d) {
-                var color;
-                if (options.colorBy=="president") { color = countryColor(d.country, d.year); }
-                else { color = countries[d.country].color; }
-                return d.category == "Original" ? color : "white";
-                //return d.category == "Original" ? "black" : "white";
-            })
-            .style("stroke", function (d) {
-                if (options.colorBy=="president") { return countryColor(d.country, d.year); }
-                else { return countries[d.country].color; }
-
-            })
-            .style("stroke-width", 2)
-      /*      .on("mouseover",function(d) {
-                chart.selectAll("#rect_"+d.country + d.year)
-                    .classed("highlight",true);
-                d3.select(this)
-                    .transition(250)
-                    .attr("r",6);
-            })
-        */    .on("mouseout",function(d) {
-                chart.selectAll("#rect_"+d.country + d.year)
-                    .classed("highlight",false);
-                d3.select(this).transition(250)
-                    .attr("r",3);
-            })
-            .on("mouseover",function(d) {
-                var classes=Object.keys(countries).filter(function(k){return d.country!=k}).map(function(k){return "."+k}).join(" ");
-                console.log(classes);
-                d3.selectAll(classes)
-                    .classed("passive",true);
-        });
-;
-
-
-        groups.append("text")
-            .attr("x", function (d) {
-                return d.text.x
-            })
-            .attr("y", function (d) {
-                return d.text.y
-            })
-            .attr("class",function(d){ d.country;})
-            .classed("passive",false)
-            .attr("dx", 0)
-            .attr("dy", "0.35em")
-            .style("text-anchor", "middle")
-            .text(function (d) {
-                return d.year;
-            });
-
-        directionChart(flatdata);
-
+        makeCairoChart(flatdata, options);
+        makeDirectionChart(flatdata, options);
     });
-
 
 /* 
     We need to interpolate missing data in Gini DB.
@@ -262,9 +288,8 @@ function prepareData(gdps, ginis, settings) {
         }
     }
 
-    refyear = 2000;
     flatdata.forEach(function (d) {
-        if (d.year == refyear) {
+        if (d.year == settings.referenceYear) {
             countries[d.country].refgdp = d.gdp;
             countries[d.country].refgini = d.gini;
         }
@@ -325,33 +350,32 @@ function positionLabels(flatdata, category, textdist) {
     var currentCategory = null;
     for (var i = 0; i < flatdata.length; i++) {
         var p1, p2;
-        var p = [x(flatdata[i].x), y(flatdata[i].y)];
+        var p = [textdist.x(flatdata[i].x), textdist.y(flatdata[i].y)];
         if (flatdata[i][category] == currentCategory) {
-            p1 = norm(substract(p, [x(flatdata[i - 1].x), y(flatdata[i - 1].y)]));
+            p1 = norm(substract(p, [textdist.x(flatdata[i - 1].x), textdist.y(flatdata[i - 1].y)]));
         } else {
             p1 = [0, 0];
         }
         if (i < flatdata.length - 1 && flatdata[i + 1][category] == flatdata[i][category]) {
-            p2 = norm(substract(p, [x(flatdata[i + 1].x), y(flatdata[i + 1].y)]));
+            p2 = norm(substract(p, [textdist.x(flatdata[i + 1].x), textdist.y(flatdata[i + 1].y)]));
         } else {
             p2 = [0, 0];
         }
         var pos = norm(add(p1, p2));
         flatdata[i].text = {
-            x: pos[0] * textdist.x,
-            y: pos[1] * textdist.y
+            x: pos[0] * textdist.a,
+            y: pos[1] * textdist.b
         };
         currentCategory = flatdata[i][category];
     }
 }
 
-
-
 function splitLineIntoSegments(countryData) {
     var country = countryData[0].country;
     var segments = [];
     countries[country].presidents.forEach(function (president, i) {
-        var segment = [],period=president.period;
+        var segment = [],
+            period = president.period;
         for (var n = 0; n < countryData.length - 1; n++) {
             if (countryData[n].year < period[0] && countryData[n + 1].year >= period[0]) { //start
                 var dt = period[0] - countryData[n].year;
@@ -387,7 +411,7 @@ function splitLineIntoSegments(countryData) {
 }
 
 
-function directionChart(flatdata) {
+function makeDirectionChart(flatdata, options) {
 
     function category(gdp, gini) {
         var cat = null;
@@ -418,12 +442,12 @@ function directionChart(flatdata) {
         return foo;
     }
 
-    chart = d3.select(".second").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+    var chart = d3.select(".second").append("svg")
+        .attr("width", options.width() + options.margin.left + options.margin.right)
+        .attr("height", options.height() + options.margin.top + options.margin.bottom)
         .append("g")
         .attr("transform", function (d) {
-            return "translate(" + margin.left + "," + margin.top + ")";
+            return "translate(" + options.margin.left + "," + options.margin.top + ")";
         });
 
     var baseyear = d3.min(flatdata, function (d) {
@@ -433,12 +457,12 @@ function directionChart(flatdata) {
         return d.year
     });
 
-    offset = {
+    var offset = {
         x: 40,
         y: 10
     };
     var matrix = {
-        w: (width-offset.x)/(endyear-baseyear+1),
+        w: (options.width() - offset.x) / (endyear - baseyear + 1),
         h: 35
     };
 
@@ -455,29 +479,31 @@ function directionChart(flatdata) {
         })
         .append("rect")
         .attr("id", function (d) {
-            return "rect_"+d.country + d.year
+            return "rect_" + d.country + d.year
         })
-        .classed("highlight",false)
-        .attr("class",function(d){ d.country;})        
-        .classed("passive",false)
+        .classed("highlight", false)
+        .attr("class", function (d) {
+            d.country;
+        })
+        .classed("passive", false)
         .attr("width", matrix.w)
         .attr("height", matrix.h)
         .style("fill", function (d) {
             return category(d.dgdp, d.dgini);
         })
-        .on("mouseover",function(d) {
-            svg.selectAll("#circle_"+d.country + d.year)
+        .on("mouseover", function (d) {
+            d3.selectAll("#circle_" + d.country + d.year)
                 .transition(250)
-                .attr("r",6);
-            d3.select(this).classed("highlight",true);
+                .attr("r", 6);
+            d3.select(this).classed("highlight", true);
         })
-        .on("mouseout",function(d) {
-            svg.selectAll("#circle_"+d.country + d.year)
+        .on("mouseout", function (d) {
+            d3.selectAll("#circle_" + d.country + d.year)
                 .transition(250)
-                .attr("r",3);
-            d3.select(this).classed("highlight",false);
+                .attr("r", 3);
+            d3.select(this).classed("highlight", false);
         });
-    
+
     chart.selectAll("countryTitles")
         .data(Object.keys(countries))
         .enter().append("g")
@@ -493,7 +519,7 @@ function directionChart(flatdata) {
         .text(function (d) {
             return d;
         });
-    
+
     chart.selectAll("years")
         .data(range(baseyear, endyear + 1))
         .enter().append("g")
