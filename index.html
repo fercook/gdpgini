@@ -36,6 +36,27 @@
         fill: grey;
         font: 12px sans-serif;
     }
+    .axis {
+        shape-rendering: crispEdges;
+    }
+    .x.axis line {
+        stroke: grey;
+    }
+    .x.axis .minor {
+        stroke-opacity: .5;
+    }
+    .x.axis path {
+        display: none;
+    }
+    .y.axis line {
+        stroke: grey;
+    }
+    .y.axis .minor {
+        stroke-opacity: .5;
+    }
+    .y.axis path {
+        display: none;
+    }
     .highlight {
         stroke: white;
         stroke-width: 3px;
@@ -44,16 +65,6 @@
         opacity: 0.1;
     }
     .multichart .years {
-        fill: grey;
-        font: 10px sans-serif;
-    }
-    .axis path,
-    .axis line {
-        fill: none;
-        stroke: #555;
-        shape-rendering: crispEdges;
-    }
-    .axis text {
         fill: grey;
         font: 10px sans-serif;
     }
@@ -106,38 +117,38 @@
             </div>
 
             <div class="panel panel-default">
-            <div class="panel-body">
-            <div class="row">
-                <div class="col-sm-4 col-md-4">
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <div class="caption">
-                        Cambio en PBI o GINI de un a&ntilde;o al siguiente:
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3">
-                    <div class="caption">
-                        <div class="legend">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="multichart"></div>
-                    </div>
-                </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="caption">
+                                Cambio en PBI o GINI de un a&ntilde;o al siguiente:
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="caption">
+                                <div class="legend">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="multichart"></div>
+                            </div>
+                        </div>
 
-                <script src="ginis.js"></script>                
-            </div>
+                        <script src="ginis.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-        <script>
-            $( window ).resize( drawCharts );
-        </script>
-    
+
+    <script>
+        $(window).resize(drawCharts);
+    </script>
+
 </body>

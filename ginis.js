@@ -289,16 +289,13 @@ function makeCairoChart(div, flatdata, options) {
 
 
     svg.append("g")
-    //.attr("class", "axis")
-    .attr("transform", "translate(0," + (height) + ")")
-        .attr("fill", "none")
-        .attr("stroke", "#555")
+        .attr("transform", "translate(0," + (height) + ")")
+        .attr("class", "x axis")
         .call(xaxis);
 
+    
     svg.append("g")
-    //.attr("class", "axis")
-    .attr("fill", "none")
-        .attr("stroke", "#555")
+        .attr("class", "y axis")
         .call(yaxis);
 
     var groups = svg.selectAll(".datagroups")
@@ -389,7 +386,7 @@ function makeCairoChart(div, flatdata, options) {
         .attr("y", 0)
         .attr("dx", 0)
         .attr("dy", "0.35em")
-        .attr("class", "title")
+        .attr("class", "media-heading")
         .style("text-anchor", "end")
         .style("font-size", "14px")
         .style("fill", "black")
@@ -431,9 +428,12 @@ function makeDirectionChart(flatdata, options) {
     d3.selectAll(".multichart svg").remove();
     d3.selectAll(".legend svg").remove();
 
+    var width = $(".multichart").width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
+    var height = options.height() - options.margin.top - options.margin.bottom;
+    
     var chart = d3.select(".multichart").append("svg")
-        .attr("width", options.width() + options.margin.left + options.margin.right)
-        .attr("height", options.height() + options.margin.top + options.margin.bottom)
+        .attr("width", width + options.margin.left + options.margin.right)
+        .attr("height", height + options.margin.top + options.margin.bottom)
         .append("g")
         .attr("transform", function (d) {
             return "translate(" + options.margin.left + "," + options.margin.top + ")";
@@ -451,8 +451,8 @@ function makeDirectionChart(flatdata, options) {
         y: 10
     };
     var matrix = {
-        w: (options.width() - offset.x) / (endyear - baseyear + 1),
-        h: 35
+        w: (width - offset.x) / (endyear - baseyear + 1),
+        h: 30
     };
 
     var cidx = {},
