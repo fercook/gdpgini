@@ -180,13 +180,17 @@ function countryColor(country, year) {
     countries[country].presidents.forEach(function (president, i) {
         var period=president.period;
         if (period[0] <= year && year < period[1]) {
+            thecolor = colorbrewer.Accent[8][i];
+            /* This is for using a quantitative scale with alternating colors...
             if (i % 2 == 0) {
                 thecolor = countries[country].scale[i / 2];
             } else {
                 var n = countries[country].scale.length / 2;
                 thecolor = countries[country].scale[n + (i - 1) / 2];
             }
+            */
         }
+        
     });
     return thecolor;
 }

@@ -15,6 +15,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<link href="css/bootstrap-switch.min.css" rel="stylesheet">
+<script src="js/bootstrap-switch.min.js"></script>
+
 <style>
     body {
         margin: 0px
@@ -71,6 +74,7 @@
     .caption {
         margin: 0 auto;
     }
+    .bootstrap-switch { height: 1.7em }
 </style>
 
 <head>
@@ -80,73 +84,85 @@
 
     <!--        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Argentina"></div>
+    <main id="content" role="main">
+        <div class="bs-docs-masthead">
+            <div class="container">
+                <p class="lead">
+                    Separar periodos presidenciales
+                    <input type="checkbox" name="presidents" checked>
+                </p>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Brazil"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Bolivia"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Chile"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Uruguay"></div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="chart" id="Paraguay"></div>
-                    </div>
-                </div>
+        </div>
 
-            </div>
-
+        <div class="container">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-sm-4 col-md-4">
-                        </div>
-                        <div class="col-sm-2 col-md-2">
-                            <div class="caption">
-                                Cambio en PBI o GINI de un a&ntilde;o al siguiente:
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Argentina"></div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-3">
-                            <div class="caption">
-                                <div class="legend">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Brazil"></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12">
-                                <div class="multichart"></div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Bolivia"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Chile"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Uruguay"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="chart" id="Paraguay"></div>
                             </div>
                         </div>
 
-                        <script src="ginis.js"></script>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4">
+                                </div>
+                                <div class="col-sm-2 col-md-2">
+                                    <div class="caption">
+                                        Cambio en PBI o GINI de un a&ntilde;o al siguiente:
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="caption">
+                                        <div class="legend">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="multichart"></div>
+                                    </div>
+                                </div>
+
+                                <script src="ginis.js"></script>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </main>
     <script>
         $(window).resize(drawCharts);
     </script>

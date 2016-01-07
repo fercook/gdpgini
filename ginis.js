@@ -7,7 +7,7 @@ var options = {
         b: 10
     },
     referenceYear: 2000,
-    colorBy: "country", // "president"
+    colorBy: "president", //"country", // 
     margin: {
         left: 30,
         right: 30,
@@ -21,6 +21,16 @@ var options = {
         return 1000 - this.margin.top - this.margin.bottom
     }
 };
+
+$("[name='presidents']").bootstrapSwitch();
+$('input[name="presidents"]').on('switchChange.bootstrapSwitch', function(event, state) {
+    if (options.colorBy=="president") {
+        options.colorBy="country"; }
+    else {
+        options.colorBy="president";
+    }
+    drawCharts();
+});
 
 function prepareData(gdps, ginis, settings) {
 
