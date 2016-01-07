@@ -21,6 +21,8 @@ To Do:
   - Dejar que el usuario elija si quiere ver valores absolutos, normalizados, o diferencias de año a año.
   - Botón para resaltar los períodos presidenciales o para dibujarlos planos con un color único.
 * Decidir si las escalas de colores son buenas
+* Arreglar etiquetas/nombres para el direction chart (los dos mejor?)
+* Agregar ejes a la leyenda del direction chart (GINI y PBIpc)
 * Arreglar bugs:
   - Los años del gráfico de dirección deberían acomodarse de manera responsive, es decir que si el ancho de la ventana se hace pequeño deberían desaparecer algunos (idea: usar el d3.svg.axis para pintarlos !)
   - Faltan los nombres de los ejes en TODOS los charts

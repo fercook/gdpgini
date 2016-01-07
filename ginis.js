@@ -532,12 +532,12 @@ function makeDirectionChart(flatdata, options) {
         .attr("width", 2 * legendW)
         .attr("height", 2 * legendH);
     var legends = [{
-            title: "Todo mejor",
+            title: "Los 2 mejor",
             dgdp: 1,
             dgini: -1
         },
         {
-            title: "Todo peor",
+            title: "Los 2 peor",
             dgdp: -1,
             dgini: 1
         },
