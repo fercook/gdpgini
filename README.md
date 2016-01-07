@@ -1,5 +1,5 @@
 # Cairo Charts
-The Alberto Cairo chart for multiple countries (work in progress)
+The Alberto Cairo chart for multiple countries (work in progress) [Test site] (http://www.bsc.es/viz/gini/)
 
 Hasta ahora funciona: 
 * Tomar datos de los ficheros CSV para cualquier pais en la lista de paises
