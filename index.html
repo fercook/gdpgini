@@ -4,57 +4,140 @@
 <script src="js/d3.v3.min.js"></script>
 <script src="js/queue.v1.min.js"></script>
 <script src="js/colorbrewer.js"></script>
-<script src="data/countries.js"></script>    
-    
+<script src="data/countries.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 <style>
-
-body {margin:0px}
-
-.main {
-  align-content: flex-end;
- }
-.main text {
-    fill: grey;
-    font: 10px sans-serif;
-    text-anchor: start;
-}
-.second text {
-    fill: grey;
-    font: 12px sans-serif;
-}
-
-.highlight {
-    stroke: white;
-    stroke-width: 3px;
-}
-
-.passive {
-    opacity: 0.1;
-}
-.second .years {
-    fill: grey;
-    font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #555;
-    shape-rendering: crispEdges;
-}
-.axis text {
+    body {
+        margin: 0px
+    }
+    .chart {
+        align-content: flex-end;
+    }
+    .title text {
+        fill: black;
+        font: bold;
+        text-anchor: end;
+    }
+    .chart text {
         fill: grey;
-    font: 10px sans-serif;
-}
-
+        font: 10px sans-serif;
+        text-anchor: start;
+    }
+    .multichart text {
+        fill: grey;
+        font: 12px sans-serif;
+    }
+    .highlight {
+        stroke: white;
+        stroke-width: 3px;
+    }
+    .passive {
+        opacity: 0.1;
+    }
+    .multichart .years {
+        fill: grey;
+        font: 10px sans-serif;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #555;
+        shape-rendering: crispEdges;
+    }
+    .axis text {
+        fill: grey;
+        font: 10px sans-serif;
+    }
+    .caption {
+        margin: 0 auto;
+    }
 </style>
 
 <head>
 </head>
 
 <body>
-    <div class="main"></div>
-    <div class="second"></div>
-    <script src="ginis.js"></script>
 
+    <!--        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Argentina"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Brazil"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Bolivia"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Chile"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Uruguay"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="chart" id="Paraguay"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel panel-default">
+            <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="caption">
+                        Cambio en PBI o GINI de un a&ntilde;o al siguiente:
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="caption">
+                        <div class="legend">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="multichart"></div>
+                    </div>
+                </div>
+
+                <script src="ginis.js"></script>                
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script>
+            $( window ).resize( drawCharts );
+        </script>
+    
 </body>

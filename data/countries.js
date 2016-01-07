@@ -26,7 +26,7 @@ countries = {
             period: [2011.9, 2015.9]
         }],
         scale: colorbrewer.Blues[8],
-        color: "steelblue"
+        color: "#095a9d"
     },
     "Brazil": {
         presidents: [{
@@ -55,7 +55,7 @@ countries = {
             period: [2011.9, 2015.9]
         }],
         scale: colorbrewer.YlGn[8],
-        color: "yellow"
+        color: "#ffd800"
     },
     "Bolivia": {
         presidents: [{
@@ -142,7 +142,7 @@ countries = {
             period: [2011.9, 2015.9]
         }],
         scale: colorbrewer.RdPu[8],
-        color: "lightblue"
+        color: "#05b4ed"
     },
     "Paraguay": {
         presidents: [{
@@ -171,7 +171,7 @@ countries = {
             period: [2011.9, 2015.9]
         }],
         scale: colorbrewer.Greys[8],
-        color: "orange"
+        color: "#d300a2"
     },
 };
 
