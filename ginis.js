@@ -200,7 +200,7 @@ function splitLineIntoSegments(countryData) {
         if (countryData[countryData.length - 1].year <= period[1]) {
             segment.push(countryData[countryData.length - 1]);
         }
-        segments.push(segment);
+        if (segment.length>1) segments.push(segment);
     });
     return segments;
 }
@@ -228,7 +228,8 @@ function makeCairoChart(div, flatdata, options) {
 
     xaxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom");
+        .orient("bottom")
+        .ticks(7);
 
     yaxis = d3.svg.axis()
         .scale(y)

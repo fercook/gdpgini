@@ -29,146 +29,143 @@ countries = {
         color: "#095a9d"
     },
     "Brazil": {
-        presidents: [{
-            name: "Alfonsin",
-            period: [1983, 1989.5]
+        presidents: [ {
+            name: "Figueiredo",
+            period: [1979.3, 1985.3]
         }, {
-            name: "Menem (I)",
-            period: [1989.5, 1994.9]
+            name: "Sarney",
+            period: [1985.3, 1990.2]
         }, {
-            name: "Menem (I)",
-            period: [1994.9, 1999.9]
+            name: "de Mello",
+            period: [1990.2, 1993]
         }, {
-            name: "Menem (I)",
-            period: [1999.9, 2001.9]
+            name: "Franco",
+            period: [1993, 1995]
         }, {
-            name: "Menem (I)",
-            period: [2001.9, 2003.9]
+            name: "Cardoso",
+            period: [1995, 2003]
         }, {
-            name: "Menem (I)",
-            period: [2003.9, 2007.9]
+            name: "Lula da Silva",
+            period: [2003, 2011]
         }, {
-            name: "Menem (I)",
-            period: [2007.9, 2011.9]
-        }, {
-            name: "Menem (I)",
-            period: [2011.9, 2015.9]
+            name: "Roussef",
+            period: [2011.0, 2016]
         }],
         scale: colorbrewer.YlGn[8],
         color: "#ffd800"
     },
     "Bolivia": {
         presidents: [{
-            name: "Alfonsin",
-            period: [1983, 1989.5]
+            name: "Paz Estennssoro",
+            period: [1985, 1989]
         }, {
-            name: "Menem (I)",
-            period: [1989.5, 1994.9]
+            name: "Paz Zamora",
+            period: [1989 ,1993]
         }, {
-            name: "Menem (I)",
-            period: [1994.9, 1999.9]
+            name: "Sanchez de Lozada",
+            period: [1993, 1997]
         }, {
-            name: "Menem (I)",
-            period: [1999.9, 2001.9]
+            name: "Banzer Suarez",
+            period: [1997, 2001]
         }, {
-            name: "Menem (I)",
-            period: [2001.9, 2003.9]
+            name: "Quiroga Ramirez",
+            period: [2001, 2002]
         }, {
-            name: "Menem (I)",
-            period: [2003.9, 2007.9]
+            name: "Sanchez de Lozada",
+            period: [2002, 2003]
         }, {
-            name: "Menem (I)",
-            period: [2007.9, 2011.9]
+            name: "Mesa",
+            period: [2003, 2005]
         }, {
-            name: "Menem (I)",
-            period: [2011.9, 2015.9]
+            name: "Morales (I)",
+            period: [2005, 2009]
+        }, {
+            name: "Morales (II)",
+            period: [2009, 2015]
         }],
         scale: colorbrewer.Greens[8],
         color: "green"
     },
     "Chile": {
         presidents: [{
-            name: "Menem (I)",
-            period: [1983, 1989.5]
+            name: "Pinochet",
+            period: [1973.8, 1990.3]
         }, {
-            name: "Menem (I)",
-            period: [1989.5, 1994.9]
+            name: "Aylwin Azocar",
+            period: [1990.3, 1994.3]
         }, {
-            name: "Menem (I)",
-            period: [1994.9, 1999.9]
+            name: "Frei Ruiz-Tagle",
+            period: [1994.3, 2000.3]
         }, {
-            name: "Menem (I)",
-            period: [1999.9, 2001.9]
+            name: "Lagos Escobar",
+            period: [2000.3, 2006.3]
         }, {
-            name: "Menem (I)",
-            period: [2001.9, 2003.9]
+            name: "Bachelet",
+            period: [2006.3, 2010.3]
         }, {
-            name: "Menem (I)",
-            period: [2003.9, 2007.9]
+            name: "Pinera",
+            period: [2010.3, 2014.3]
         }, {
-            name: "Menem (I)",
-            period: [2007.9, 2011.9]
-        }, {
-            name: "Menem (I)",
-            period: [2011.9, 2015.9]
+            name: "Bachelet (II)",
+            period: [2014.3, 2018.3]
         }],
         scale: colorbrewer.Reds[8],
         color: "red"
     },
     "Uruguay": {
         presidents: [{
-            name: "Menem (I)",
-            period: [1983, 1989.5]
+            name: "Sanguinetti (I)",
+            period: [1985.2, 1990.2]
         }, {
-            name: "Menem (I)",
-            period: [1989.5, 1994.9]
+            name: "Lacalle",
+            period: [1990.2, 1995.2]
         }, {
-            name: "Menem (I)",
-            period: [1994.9, 1999.9]
+            name: "Sanguinetti (II)",
+            period: [1995.2, 2000.2]
         }, {
-            name: "Menem (I)",
-            period: [1999.9, 2001.9]
+            name: "Batlle",
+            period: [2000.2, 2005.2]
         }, {
-            name: "Menem (I)",
-            period: [2001.9, 2003.9]
+            name: "Vazquez",
+            period: [2005.2, 2010.2]
         }, {
-            name: "Menem (I)",
-            period: [2003.9, 2007.9]
+            name: "Mujica",
+            period: [2010.2, 2015.2]
         }, {
-            name: "Menem (I)",
-            period: [2007.9, 2011.9]
-        }, {
-            name: "Menem (I)",
-            period: [2011.9, 2015.9]
+            name: "Vazquez (II)",
+            period: [2015.2, 2020.2]
         }],
         scale: colorbrewer.RdPu[8],
         color: "#05b4ed"
     },
     "Paraguay": {
         presidents: [{
-            name: "Menem (I)",
-            period: [1983, 1989.5]
+            name: "Stroessner",
+            period: [1954, 1989.1]
         }, {
-            name: "Menem (I)",
-            period: [1989.5, 1994.9]
+            name: "Pedotti",
+            period: [1989.1, 1993.7]
         }, {
-            name: "Menem (I)",
-            period: [1994.9, 1999.9]
+            name: "Wasmosy",
+            period: [1993.7, 1998.7]
         }, {
-            name: "Menem (I)",
-            period: [1999.9, 2001.9]
+            name: "Grau",
+            period: [1998.7, 1999.3]
         }, {
-            name: "Menem (I)",
-            period: [2001.9, 2003.9]
+            name: "Macchi",
+            period: [1999.3, 2003.7]
         }, {
-            name: "Menem (I)",
-            period: [2003.9, 2007.9]
+            name: "Frutos",
+            period: [2003.7, 2008.7]
         }, {
-            name: "Menem (I)",
-            period: [2007.9, 2011.9]
+            name: "Lugo",
+            period: [2008.7, 2012.5]
         }, {
-            name: "Menem (I)",
-            period: [2011.9, 2015.9]
+            name: "Franco",
+            period: [2012.5, 2013.7]
+        }, {
+            name: "Cartes",
+            period: [2013.7, 2017.7]
         }],
         scale: colorbrewer.Greys[8],
         color: "#d300a2"
@@ -180,7 +177,7 @@ function countryColor(country, year) {
     countries[country].presidents.forEach(function (president, i) {
         var period=president.period;
         if (period[0] <= year && year < period[1]) {
-            thecolor = colorbrewer.Accent[8][i];
+            thecolor = colorbrewer.Set1[9][i];
             /* This is for using a quantitative scale with alternating colors...
             if (i % 2 == 0) {
                 thecolor = countries[country].scale[i / 2];
