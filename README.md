@@ -14,12 +14,11 @@ He puesto otro gráfico que creo funciona bien: tomando el gráfico de cambio po
 To Do:
 * Arreglar el algoritmo de posicionamiento de etiquetas (de años) para que no se pisen entre ellos ni con la curva en caso de que le pase cerca (posibilidad: user algoritmo de fuerzas tipo [d3.layout.force] (https://github.com/mbostock/d3/wiki/Force-Layout)
 * Pensar e implementar un algoritmo para posicionar las etiquetas de los presidentes.
-* Rellenar los períodos presidenciales para todos los países (actualmente solo está Argentina, los otros paises tienen un copy paste de los mismos datos)
+* Rellenar los períodos presidenciales para todos los países (actualmente solo están los 6 paises del cono sur)
 * Evaluar (entrevistas, comentarios, etc) si el gráfico de dirección funciona, y ver como mejorarlo.
 * Ideas para interfaz general: 
   - Si se ponen mas países en el fichero countries.js estos aparecen automáticamente en el gráfico, tal como está. Se podría cambiar esto para que el usuario tenga un combo box y vaya eligiendo países para que aparezcan en el orden que toca.
   - Dejar que el usuario elija si quiere ver valores absolutos, normalizados, o diferencias de año a año.
-  - Botón para resaltar los períodos presidenciales o para dibujarlos planos con un color único.
 * Decidir si las escalas de colores son buenas
 * Arreglar etiquetas/nombres para el direction chart (los dos mejor?)
 * Agregar ejes a la leyenda del direction chart (GINI y PBIpc)
