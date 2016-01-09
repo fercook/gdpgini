@@ -7,7 +7,7 @@ var options = {
         b: 10
     },
     referenceYear: 2000,
-    colorBy: "president", //"country", // 
+    colorBy: "country", //"president", // 
     margin: {
         left: 30,
         right: 30,
@@ -19,8 +19,11 @@ var options = {
     },
     width: function () {
         return 1000 - this.margin.top - this.margin.bottom
-    }
+    },
+    separateCountries: true
 };
+
+$.fn.bootstrapSwitch.defaults.size = 'mini';
 
 $("[name='presidents']").bootstrapSwitch();
 $('input[name="presidents"]').on('switchChange.bootstrapSwitch', function(event, state) {
@@ -29,6 +32,39 @@ $('input[name="presidents"]').on('switchChange.bootstrapSwitch', function(event,
     else {
         options.colorBy="president";
     }
+    drawCharts();
+});
+
+$("[name='multicountry']").bootstrapSwitch();
+$('input[name="multicountry"]').on('switchChange.bootstrapSwitch', function(event, state) {
+    options.separateCountries= !options.separateCountries;
+    if (options.separateCountries) {
+        $("div[id=separatecountries]").show();
+        $("div[id=multicountry]").hide();
+        options.height= function () {
+            return 300 - this.margin.left - this.margin.right};
+
+    } else {
+        $("div[id=separatecountries]").hide();
+        $("div[id=multicountry]").show();
+        options.height= function () {
+        return 600 - this.margin.left - this.margin.right};
+    }  
+    drawCharts();
+});
+
+$("[name='percent']").bootstrapSwitch();
+$('input[name="percent"]').on('switchChange.bootstrapSwitch', function(event, state) {
+    options.percent=!options.percent;
+    normalizeData();
+    drawCharts();
+});
+
+$("[name='reference']").bootstrapSwitch();
+$('input[name="reference"]').on('switchChange.bootstrapSwitch', function(event, state) {
+    options.normalize=!options.normalize;
+    normalizeData();
+    // I should turn off the percent switch
     drawCharts();
 });
 
@@ -104,29 +140,29 @@ function prepareData(gdps, ginis, settings) {
         }
     }
     //Print to copy
-    //console.log(flatdata);
+    //console.log(flatdata);    
+    return flatdata;
+}
 
-    if (settings.normalize) {
+function normalizeData() {
+    if (options.percent) {
         flatdata.forEach(function (d) {
-            d.gdp = d.gdp / countries[d.country].refgdp;
-            d.gini = d.gini / countries[d.country].refgini;
-        });
-    }
-    if (settings.percent) {
-        flatdata.forEach(function (d) {
-            d.x = d.dgdp;
-            d.y = d.gdini;
+            d.y = d.dgini;
+            d.x = d.dgdp;            
         });
     } else {
         flatdata.forEach(function (d) {
             d.y = d.gini;
             d.x = d.gdp;
         });
-    }
-
-    return flatdata;
+    }    
+    if (options.normalize) {
+        flatdata.forEach(function (d) {
+            d.x = d.gdp / countries[d.country].refgdp;
+            d.y = d.gini / countries[d.country].refgini;
+        });
+    }    
 }
-
 function positionLabels(flatdata, category, textdist) {
 
     function norm(vec) {
@@ -410,17 +446,17 @@ function makeDirectionChart(flatdata, options) {
     function category(gdp, gini) {
         var cat = null;
         if (gdp > 0 && gini < 0) {
-            cat = 3
-        } else if (gdp > 0 && gini >= 0) {
-            cat = 2
-        } else if (gdp <= 0 && gini < 0) {
-            cat = 1
-        } else if (gdp <= 0 && gini >= 0) {
             cat = 0
+        } else if (gdp > 0 && gini >= 0) {
+            cat = 1
+        } else if (gdp <= 0 && gini < 0) {
+            cat = 2
+        } else if (gdp <= 0 && gini >= 0) {
+            cat = 3
         } else {
             return "white"
         }
-        return colorbrewer.PiYG[4][cat];
+        return colorbrewer.PuOr[4][cat];
     };
 
     function range(start, end) {
@@ -618,17 +654,21 @@ queue()
             }
         });
         flatdata = prepareData(gdps, ginis, options);
+        normalizeData();
         drawCharts();
     });
 
 function drawCharts() {
-    for (var country in countries) {
-        oneCountryData = flatdata.filter(function (d) {
-            return d.year >= 1986 && d.country == country;
-        });
-        makeCairoChart(country, oneCountryData, options);
-    };
-
+    if (options.separateCountries) {
+        for (var country in countries) {
+            oneCountryData = flatdata.filter(function (d) {
+                return d.year >= 1986 && d.country == country;
+            });
+            makeCairoChart(country, oneCountryData, options);
+        };
+    } else {
+        makeCairoChart("generalDiv", flatdata, options);
+    }
     makeDirectionChart(flatdata, options);
 }
 
