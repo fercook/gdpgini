@@ -9,10 +9,10 @@ var options = {
     referenceYear: 2000,
     colorBy: "country", //"president", // 
     margin: {
-        left: 30,
-        right: 30,
-        top: 30,
-        bottom: 20
+        left: 40,
+        right: 10,
+        top: 10,
+        bottom: 40
     },
     height: function () {
         return 300 - this.margin.left - this.margin.right
@@ -24,6 +24,10 @@ var options = {
 };
 
 $.fn.bootstrapSwitch.defaults.size = 'mini';
+$.fn.bootstrapSwitch.defaults.onText  = 'on';
+$.fn.bootstrapSwitch.defaults.offText  = 'off';
+$.fn.bootstrapSwitch.defaults.handleWidth  = 12;
+
 
 $("[name='presidents']").bootstrapSwitch();
 $('input[name="presidents"]').on('switchChange.bootstrapSwitch', function(event, state) {
@@ -241,7 +245,7 @@ function splitLineIntoSegments(countryData) {
     return segments;
 }
 
-function makeCairoChart(div, flatdata, options) {
+function makeCairoChart(div, title, flatdata, options) {
 
     d3.selectAll("#" + div + " svg").remove();
     var width = $("#" + div).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
@@ -281,7 +285,7 @@ function makeCairoChart(div, flatdata, options) {
         (1 + offset) * d3.max(flatdata, function (d) {
             return d.x;
         })
-                    ]);
+                    ])  ;
     y.domain([
         (1 - offset) * d3.min(flatdata, function (d) {
             return d.y;
@@ -289,7 +293,7 @@ function makeCairoChart(div, flatdata, options) {
         (1 + offset) * d3.max(flatdata, function (d) {
             return d.y;
         })
-                    ]);
+                    ]).nice()  ;
 
     if (options.lines) {
 
@@ -344,7 +348,7 @@ function makeCairoChart(div, flatdata, options) {
     svg.append("g")
         .attr("class", "y axis")
         .call(yaxis);
-
+    
     var groups = svg.selectAll(".datagroups")
         .data(flatdata)
         .enter().append("g")
@@ -429,6 +433,26 @@ function makeCairoChart(div, flatdata, options) {
         });
 
     svg.append("text")
+        .style("text-anchor", "middle")  
+        .attr("x", width/2)
+        .attr("y", height+2*options.margin.bottom/3)
+        .attr("dx", 0)
+        .attr("dy", "0.35em")
+        .style("font-size", "12px")
+        .text("PBI per capita (ajust. infl.)");
+
+    svg.append("text")
+        .style("text-anchor", "middle")  
+        //.attr("x", width/2)
+        //.attr("y", height+2*options.margin.bottom/3)
+        .attr("dx", 0)
+        .attr("dy", "0.35em")
+        .style("font-size", "12px")
+        .attr("transform", "translate(-"+4*options.margin.left/5+","+(height/2)+")rotate(-90)")  
+        .text("Coeficiente Gini");
+
+    
+    svg.append("text")
         .attr("x", width)
         .attr("y", 0)
         .attr("dx", 0)
@@ -438,7 +462,7 @@ function makeCairoChart(div, flatdata, options) {
         .style("font-size", "14px")
         .style("fill", "black")
         .style("font", "bold")
-        .text(div);
+        .text(title);
 }
 
 function makeDirectionChart(flatdata, options) {
@@ -664,10 +688,10 @@ function drawCharts() {
             oneCountryData = flatdata.filter(function (d) {
                 return d.year >= 1986 && d.country == country;
             });
-            makeCairoChart(country, oneCountryData, options);
+            makeCairoChart(country, country, oneCountryData, options);
         };
     } else {
-        makeCairoChart("generalDiv", flatdata, options);
+        makeCairoChart("generalDiv", "", flatdata, options);
     }
     makeDirectionChart(flatdata, options);
 }
