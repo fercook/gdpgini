@@ -580,7 +580,7 @@ function makeDirectionChart(flatdata, options) {
             return d;
         });
 
-    chart.selectAll("years")
+   /* chart.selectAll("years")
         .data(range(baseyear, endyear + 1))
         .enter().append("g")
         .attr("transform", function (d) {
@@ -596,7 +596,24 @@ function makeDirectionChart(flatdata, options) {
         .text(function (d) {
             return d;
         });
-
+*/  //(width - offset.x) / (endyear - baseyear + 1),    (endyear - baseyear) * matrix.w
+    var x = d3.scale.linear()
+        .range([offset.x+matrix.w/2, offset.x + (endyear - baseyear) * matrix.w+matrix.w/2])     
+        .domain([baseyear,endyear]); 
+    
+    var xaxis = d3.svg.axis()
+        .scale(x)
+        .orient("top")
+        //.ticks(endyear-baseyear)  
+        .ticks(Math.floor(((endyear - baseyear) * matrix.w)/34))
+        .tickFormat(d3.format(".0f"));
+        
+    chart.append("g")
+        .attr("transform", "translate(0," + (options.margin.top) + ")")
+        .attr("class", "years")
+        .call(xaxis);
+    
+    /*
     var legendW = 80,
         legendH = 30;
     var legendsvg = d3.selectAll(".legend").append("svg")
@@ -645,7 +662,7 @@ function makeDirectionChart(flatdata, options) {
         .attr("dx", 0)
         .attr("dy", "0.35em")
         .style("text-anchor", "middle");
-
+*/
 
 }
 

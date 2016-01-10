@@ -45,7 +45,7 @@
     .x.axis line {
         stroke: grey;
     }
-    .x.axis .minor {
+    .x.axis.minor {
         stroke-opacity: .5;
     }
     .x.axis path {
@@ -67,9 +67,15 @@
     .passive {
         opacity: 0.1;
     }
-    .multichart .years {
+    .multichart.years {
         fill: grey;
         font: 10px sans-serif;
+    }
+    .years path {
+        display: none;
+    }
+    .years line {
+        stroke: grey;
     }
     .caption {
         margin: 0 auto;
@@ -77,6 +83,10 @@
     .bootstrap-switch {
         height: 1.7em
     }
+    .thumbnail.legend {
+    border: 0 none;
+    box-shadow: none;
+}
 </style>
 
 <head>
@@ -129,63 +139,63 @@
                         </div>
 
                     </div>
-                    <div class="row" >
-                            <div class="col-sm-1 col-md-2">
-                                <p>
-                                    Separar periodos presidenciales</p>
-                            </div>
-                            <div class="col-sm-1 col-md-1">
-                                <input type="checkbox" name="presidents">
-                            </div>
-                            <div class="col-sm-1 col-md-2">
-                                <p>
-                                    Separar grafico por pais</p>
-                            </div>
-                            <div class="col-sm-1 col-md-1">
-                                <input type="checkbox" name="multicountry" checked>
-                            </div>
-                            <div class="col-sm-1 col-md-2">
-                                <p>
-                                    Tomar a&ntilde;o de referencia (2000)</p>
-                            </div>
-                            <div class="col-sm-1 col-md-1">
-                                <input type="checkbox" name="reference">
-                            </div>
-                            <div class="col-sm-1 col-md-2">
-                                <p>
-                                    Valores porcentuales</p>
-                            </div>
-                            <div class="col-sm-1 col-md-1">
-                                <input type="checkbox" name="percent">
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-1 col-md-2">
+                            <p>
+                                Separar periodos presidenciales</p>
+                        </div>
+                        <div class="col-sm-1 col-md-1">
+                            <input type="checkbox" name="presidents">
+                        </div>
+                        <div class="col-sm-1 col-md-2">
+                            <p>
+                                Separar grafico por pais</p>
+                        </div>
+                        <div class="col-sm-1 col-md-1">
+                            <input type="checkbox" name="multicountry" checked>
+                        </div>
+                        <div class="col-sm-1 col-md-2">
+                            <p>
+                                Tomar a&ntilde;o de referencia (2000)</p>
+                        </div>
+                        <div class="col-sm-1 col-md-1">
+                            <input type="checkbox" name="reference">
+                        </div>
+                        <div class="col-sm-1 col-md-2">
+                            <p>
+                                Valores porcentuales</p>
+                        </div>
+                        <div class="col-sm-1 col-md-1">
+                            <input type="checkbox" name="percent">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <p class="lead">Cambio del PBI y Gini de un a&ntilde;o al siguiente:</p>
-                            <div class="row">
-
-                                <div class="col-sm-9 col-md-9">
-                                    <div class="multichart"></div>
-                                </div>
-
-                                <div class="col-sm-3 col-md-3">
-                                    <!--<div class="legend">
+                    <p class="lead">Cambio del PBI y Gini de un a&ntilde;o al siguiente:</p>
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3">
+                            <!--<div class="legend">
                                         </div>-->
-                                    <div class="caption">
-                                        Como leer este gr&aacute;fico:
-                                    <img src="images/legend_spanish.jpg" height="200" width="200">
-                                                                            </div>
 
+                            <div class="thumbnail legend">
+                                <img src="images/legend_spanish.jpg" height="200" width="200">
+                                <div class="caption navbar-right">
+                                    <p>Como leer este gr&aacute;fico</p>
                                 </div>
                             </div>
 
-                            <script src="ginis.js"></script>
                         </div>
+                        <div class="col-sm-9 col-md-9">
+                            <div class="multichart"></div>
+                        </div>
+
                     </div>
+
+
+
+                    <script src="ginis.js"></script>
                 </div>
             </div>
         </div>
