@@ -328,7 +328,7 @@ function makeCairoChart(div, title, flatdata, options) {
                             .attr("stroke-width", 3)
                             .attr("fill", "none")
                             .on("mouseover", function (d) {
-
+                                console.log(d);
                             });
                     }
 
@@ -439,6 +439,7 @@ function makeCairoChart(div, title, flatdata, options) {
         .attr("dx", 0)
         .attr("dy", "0.35em")
         .style("font-size", "12px")
+        //.style("fill", "black")
         .text("PBI per capita (ajust. infl.)");
 
     svg.append("text")
@@ -448,7 +449,8 @@ function makeCairoChart(div, title, flatdata, options) {
         .attr("dx", 0)
         .attr("dy", "0.35em")
         .style("font-size", "12px")
-        .attr("transform", "translate(-"+4*options.margin.left/5+","+(height/2)+")rotate(-90)")  
+        .attr("transform", "translate(-"+5*options.margin.left/6+","+(height/2)+")rotate(-90)") 
+        //.style("fill", "black")
         .text("Coeficiente Gini");
 
     
@@ -463,6 +465,8 @@ function makeCairoChart(div, title, flatdata, options) {
         .style("fill", "black")
         .style("font", "bold")
         .text(title);
+    
+    
 }
 
 function makeDirectionChart(flatdata, options) {

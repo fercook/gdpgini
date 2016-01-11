@@ -26,7 +26,7 @@ countries = {
             period: [2011.9, 2015.9]
         }],
         scale: colorbrewer.Blues[8],
-        color: "#095a9d"
+        color: "#092dc6"
     },
     "Brazil": {
         presidents: [ {
@@ -189,6 +189,12 @@ function countryColor(country, year) {
                 thecolor = countries[country].scale[n + (i - 1) / 2];
             }
             */
+            if (i % 2 == 0) {
+                thecolor = d3.rgb(countries[country].color).darker().toString(); //countries[country].color;
+            } else {
+                thecolor = d3.rgb(countries[country].color).brighter().toString();
+            } 
+
         }
         
     });
