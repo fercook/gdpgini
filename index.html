@@ -77,6 +77,9 @@
     .years line {
         stroke: grey;
     }
+    .no_interaction {
+        pointer-events : none;
+    }
     .caption {
         margin: 0 auto;
     }
@@ -84,8 +87,26 @@
         height: 1.7em
     }
     .thumbnail.legend {
-    border: 0 none;
-    box-shadow: none;
+        border: 0 none;
+        box-shadow: none;
+    }
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        //width: 100px;
+        height: 40px;
+        border: 1px;
+        border-radius: 3px;
+        top: 100px;
+        left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font: 16px sans-serif;
+        background: rgba(255,255,255,0.5) ;
+        pointer-events: none;
+        /*review this font-family: 'lato_regular', arial; */
+    }
 }
 </style>
 

@@ -23,54 +23,57 @@ var options = {
     separateCountries: true
 };
 
-$.fn.bootstrapSwitch.defaults.size = 'mini';
-$.fn.bootstrapSwitch.defaults.onText  = 'on';
-$.fn.bootstrapSwitch.defaults.offText  = 'off';
-$.fn.bootstrapSwitch.defaults.handleWidth  = 12;
 
+$.fn.bootstrapSwitch.defaults.size = 'mini';
+$.fn.bootstrapSwitch.defaults.onText = 'on';
+$.fn.bootstrapSwitch.defaults.offText = 'off';
+$.fn.bootstrapSwitch.defaults.handleWidth = 12;
 
 $("[name='presidents']").bootstrapSwitch();
-$('input[name="presidents"]').on('switchChange.bootstrapSwitch', function(event, state) {
-    if (options.colorBy=="president") {
-        options.colorBy="country"; }
-    else {
-        options.colorBy="president";
+$('input[name="presidents"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    if (options.colorBy == "president") {
+        options.colorBy = "country";
+    } else {
+        options.colorBy = "president";
     }
     drawCharts();
 });
 
 $("[name='multicountry']").bootstrapSwitch();
-$('input[name="multicountry"]').on('switchChange.bootstrapSwitch', function(event, state) {
-    options.separateCountries= !options.separateCountries;
+$('input[name="multicountry"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    options.separateCountries = !options.separateCountries;
     if (options.separateCountries) {
         $("div[id=separatecountries]").show();
         $("div[id=multicountry]").hide();
-        options.height= function () {
-            return 300 - this.margin.left - this.margin.right};
+        options.height = function () {
+            return 300 - this.margin.left - this.margin.right
+        };
 
     } else {
         $("div[id=separatecountries]").hide();
         $("div[id=multicountry]").show();
-        options.height= function () {
-        return 600 - this.margin.left - this.margin.right};
-    }  
+        options.height = function () {
+            return 600 - this.margin.left - this.margin.right
+        };
+    }
     drawCharts();
 });
 
 $("[name='percent']").bootstrapSwitch();
-$('input[name="percent"]').on('switchChange.bootstrapSwitch', function(event, state) {
-    options.percent=!options.percent;
+$('input[name="percent"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    options.percent = !options.percent;
     normalizeData();
     drawCharts();
 });
 
 $("[name='reference']").bootstrapSwitch();
-$('input[name="reference"]').on('switchChange.bootstrapSwitch', function(event, state) {
-    options.normalize=!options.normalize;
+$('input[name="reference"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    options.normalize = !options.normalize;
     normalizeData();
     // I should turn off the percent switch
     drawCharts();
 });
+
 
 function prepareData(gdps, ginis, settings) {
 
@@ -152,21 +155,22 @@ function normalizeData() {
     if (options.percent) {
         flatdata.forEach(function (d) {
             d.y = d.dgini;
-            d.x = d.dgdp;            
+            d.x = d.dgdp;
         });
     } else {
         flatdata.forEach(function (d) {
             d.y = d.gini;
             d.x = d.gdp;
         });
-    }    
+    }
     if (options.normalize) {
         flatdata.forEach(function (d) {
             d.x = d.gdp / countries[d.country].refgdp;
             d.y = d.gini / countries[d.country].refgini;
         });
-    }    
+    }
 }
+
 function positionLabels(flatdata, category, textdist) {
 
     function norm(vec) {
@@ -219,33 +223,60 @@ function splitLineIntoSegments(countryData) {
                 segment.push({
                     x: dx + countryData[n].x,
                     y: dy + countryData[n].y,
-                    year: dt + countryData[n].year
+                    year: dt + countryData[n].year,
+                    president: president.name
                 }); //interpolate      
             } else if (countryData[n].year >= period[0] && countryData[n + 1].year < period[1]) { // middle
-                segment.push(countryData[n]);
+                segment.push({
+                    x: countryData[n].x,
+                    y: countryData[n].y,
+                    year: countryData[n].year,
+                    president: president.name
+                });
             } else if (countryData[n].year < period[1] && countryData[n + 1].year >= period[1]) { //end
-                segment.push(countryData[n]);
+                segment.push({
+                    x: countryData[n].x,
+                    y: countryData[n].y,
+                    year: countryData[n].year,
+                    president: president.name
+                });
                 var dt = period[1] - countryData[n].year;
                 var dx = dt * (countryData[n + 1].x - countryData[n].x);
                 var dy = dt * (countryData[n + 1].y - countryData[n].y);
                 segment.push({
                     x: dx + countryData[n].x,
                     y: dy + countryData[n].y,
-                    year: dt + countryData[n].year
+                    year: dt + countryData[n].year,
+                    president: president.name
                 }); //interpolate      
             } else if (countryData[n].year > period[0] && countryData[n].year < period[1]) {
-                segment.push(countryData[n]);
+                segment.push({
+                    x: countryData[n].x,
+                    y: countryData[n].y,
+                    year: countryData[n].year,
+                    president: president.name
+                });
             }
         }
         if (countryData[countryData.length - 1].year <= period[1]) {
-            segment.push(countryData[countryData.length - 1]);
+            segment.push({
+                x: countryData[countryData.length - 1].x,
+                y: countryData[countryData.length - 1].y,
+                year: countryData[countryData.length - 1].year,
+                president: president.name
+            });
         }
-        if (segment.length>1) segments.push(segment);
+        if (segment.length > 1) segments.push(segment);
     });
     return segments;
 }
 
 function makeCairoChart(div, title, flatdata, options) {
+    
+    var tooltip = d3.select("#"+div).append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    tooltip.style('display', 'none');
 
     d3.selectAll("#" + div + " svg").remove();
     var width = $("#" + div).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
@@ -275,8 +306,6 @@ function makeCairoChart(div, title, flatdata, options) {
         .scale(y)
         .orient("left");
 
-
-
     var offset = 0.02;
     x.domain([
         (1 - offset) * d3.min(flatdata, function (d) {
@@ -285,7 +314,7 @@ function makeCairoChart(div, title, flatdata, options) {
         (1 + offset) * d3.max(flatdata, function (d) {
             return d.x;
         })
-                    ])  ;
+                    ]);
     y.domain([
         (1 - offset) * d3.min(flatdata, function (d) {
             return d.y;
@@ -293,7 +322,7 @@ function makeCairoChart(div, title, flatdata, options) {
         (1 + offset) * d3.max(flatdata, function (d) {
             return d.y;
         })
-                    ]).nice()  ;
+                    ]).nice();
 
     if (options.lines) {
 
@@ -327,8 +356,27 @@ function makeCairoChart(div, title, flatdata, options) {
                             .classed("passive", false)
                             .attr("stroke-width", 3)
                             .attr("fill", "none")
-                            .on("mouseover", function (d) {
-                                console.log(d);
+                            .on("mouseover", function () {
+                                // PRESISEGMENT
+                                var mouse = d3.mouse(this.parentNode);
+                                //showTooltip(mouse, 
+                                tooltip.style('display', null);
+                                tooltip.html("<div>" + segment[1].president + "</div>")
+                                    .style("top", (mouse[1] - 20) + "px") 
+                                    .style("left", function () {
+                                        if (mouse[0] + 25 + 50 > width) {
+                                            var newx = mouse[0] - 25 - 50;
+                                        } else {
+                                            var newx = mouse[0] + 25;
+                                        }
+                                        return newx + "px"
+                                    }) //(mouse[0]+radius/2+5)+"px")
+                                    .transition()
+                                    .duration(200)
+                                    .style("opacity", 0.8);
+                            })
+                            .on("mouseout", function () {
+                                tooltip.style('display', 'none');
                             });
                     }
 
@@ -344,24 +392,22 @@ function makeCairoChart(div, title, flatdata, options) {
         .attr("class", "x axis")
         .call(xaxis);
 
-    
+
     svg.append("g")
         .attr("class", "y axis")
         .call(yaxis);
-    
+
     var groups = svg.selectAll(".datagroups")
         .data(flatdata)
         .enter().append("g")
         .attr("transform", function (d) {
             return "translate(" + x(d.x) + "," + y(d.y) + ")";
-        });
+        })
+        .attr("class", " no_interaction");
 
     groups.append("circle")
         .attr("id", function (d) {
             return "circle_" + d.country + d.year
-        })
-        .attr("class", function (d) {
-            d.country;
         })
         .classed("passive", false)
         .attr("cx", 0)
@@ -406,7 +452,6 @@ function makeCairoChart(div, title, flatdata, options) {
             }).map(function (k) {
                 return "." + k
             }).join(" ");
-            console.log(classes);
             d3.selectAll(classes)
                 .classed("passive", true);
         });;
@@ -421,9 +466,7 @@ function makeCairoChart(div, title, flatdata, options) {
         .attr("y", function (d) {
             return d.text.y
         })
-        .attr("class", function (d) {
-            d.country;
-        })
+        .attr("class", "yearlabel")
         .classed("passive", false)
         .attr("dx", 0)
         .attr("dy", "0.35em")
@@ -433,27 +476,27 @@ function makeCairoChart(div, title, flatdata, options) {
         });
 
     svg.append("text")
-        .style("text-anchor", "middle")  
-        .attr("x", width/2)
-        .attr("y", height+2*options.margin.bottom/3)
+        .style("text-anchor", "middle")
+        .attr("x", width / 2)
+        .attr("y", height + 2 * options.margin.bottom / 3)
         .attr("dx", 0)
         .attr("dy", "0.35em")
         .style("font-size", "12px")
-        //.style("fill", "black")
-        .text("PBI per capita (ajust. infl.)");
+    //.style("fill", "black")
+    .text("PBI per capita (ajust. infl.)");
 
     svg.append("text")
-        .style("text-anchor", "middle")  
-        //.attr("x", width/2)
-        //.attr("y", height+2*options.margin.bottom/3)
-        .attr("dx", 0)
+        .style("text-anchor", "middle")
+    //.attr("x", width/2)
+    //.attr("y", height+2*options.margin.bottom/3)
+    .attr("dx", 0)
         .attr("dy", "0.35em")
         .style("font-size", "12px")
-        .attr("transform", "translate(-"+5*options.margin.left/6+","+(height/2)+")rotate(-90)") 
-        //.style("fill", "black")
-        .text("Coeficiente Gini");
+        .attr("transform", "translate(-" + 5 * options.margin.left / 6 + "," + (height / 2) + ")rotate(-90)")
+    //.style("fill", "black")
+    .text("Coeficiente Gini");
 
-    
+
     svg.append("text")
         .attr("x", width)
         .attr("y", 0)
@@ -465,8 +508,8 @@ function makeCairoChart(div, title, flatdata, options) {
         .style("fill", "black")
         .style("font", "bold")
         .text(title);
-    
-    
+
+
 }
 
 function makeDirectionChart(flatdata, options) {
@@ -505,7 +548,7 @@ function makeDirectionChart(flatdata, options) {
 
     var width = $(".multichart").width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
     var height = options.height() - options.margin.top - options.margin.bottom;
-    
+
     var chart = d3.select(".multichart").append("svg")
         .attr("width", width + options.margin.left + options.margin.right)
         .attr("height", height + options.margin.top + options.margin.bottom)
@@ -584,7 +627,7 @@ function makeDirectionChart(flatdata, options) {
             return d;
         });
 
-   /* chart.selectAll("years")
+    /* chart.selectAll("years")
         .data(range(baseyear, endyear + 1))
         .enter().append("g")
         .attr("transform", function (d) {
@@ -600,23 +643,23 @@ function makeDirectionChart(flatdata, options) {
         .text(function (d) {
             return d;
         });
-*/  //(width - offset.x) / (endyear - baseyear + 1),    (endyear - baseyear) * matrix.w
+*/ //(width - offset.x) / (endyear - baseyear + 1),    (endyear - baseyear) * matrix.w
     var x = d3.scale.linear()
-        .range([offset.x+matrix.w/2, offset.x + (endyear - baseyear) * matrix.w+matrix.w/2])     
-        .domain([baseyear,endyear]); 
-    
+        .range([offset.x + matrix.w / 2, offset.x + (endyear - baseyear) * matrix.w + matrix.w / 2])
+        .domain([baseyear, endyear]);
+
     var xaxis = d3.svg.axis()
         .scale(x)
         .orient("top")
         //.ticks(endyear-baseyear)  
-        .ticks(Math.floor(((endyear - baseyear) * matrix.w)/34))
+        .ticks(Math.floor(((endyear - baseyear) * matrix.w) / 34))
         .tickFormat(d3.format(".0f"));
-        
+
     chart.append("g")
         .attr("transform", "translate(0," + (options.margin.top) + ")")
         .attr("class", "years")
         .call(xaxis);
-    
+
     /*
     var legendW = 80,
         legendH = 30;
