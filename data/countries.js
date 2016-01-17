@@ -1,4 +1,4 @@
-countries = {
+countries = {       
     "Argentina": {
         presidents: [{
             name: "Alfonsin",
@@ -174,6 +174,15 @@ countries = {
         color: "#d300a2"
     },
 };
+
+
+usedCountries = {};
+usedCountries["Argentina"]=countries["Argentina"];
+usedCountries["Brazil"]=countries["Brazil"];
+usedCountries["Uruguay"]=countries["Uruguay"];
+usedCountries["Chile"]=countries["Chile"];
+usedCountries["Paraguay"]=countries["Paraguay"];
+usedCountries["Bolivia"]=countries["Bolivia"];
 
 function countryColor(country, year) {
     var thecolor = "black"; // default

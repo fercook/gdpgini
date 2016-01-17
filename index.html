@@ -5,109 +5,19 @@
 <script src="js/queue.v1.min.js"></script>
 <script src="js/colorbrewer.js"></script>
 <script src="data/countries.js"></script>
+<script src="ginis.js"></script>
+<link rel="stylesheet" href="css/main.css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+<!-- Bootstrap switch-->
 <link href="css/bootstrap-switch.min.css" rel="stylesheet">
 <script src="js/bootstrap-switch.min.js"></script>
 
 <style>
-    body {
-        margin: 0px
-    }
-    .chart {
-        align-content: flex-end;
-    }
-    .title text {
-        fill: black;
-        font: bold;
-        text-anchor: end;
-    }
-    .chart text {
-        fill: grey;
-        font: 10px sans-serif;
-        text-anchor: start;
-    }
-    .multichart text {
-        fill: grey;
-        font: 12px sans-serif;
-    }
-    .axis {
-        shape-rendering: crispEdges;
-    }
-    .x.axis line {
-        stroke: grey;
-    }
-    .x.axis.minor {
-        stroke-opacity: .5;
-    }
-    .x.axis path {
-        display: none;
-    }
-    .y.axis line {
-        stroke: grey;
-    }
-    .y.axis .minor {
-        stroke-opacity: .5;
-    }
-    .y.axis path {
-        display: none;
-    }
-    .highlight {
-        stroke: white;
-        stroke-width: 3px;
-    }
-    .passive {
-        opacity: 0.1;
-    }
-    .multichart.years {
-        fill: grey;
-        font: 10px sans-serif;
-    }
-    .years path {
-        display: none;
-    }
-    .years line {
-        stroke: grey;
-    }
-    .no_interaction {
-        pointer-events : none;
-    }
-    .caption {
-        margin: 0 auto;
-    }
-    .bootstrap-switch {
-        height: 1.7em
-    }
-    .thumbnail.legend {
-        border: 0 none;
-        box-shadow: none;
-    }
-    div.tooltip {
-        position: absolute;
-        text-align: center;
-        align-content: center;
-        //width: 100px;
-        height: 40px;
-        border: 1px;
-        border-radius: 3px;
-        top: 100px;
-        left: 5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font: 16px sans-serif;
-        background: rgba(255,255,255,0.5) ;
-        pointer-events: none;
-        /*review this font-family: 'lato_regular', arial; */
-    }
-}
 </style>
 
 <head>
@@ -119,80 +29,69 @@
     <div class="panel panel-default">
     </div>
     <main id="content" role="main">
-        <div class="container">
+        <div class="container-fluid">
+            <h1>Desigualdad y Crecimiento en Latinoam&eacute;rica</h1>
             <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body">                    
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-6 col-md-1 col-lg-1">
+                            <h4 class="text-right">Como leer las gr&aacute;ficas:</h4>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-md-3 col-lg-3">
+                            <img src="images/legend_cairo.png" class="img-responsive center-block">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                            <p> Valores mas altos indican mayor desigualdad (
+                            <a href="http://www.wikipedia.es/Coeficiente_de_Gini">coeficiente de Gini</a>)</p>
+                            <p> Hacia la derecha se indica un crecimiento econ&oacute;mico, medido con el Producto Bruto Interno
+                            per capita en USD (ajustado por inflaci&oacute;n a valores del 2005)</p>
+                            <h6 class="small">Fuente de datos: Banco Mundial</h6>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pull-right">
+                            <div class="form-group">
+                                <select id="countryList" class="form-control btn-primary">
+                                    <option selected disabled value="base">Agregar pa&iacute;s</option>
+                                </select>
+                            </div>
+                            <div class="row h6 small">
+                                <div class="col-sm-2 col-md-2">
+                                    <input type="checkbox" name="presidents">
+                                </div>
+                                <div class="col-sm-10 col-md-10">
+                                    <p>
+                                        Separar periodos presidenciales</p>
+                                </div>                                
+                                <div class="col-sm-2 col-md-2">
+                                    <input type="checkbox" name="multicountry" checked>
+                                </div>
+                                <div class="col-sm-10 col-md-10">
+                                    <p>
+                                        Separar grafico por pais</p>
+                                </div>
+                                <div class="col-sm-2 col-md-2 depends">
+                                    <input type="checkbox" name="reference">
+                                </div>
+                                <div class="col-sm-10 col-md-10 depends">
+                                    <p>
+                                        Tomar a&ntilde;o de referencia (2000)</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row" id="separatecountries">
+
+                    </div>
                     <div class="row" id="multicountry">
                         <div class="col-sm-12 col-md-12">
                             <div class="chart" id="generalDiv"></div>
                         </div>
                     </div>
-                    <div class="row" id="separatecountries">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Argentina"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Brazil"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Bolivia"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Chile"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Uruguay"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
-                                <div class="chart" id="Paraguay"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-1 col-md-2">
-                            <p>
-                                Separar periodos presidenciales</p>
-                        </div>
-                        <div class="col-sm-1 col-md-1">
-                            <input type="checkbox" name="presidents">
-                        </div>
-                        <div class="col-sm-1 col-md-2">
-                            <p>
-                                Separar grafico por pais</p>
-                        </div>
-                        <div class="col-sm-1 col-md-1">
-                            <input type="checkbox" name="multicountry" checked>
-                        </div>
-                        <div class="col-sm-1 col-md-2">
-                            <p>
-                                Tomar a&ntilde;o de referencia (2000)</p>
-                        </div>
-                        <div class="col-sm-1 col-md-1">
-                            <input type="checkbox" name="reference">
-                        </div>
-                        <div class="col-sm-1 col-md-2">
-                            <p>
-                                Valores porcentuales</p>
-                        </div>
-                        <div class="col-sm-1 col-md-1">
-                            <input type="checkbox" name="percent">
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" id="directionPlot">
                 <div class="panel-body">
                     <p class="lead">Cambio del PBI y Gini de un a&ntilde;o al siguiente:</p>
                     <div class="row">
@@ -216,7 +115,7 @@
 
 
 
-                    <script src="ginis.js"></script>
+                    <script src="main.js"></script>
                 </div>
             </div>
         </div>

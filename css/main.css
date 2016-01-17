@@ -1,0 +1,88 @@
+body {
+    margin: 0px
+}
+.chart {
+    align-content: flex-end;
+}
+.title text {
+    fill: black;
+    font: bold;
+    text-anchor: end;
+}
+.chart text {
+    fill: grey;
+    font: 10px sans-serif;
+    text-anchor: start;
+}
+.multichart text {
+    fill: grey;
+    font: 12px sans-serif;
+}
+.axis {
+    shape-rendering: crispEdges;
+}
+.x.axis line {
+    stroke: grey;
+}
+.x.axis.minor {
+    stroke-opacity: .5;
+}
+.x.axis path {
+    display: none;
+}
+.y.axis line {
+    stroke: grey;
+}
+.y.axis .minor {
+    stroke-opacity: .5;
+}
+.y.axis path {
+    display: none;
+}
+.highlight {
+    stroke: white;
+    stroke-width: 3px;
+}
+.passive {
+    opacity: 0.1;
+}
+.multichart.years {
+    fill: grey;
+    font: 10px sans-serif;
+}
+.years path {
+    display: none;
+}
+.years line {
+    stroke: grey;
+}
+.no_interaction {
+    pointer-events: none;
+}
+.caption {
+    margin: 0 auto;
+}
+.bootstrap-switch {
+    height: 1.7em
+}
+.thumbnail.legend {
+    border: 0 none;
+    box-shadow: none;
+}
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    //width: 100px;
+    height: 40px;
+    border: 1px;
+    border-radius: 3px;
+    top: 100px;
+    left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font: 16px sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    /*review this font-family: 'lato_regular', arial; */
+}

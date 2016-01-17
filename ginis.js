@@ -1,78 +1,3 @@
-var options = {
-    normalize: false,
-    percent: false,
-    lines: true,
-    textdist: {
-        a: 17,
-        b: 10
-    },
-    referenceYear: 2000,
-    colorBy: "country", //"president", // 
-    margin: {
-        left: 40,
-        right: 10,
-        top: 10,
-        bottom: 40
-    },
-    height: function () {
-        return 300 - this.margin.left - this.margin.right
-    },
-    width: function () {
-        return 1000 - this.margin.top - this.margin.bottom
-    },
-    separateCountries: true
-};
-
-
-$.fn.bootstrapSwitch.defaults.size = 'mini';
-$.fn.bootstrapSwitch.defaults.onText = 'on';
-$.fn.bootstrapSwitch.defaults.offText = 'off';
-$.fn.bootstrapSwitch.defaults.handleWidth = 12;
-
-$("[name='presidents']").bootstrapSwitch();
-$('input[name="presidents"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    if (options.colorBy == "president") {
-        options.colorBy = "country";
-    } else {
-        options.colorBy = "president";
-    }
-    drawCharts();
-});
-
-$("[name='multicountry']").bootstrapSwitch();
-$('input[name="multicountry"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.separateCountries = !options.separateCountries;
-    if (options.separateCountries) {
-        $("div[id=separatecountries]").show();
-        $("div[id=multicountry]").hide();
-        options.height = function () {
-            return 300 - this.margin.left - this.margin.right
-        };
-
-    } else {
-        $("div[id=separatecountries]").hide();
-        $("div[id=multicountry]").show();
-        options.height = function () {
-            return 600 - this.margin.left - this.margin.right
-        };
-    }
-    drawCharts();
-});
-
-$("[name='percent']").bootstrapSwitch();
-$('input[name="percent"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.percent = !options.percent;
-    normalizeData();
-    drawCharts();
-});
-
-$("[name='reference']").bootstrapSwitch();
-$('input[name="reference"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.normalize = !options.normalize;
-    normalizeData();
-    // I should turn off the percent switch
-    drawCharts();
-});
 
 
 function prepareData(gdps, ginis, settings) {
@@ -497,18 +422,69 @@ function makeCairoChart(div, title, flatdata, options) {
     .text("Coeficiente Gini");
 
 
-    svg.append("text")
-        .attr("x", width)
-        .attr("y", 0)
-        .attr("dx", 0)
-        .attr("dy", "0.35em")
-        .attr("class", "media-heading")
-        .style("text-anchor", "end")
-        .style("font-size", "14px")
-        .style("fill", "black")
-        .style("font", "bold")
-        .text(title);
-
+    var caption = svg.append("g")
+        .attr("transform", "translate(" + width + ",0)");
+    
+    if (title != "") { // we are plotting a single chart
+        caption.append("text")
+            .attr("x", -14)
+            .attr("y", 0)
+            .attr("dx", 0)
+            .attr("dy", "0.35em")
+            .attr("class", "media-heading")
+            .style("text-anchor", "end")
+            .style("font-size", "14px")
+            .style("fill", "black")
+            .style("font", "bold")
+            .text(title);
+        // TODO: Add delete button delete thisIsObject[key]; 
+        caption.append("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("dx", 0)
+            .attr("dy", "0.35em")
+            .attr("class", "media-heading")
+            .style("text-anchor", "end")
+            .style("font-size", "16px")
+            .style("font", "bold")
+            .text("X").
+            on("click", function(d){
+                delete usedCountries[title];
+                fillCountryList();
+                drawCharts();
+            });
+    } else {
+        var nn=0, deltaY=12;
+        for (var country in usedCountries) {
+            caption.append("text")
+                .attr("x", -12)
+                .attr("y", nn*deltaY)
+                .attr("dx", 0)
+                .attr("dy", "0.35em")
+                .attr("class", "media-heading")
+                .style("text-anchor", "end")
+                .style("font-size", "12px")
+                .style("fill", countries[country].color)
+                .style("font", "bold")
+                .text(country);
+            caption.append("text")
+                .attr("x", 0)
+                .attr("y", nn*deltaY)
+                .attr("dx", 0)
+                .attr("dy", "0.35em")
+                .attr("class", "media-heading")
+                .style("text-anchor", "end")
+                .style("font-size", "12px")
+                .style("font", "bold")
+                .text("X")
+                .on("click", function(d){
+                    delete usedCountries[country];
+                    fillCountryList();
+                    drawCharts();
+                });
+            nn++;
+        }
+    }  
 
 }
 
@@ -723,41 +699,6 @@ function freq(arr) {
         }
     });
     return re;
-}
-
-// Finally we do something
-
-queue()
-    .defer(d3.csv, "data/GDP.csv")
-    .defer(d3.csv, "data/GINI.csv")
-    .await(function (error, gdps, ginis) {
-        gdps.forEach(function (row) {
-            if (row["Country Name"] in countries) {
-                countries[row["Country Name"]]["gdp"] = row;
-            }
-        });
-        ginis.forEach(function (row) {
-            if (row["Country Name"] in countries) {
-                countries[row["Country Name"]]["gini"] = row;
-            }
-        });
-        flatdata = prepareData(gdps, ginis, options);
-        normalizeData();
-        drawCharts();
-    });
-
-function drawCharts() {
-    if (options.separateCountries) {
-        for (var country in countries) {
-            oneCountryData = flatdata.filter(function (d) {
-                return d.year >= 1986 && d.country == country;
-            });
-            makeCairoChart(country, country, oneCountryData, options);
-        };
-    } else {
-        makeCairoChart("generalDiv", "", flatdata, options);
-    }
-    makeDirectionChart(flatdata, options);
 }
 
 /*
