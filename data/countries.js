@@ -180,9 +180,6 @@ usedCountries = {};
 usedCountries["Argentina"]=countries["Argentina"];
 usedCountries["Brazil"]=countries["Brazil"];
 usedCountries["Uruguay"]=countries["Uruguay"];
-usedCountries["Chile"]=countries["Chile"];
-usedCountries["Paraguay"]=countries["Paraguay"];
-usedCountries["Bolivia"]=countries["Bolivia"];
 
 function countryColor(country, year) {
     var thecolor = "black"; // default
@@ -210,7 +207,6 @@ function countryColor(country, year) {
     var rgb = hexToRgb(thecolor);
     var modifier = hexToRgb(countries[country].color);
     thecolor=rgbToHex( mix(rgb,modifier) );
-    console.log(thecolor);
     return thecolor;
 }
 

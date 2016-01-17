@@ -23,62 +23,101 @@ var options = {
     separateCountries: true
 };
 
+function init() {
+    $.fn.bootstrapSwitch.defaults.size = 'mini';
+    $.fn.bootstrapSwitch.defaults.onText = 'on';
+    $.fn.bootstrapSwitch.defaults.offText = 'off';
+    $.fn.bootstrapSwitch.defaults.handleWidth = 12;
 
-$.fn.bootstrapSwitch.defaults.size = 'mini';
-$.fn.bootstrapSwitch.defaults.onText = 'on';
-$.fn.bootstrapSwitch.defaults.offText = 'off';
-$.fn.bootstrapSwitch.defaults.handleWidth = 12;
-
-$("[name='presidents']").bootstrapSwitch();
-$('input[name="presidents"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    if (options.colorBy == "president") {
-        options.colorBy = "country";
-    } else {
-        options.colorBy = "president";
+    // Separate presidential periods
+    function switchPresidentOptions() {
+        if (options.colorBy == "president") {
+            options.colorBy = "country";
+        } else {
+            options.colorBy = "president";
+        }
     }
-    drawCharts();
-});
+    $("[name='presidentsMulti']").bootstrapSwitch();
+    $("[name='presidentsSeparate']").bootstrapSwitch();
+    $('input[name="presidentsSeparate"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        $("[name='presidentsMulti']").bootstrapSwitch('toggleState', true);
+        switchPresidentOptions();
+        drawCharts();
+    });
+    $('input[name="presidentsMulti"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        $("[name='presidentsSeparate']").bootstrapSwitch('toggleState', true);
+        switchPresidentOptions();
+        drawCharts();
+    });
 
-$("[name='multicountry']").bootstrapSwitch();
-$('input[name="multicountry"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.separateCountries = !options.separateCountries;
-    if (options.separateCountries) {
-        $("div[id=separatecountries]").show();
-        $("div[id=multicountry]").hide();
-        $(".depends").hide();
-        options.height = function () {
-            return 300 - this.margin.left - this.margin.right
-        };
+    // Separate charts into small multiples
+    function switchSmallMultiples() {
+        options.separateCountries = !options.separateCountries;
+        if (options.separateCountries) {
+            $("div[id=separatecountriesPanel]").show();
+            $("div[id=multicountryPanel]").hide();
+            $(".depends").hide();
+            options.height = function () {
+                return 300 - this.margin.left - this.margin.right
+            };
 
-    } else {
-        $("div[id=separatecountries]").hide();
-        $("div[id=multicountry]").show();
-        $(".depends").show();
-        options.height = function () {
-            return 600 - this.margin.left - this.margin.right
-        };
+        } else {
+            $("div[id=separatecountriesPanel]").hide();
+            $("div[id=multicountryPanel]").show();
+            $(".depends").show();
+            options.height = function () {
+                return 600 - this.margin.left - this.margin.right
+            };
+        }
     }
-    drawCharts();
-});
+    $("[name='multicountryMulti']").bootstrapSwitch();
+    $("[name='multicountrySeparate']").bootstrapSwitch();
+    $('input[name="multicountryMulti"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        $("[name='multicountrySeparate']").bootstrapSwitch('toggleState', true);        
+        switchSmallMultiples();
+        drawCharts();
+    });
+    $('input[name="multicountrySeparate"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        $("[name='multicountryMulti']").bootstrapSwitch('toggleState', true);        
+        switchSmallMultiples();
+        drawCharts();
+    });
 
-$("[name='percent']").bootstrapSwitch();
-$('input[name="percent"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.percent = !options.percent;
-    normalizeData();
-    drawCharts();
-});
+    // Draw percent change yr to tr and not values
+    $("[name='percent']").bootstrapSwitch();
+    $('input[name="percent"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        options.percent = !options.percent;
+        normalizeData();
+        drawCharts();
+    });
 
-$("[name='reference']").bootstrapSwitch();
-$('input[name="reference"]').on('switchChange.bootstrapSwitch', function (event, state) {
-    options.normalize = !options.normalize;
-    normalizeData();
-    // I should turn off the percent switch
-    drawCharts();
-});
+    // Draw normalized values (CAREFUL SOME DONT HAVE YEAR 2000)
+    $("[name='reference']").bootstrapSwitch();
+    $('input[name="reference"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        options.normalize = !options.normalize;
+        normalizeData();
+        // I should turn off the percent switch
+        drawCharts();
+    });
 
+    d3.selectAll(".countryList").on("change", function () {
+        var $dropdown = $(this);
+        var newCountry = $dropdown.val();
+        usedCountries[newCountry] = countries[newCountry];
+        fillCountryList();
+        drawCharts();
+    });
+
+    $("div[id=multicountryPanel]").hide();
+    $("div[id=directionPlot]").hide();
+    $(".depends").hide();
+
+}
+
+init();
 
 function fillCountryList() {
-    var $dropdown = $("#countryList");
+    var $dropdown = $(".countryList");
     var vals = [];
     for (var country in countries) {
         if (!(country in usedCountries)) {
@@ -86,7 +125,7 @@ function fillCountryList() {
         }
     }
     $dropdown.empty();
-    if (vals.length>0) {
+    if (vals.length > 0) {
         $dropdown.show();
         $dropdown.append('<option selected disabled value="base">Agregar pa&iacute;s</option>');
         $.each(vals, function (index, country) {
@@ -96,19 +135,6 @@ function fillCountryList() {
         $dropdown.hide();
     }
 }
-
-
- d3.select("#countryList").on("change", function () {
-            var $dropdown = $(this);
-            var newCountry = $dropdown.val();
-            usedCountries[newCountry] = countries[newCountry];
-            fillCountryList();
-            drawCharts();
-        });
-
-$("div[id=multicountry]").hide();
-$("div[id=directionPlot]").hide();
-$(".depends").hide();
 
 // Finally we do something
 
@@ -136,19 +162,20 @@ queue()
 
 
 function drawCharts() {
-    $("#separatecountries").children().remove();
+    $(".country").remove();
     var container = d3.select("#separatecountries");
     var tiling = [6, 4];
-    var numCountries = Object.keys(usedCountries).length;
+    /*    var numCountries = Object.keys(usedCountries).length;
     if (numCountries == 1) {
         tiling = [6, 6]
     }
+*/
     for (var country in usedCountries) {
         oneCountryData = flatdata.filter(function (d) {
             return d.year >= 1986 && d.country == country;
         });
         container.append("div")
-            .attr("class", "col-sm-" + tiling[0] + " col-md-" + tiling[1])
+            .attr("class", "country col-sm-" + tiling[0] + " col-md-" + tiling[1])
             .append("div")
             .attr("class", "thumbnail")
             .append("div")
@@ -156,16 +183,26 @@ function drawCharts() {
             .attr("id", country);
         makeCairoChart(country, country, oneCountryData, options);
     };
-       
-    var onlyCountries= flatdata.filter(function (d) {
+
+    var onlyCountries = flatdata.filter(function (d) {
         return d.year >= 1986 && d.country in usedCountries;
     });
-    if (onlyCountries.length>0) {
+    if (onlyCountries.length > 0) {
         makeCairoChart("generalDiv", "", onlyCountries, options);
     }
 
-    
-    /*    .append("option")
+    makeDirectionChart(flatdata, options);
+}
+
+/*
+                           <div class="form-group">
+                                <select id="countryList" class="form-control btn-primary">
+                                    <option selected disabled value="base">Agregar pa&iacute;s</option>
+                                </select>
+                            </div>
+                                    */
+
+/*    .append("option")
       .attr("class","chart")
       .attr("id","addCountry");    
     
@@ -178,6 +215,3 @@ function drawCharts() {
                               </div>  
                         </div>
                    */
-
-    makeDirectionChart(flatdata, options);
-}
