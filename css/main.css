@@ -86,3 +86,8 @@ div.tooltip {
     pointer-events: none;
     /*review this font-family: 'lato_regular', arial; */
 }
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

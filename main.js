@@ -7,7 +7,7 @@ var options = {
         b: 10
     },
     referenceYear: 2000,
-    colorBy: "country", //"president", // 
+    colorBy: "country", //"president", //
     margin: {
         left: 40,
         right: 10,
@@ -73,12 +73,12 @@ function init() {
     $("[name='multicountryMulti']").bootstrapSwitch();
     $("[name='multicountrySeparate']").bootstrapSwitch();
     $('input[name="multicountryMulti"]').on('switchChange.bootstrapSwitch', function (event, state) {
-        $("[name='multicountrySeparate']").bootstrapSwitch('toggleState', true);        
+        $("[name='multicountrySeparate']").bootstrapSwitch('toggleState', true);
         switchSmallMultiples();
         drawCharts();
     });
     $('input[name="multicountrySeparate"]').on('switchChange.bootstrapSwitch', function (event, state) {
-        $("[name='multicountryMulti']").bootstrapSwitch('toggleState', true);        
+        $("[name='multicountryMulti']").bootstrapSwitch('toggleState', true);
         switchSmallMultiples();
         drawCharts();
     });
@@ -109,7 +109,7 @@ function init() {
     });
 
     $("div[id=multicountryPanel]").hide();
-    $("div[id=directionPlot]").hide();
+    //$("div[id=directionPlot]").hide();
     $(".depends").hide();
 
 }
@@ -204,14 +204,14 @@ function drawCharts() {
 
 /*    .append("option")
       .attr("class","chart")
-      .attr("id","addCountry");    
-    
-    
+      .attr("id","addCountry");
+
+
      <div class="col-sm-6 col-md-4">
-                              <div class="form-group" style="height: 300px">                               
+                              <div class="form-group" style="height: 300px">
                                     <select id="countryList" class="form-control">
                                       <option selected disabled value="base">Add a country</option>
-                                    </select>                                  
-                              </div>  
+                                    </select>
+                              </div>
                         </div>
                    */
