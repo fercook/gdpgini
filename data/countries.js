@@ -1,4 +1,4 @@
-countries = {       
+countries = {
     "Argentina": {
         presidents: [{
             name: "Alfonsin",
@@ -195,14 +195,17 @@ function countryColor(country, year) {
                 thecolor = countries[country].scale[n + (i - 1) / 2];
             }
             */
-            if (i % 2 == 0) {
+            if (i % 3 == 0) {
                 thecolor = d3.rgb(countries[country].color).darker().toString(); //countries[country].color;
-            } else {
+            } else if (i % 3 == 1) {
+                thecolor = d3.rgb(countries[country].color).toString(); //countries[country].color;
+            }
+            else {
                 thecolor = d3.rgb(countries[country].color).brighter().toString();
-            } 
+            }
 
         }
-        
+
     });
     var rgb = hexToRgb(thecolor);
     var modifier = hexToRgb(countries[country].color);

@@ -175,7 +175,7 @@ function drawCharts() {
             return d.year >= 1986 && d.country == country;
         });
         container.append("div")
-            .attr("class", "country col-sm-" + tiling[0] + " col-md-" + tiling[1])
+            .attr("class", "country  col-md-" + tiling[1])
             .append("div")
             .attr("class", "thumbnail")
             .append("div")
