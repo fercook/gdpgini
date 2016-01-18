@@ -124,12 +124,13 @@ function fillCountryList() {
             vals.push(country);
         }
     }
+    console.log(vals);
     $dropdown.empty();
     if (vals.length > 0) {
         $dropdown.show();
         $dropdown.append('<option selected disabled value="base">Agregar pa&iacute;s</option>');
         $.each(vals, function (index, country) {
-            $dropdown.append("<option value=" + country + ">" + country + "</option>");
+            $dropdown.append("<option value='" + country + "'>" + country + "</option>");
         });
     } else {
         $dropdown.hide();
@@ -174,14 +175,15 @@ function drawCharts() {
         oneCountryData = flatdata.filter(function (d) {
             return d.year >= 1986 && d.country == country;
         });
+        var divName=country.replace(" ","_");
         container.append("div")
             .attr("class", "country  col-md-" + tiling[1])
             .append("div")
             .attr("class", "thumbnail")
             .append("div")
             .attr("class", "chart")
-            .attr("id", country);
-        makeCairoChart(country, country, oneCountryData, options);
+            .attr("id", divName);
+        makeCairoChart(divName, country, oneCountryData, options);
     };
 
     var onlyCountries = flatdata.filter(function (d) {

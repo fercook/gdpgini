@@ -2,7 +2,7 @@
 
 function prepareData(gdps, ginis, settings) {
 
-    /* 
+    /*
     We need to interpolate missing data in Gini DB.
      For this, we go through the list and we might get
      Gini == 0 --> 1) no Gini has been found yet (lastValidYear != year-1 (or equal to initial_value))
@@ -72,7 +72,7 @@ function prepareData(gdps, ginis, settings) {
         }
     }
     //Print to copy
-    //console.log(flatdata);    
+    //console.log(flatdata);
     return flatdata;
 }
 
@@ -150,7 +150,7 @@ function splitLineIntoSegments(countryData) {
                     y: dy + countryData[n].y,
                     year: dt + countryData[n].year,
                     president: president.name
-                }); //interpolate      
+                }); //interpolate
             } else if (countryData[n].year >= period[0] && countryData[n + 1].year < period[1]) { // middle
                 segment.push({
                     x: countryData[n].x,
@@ -173,7 +173,7 @@ function splitLineIntoSegments(countryData) {
                     y: dy + countryData[n].y,
                     year: dt + countryData[n].year,
                     president: president.name
-                }); //interpolate      
+                }); //interpolate
             } else if (countryData[n].year > period[0] && countryData[n].year < period[1]) {
                 segment.push({
                     x: countryData[n].x,
@@ -197,14 +197,14 @@ function splitLineIntoSegments(countryData) {
 }
 
 function makeCairoChart(div, title, flatdata, options) {
-    
+
     var tooltip = d3.select("#"+div).append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
     tooltip.style('display', 'none');
 
     d3.selectAll("#" + div + " svg").remove();
-    var width = $("#" + div).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
+    var width = $("#" + div).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
     var height = options.height() - options.margin.top - options.margin.bottom;
     svg = d3.select("#" + div).append("svg")
         .attr("width", width + options.margin.left + options.margin.right)
@@ -284,10 +284,10 @@ function makeCairoChart(div, title, flatdata, options) {
                             .on("mouseover", function () {
                                 // PRESISEGMENT
                                 var mouse = d3.mouse(this.parentNode);
-                                //showTooltip(mouse, 
+                                //showTooltip(mouse,
                                 tooltip.style('display', null);
                                 tooltip.html("<div>" + segment[1].president + "</div>")
-                                    .style("top", (mouse[1] - 20) + "px") 
+                                    .style("top", (mouse[1] - 20) + "px")
                                     .style("left", function () {
                                         if (mouse[0] + 25 + 50 > width) {
                                             var newx = mouse[0] - 25 - 50;
@@ -424,7 +424,7 @@ function makeCairoChart(div, title, flatdata, options) {
 
     var caption = svg.append("g")
         .attr("transform", "translate(" + width + ",0)");
-    
+
     if (title != "") { // we are plotting a single chart
         caption.append("text")
             .attr("x", -14)
@@ -437,7 +437,7 @@ function makeCairoChart(div, title, flatdata, options) {
             .style("fill", "black")
             .style("font", "bold")
             .text(title);
-        // TODO: Add delete button delete thisIsObject[key]; 
+        // TODO: Add delete button delete thisIsObject[key];
         caption.append("text")
             .attr("x", 0)
             .attr("y", 0)
@@ -484,7 +484,7 @@ function makeCairoChart(div, title, flatdata, options) {
                 });
             nn++;
         }
-    }  
+    }
 
 }
 
@@ -522,7 +522,7 @@ function makeDirectionChart(flatdata, options) {
     d3.selectAll(".multichart svg").remove();
     d3.selectAll(".legend svg").remove();
 
-    var width = $(".multichart").width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height(); 
+    var width = $(".multichart").width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
     var height = options.height() - options.margin.top - options.margin.bottom;
 
     var chart = d3.select(".multichart").append("svg")
@@ -627,7 +627,7 @@ function makeDirectionChart(flatdata, options) {
     var xaxis = d3.svg.axis()
         .scale(x)
         .orient("top")
-        //.ticks(endyear-baseyear)  
+        //.ticks(endyear-baseyear)
         .ticks(Math.floor(((endyear - baseyear) * matrix.w) / 34))
         .tickFormat(d3.format(".0f"));
 

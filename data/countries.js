@@ -172,7 +172,7 @@ countries = {
         }],
         scale: colorbrewer.Greys[8],
         color: "#d300a2"
-    },
+    }
 };
 
 
