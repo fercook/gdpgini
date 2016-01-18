@@ -41,160 +41,119 @@
 
     <main id="content" role="main">
         <div class="container-fluid">
-            <h1>Desigualdad y Crecimiento
+            <h1>Desigualdad y Crecimiento Econ&oacute;mico
             </h1>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Hemos visto como en <a href="http://www.elartefuncional.com/im/desigualdad.jpg">Brasil</a> y <a href="https://thevizcorner.wordpress.com/2015/11/16/desigualdad-y-crecimiento-economico-en-argentina/">Argentina</a> el crecimiento econ&oacute;mico no beneficia a todos por igual, y que la desigualdad en la distribuci&oacute;n de los ingresos parece est&aacute;r mas bien vinculada a las pol&iacute;ticas sociales que implementa cada gobierno.</p>
 
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>Hemos visto como en <a href="http://www.elartefuncional.com/im/desigualdad.jpg">Brasil</a> y <a href="https://thevizcorner.wordpress.com/2015/11/16/desigualdad-y-crecimiento-economico-en-argentina/">Argentina</a> el crecimiento econ&oacute;mico no beneficia a todos por igual, y que la desigualdad en la distribuci&oacute;n de los ingresos parece est&aacute;r mas bien vinculada a las pol&iacute;ticas sociales que implementa cada gobierno.</p>
+                                <p>Pero ambos pa&iacute;ses parecen tener tendencias similares. &iquest;Hay un efecto regional en la evoluci&oacute;n de la econom&iacute;a y la desigualdad social?
+                                </p>
 
-                            <p>Pero ambos pa&iacute;ses parecen tener tendencias similares. &iquest;Hay un efecto regional en la evoluci&oacute;n de la econom&iacute;a y la desigualdad social?
-                            </p>
+                                <p>En un primer intento, podemos comparar la misma gr&aacute;fica para muchos pa&iacute;ses...
+                                </p>
+                                <h6 class="small">Fuente de datos: <a href="http://datos.bancomundial.org/">Banco Mundial</a>. Inspirado en el trabajo de <a href="http://www.thefunctionalart.com/p/about-author.html">Alberto Cairo</a></h6>
 
-                            <p>En un primer intento, podemos comparar la misma gr&aacute;fica para muchos pa&iacute;ses...
-                            </p>
-                            <h6 class="small">Fuente de datos: <a href="http://datos.bancomundial.org/">Banco Mundial</a>. Inspirado en el trabajo de <a href="http://www.thefunctionalart.com/p/about-author.html">Alberto Cairo</a></h6>
-
-                        </div>
-                        <div class="col-md-3">
-                            <img src="images/legend_cairo.png" class="img-responsive center-block">
-                        </div>
-                        <div class="col-md-3 pull-right">
-
-                            <div class="depends">
-                                <div class="form-group">
-                                    <select class="btn-primary form-control countryList">
-                                        <option selected="" disabled="" value="base">Agregar pa&iacute;s</option>
-                                        <option value="Bolivia">Bolivia</option>
-                                    </select>
-                                </div>
-                                <div class="row h6 small">
-                                    <div class="col-md-3">
-                                        <input type="checkbox" class="form-control" name="presidentsMulti">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <p>
-                                            Separar periodos presidenciales</p>
-                                    </div>
-                                </div>
-                                <div class="row h6 small">
-
-                                    <div class="col-md-3">
-                                        <input type="checkbox" class="form-control" name="multicountryMulti" checked>
-                                    </div>
-                                    <div class="col-md-9 col-md-9">
-                                        <p>
-                                            Separar grafico por pais</p>
-                                    </div>
-                                </div>
-                                <div class="row h6 small">
-                                    <div class="col-md-3 depends">
-                                        <input type="checkbox" name="reference">
-                                    </div>
-                                    <div class="col-md-9  depends">
-                                        <p>
-                                            Tomar a&ntilde;o de referencia (2000)</p>
-                                    </div>
-
-                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="images/legend_cairo.png" class="img-responsive center-block">
                             </div>
 
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-default" id="separatecountriesPanel">
-                <div class="panel-body" id="separatecountries">
 
-                    <div class="col-md-4">
-                        <div class="thumbnail">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <form class="form-inline" role="form">
                             <div class="form-group">
-                                <select class="countryList btn-primary form-control">
+                                <select class="btn-primary form-control countryList center-block">
                                     <option selected="" disabled="" value="base">Agregar pa&iacute;s</option>
-                                    <option value="Bolivia">Bolivia</option>
                                 </select>
                             </div>
-                            <div class="row h6 small">
-                                <div class="col-md-2">
-                                    <input type="checkbox" class="form-control" name="presidentsSeparate">
-                                </div>
-                                <div class="col-md-10">
-                                    <p>
-                                        Separar periodos presidenciales</p>
-                                </div>
+                            <div class="checkbox h6">
+                                <label>
+                                 <input type="checkbox" class="form-control" name="presidentsMulti"> Separar periodos presidenciales</label>
                             </div>
-                            <div class="row h6 small">
+                            <div class="checkbox h6">
+                                <label>
+                                    <input type="checkbox" class="form-control" name="multicountryMulti">Ver en grafico &uacute;nico</label>
+                            </div>
+                            <div class="checkbox depends h6">
+                                <label>
+                                    <input type="checkbox" class="form-control" name="reference">Tomar a&ntilde;o de referencia (2000)</label>
+                            </div>
 
-                                <div class="col-md-2">
-                                    <input type="checkbox" class="form-control" name="multicountrySeparate" checked>
-                                </div>
-                                <div class="col-md-10">
-                                    <p>
-                                        Separar grafico por pais</p>
-                                </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default" id="separatecountriesPanel">
+                    <div class="panel-body" id="separatecountries">
+
+                    </div>
+                </div>
+                <div class="panel panel-default" id="multicountryPanel">
+                    <div class="panel-body">
+
+                        <div class="row" id="multicountry">
+                            <div class="col-md-12 col-md-12">
+                                <div class="chart" id="generalDiv"></div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="panel panel-default" id="multicountryPanel">
-                <div class="panel-body">
 
-                    <div class="row" id="multicountry">
-                        <div class="col-md-12 col-md-12">
-                            <div class="chart" id="generalDiv"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Direction Plot -->
-            <div class="panel panel-default" id="directionPlot">
-                <div class="panel-body">
-                    <div class="row vcenter">
-                        <div class="col-sm-6 ">
-                            <p>Las gr&aacute;ficas anteriores para Latinoam&eacute;rica parecen insinuar un patr&oacute;n de mejora econ&oacute;mica y social a partir del 2002, aunque no es f&aacute;cil de ver. &iquest;C&oacute;mo podemos resaltarlo?</p>
-                            <p>&iquest;Que tal si no miramos el valor de los indicadores, sino la direcci&oacute;n del cambio? La simplificaci&oacute;n mas grande que podemos hacer es distinguir solamente el signo del cambio de un a&ntilde;o al siguiente.</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <!--<div class="legend">
+                <!--Direction Plot -->
+                <div class="panel panel-default" id="directionPlot">
+                    <div class="panel-body">
+                        <div class="row vcenter">
+                            <div class="col-sm-6 ">
+                                <p>Las gr&aacute;ficas anteriores para Latinoam&eacute;rica parecen insinuar un patr&oacute;n de mejora econ&oacute;mica y social a partir del 2002, aunque no es f&aacute;cil de ver. &iquest;C&oacute;mo podemos resaltarlo?</p>
+                                <p>&iquest;Que tal si no miramos el valor de los indicadores, sino la direcci&oacute;n del cambio? La simplificaci&oacute;n mas grande que podemos hacer es distinguir solamente el signo del cambio de un a&ntilde;o al siguiente.</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <!--<div class="legend">
                                         </div>-->
-                            <img src="images/legend_spanish.png" class="center-block" width="100%" style="min-width: 160px; max-width: 200px">
+                                <img src="images/legend_spanish.png" class="center-block" width="100%" style="min-width: 160px; max-width: 200px">
 
+                            </div>
+
+
+                            <div class="col-sm-3">
+
+                                <p>As&iacute; podemos ver mas claramente como aparece a partir de 2002 hasta 2012 un bloque de crecimiento econ&oacute;mico y baja de la desigualdad (brevemente interrumpido por la crisis financiera en 2009)</p>
+                            </div>
                         </div>
-
-
-                        <div class="col-sm-3">
-
-                            <p>As&iacute; podemos ver mas claramente como aparece a partir de 2002 hasta 2012 un bloque de crecimiento econ&oacute;mico y baja de la desigualdad (brevemente interrumpido por la crisis financiera en 2009)</p>
-                        </div>
-                </div>
-            </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div class="multichart"></div>
-                        </div>
-
                     </div>
-
-
-
-                    <script src="main.js"></script>
                 </div>
-            </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="multichart"></div>
+                            </div>
+
+                        </div>
 
 
-            <!--Social linkies-->
-            <div class="panel panel-default">
-                <div class="panel-body">
+
+                        <script src="main.js"></script>
+                    </div>
+                </div>
+
+
+                <!--Social linkies-->
+                <div class="panel-footer">
+
 
                     <div class="row">
                         <h6 class="small ">Copyright: Fernando Cucchietti 2016</h6>
@@ -226,7 +185,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
     <script>
