@@ -1,5 +1,3 @@
-
-
 function prepareData(gdps, ginis, settings) {
 
     /*
@@ -198,7 +196,7 @@ function splitLineIntoSegments(countryData) {
 
 function makeCairoChart(div, title, flatdata, options) {
 
-    var tooltip = d3.select("#"+div).append("div")
+    var tooltip = d3.select("#" + div).append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
     tooltip.style('display', 'none');
@@ -296,7 +294,7 @@ function makeCairoChart(div, title, flatdata, options) {
                                         }
                                         return newx + "px"
                                     }) //(mouse[0]+radius/2+5)+"px")
-                                    .transition()
+                                .transition()
                                     .duration(200)
                                     .style("opacity", 0.8);
                             })
@@ -448,17 +446,18 @@ function makeCairoChart(div, title, flatdata, options) {
             .style("font-size", "16px")
             .style("font", "bold")
             .text("X").
-            on("click", function(d){
-                delete usedCountries[title];
-                fillCountryList();
-                drawCharts();
-            });
+        on("click", function (d) {
+            delete usedCountries[title];
+            fillCountryList();
+            drawCharts();
+        });
     } else {
-        var nn=0, deltaY=12;
+        var nn = 0,
+            deltaY = 12;
         for (var country in usedCountries) {
             caption.append("text")
                 .attr("x", -12)
-                .attr("y", nn*deltaY)
+                .attr("y", nn * deltaY)
                 .attr("dx", 0)
                 .attr("dy", "0.35em")
                 .attr("class", "media-heading")
@@ -469,7 +468,7 @@ function makeCairoChart(div, title, flatdata, options) {
                 .text(country);
             caption.append("text")
                 .attr("x", 0)
-                .attr("y", nn*deltaY)
+                .attr("y", nn * deltaY)
                 .attr("dx", 0)
                 .attr("dy", "0.35em")
                 .attr("class", "media-heading")
@@ -477,7 +476,7 @@ function makeCairoChart(div, title, flatdata, options) {
                 .style("font-size", "12px")
                 .style("font", "bold")
                 .text("X")
-                .on("click", function(d){
+                .on("click", function (d) {
                     delete usedCountries[country];
                     fillCountryList();
                     drawCharts();
@@ -519,20 +518,6 @@ function makeDirectionChart(flatdata, options) {
         return foo;
     }
 
-    d3.selectAll(".multichart svg").remove();
-    d3.selectAll(".legend svg").remove();
-
-    var width = $(".multichart").width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
-    var height = options.height() - options.margin.top - options.margin.bottom;
-
-    var chart = d3.select(".multichart").append("svg")
-        .attr("width", width + options.margin.left + options.margin.right)
-        .attr("height", height + options.margin.top + options.margin.bottom)
-        .append("g")
-        .attr("transform", function (d) {
-            return "translate(" + options.margin.left + "," + options.margin.top + ")";
-        });
-
     var baseyear = d3.min(flatdata, function (d) {
         return d.year
     });
@@ -540,27 +525,125 @@ function makeDirectionChart(flatdata, options) {
         return d.year
     });
 
-    var offset = {
-        x: 40,
-        y: 10
-    };
-    var matrix = {
-        w: (width - offset.x) / (endyear - baseyear + 1),
-        h: 30
-    };
+    d3.selectAll(".multichartH svg").remove();
+    d3.selectAll(".multichartV svg").remove();
 
+    var isScreenSmall = $(window).width() < 768;
+    var orientation = isScreenSmall ? "V" : "H";
+    var width = $(".multichart" + orientation).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
+    var heightH = options.height() - options.margin.top - options.margin.bottom;
+    var heightV = 800;
+    var height = isScreenSmall ? heightV : heightH;
+
+    var chart = d3.select(".multichart" + orientation).append("svg")
+        .attr("width", width + options.margin.left + options.margin.right)
+        .attr("height", height + options.margin.top + options.margin.bottom + (isScreenSmall? 50:0) ) //just in case 50px more...
+        .append("g")
+        .attr("transform", function (d) {
+            return "translate(" + options.margin.left + "," + options.margin.top + ")";
+        });
+
+    var offset = {},
+        matrix = {};
+    var rectangles, countryTitles;
     var cidx = {},
         c = 0;
     for (var country in countries) {
         cidx[country] = c++
     }
-    chart.selectAll("rect")
-        .data(flatdata)
-        .enter().append("g")
-        .attr("transform", function (d) {
-            return "translate(" + (offset.x + (d.year - baseyear) * matrix.w) + "," + (offset.y + matrix.h * cidx[d.country]) + ")";
-        })
-        .append("rect")
+    if (isScreenSmall) { //phones and such
+        $('div[id=horizontalChart]').hide();
+        $('div[id=verticalChart]').show();
+        offset.x = 0;
+        offset.y = 60;
+        matrix.h = (height - offset.x) / (endyear - baseyear + 1);
+        matrix.w = Math.max(width / c, 228 / c);
+        rectangles = chart.selectAll("rect")
+            .data(flatdata)
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + (offset.x + matrix.w * cidx[d.country]) + "," + (offset.y + (d.year - baseyear) * matrix.h) + ")";
+            });
+        countryTitles = chart.selectAll("countryTitles")
+            .data(Object.keys(countries))
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + (offset.x + matrix.w * cidx[d]+ matrix.w/2) + "," + (offset.y-5) + ")rotate(-90)";
+            })
+            .append("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("dx", 0)
+            .attr("dy", "0.35em")
+            .style("text-anchor", "start")
+            .text(function (d) {
+                return d;
+            });
+        var y = d3.scale.linear()
+            .range([offset.y + matrix.h / 2, offset.y + (endyear - baseyear) * matrix.h + matrix.h / 2])
+            .domain([baseyear, endyear]);
+
+        var yaxis = d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            //.ticks(endyear-baseyear)
+            .ticks(Math.floor(((endyear - baseyear) * matrix.h) / 34))
+            .tickFormat(d3.format(".0f"));
+
+        chart.append("g")
+            .attr("transform", "translate("+offset.x+"," + 0 + ")")
+            .attr("class", "years")
+            .call(yaxis);
+
+    } else { //tablets and larger
+        $('div[id=horizontalChart]').show();
+        $('div[id=verticalChart]').hide();
+
+        offset.x = 40;
+        offset.y = 10;
+        matrix.w = (width - offset.x) / (endyear - baseyear + 1);
+        matrix.h = 30;
+        rectangles = chart.selectAll("rect")
+            .data(flatdata)
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + (offset.x + (d.year - baseyear) * matrix.w) + "," + (offset.y + matrix.h * cidx[d.country]) + ")";
+            });
+        countryTitles = chart.selectAll("countryTitles")
+            .data(Object.keys(countries))
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + 0 + "," + (offset.y + matrix.h * cidx[d]) + ")";
+            })
+            .append("text")
+            .attr("x", offset.x - 5)
+            .attr("y", matrix.h / 2)
+            .attr("dx", 0)
+            .attr("dy", "0.35em")
+            .style("text-anchor", "end")
+            .text(function (d) {
+                return d;
+            });
+        var x = d3.scale.linear()
+            .range([offset.x + matrix.w / 2, offset.x + (endyear - baseyear) * matrix.w + matrix.w / 2])
+            .domain([baseyear, endyear]);
+
+        var xaxis = d3.svg.axis()
+            .scale(x)
+            .orient("top")
+            //.ticks(endyear-baseyear)
+            .ticks(Math.floor(((endyear - baseyear + 1) * matrix.w) / (50))) // basically (width - offset.x) / smallestTickSeparation
+            .tickFormat(d3.format(".0f"));
+
+        chart.append("g")
+            .attr("transform", "translate(0," + (options.margin.top) + ")")
+            .attr("class", "years")
+            .call(xaxis);
+
+    };
+
+
+    rectangles.append("rect")
         .attr("id", function (d) {
             return "rect_" + d.country + d.year
         })
@@ -587,106 +670,6 @@ function makeDirectionChart(flatdata, options) {
             d3.select(this).classed("highlight", false);
         });
 
-    chart.selectAll("countryTitles")
-        .data(Object.keys(countries))
-        .enter().append("g")
-        .attr("transform", function (d) {
-            return "translate(" + 0 + "," + (offset.y + matrix.h * cidx[d]) + ")";
-        })
-        .append("text")
-        .attr("x", offset.x - 5)
-        .attr("y", matrix.h / 2)
-        .attr("dx", 0)
-        .attr("dy", "0.35em")
-        .style("text-anchor", "end")
-        .text(function (d) {
-            return d;
-        });
-
-    /* chart.selectAll("years")
-        .data(range(baseyear, endyear + 1))
-        .enter().append("g")
-        .attr("transform", function (d) {
-            return "translate(" + (offset.x + (d - baseyear) * matrix.w) + "," + 0 + ")";
-        })
-        .append("text")
-        .attr("class", "years")
-        .attr("x", matrix.w / 2)
-        .attr("y", 0)
-        .attr("dx", 0)
-        .attr("dy", "0.35em")
-        .style("text-anchor", "middle")
-        .text(function (d) {
-            return d;
-        });
-*/ //(width - offset.x) / (endyear - baseyear + 1),    (endyear - baseyear) * matrix.w
-    var x = d3.scale.linear()
-        .range([offset.x + matrix.w / 2, offset.x + (endyear - baseyear) * matrix.w + matrix.w / 2])
-        .domain([baseyear, endyear]);
-
-    var xaxis = d3.svg.axis()
-        .scale(x)
-        .orient("top")
-        //.ticks(endyear-baseyear)
-        .ticks(Math.floor(((endyear - baseyear) * matrix.w) / 34))
-        .tickFormat(d3.format(".0f"));
-
-    chart.append("g")
-        .attr("transform", "translate(0," + (options.margin.top) + ")")
-        .attr("class", "years")
-        .call(xaxis);
-
-    /*
-    var legendW = 80,
-        legendH = 30;
-    var legendsvg = d3.selectAll(".legend").append("svg")
-        .attr("width", 2 * legendW)
-        .attr("height", 2 * legendH);
-    var legends = [{
-            title: "Los 2 mejor",
-            dgdp: 1,
-            dgini: -1
-        },
-        {
-            title: "Los 2 peor",
-            dgdp: -1,
-            dgini: 1
-        },
-        {
-            title: "PBI mejor",
-            dgdp: 1,
-            dgini: 1
-        },
-        {
-            title: "GINI mejor",
-            dgdp: -1,
-            dgini: -1
-        }];
-
-    var legendChart = legendsvg.selectAll("legends").data(legends).enter()
-        .append("g")
-        .attr("transform", function (d) {
-            return "translate(" + ((d.dgdp + 1) * legendW / 2) + "," + (-(d.dgini - 1) * legendH / 2) + ")";
-        });
-
-    legendChart.append("rect")
-        .attr("width", legendW)
-        .attr("height", legendH)
-        .style("fill", function (d) {
-            return category(d.dgdp, d.dgini);
-        });
-
-    legendChart.append("text")
-        .text(function (d) {
-            return d.title
-        })
-        .attr("x", legendW / 2)
-        .attr("y", legendH / 2)
-        .attr("dx", 0)
-        .attr("dy", "0.35em")
-        .style("text-anchor", "middle");
-*/
-
 }
 
 function freq(arr) {
@@ -700,56 +683,3 @@ function freq(arr) {
     });
     return re;
 }
-
-/*
-    var yearpp = flatdata.filter(function (d) {
-        return d.gdp > 0 && d.gini > 0
-    }).map(function (d) {
-        return {
-            year: d.year,
-            country: d.country,
-            category: "pp"
-        }
-    });
-    var yearpm = flatdata.filter(function (d) {
-        return d.gdp > 0 && d.gini <= 0
-    }).map(function (d) {
-        return {
-            year: d.year,
-            country: d.country,
-            category: "pp"
-        }
-    });
-    var yearmp = flatdata.filter(function (d) {
-        return d.gdp <= 0 && d.gini > 0
-    }).map(function (d) {
-        return {
-            year: d.year,
-            country: d.country,
-            category: "pp"
-        }
-    });
-    var yearmm = flatdata.filter(function (d) {
-        return d.gdp <= 0 && d.gini <= 0
-    }).map(function (d) {
-        return {
-            year: d.year,
-            country: d.country,
-            category: "pp"
-        }
-    });
-
-
-    function label(gdp, gini) {
-        return ((gdp > 0) ? "p" : "m") + ((gini > 0) ? "p" : "m");
-    };
-
-    console.log(flatdata.map(function (d) {
-        return {
-            year: d.year,
-            country: d.country,
-            gdp: d.dgdp,
-            gini: d.dgini
-        }
-    }));
-*/
