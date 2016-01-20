@@ -20,4 +20,6 @@ To Do:
 
 * Probar en el gráfico de dirección agregar o reemplazar los colores por pequeños vectores. Puede hacerlo mas complejo pero permite poner mucha mas información.
 * Probar como poner informacion de los periodos presidenciales en el grafico de direccion
+  * Poner un boton para mostrar/ocultar presidentes
 * "Zoom" feature para pasar del small multiples al grafico grande. 
+* Etiqueta de % de cambio en el direction chart...
