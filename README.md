@@ -15,6 +15,7 @@ To Do:
 * Intentar hacer mas visible/obvio el boton de agregar paises
 * Arreglar la X para borrar pais
 * Sacar boton de separar por pais cuando hay un solo pais...
+* Cambiar imagen arriba "mas o menos" por "a medias" como la imagen de abajo.
 
 **Features**
 
