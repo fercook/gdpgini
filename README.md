@@ -1,16 +1,6 @@
 # Cairo Charts
 The Alberto Cairo chart for multiple countries (work in progress) ([Test site] (http://www.bsc.es/viz/gini/))
 
-Hasta ahora funciona: 
-* Tomar datos de los ficheros CSV para cualquier pais en la lista de paises
-* Graficar estos datos de forma conjunta (en un solo gráfico) o en varios gráficos separados
-* Graficar valores absolutos o normalizados a un año en particular (hardcoded a 2000, podría ser una opción pero no le veo mucho valor)
-* Calcular y graficar cambio porcentual año a año de PBI o GINI.
-* Las etiquetas de años se ubican automáticamente intentando evitar la curva que pasa cerca. El algoritmo es super barato pero malo.
-* Graficar con colores diferentes los períodos presidenciales.
-
-He puesto otro gráfico que creo funciona bien: tomando el gráfico de cambio porcentual año a año, graficar la dirección del cambio para cada país y para cada año. Asi vemos mas fácil como a partir de 2003 los países del cono sur se mueven en la mejor dirección del gráfico (abajo a la derecha). Lo llamo gráfico de dirección. NO MUESTRA MAGNITUD, solo la dirección del cambio.
-
 To Do:
 
 **Bugs**
@@ -21,10 +11,13 @@ To Do:
 * Rellenar los períodos presidenciales para todos los países (actualmente solo están los 6 paises del cono sur)
 * Evaluar (entrevistas, comentarios, etc) si el gráfico de dirección funciona, y ver como mejorarlo.
 * Mejorar la diferencia de color entre periodos presidenciales para que se entienda y se pueda distinguir cuando estan todos los paises juntos.
+* Decidir si las escalas de colores son buenas
+* Intentar hacer mas visible/obvio el boton de agregar paises
+* Arreglar la X para borrar pais
+* Sacar boton de separar por pais cuando hay un solo pais...
 
 **Features**
 
-* Ideas para interfaz general: 
-  - Si se ponen mas países en el fichero countries.js estos aparecen automáticamente en el gráfico, tal como está. 
-* Decidir si las escalas de colores son buenas
 * Probar en el gráfico de dirección agregar o reemplazar los colores por pequeños vectores. Puede hacerlo mas complejo pero permite poner mucha mas información.
+* Probar como poner informacion de los periodos presidenciales en el grafico de direccion
+* "Zoom" feature para pasar del small multiples al grafico grande. 
