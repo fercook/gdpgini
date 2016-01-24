@@ -20,10 +20,12 @@ var options = {
     width: function () {
         return 1000 - this.margin.top - this.margin.bottom
     },
-    separateCountries: true
+    separateCountries: true,
+    onlyLatinoAmerica: true
 };
 
 function init() {
+
     $.fn.bootstrapSwitch.defaults.size = 'mini';
     $.fn.bootstrapSwitch.defaults.onText = 'on';
     $.fn.bootstrapSwitch.defaults.offText = 'off';
@@ -60,6 +62,8 @@ function init() {
             options.height = function () {
                 return 300 - this.margin.left - this.margin.right
             };
+            var d = document.getElementById("countrySelector");
+            d.className += " col-md-offset-3";
 
         } else {
             $("div[id=separatecountriesPanel]").hide();
@@ -68,6 +72,8 @@ function init() {
             options.height = function () {
                 return 600 - this.margin.left - this.margin.right
             };
+            var d = document.getElementById("countrySelector");
+            d.className = "form-group col-md-3 ";
         }
     }
     $("[name='multicountryMulti']").bootstrapSwitch();
@@ -87,6 +93,19 @@ function init() {
     $("[name='percent']").bootstrapSwitch();
     $('input[name="percent"]').on('switchChange.bootstrapSwitch', function (event, state) {
         options.percent = !options.percent;
+        normalizeData();
+        drawCharts();
+    });
+
+    // Allow all countrues
+    $("[name='allcountries']").bootstrapSwitch();
+    $('input[name="allcountries"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        options.onlyLatinoAmerica = !options.onlyLatinoAmerica;
+        if (options.onlyLatinoAmerica) {
+            allowOnlyLatinAmerica();
+        } else {
+            allowAllCountries();
+        }
         normalizeData();
         drawCharts();
     });
@@ -114,7 +133,20 @@ function init() {
 
 }
 
-init();
+function initColors() {
+    countries["Argentina"].scale = colorbrewer.Blues[8];
+    countries["Argentina"].color = "#092dc6";
+    countries["Brazil"].scale = colorbrewer.YlGn[8];
+    countries["Brazil"].color = "#ffd800";
+    countries["Bolivia"].scale = colorbrewer.Greens[8];
+    countries["Bolivia"].color = "#029d02";
+    countries["Chile"].scale = colorbrewer.Reds[8];
+    countries["Chile"].color = "#e00000";
+    countries["Uruguay"].scale = colorbrewer.RdPu[8];
+    countries["Uruguay"].color = "#05b4ed";
+    countries["Paraguay"].scale = colorbrewer.Greys[8];
+    countries["Paraguay"].color = "#d300a2";
+}
 
 function fillCountryList() {
     var $dropdown = $(".countryList");
@@ -124,7 +156,7 @@ function fillCountryList() {
             vals.push(country);
         }
     }
-    console.log(vals);
+    vals.sort();
     $dropdown.empty();
     if (vals.length > 0) {
         $dropdown.show();
@@ -137,6 +169,26 @@ function fillCountryList() {
     }
 }
 
+function allowOnlyLatinAmerica() {
+    usedCountries = {};
+    countries = {};
+    latinAmerica.forEach(function (country) {
+        countries[country] = allCountries[country];
+    });
+    usedCountries["Argentina"] = countries["Argentina"];
+    usedCountries["Brazil"] = countries["Brazil"];
+    usedCountries["Uruguay"] = countries["Uruguay"];
+
+}
+
+function allowAllCountries() {
+    usedCountries = {};
+    countries = allCountries;
+    usedCountries["Argentina"] = countries["Argentina"];
+    usedCountries["Brazil"] = countries["Brazil"];
+    usedCountries["Uruguay"] = countries["Uruguay"];
+
+}
 // Finally we do something
 
 //fillCountryList();
@@ -144,20 +196,36 @@ function fillCountryList() {
 queue()
     .defer(d3.csv, "data/GDP.csv")
     .defer(d3.csv, "data/GINI.csv")
-    .await(function (error, gdps, ginis) {
+    .defer(d3.json, "data/presidents.json")
+    .await(function (error, gdps, ginis, presidents) {
+        for (var country in presidents) {
+            presidents[country].presidents.sort(function (a, b) {
+                if (a.period[0] < b.period[0]) {
+                    return -1;
+                }
+                if (a.period[0] > b.period[0]) {
+                    return 1;
+                }
+                return 0;
+            });
+        }
+        allCountries = presidents;
+        init();
         gdps.forEach(function (row) {
-            if (row["Country Name"] in countries) {
-                countries[row["Country Name"]]["gdp"] = row;
+            if (row["Country Name"] in allCountries) {
+                allCountries[row["Country Name"]]["gdp"] = row;
             }
         });
         ginis.forEach(function (row) {
-            if (row["Country Name"] in countries) {
-                countries[row["Country Name"]]["gini"] = row;
+            if (row["Country Name"] in allCountries) {
+                allCountries[row["Country Name"]]["gini"] = row;
             }
         });
-        flatdata = prepareData(gdps, ginis, options);
+        flatdata = prepareData(gdps, ginis, options, allCountries); //it does things to allCountries
+        allowOnlyLatinAmerica();
         normalizeData();
         fillCountryList();
+        initColors();
         drawCharts();
     });
 
@@ -173,9 +241,9 @@ function drawCharts() {
 */
     for (var country in usedCountries) {
         oneCountryData = flatdata.filter(function (d) {
-            return d.year >= 1986 && d.country == country;
+            return  d.country == country;
         });
-        var divName=country.replace(" ","_");
+        var divName = country.replace(" ", "_");
         container.append("div")
             .attr("class", "country  col-md-" + tiling[1])
             .append("div")
@@ -187,13 +255,23 @@ function drawCharts() {
     };
 
     var onlyCountries = flatdata.filter(function (d) {
-        return d.year >= 1986 && d.country in usedCountries;
+        return d.country in usedCountries;
     });
     if (onlyCountries.length > 0) {
         makeCairoChart("generalDiv", "", onlyCountries, options);
     }
 
-    makeDirectionChart(flatdata, options);
+    var directionCountries = [];
+    if (options.onlyLatinoAmerica) {
+        directionCountries = flatdata.filter(function (d) {
+            return latinAmerica.indexOf(d.country) >= 0;
+        });
+    } else {
+        directionCountries = flatdata.filter(function (d) {
+            return d.country in usedCountries;
+        });        
+    }
+    makeDirectionChart(directionCountries, options);
 }
 
 /*

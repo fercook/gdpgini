@@ -1,4 +1,4 @@
-function prepareData(gdps, ginis, settings) {
+function prepareData(gdps, ginis, settings, countryList) {
 
     /*
     We need to interpolate missing data in Gini DB.
@@ -16,18 +16,33 @@ function prepareData(gdps, ginis, settings) {
                    3) we had a Gini value many years ago (lastValidYear != year-1 && != initial_value)
                         --> insert interpolated data and mark end of hole
     */
-
+    var toErase=[]; // We are missing important data for this
+    for (var country in countryList) {
+        if (countryList[country].gdp==null){
+            toErase.push(country);
+        }
+        if (countryList[country].color==null) {
+            countryList[country].color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        }
+    }
+    toErase.forEach(function(country){
+        delete countryList[country];
+    });
     var flatdata = [];
-    for (var country in countries) {
+    for (var country in countryList) {
         var lastValidYear = 0;
-        for (var year = 1970; year < 2015; year++) {
-            var gdp = +countries[country].gdp[year];
-            var gini = +countries[country].gini[year];
+        var minYear = d3.min( Object.keys(countryList[country].gdp), function(d){return +d});
+        minYear = Math.max(minYear, d3.min( Object.keys(countryList[country].gini), function(d){return +d}));
+        var maxYear = d3.max( Object.keys(countryList[country].gdp), function(d){return +d});
+        maxYear = Math.min(maxYear, d3.max( Object.keys(countryList[country].gini), function(d){return +d}));
+        for (var year = minYear; year <= maxYear; year++) {
+            var gdp = +countryList[country].gdp[year];
+            var gini = +countryList[country].gini[year];
             if (gini != 0) {
                 if (!(lastValidYear == 0 || lastValidYear == year - 1)) { // we need to interpolate
-                    var inigini = +countries[country].gini[lastValidYear];
+                    var inigini = +countryList[country].gini[lastValidYear];
                     for (var altyear = lastValidYear + 1; altyear < year; altyear++) {
-                        var altgdp = +countries[country].gdp[altyear];
+                        var altgdp = +countryList[country].gdp[altyear];
                         var altgini = inigini + (gini - inigini) * (altyear - lastValidYear) / (1 + year - lastValidYear);
                         flatdata.push({
                             "country": country,
@@ -52,8 +67,8 @@ function prepareData(gdps, ginis, settings) {
 
     flatdata.forEach(function (d) {
         if (d.year == settings.referenceYear) {
-            countries[d.country].refgdp = d.gdp;
-            countries[d.country].refgini = d.gini;
+            countryList[d.country].refgdp = d.gdp;
+            countryList[d.country].refgini = d.gini;
         }
     });
     var country = null;
@@ -88,8 +103,8 @@ function normalizeData() {
     }
     if (options.normalize) {
         flatdata.forEach(function (d) {
-            d.x = d.gdp / countries[d.country].refgdp;
-            d.y = d.gini / countries[d.country].refgini;
+            d.x = d.gdp / countryList[d.country].refgdp;
+            d.y = d.gini / countryList[d.country].refgini;
         });
     }
 }
@@ -272,7 +287,7 @@ function makeCairoChart(div, title, flatdata, options) {
                                 if (options.colorBy == "president") {
                                     return countryColor(country, segment[1].year);
                                 } else {
-                                    return countries[country].color;
+                                    return countryColor(country);
                                 }
                             })
                             .classed(country, true)
@@ -341,7 +356,7 @@ function makeCairoChart(div, title, flatdata, options) {
             if (options.colorBy == "president") {
                 color = countryColor(d.country, d.year);
             } else {
-                color = countries[d.country].color;
+                color = countryColor(d.country);
             }
             return d.category == "Original" ? color : "white";
             //return d.category == "Original" ? "black" : "white";
@@ -350,7 +365,7 @@ function makeCairoChart(div, title, flatdata, options) {
             if (options.colorBy == "president") {
                 return countryColor(d.country, d.year);
             } else {
-                return countries[d.country].color;
+                return countryColor(d.country);
             }
 
         })
@@ -463,7 +478,7 @@ function makeCairoChart(div, title, flatdata, options) {
                 .attr("class", "media-heading")
                 .style("text-anchor", "end")
                 .style("font-size", "12px")
-                .style("fill", countries[country].color)
+                .style("fill", countryColor(country))
                 .style("font", "bold")
                 .text(country);
             caption.append("text")
@@ -548,14 +563,14 @@ function makeDirectionChart(flatdata, options) {
     var rectangles, countryTitles;
     var cidx = {},
         c = 0;
-    for (var country in countries) {
+    for (var country in usedCountries) {
         cidx[country] = c++
     }
     if (isScreenSmall) { //phones and such
         $('div[id=horizontalChart]').hide();
         $('div[id=verticalChart]').show();
-        offset.x = 0;
-        offset.y = 60;
+        offset.x = 5;
+        offset.y = 65;
         matrix.h = (height - offset.x) / (endyear - baseyear + 1);
         matrix.w = Math.max(width / c, 228 / c);
         rectangles = chart.selectAll("rect")
@@ -565,7 +580,7 @@ function makeDirectionChart(flatdata, options) {
                 return "translate(" + (offset.x + matrix.w * cidx[d.country]) + "," + (offset.y + (d.year - baseyear) * matrix.h) + ")";
             });
         countryTitles = chart.selectAll("countryTitles")
-            .data(Object.keys(countries))
+            .data(Object.keys(usedCountries))
             .enter().append("g")
             .attr("transform", function (d) {
                 return "translate(" + (offset.x + matrix.w * cidx[d]+ matrix.w/2) + "," + (offset.y-5) + ")rotate(-90)";
@@ -600,7 +615,7 @@ function makeDirectionChart(flatdata, options) {
         $('div[id=verticalChart]').hide();
 
         offset.x = 40;
-        offset.y = 10;
+        offset.y = 12;
         matrix.w = (width - offset.x) / (endyear - baseyear + 1);
         matrix.h = 30;
         rectangles = chart.selectAll("rect")
@@ -610,7 +625,7 @@ function makeDirectionChart(flatdata, options) {
                 return "translate(" + (offset.x + (d.year - baseyear) * matrix.w) + "," + (offset.y + matrix.h * cidx[d.country]) + ")";
             });
         countryTitles = chart.selectAll("countryTitles")
-            .data(Object.keys(countries))
+            .data(Object.keys(usedCountries))
             .enter().append("g")
             .attr("transform", function (d) {
                 return "translate(" + 0 + "," + (offset.y + matrix.h * cidx[d]) + ")";
@@ -636,7 +651,7 @@ function makeDirectionChart(flatdata, options) {
             .tickFormat(d3.format(".0f"));
 
         chart.append("g")
-            .attr("transform", "translate(0," + (options.margin.top) + ")")
+            .attr("transform", "translate(0," + (options.margin.top+2) + ")")
             .attr("class", "years")
             .call(xaxis);
 

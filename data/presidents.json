@@ -1,0 +1,2129 @@
+{
+    "Brazil": {
+        "presidents": [{
+            "name": "Figueiredo",
+            "period": [1979.3, 1985.3]
+        }, {
+            "name": "Sarney",
+            "period": [1985.3, 1990.2]
+        }, {
+            "name": "Fernando Collor de Mello",
+            "period": [1990.2, 1992.75]
+        }, {
+            "name": "Itamar Franco",
+            "period": [1992.99, 1995.0]
+        }, {
+            "name": "Fernando Henrique Cardoso",
+            "period": [1995.0, 1999.0]
+        }, {
+            "name": "Fernando Henrique Cardoso",
+            "period": [1999.0, 2003.0]
+        }, {
+            "name": "Luiz Inacio Lula da Silva",
+            "period": [2003.0, 2007.0]
+        }, {
+            "name": "Luiz Inacio Lula da Silva",
+            "period": [2007.0, 2011.0]
+        }, {
+            "name": "Dilma Rousseff",
+            "period": [2011.0, 2020]
+        }]
+    },
+    "Afghanistan": {
+        "presidents": [{
+            "name": "Mohammad Najibullah",
+            "period": [1987.75, 1992.29]
+        }, {
+            "name": "Burhanuddin Rabbani",
+            "period": [2001.87, 2001.97]
+        }, {
+            "name": "Burhanuddin Rabbani",
+            "period": [1922.49, 1996.74]
+        }, {
+            "name": "Hamid Karzai",
+            "period": [2009.63, 2014.74]
+        }, {
+            "name": "Hamid Karzai",
+            "period": [2001.97, 2004.93]
+        }, {
+            "name": "Ashraf Ghani",
+            "period": [2014.74, 2020]
+        }]
+    },
+    "Dominican-Republic": {
+        "presidents": [{
+            "name": "Hipolito Mejia",
+            "period": [2000.62, 2004.62]
+        }, {
+            "name": "Leonel Fernandez",
+            "period": [2004.62, 2012.62]
+        }, {
+            "name": "Leonel Fernandez",
+            "period": [1996.62, 2000.62]
+        }, {
+            "name": "Danilo Medina",
+            "period": [2012.62, 2020]
+        }]
+    },
+    "Italy": {
+        "presidents": [{
+            "name": "Carlo Azeglio Ciampi",
+            "period": [1999.38, 2006.37]
+        }, {
+            "name": "Francesco Cossiga",
+            "period": [1985.49, 1992.32]
+        }, {
+            "name": "Enrico De Nicola",
+            "period": [1946.5, 1948.36]
+        }, {
+            "name": "Luigi Einaudi",
+            "period": [1948.36, 1955.36]
+        }, {
+            "name": "Giovanni Gronchi",
+            "period": [1955.36, 1962.36]
+        }, {
+            "name": "Enrico Letta",
+            "period": [2013.32, 2014.14]
+        }, {
+            "name": "Mario Monti",
+            "period": [2011.87, 2013.32]
+        }, {
+            "name": "Benito Mussolini",
+            "period": [1922.83, 1943.56]
+        }, {
+            "name": "Giorgio Napolitano",
+            "period": [2006.37, 2020]
+        }, {
+            "name": "Matteo Renzi",
+            "period": [2014.14, 2020]
+        }, {
+            "name": "Oscar Luigi Scalfaro",
+            "period": [1992.4, 1999.37]
+        }]
+    },
+    "Bangladesh": {
+        "presidents": [{
+            "name": "AFM Ahsanuddin Chowdhury",
+            "period": [1982.23, 1983.94]
+        }, {
+            "name": "Hussain Muhammad Ershad",
+            "period": [1983.94, 1990.93]
+        }, {
+            "name": "Zillur Rahman",
+            "period": [2009.12, 2013.21]
+        }, {
+            "name": "Abdul Hamid",
+            "period": [2013.31, 2020]
+        }]
+    },
+    "Canada": {
+        "presidents": [{
+            "name": "John A Macdonald",
+            "period": [1878.79, 1891.43]
+        }, {
+            "name": "Alexander Mackenzie",
+            "period": [1873.85, 1878.77]
+        }, {
+            "name": "John Abbott",
+            "period": [1891.45, 1892.9]
+        }, {
+            "name": "John Sparrow David Thompson",
+            "period": [1892.93, 1894.95]
+        }, {
+            "name": "Mackenzie Bowell",
+            "period": [1894.97, 1896.32]
+        }, {
+            "name": "Charles Tupper",
+            "period": [1896.33, 1896.52]
+        }, {
+            "name": "Wilfrid Laurier",
+            "period": [1896.52, 1911.76]
+        }, {
+            "name": "Robert Borden",
+            "period": [1911.77, 1920.52]
+        }, {
+            "name": "Arthur Meighen",
+            "period": [1926.49, 1926.73]
+        }, {
+            "name": "William Lyon Mackenzie King",
+            "period": [1921.99, 1926.49]
+        }, {
+            "name": "Richard Bedford Bennett",
+            "period": [1930.6, 1935.81]
+        }, {
+            "name": "Louis St Laurent",
+            "period": [1948.87, 1957.47]
+        }, {
+            "name": "John Diefenbaker",
+            "period": [1957.47, 1963.3]
+        }, {
+            "name": "Lester B Pearson",
+            "period": [1963.3, 1968.3]
+        }, {
+            "name": "Pierre Trudeau",
+            "period": [1968.3, 1979.42]
+        }, {
+            "name": "Joe Clark",
+            "period": [1979.42, 1980.17]
+        }, {
+            "name": "John Turner",
+            "period": [1984.49, 1984.71]
+        }, {
+            "name": "Brian Mulroney",
+            "period": [1984.71, 1993.48]
+        }, {
+            "name": "Kim Campbell",
+            "period": [1993.48, 1993.84]
+        }, {
+            "name": "Jean Chretien",
+            "period": [1993.84, 2003.95]
+        }, {
+            "name": "Paul Martin",
+            "period": [2003.95, 2006.1]
+        }, {
+            "name": "Stephen Harper",
+            "period": [2006.1, 2020]
+        }]
+    },
+    "Kenya": {
+        "presidents": [{
+            "name": "Jomo Kenyatta",
+            "period": [1964.95, 1978.64]
+        }, {
+            "name": "Daniel arap Moi",
+            "period": [1978.64, 2002.99]
+        }, {
+            "name": "Mwai Kibaki",
+            "period": [2002.99, 2013.27]
+        }, {
+            "name": "Uhuru Kenyatta",
+            "period": [2013.27, 2020]
+        }]
+    },
+    "United-Kingdom": {
+        "presidents": [{
+            "name": "Robert Walpole",
+            "period": [1721.25, 1742.11]
+        }, {
+            "name": "Spencer Compton",
+            "period": [1742.13, 1743.5]
+        }, {
+            "name": "Henry Pelham",
+            "period": [1743.65, 1754.18]
+        }, {
+            "name": "Thomas Pelham Holles",
+            "period": [1757.5, 1762.4]
+        }, {
+            "name": "Thomas Pelham Holles",
+            "period": [1754.2, 1756.87]
+        }, {
+            "name": "William Cavendish",
+            "period": [1756.87, 1757.48]
+        }, {
+            "name": "John Stuart",
+            "period": [1762.4, 1763.27]
+        }, {
+            "name": "George Grenville",
+            "period": [1763.29, 1765.53]
+        }, {
+            "name": "Charles Watson Wentworth",
+            "period": [1782.23, 1782.5]
+        }, {
+            "name": "William Pitt the Elder",
+            "period": [1766.58, 1768.78]
+        }, {
+            "name": "Augustus FitzRoy",
+            "period": [1768.78, 1770.07]
+        }, {
+            "name": "Lord Frederick North",
+            "period": [1770.07, 1782.22]
+        }, {
+            "name": "William Petty",
+            "period": [1782.5, 1783.25]
+        }, {
+            "name": "William Cavendish Bentinck",
+            "period": [1807.24, 1809.76]
+        }, {
+            "name": "William Cavendish Bentinck",
+            "period": [1783.25, 1783.96]
+        }, {
+            "name": "William Pitt",
+            "period": [1804.36, 1806.06]
+        }, {
+            "name": "William Pitt",
+            "period": [1783.96, 1801.2]
+        }, {
+            "name": "Henry Addington",
+            "period": [1801.2, 1804.36]
+        }, {
+            "name": "William Grenville",
+            "period": [1806.11, 1807.24]
+        }, {
+            "name": "Spencer Perceval",
+            "period": [1809.76, 1812.36]
+        }, {
+            "name": "Robert Jenkinson",
+            "period": [1812.43, 1827.27]
+        }, {
+            "name": "George Canning",
+            "period": [1827.27, 1827.6]
+        }, {
+            "name": "Frederick Robinson",
+            "period": [1827.66, 1828.05]
+        }, {
+            "name": "Arthur Wellesley",
+            "period": [1828.06, 1830.87]
+        }, {
+            "name": "Arthur Wellesley",
+            "period": [1834.87, 1834.94]
+        }, {
+            "name": "Charles Grey",
+            "period": [1830.89, 1834.54]
+        }, {
+            "name": "William Lamb",
+            "period": [1834.54, 1834.87]
+        }, {
+            "name": "William Lamb",
+            "period": [1835.29, 1841.66]
+        }, {
+            "name": "Robert Peel",
+            "period": [1841.66, 1846.49]
+        }, {
+            "name": "Robert Peel",
+            "period": [1834.94, 1835.27]
+        }, {
+            "name": "John Russell",
+            "period": [1865.82, 1866.49]
+        }, {
+            "name": "John Russell",
+            "period": [1846.49, 1852.14]
+        }, {
+            "name": "Edward Smith Stanley",
+            "period": [1866.49, 1868.16]
+        }, {
+            "name": "Edward Smith Stanley",
+            "period": [1858.14, 1859.44]
+        }, {
+            "name": "Edward Smith Stanley",
+            "period": [1852.14, 1852.96]
+        }, {
+            "name": "George Hamilton Gordon",
+            "period": [1852.96, 1855.08]
+        }, {
+            "name": "Henry John Temple",
+            "period": [1859.44, 1865.79]
+        }, {
+            "name": "Henry John Temple",
+            "period": [1855.1, 1858.13]
+        }, {
+            "name": "Benjamin Disraeli",
+            "period": [1874.14, 1880.3]
+        }, {
+            "name": "Benjamin Disraeli",
+            "period": [1868.16, 1868.92]
+        }, {
+            "name": "William Ewart Gladstone",
+            "period": [1892.62, 1894.16]
+        }, {
+            "name": "William Ewart Gladstone",
+            "period": [1886.08, 1886.55]
+        }, {
+            "name": "William Ewart Gladstone",
+            "period": [1880.31, 1885.44]
+        }, {
+            "name": "William Ewart Gladstone",
+            "period": [1868.92, 1874.13]
+        }, {
+            "name": "Robert Gascoyne Cecil",
+            "period": [1885.47, 1886.07]
+        }, {
+            "name": "Robert Gascoyne Cecil",
+            "period": [1886.56, 1892.61]
+        }, {
+            "name": "Robert Gascoyne Cecil",
+            "period": [1895.48, 1902.52]
+        }, {
+            "name": "Archibald Primrose",
+            "period": [1894.17, 1895.47]
+        }, {
+            "name": "Arthur Balfour",
+            "period": [1902.52, 1905.93]
+        }, {
+            "name": "Henry Campbell Bannerman",
+            "period": [1905.93, 1908.25]
+        }, {
+            "name": "Herbert Henry Asquith",
+            "period": [1908.26, 1916.93]
+        }, {
+            "name": "David Lloyd George",
+            "period": [1916.93, 1922.81]
+        }, {
+            "name": "Bonar Law",
+            "period": [1922.81, 1923.39]
+        }, {
+            "name": "Stanley Baldwin",
+            "period": [1935.43, 1937.4]
+        }, {
+            "name": "Stanley Baldwin",
+            "period": [1924.84, 1929.42]
+        }, {
+            "name": "Stanley Baldwin",
+            "period": [1923.39, 1924.04]
+        }, {
+            "name": "Ramsay MacDonald",
+            "period": [1929.42, 1935.43]
+        }, {
+            "name": "Ramsay MacDonald",
+            "period": [1924.06, 1924.84]
+        }, {
+            "name": "Neville Chamberlain",
+            "period": [1937.4, 1940.36]
+        }, {
+            "name": "Winston Churchill",
+            "period": [1940.36, 1945.39]
+        }, {
+            "name": "Clement Attlee",
+            "period": [1945.57, 1951.82]
+        }, {
+            "name": "Anthony Eden",
+            "period": [1955.26, 1957.02]
+        }, {
+            "name": "Harold Macmillan",
+            "period": [1957.03, 1963.8]
+        }, {
+            "name": "Alec Douglas Home",
+            "period": [1963.8, 1964.79]
+        }, {
+            "name": "Harold Wilson",
+            "period": [1974.17, 1976.26]
+        }, {
+            "name": "Edward Heath",
+            "period": [1970.46, 1974.17]
+        }, {
+            "name": "James Callaghan",
+            "period": [1976.26, 1979.34]
+        }, {
+            "name": "Margaret Thatcher",
+            "period": [1979.34, 1990.91]
+        }, {
+            "name": "John Major",
+            "period": [1990.91, 1997.33]
+        }, {
+            "name": "Tony Blair",
+            "period": [1997.33, 2007.48]
+        }, {
+            "name": "Gordon Brown",
+            "period": [2007.48, 2010.36]
+        }, {
+            "name": "David Cameron",
+            "period": [2010.36, 2020]
+        }]
+    },
+    "Panama": {
+        "presidents": [{
+            "name": "Ricardo Martinelli",
+            "period": [2009.5, 2014.5]
+        }, {
+            "name": "Mireya Moscoso",
+            "period": [1999.67, 2004.67]
+        }, {
+            "name": "Martin Torrijos",
+            "period": [2004.67, 2009.5]
+        }, {
+            "name": "Juan Carlos Varela",
+            "period": [2014.5, 2020]
+        }]
+    },
+    "France": {
+        "presidents": [{
+            "name": "Napoleon III",
+            "period": [1848.97, 1852.92]
+        }, {
+            "name": "Adolphe Thiers",
+            "period": [1871.13, 1873.39]
+        }, {
+            "name": "Patrice de Mac Mahon",
+            "period": [1873.39, 1879.08]
+        }, {
+            "name": "Jules Grevy",
+            "period": [1879.08, 1887.92]
+        }, {
+            "name": "Marie Francois Sadi Carnot",
+            "period": [1887.92, 1894.48]
+        }, {
+            "name": "Jean Casimir Perier",
+            "period": [1894.48, 1895.04]
+        }, {
+            "name": "Felix Faure",
+            "period": [1895.04, 1899.13]
+        }, {
+            "name": "Emile Loubet",
+            "period": [1899.13, 1906.13]
+        }, {
+            "name": "Armand Fallieres",
+            "period": [1906.13, 1913.13]
+        }, {
+            "name": "Raymond Poincare",
+            "period": [1913.13, 1920.13]
+        }, {
+            "name": "Paul Deschanel",
+            "period": [1920.13, 1920.72]
+        }, {
+            "name": "Alexandre Millerand",
+            "period": [1920.73, 1924.44]
+        }, {
+            "name": "Gaston Doumergue",
+            "period": [1924.45, 1931.45]
+        }, {
+            "name": "Paul Doumer",
+            "period": [1931.45, 1932.35]
+        }, {
+            "name": "Albert Francois Lebrun",
+            "period": [1932.36, 1940.52]
+        }, {
+            "name": "Vincent Auriol",
+            "period": [1947.04, 1954.04]
+        }, {
+            "name": "Rene Coty",
+            "period": [1954.04, 1959.02]
+        }, {
+            "name": "Charles de Gaulle",
+            "period": [1959.02, 1969.32]
+        }, {
+            "name": "Georges Pompidou",
+            "period": [1969.47, 1974.25]
+        }, {
+            "name": "Valery Giscard d Estaing",
+            "period": [1974.4, 1981.38]
+        }, {
+            "name": "Francois Mitterrand",
+            "period": [1981.38, 1988.35]
+        }, {
+            "name": "Francois Mitterrand",
+            "period": [1988.35, 1995.37]
+        }, {
+            "name": "Jacques Chirac",
+            "period": [1995.37, 2002.37]
+        }, {
+            "name": "Jacques Chirac",
+            "period": [2002.37, 2007.37]
+        }, {
+            "name": "Nicolas Sarkozy",
+            "period": [2007.37, 2012.37]
+        }, {
+            "name": "Francois Hollande",
+            "period": [2012.37, 2020]
+        }]
+    },
+    "Saudi-Arabia": {
+        "presidents": [{
+            "name": "Khalid of Saudi Arabia",
+            "period": [1975.23, 1982.45]
+        }, {
+            "name": "Fahd of Saudi Arabia",
+            "period": [1982.45, 2005.58]
+        }, {
+            "name": "Abdullah of Saudi Arabia",
+            "period": [2005.58, 2020]
+        }]
+    },
+    "Slovakia": {
+        "presidents": [{
+            "name": "Michal Kovac",
+            "period": [1993.16, 1998.16]
+        }, {
+            "name": "Rudolf Schuster",
+            "period": [1999.45, 2004.45]
+        }, {
+            "name": "Ivan Gasparovic",
+            "period": [2004.45, 2014.45]
+        }, {
+            "name": "Ivan Gasparovic",
+            "period": [1998.53, 1998.83]
+        }, {
+            "name": "Andrej Kiska",
+            "period": [2014.45, 2020]
+        }]
+    },
+    "Ireland": {
+        "presidents": [{
+            "name": "Douglas Hyde",
+            "period": [1938.48, 1945.48]
+        }, {
+            "name": "Sean O Kelly",
+            "period": [1945.48, 1959.48]
+        }, {
+            "name": "Eamon de Valera",
+            "period": [1959.48, 1973.48]
+        }, {
+            "name": "Erskine Hamilton Childers",
+            "period": [1973.48, 1974.88]
+        }, {
+            "name": "Cearbhall O Dalaigh",
+            "period": [1974.96, 1976.81]
+        }, {
+            "name": "Patrick Hillery",
+            "period": [1976.92, 1990.92]
+        }, {
+            "name": "Mary Robinson",
+            "period": [1990.92, 1997.7]
+        }, {
+            "name": "Mary McAleese",
+            "period": [1997.86, 2004.86]
+        }, {
+            "name": "Mary McAleese",
+            "period": [2004.03, 2011.86]
+        }, {
+            "name": "Michael Higgins",
+            "period": [2011.86, 2020]
+        }]
+    },
+    "Palestine": {
+        "presidents": [{
+            "name": "Yasser Arafat",
+            "period": [1994.51, 2004.86]
+        }, {
+            "name": "Mahmoud Abbas",
+            "period": [2005.04, 2020]
+        }]
+    },
+    "Argentina": {
+        "presidents": [{
+            "name": "Raul Alfonsin",
+            "period": [1983.94, 1989.52]
+        }, {
+            "name": "Reynaldo Bignone",
+            "period": [1982.5, 1983.94]
+        }, {
+            "name": "Fernando de la Rua",
+            "period": [1999.94, 2001.97]
+        }, {
+            "name": "Eduardo Duhalde",
+            "period": [2002.0, 2003.39]
+        }, {
+            "name": "Cristina Fernandez de Kirchner",
+            "period": [2007.94, 2011.94]
+        }, {
+            "name": "Cristina Fernandez de Kirchner",
+            "period": [2011.94, 2020]
+        }, {
+            "name": "Leopoldo Galtieri",
+            "period": [1981.97, 1982.46]
+        }, {
+            "name": "Nestor Kirchner",
+            "period": [2003.39, 2007.94]
+        }, {
+            "name": "Carlos Menem",
+            "period": [1989.52, 1995.94]
+        }, {
+            "name": "Carlos Menem",
+            "period": [1995.94, 1999.94]
+        }, {
+            "name": "Peron",
+            "period": [1946.42, 1952.42]
+        }, {
+            "name": "Isabel Peron",
+            "period": [1974.5, 1976.23]
+        }, {
+            "name": "Bernardino Rivadavia",
+            "period": [1826.1, 1827.51]
+        }, {
+            "name": "Jorge Rafael Videla",
+            "period": [1976.23, 1981.24]
+        }]
+    },
+    "Bolivia": {
+        "presidents": [{
+            "name": "Paz Estennssoro",
+            "period": [1985, 1989]
+        }, {
+            "name": "Paz Zamora",
+            "period": [1989, 1993]
+        }, {
+            "name": "Sanchez de Lozada",
+            "period": [1993, 1997]
+        }, {
+            "name": "Banzer Suarez",
+            "period": [1997, 2001]
+        }, {
+            "name": "Quiroga Ramirez",
+            "period": [2001, 2002]
+        }, {
+            "name": "Sanchez de Lozada",
+            "period": [2002, 2003.79]
+        }, {
+            "name": "Carlos Mesa",
+            "period": [2003.79, 2005.43]
+        }, {
+            "name": "Evo Morales",
+            "period": [2006.06, 2020]
+        }, {
+            "name": "Eduardo Rodriguez",
+            "period": [2005.44, 2006.06]
+        }]
+    },
+    "Norway": {
+        "presidents": [{
+            "name": "Thorbjorn Jagland",
+            "period": [1996.81, 1997.79]
+        }, {
+            "name": "Kjell Magne Bondevik",
+            "period": [2001.8, 2005.79]
+        }, {
+            "name": "Jens Stoltenberg",
+            "period": [2005.79, 2013.79]
+        }, {
+            "name": "Jens Stoltenberg",
+            "period": [2000.17, 2001.8]
+        }, {
+            "name": "Erna Solberg",
+            "period": [2013.79, 2020]
+        }]
+    },
+    "Ecuador": {
+        "presidents": [{
+            "name": "Rafael Correa",
+            "period": [2007.04, 2020]
+        }, {
+            "name": "Leon Febres Cordero",
+            "period": [1984.61, 1988.61]
+        }, {
+            "name": "Alfredo Palacio",
+            "period": [2005.3, 2007.04]
+        }]
+    },
+    "North-Korea": {
+        "presidents": [{
+            "name": "Kim Il sung",
+            "period": [1949.49, 1994.52]
+        }, {
+            "name": "Kim Jong un",
+            "period": [2012.28, 2020]
+        }, {
+            "name": "Kim Jong il",
+            "period": [1993.27, 2011.96]
+        }]
+    },
+    "Ghana": {
+        "presidents": [{
+            "name": "John Kufuor",
+            "period": [2001.02, 2009.02]
+        }, {
+            "name": "John Dramani Mahama",
+            "period": [2012.56, 2020]
+        }, {
+            "name": "John Atta Mills",
+            "period": [2009.02, 2012.56]
+        }]
+    },
+    "Israel": {
+        "presidents": [{
+            "name": "Moshe Katsav",
+            "period": [2000.58, 2007.53]
+        }, {
+            "name": "Benjamin Netanyahu",
+            "period": [2009.24, 2013.21]
+        }, {
+            "name": "Benjamin Netanyahu",
+            "period": [2013.21, 2020]
+        }, {
+            "name": "Ehud Olmert",
+            "period": [2006.01, 2009.24]
+        }]
+    },
+    "Australia": {
+        "presidents": [{
+            "name": "Edmund Barton",
+            "period": [1901.0, 1903.73]
+        }, {
+            "name": "Alfred Deakin",
+            "period": [1903.73, 1904.32]
+        }, {
+            "name": "Alfred Deakin",
+            "period": [1905.51, 1908.87]
+        }, {
+            "name": "Alfred Deakin",
+            "period": [1909.42, 1910.32]
+        }, {
+            "name": "Chris Watson",
+            "period": [1904.32, 1904.63]
+        }, {
+            "name": "George Reid",
+            "period": [1904.63, 1905.51]
+        }, {
+            "name": "Andrew Fisher",
+            "period": [1908.87, 1909.42]
+        }, {
+            "name": "Andrew Fisher",
+            "period": [1910.32, 1913.48]
+        }, {
+            "name": "Andrew Fisher",
+            "period": [1914.71, 1915.82]
+        }, {
+            "name": "Joseph Cook",
+            "period": [1913.48, 1914.71]
+        }, {
+            "name": "Billy Hughes",
+            "period": [1915.82, 1923.11]
+        }, {
+            "name": "Stanley Bruce",
+            "period": [1923.11, 1929.81]
+        }, {
+            "name": "James Scullin",
+            "period": [1929.81, 1932.01]
+        }, {
+            "name": "Joseph Lyons",
+            "period": [1932.01, 1939.26]
+        }, {
+            "name": "Earle Page",
+            "period": [1039.26, 1939.32]
+        }, {
+            "name": "Robert Menzies",
+            "period": [1939.32, 1941.65]
+        }, {
+            "name": "Robert Menzies",
+            "period": [1949.96, 1966.07]
+        }, {
+            "name": "Arthur Fadden",
+            "period": [1941.66, 1931.76]
+        }, {
+            "name": "John Curtin",
+            "period": [1941.76, 1945.51]
+        }, {
+            "name": "Frank Forde",
+            "period": [1945.51, 1945.53]
+        }, {
+            "name": "Ben Chifley",
+            "period": [1945.53, 1949.96]
+        }, {
+            "name": "Harold Holt",
+            "period": [1966.07, 1967.96]
+        }, {
+            "name": "John McEwen",
+            "period": [1967.96, 1968.02]
+        }, {
+            "name": "John Gorton",
+            "period": [1968.02, 1971.19]
+        }, {
+            "name": "William McMahon",
+            "period": [1971.19, 1972.93]
+        }, {
+            "name": "Gough Whitlam",
+            "period": [1972.93, 1975.86]
+        }, {
+            "name": "Malcolm Fraser",
+            "period": [1975.86, 1983.19]
+        }, {
+            "name": "Robert Hawke",
+            "period": [1983.19, 1991.97]
+        }, {
+            "name": "Paul Keating",
+            "period": [1991.97, 1996.19]
+        }, {
+            "name": "John Howard",
+            "period": [1996.19, 2007.92]
+        }, {
+            "name": "Kevin Rudd",
+            "period": [2007.92, 2010.48]
+        }, {
+            "name": "Julia Gillard",
+            "period": [2010.48, 2013.48]
+        }, {
+            "name": "Tony Abbott",
+            "period": [2013.71, 2020]
+        }]
+    },
+    "Iran": {
+        "presidents": [{
+            "name": "Akbar Hashemi Rafsanjani",
+            "period": [1989.59, 1993.59]
+        }, {
+            "name": "Akbar Hashemi Rafsanjani",
+            "period": [1993.59, 1997.59]
+        }, {
+            "name": "Mohammad Khatami",
+            "period": [1997.59, 2001.59]
+        }, {
+            "name": "Mohammad Khatami",
+            "period": [2001.59, 2005.59]
+        }, {
+            "name": "Mahmoud Ahmadinejad",
+            "period": [2005.59, 2013.59]
+        }, {
+            "name": "Hassan Rouhani",
+            "period": [2013.59, 2020]
+        }]
+    },
+    "Singapore": {
+        "presidents": [{
+            "name": "Yusof bin Ishak",
+            "period": [1965.6, 1970.89]
+        }, {
+            "name": "Benjamin Sheares",
+            "period": [1971.0, 1981.36]
+        }, {
+            "name": "Devan Nair",
+            "period": [1981.81, 1985.23]
+        }, {
+            "name": "Wee Kim Wee",
+            "period": [1985.67, 1993.67]
+        }, {
+            "name": "Ong Teng Cheong",
+            "period": [1993.67, 1999.66]
+        }, {
+            "name": "S R Nathan",
+            "period": [1999.67, 2011.66]
+        }, {
+            "name": "Tony Tan",
+            "period": [2011.67, 2020]
+        }]
+    },
+    "Venezuela": {
+        "presidents": [{
+            "name": "Rafael Caldera",
+            "period": [1969.19, 1974.19]
+        }, {
+            "name": "Rafael Caldera",
+            "period": [1994.09, 1999.09]
+        }, {
+            "name": "Hugo Chavez",
+            "period": [1999.09, 2001.02]
+        }, {
+            "name": "Hugo Chavez",
+            "period": [2001.02, 2007.02]
+        }, {
+            "name": "Hugo Chavez",
+            "period": [2007.02, 2013.02]
+        }, {
+            "name": "Hugo Chavez",
+            "period": [2013.02, 2013.17]
+        }, {
+            "name": "Octavio Lepage",
+            "period": [1993.38, 1993.42]
+        }, {
+            "name": "Nicolas Maduro",
+            "period": [2013.3, 2020]
+        }, {
+            "name": "Ramon Jose Velasquez",
+            "period": [1993.42, 1994.09]
+        }]
+    },
+    "Guatemala": {
+        "presidents": [{
+            "name": "Oscar Berger",
+            "period": [2004.04, 2008.04]
+        }, {
+            "name": "Otto Perez Molina",
+            "period": [2012.04, 2020]
+        }, {
+            "name": "Alfonso Portillo",
+            "period": [2000.04, 2004.04]
+        }]
+    },
+    "China": {
+        "presidents": [{
+            "name": "Hu Jintao",
+            "period": [2002.87, 2012.87]
+        }, {
+            "name": "Yang Shangkun",
+            "period": [1988.27, 1993.23]
+        }, {
+            "name": "Xi Jinping",
+            "period": [2013.2, 2020]
+        }, {
+            "name": "Jiang Zemin",
+            "period": [1993.23, 2003.2]
+        }]
+    },
+    "Chile": {
+        "presidents": [{
+            "name": "Augusto Pinochet",
+            "period": [1973.8, 1990.3]
+        }, {
+            "name": "Patricio Aylwin",
+            "period": [1990.19, 1994.19]
+        }, {
+            "name": "Michelle Bachelet",
+            "period": [2006.19, 2010.19]
+        }, {
+            "name": "Michelle Bachelet",
+            "period": [2014.19, 2020]
+        }, {
+            "name": "Eduardo Frei Ruiz Tagle",
+            "period": [1994.19, 2000.19]
+        }, {
+            "name": "Ricardo Lagos",
+            "period": [2000.19, 2006.19]
+        }, {
+            "name": "Sebastian Pinera",
+            "period": [2010.19, 2014.19]
+        }, {
+            "name": "Pinochet",
+            "period": [1974.48, 1990.19]
+        }]
+    },
+    "Belgium": {
+        "presidents": [{
+            "name": "Herman Van Rompuy",
+            "period": [2008.99, 2009.9]
+        }, {
+            "name": "Yves Leterme",
+            "period": [2009.9, 2011.93]
+        }, {
+            "name": "Yves Leterme",
+            "period": [2008.22, 2008.99]
+        }, {
+            "name": "Elio Di Rupo",
+            "period": [2011.93, 2014.78]
+        }, {
+            "name": "Charles Michel",
+            "period": [2014.86, 2020]
+        }]
+    },
+    "Thailand": {
+        "presidents": [{
+            "name": "Thaksin Shinawatra",
+            "period": [2006.39, 2006.72]
+        }, {
+            "name": "Thaksin Shinawatra",
+            "period": [2001.11, 2006.26]
+        }, {
+            "name": "Abhisit Vejjajiva",
+            "period": [2008.96, 2011.59]
+        }, {
+            "name": "Yingluck Shinawatra",
+            "period": [2011.59, 2014.35]
+        }, {
+            "name": "Prayut Chan o cha",
+            "period": [2014.64, 2020]
+        }]
+    },
+    "Germany": {
+        "presidents": [{
+            "name": "Theodor Heuss",
+            "period": [1949.7, 1954.7]
+        }, {
+            "name": "Theodor Heuss",
+            "period": [1954.7, 1959.7]
+        }, {
+            "name": "Karl Carstens",
+            "period": [1979.5, 1984.49]
+        }, {
+            "name": "Richard von Weizsacker",
+            "period": [1984.5, 1994.49]
+        }, {
+            "name": "Roman Herzog",
+            "period": [1994.5, 1999.5]
+        }, {
+            "name": "Johannes Rau",
+            "period": [1999.5, 2004.5]
+        }, {
+            "name": "Horst Kohler",
+            "period": [2004.5, 2010.41]
+        },  {
+            "name": "Christian Wulff",
+            "period": [2010.5, 2012.13]
+        }, {
+            "name": "Joachim Gauck",
+            "period": [2012.21, 2020]
+        }]
+    },
+    "Poland": {
+        "presidents": [{
+            "name": "Lech Kaczynski",
+            "period": [2005.98, 2010.27]
+        }, {
+            "name": "Bronislaw Komorowski",
+            "period": [2010.59, 2020]
+        }, {
+            "name": "Bronislaw Komorowski",
+            "period": [2010.27, 2010.52]
+        }, {
+            "name": "Aleksander Kwasniewski",
+            "period": [1995.98, 2000.98]
+        }, {
+            "name": "Aleksander Kwasniewski",
+            "period": [2000.98, 2005.98]
+        }, {
+            "name": "Lech Walesa",
+            "period": [1990.98, 1995.98]
+        }]
+    },
+    "Spain": {
+        "presidents": [{
+            "name": "Francisco Franco",
+            "period": [1939.1, 1975.88]
+        }, {
+            "name": "Felipe Gonzalez",
+            "period": [1982.92, 1996.34]
+        }, {
+            "name": "Jose Maria Aznar",
+            "period": [1996.34, 2000.34]
+        }, {
+            "name": "Jose Maria Aznar",
+            "period": [2000.34, 2004.29]
+        }, {
+            "name": "Jose Luis Rodriguez Zapatero",
+            "period": [2004.29, 2011.97]
+        }, {
+            "name": "Mariano Rajoy",
+            "period": [2011.97, 2015]
+        }]
+    },
+    "Ukraine": {
+        "presidents": [{
+            "name": "Leonid Kuchma",
+            "period": [1994.55, 2005.06]
+        }, {
+            "name": "Viktor Yuschenko",
+            "period": [2005.06, 2010.15]
+        }, {
+            "name": "Viktor Yanukovych",
+            "period": [2010.15, 2014.14]
+        }, {
+            "name": "Petro Poroshenko",
+            "period": [2014.43, 2020]
+        }]
+    },
+    "Netherlands": {
+        "presidents": [{
+            "name": "Jan Peter Balkenende",
+            "period": [2002.55, 2010.78]
+        }, {
+            "name": "Wim Kok",
+            "period": [1994.64, 2002.55]
+        }, {
+            "name": "Mark Rutte",
+            "period": [2010.78, 2020]
+        }]
+    },
+    "Czech-Republic": {
+        "presidents": [{
+            "name": "Vaclav Havel",
+            "period": [1993.09, 2003.09]
+        }, {
+            "name": "Vaclav Klaus",
+            "period": [2003.18, 2013.18]
+        }, {
+            "name": "Milos Zeman",
+            "period": [2013.18, 2020]
+        }]
+    },
+    "Libya": {
+        "presidents": [{
+            "name": "Muammar Gaddafi",
+            "period": [1969.67, 1977.16]
+        }, {
+            "name": "Muammar Gaddafi",
+            "period": [1977.16, 1979.16]
+        }, {
+            "name": "Muammar Gaddafi",
+            "period": [1979.16, 2011.64]
+        }, {
+            "name": "Mohammed Magariaf",
+            "period": [2012.6, 2013.4]
+        }, {
+            "name": "Mustafa Abdul Jalil",
+            "period": [2011.17, 2012.6]
+        }]
+    },
+    "Denmark": {
+        "presidents": [{
+            "name": "Anders Fogh Rasmussen",
+            "period": [2001.9, 2009.26]
+        }, {
+            "name": "Lars Lokke Rasmussen",
+            "period": [2009.26, 2011.75]
+        }, {
+            "name": "Helle Thorning Schmidt",
+            "period": [2011.75, 2014.09]
+        }, {
+            "name": "Helle Thorning Schmidt",
+            "period": [2014.09, 2020]
+        }]
+    },
+    "Philippines": {
+        "presidents": [{
+            "name": "Emilio Aguinaldo",
+            "period": [1897.22, 1901.25]
+        }, {
+            "name": "Manuel L Quezon",
+            "period": [1935.87, 1944.58]
+        }, {
+            "name": "Jose P Laurel",
+            "period": [1943.78, 1945.62]
+        }, {
+            "name": "Sergio Osmena",
+            "period": [1944.58, 1946.4]
+        }, {
+            "name": "Manuel Roxas",
+            "period": [1946.4, 1948.29]
+        }, {
+            "name": "Elpidio Quirino",
+            "period": [1948.29, 1953.99]
+        }, {
+            "name": "Ramon Magsaysay",
+            "period": [1953.99, 1957.21]
+        }, {
+            "name": "Carlos P Garcia",
+            "period": [1957.21, 1961.99]
+        }, {
+            "name": "Diosdado Macapagal",
+            "period": [1961.99, 1965.99]
+        }, {
+            "name": "Ferdinand Marcos",
+            "period": [1965.99, 1986.15]
+        }, {
+            "name": "Corazon Aquino",
+            "period": [1986.15, 1992.49]
+        }, {
+            "name": "Fidel V Ramos",
+            "period": [1992.49, 1998.49]
+        }, {
+            "name": "Joseph Estrada",
+            "period": [1998.49, 2001.05]
+        }, {
+            "name": "Gloria Macapagal Arroyo",
+            "period": [2001.05, 2010.49]
+        }, {
+            "name": "Benigno Aquino III",
+            "period": [2010.49, 2020]
+        }]
+    },
+    "Indonesia": {
+        "presidents": [{
+            "name": "Megawati Sukarnoputri",
+            "period": [2001.56, 2004.8]
+        }, {
+            "name": "Joko Widodo",
+            "period": [2014.8, 2020]
+        }, {
+            "name": "Susilo Bambang Yudhoyono",
+            "period": [2004.8, 2014.8]
+        }]
+    },
+    "Costa-Rica": {
+        "presidents": [{
+            "name": "Oscar Arias",
+            "period": [2006.35, 2010.35]
+        }, {
+            "name": "Laura Chinchilla",
+            "period": [2010.35, 2014.35]
+        }, {
+            "name": "Abel Pacheco",
+            "period": [2002.35, 2006.35]
+        }, {
+            "name": "Luis Guillermo Solis",
+            "period": [2014.35, 2020]
+        }]
+    },
+    "South-Africa": {
+        "presidents": [{
+            "name": "Charles Robberts Swart",
+            "period": [1961.41, 1967.41]
+        }, {
+            "name": "Theophilus Ebenhaezer Donges",
+            "period": [1966.68, 1966.7]
+        }, {
+            "name": "Jozua Francois Naude",
+            "period": [1967.41, 1968.27]
+        }, {
+            "name": "Jacobus Johannes Fouche",
+            "period": [1968.27, 1975.27]
+        }, {
+            "name": "Johannes de Klerk",
+            "period": [1975.27, 1975.3]
+        }, {
+            "name": "Nicolaas Diederichs",
+            "period": [1975.3, 1978.64]
+        }, {
+            "name": "B J Vorster",
+            "period": [1978.77, 1979.42]
+        }, {
+            "name": "Marais Viljoen",
+            "period": [1979.42, 1984.67]
+        }, {
+            "name": "Marais Viljoen",
+            "period": [1978.64, 1978.77]
+        }, {
+            "name": "P W Botha",
+            "period": [1984.67, 1989.62]
+        }, {
+            "name": "F W de Klerk",
+            "period": [1989.72, 1994.35]
+        }, {
+            "name": "Nelson Mandela",
+            "period": [1994.32, 1999.45]
+        }, {
+            "name": "Thabo Mbeki",
+            "period": [1999.45, 2008.73]
+        }, {
+            "name": "Kgalema Motlanthe",
+            "period": [2008.73, 2009.35]
+        }, {
+            "name": "Jacob Zuma",
+            "period": [2009.35, 2020]
+        }]
+    },
+    "Turkey": {
+        "presidents": [{
+            "name": "Ismet Inonu",
+            "period": [1938.86, 1950.39]
+        }, {
+            "name": "Ahmet Necdet Sezer",
+            "period": [2000.37, 2007.65]
+        }, {
+            "name": "Abdullah Gul",
+            "period": [2007.65, 2014.65]
+        }, {
+            "name": "Recep Tayyip Erdogan",
+            "period": [2014.65, 2020]
+        }]
+    },
+    "Mexico": {
+        "presidents": [{
+            "name": "Felipe Calderon",
+            "period": [2006.92, 2012.91]
+        }, {
+            "name": "Miguel de la Madrid",
+            "period": [1982.92, 1988.92]
+        }, {
+            "name": "Vicente Fox",
+            "period": [2000.92, 2006.92]
+        }, {
+            "name": "Enrique Pena Nieto",
+            "period": [2012.92, 2020]
+        }, {
+            "name": "Carlos Salinas",
+            "period": [1988.92, 1994.92]
+        }, {
+            "name": "Ernesto Zedillo",
+            "period": [1994.92, 2000.92]
+        }]
+    },
+    "South-Korea": {
+        "presidents": [{
+            "name": "Kim Young sam",
+            "period": [1993.15, 1998.15]
+        }, {
+            "name": "Kim Dae jung",
+            "period": [1998.15, 2003.15]
+        }, {
+            "name": "Roh Moo hyun",
+            "period": [2003.15, 2008.15]
+        }, {
+            "name": "Lee Myung bak",
+            "period": [2008.15, 2020]
+        }, {
+            "name": "Park Geun hye",
+            "period": [2013.15, 2020]
+        }]
+    },
+    "Sweden": {
+        "presidents": [{
+            "name": "Stefan Lofven",
+            "period": [2014.75, 2020]
+        }, {
+            "name": "Goran Persson",
+            "period": [1996.22, 2006.76]
+        }, {
+            "name": "Fredrik Reinfeldt",
+            "period": [2006.76, 2014.75]
+        }]
+    },
+    "Vietnam": {
+        "presidents": [{
+            "name": "Tran Duc Luong",
+            "period": [1997.73, 2006.48]
+        }, {
+            "name": "Nguyen Minh Triet",
+            "period": [2006.48, 2011.56]
+        }, {
+            "name": "Truong Tan Sang",
+            "period": [2011.56, 2020]
+        }]
+    },
+    "Croatia": {
+        "presidents": [{
+            "name": "Franjo Tudman",
+            "period": [1990.41, 1999.94]
+        }, {
+            "name": "Stjepan Mesic",
+            "period": [2000.13, 2010.13]
+        }, {
+            "name": "Ivo Josipovic",
+            "period": [2010.13, 2020]
+        }]
+    },
+    "Finland": {
+        "presidents": [{
+            "name": "Martti Ahtisaari",
+            "period": [1994.16, 2000.16]
+        }, {
+            "name": "Tarja Halonen",
+            "period": [2000.16, 2012.16]
+        }, {
+            "name": "Sauli Niinisto",
+            "period": [2012.16, 2020]
+        }]
+    },
+    "Japan": {
+        "presidents": [{
+            "name": "Yoshiro Mori",
+            "period": [2000.26, 2000.51]
+        }, {
+            "name": "Yoshiro Mori",
+            "period": [2000.51, 2001.32]
+        }, {
+            "name": "Junichiro Koizumi",
+            "period": [2001.32, 2003.88]
+        }, {
+            "name": "Junichiro Koizumi",
+            "period": [2003.88, 2005.72]
+        }, {
+            "name": "Junichiro Koizumi",
+            "period": [2005.72, 2006.73]
+        }, {
+            "name": "Shinzo Abe",
+            "period": [2006.73, 2007.73]
+        }, {
+            "name": "Shinzo Abe",
+            "period": [2012.98, 2020]
+        }, {
+            "name": "Yasuo Fukuda",
+            "period": [2007.73, 2008.73]
+        }]
+    },
+    "Switzerland": {
+        "presidents": [{
+            "name": "Didier Burkhalter",
+            "period": [2014.0, 2020]
+        }, {
+            "name": "Micheline Calmy Rey",
+            "period": [2007.0, 2008.0]
+        }, {
+            "name": "Micheline Calmy Rey",
+            "period": [2011.0, 2012.0]
+        }, {
+            "name": "Pascal Couchepin",
+            "period": [2008.0, 2009.0]
+        }, {
+            "name": "Pascal Couchepin",
+            "period": [1998.0, 2009.83]
+        }, {
+            "name": "Pascal Couchepin",
+            "period": [2003.0, 2004.0]
+        }, {
+            "name": "Moritz Leuenberger",
+            "period": [2001.0, 2002.0]
+        }, {
+            "name": "Moritz Leuenberger",
+            "period": [2006.0, 2007.0]
+        }, {
+            "name": "Ueli Maurer",
+            "period": [2013.02, 2014.0]
+        }, {
+            "name": "Samuel Schmid",
+            "period": [2005.0, 2006.0]
+        }]
+    },
+    "Syria": {
+        "presidents": [{
+            "name": "Nazim al Kudsi",
+            "period": [1961.95, 1963.18]
+        }, {
+            "name": "Hafez al Assad",
+            "period": [1971.19, 2000.44]
+        }, {
+            "name": "Bashar al Assad",
+            "period": [2000.54, 2020]
+        }]
+    },
+    "New-Zealand": {
+        "presidents": [{
+            "name": "Henry Sewell",
+            "period": [1856.35, 1856.38]
+        }, {
+            "name": "William Fox",
+            "period": [1856.38, 1856.42]
+        }, {
+            "name": "William Fox",
+            "period": [1861.53, 1862.59]
+        }, {
+            "name": "William Fox",
+            "period": [1869.49, 1872.69]
+        }, {
+            "name": "William Fox",
+            "period": [1873.17, 1873.27]
+        }, {
+            "name": "Edward Stafford",
+            "period": [1856.42, 1861.53]
+        }, {
+            "name": "Edward Stafford",
+            "period": [1865.79, 1869.49]
+        }, {
+            "name": "Edward Stafford",
+            "period": [1872.69, 1872.78]
+        }, {
+            "name": "Alfred Domett",
+            "period": [1862.59, 1863.83]
+        }, {
+            "name": "Frederick Whitaker",
+            "period": [1863.83, 1864.9]
+        }, {
+            "name": "Frederick Whitaker",
+            "period": [1882.3, 1883.73]
+        }, {
+            "name": "Frederick Weld",
+            "period": [1864.9, 1865.79]
+        }, {
+            "name": "George Marsden Waterhouse",
+            "period": [1872.78, 1873.17]
+        }, {
+            "name": "Julius Vogel",
+            "period": [1873.27, 1875.51]
+        }, {
+            "name": "Julius Vogel",
+            "period": [1876.12, 1876.67]
+        }, {
+            "name": "Daniel Pollen",
+            "period": [1875.51, 1876.12]
+        }, {
+            "name": "Harry Atkinson",
+            "period": [1876.67, 1877.78]
+        }, {
+            "name": "Harry Atkinson",
+            "period": [1883.73, 1884.62]
+        }, {
+            "name": "Harry Atkinson",
+            "period": [1884.66, 1884.67]
+        }, {
+            "name": "Harry Atkinson",
+            "period": [1887.77, 1891.06]
+        }, {
+            "name": "George Grey",
+            "period": [1877.78, 1879.77]
+        }, {
+            "name": "John Hall",
+            "period": [1879.77, 1882.3]
+        }, {
+            "name": "Robert Stout",
+            "period": [1884.62, 1884.66]
+        }, {
+            "name": "Robert Stout",
+            "period": [1884.67, 1887.77]
+        }, {
+            "name": "John Ballance",
+            "period": [1891.06, 1893.32]
+        }, {
+            "name": "Richard Seddon",
+            "period": [1893.32, 1906.44]
+        }, {
+            "name": "William Hall Jones",
+            "period": [1906.44, 1906.59]
+        }, {
+            "name": "Joseph Ward",
+            "period": [1906.59, 1912.24]
+        }, {
+            "name": "Joseph Ward",
+            "period": [1928.94, 1930.4]
+        }, {
+            "name": "Thomas Mackenzie",
+            "period": [1912.24, 1912.52]
+        }, {
+            "name": "William Massey",
+            "period": [1912.52, 1925.35]
+        }, {
+            "name": "Francis Bell",
+            "period": [1925.35, 1925.41]
+        }, {
+            "name": "Gordon Coates",
+            "period": [1925.41, 1928.94]
+        }, {
+            "name": "George Forbes",
+            "period": [1930.4, 1935.93]
+        }, {
+            "name": "Michael Savage",
+            "period": [1935.93, 1940.23]
+        }, {
+            "name": "Peter Fraser",
+            "period": [1940.23, 1949.95]
+        }, {
+            "name": "Sidney Holland",
+            "period": [1949.95, 1957.72]
+        }, {
+            "name": "Keith Holyoake",
+            "period": [1957.72, 1957.95]
+        }, {
+            "name": "Keith Holyoake",
+            "period": [1960.95, 1972.1]
+        }, {
+            "name": "Walter Nash",
+            "period": [1957.95, 1960.95]
+        }, {
+            "name": "Jack Marshall",
+            "period": [1972.1, 1972.93]
+        }, {
+            "name": "Norman Kirk",
+            "period": [1972.93, 1974.66]
+        }, {
+            "name": "Bill Rowling",
+            "period": [1974.68, 1975.95]
+        }, {
+            "name": "Robert Muldoon",
+            "period": [1975.95, 1984.57]
+        }, {
+            "name": "David Lange",
+            "period": [1984.57, 1989.6]
+        }, {
+            "name": "Geoffrey Palmer",
+            "period": [1989.6, 1990.67]
+        }, {
+            "name": "Mike Moore",
+            "period": [1990.67, 1990.84]
+        }, {
+            "name": "Jim Bolger",
+            "period": [1990.84, 1991.93]
+        }, {
+            "name": "Jenny Shipley",
+            "period": [1997.93, 1999.93]
+        }, {
+            "name": "Helen Clark",
+            "period": [1999.93, 2008.88]
+        }, {
+            "name": "John Key",
+            "period": [2008.88, 2020]
+        }]
+    },
+    "Pakistan": {
+        "presidents": [{
+            "name": "Iskander Mirza",
+            "period": [1956.22, 1958.82]
+        }, {
+            "name": "Pervez Musharraf",
+            "period": [2001.47, 2008.63]
+        }, {
+            "name": "Asif Ali Zardari",
+            "period": [2008.69, 2013.68]
+        }, {
+            "name": "Mamnoon Hussain",
+            "period": [2013.69, 2020]
+        }]
+    },
+    "Romania": {
+        "presidents": [{
+            "name": "Traian Basescu",
+            "period": [2012.65, 2020]
+        }, {
+            "name": "Traian Basescu",
+            "period": [2007.39, 2012.52]
+        }, {
+            "name": "Traian Basescu",
+            "period": [2004.97, 2007.3]
+        }, {
+            "name": "Ion Iliescu",
+            "period": [1990.38, 1992.78]
+        }, {
+            "name": "Ion Iliescu",
+            "period": [1992.78, 1996.91]
+        }, {
+            "name": "Ion Iliescu",
+            "period": [2000.97, 2004.97]
+        }]
+    },
+    "Iraq": {
+        "presidents": [{
+            "name": "Muhammad Najib Ar Ruba i",
+            "period": [1958.53, 1963.1]
+        }, {
+            "name": "Abdul Salam Arif",
+            "period": [1963.1, 1966.28]
+        }, {
+            "name": "Abdul Rahman Arif",
+            "period": [1966.29, 1968.54]
+        }, {
+            "name": "Ahmed Hassan al Bakr",
+            "period": [1968.54, 1979.54]
+        }, {
+            "name": "Saddam Hussein",
+            "period": [1979.54, 2003.27]
+        }, {
+            "name": "Jalal Talabani",
+            "period": [2005.26, 2014.56]
+        }, {
+            "name": "Fuad Masum",
+            "period": [2014.56, 2020]
+        }]
+    },
+    "Portugal": {
+        "presidents": [{
+            "name": "Jorge Sampaio",
+            "period": [1996.19, 2001.18]
+        }, {
+            "name": "Jorge Sampaio",
+            "period": [2001.18, 2006.18]
+        }, {
+            "name": "Anibal Cavaco Silva",
+            "period": [2006.18, 2011.18]
+        }, {
+            "name": "Anibal Cavaco Silva",
+            "period": [2011.18, 2020]
+        }, {
+            "name": "Mario Soares",
+            "period": [1986.18, 1996.19]
+        }]
+    },
+    "Uruguay": {
+        "presidents": [{
+            "name": "Sanguinetti (I)",
+            "period": [1985.2, 1990.2]
+        }, {
+            "name": "Lacalle",
+            "period": [1990.2, 1995.2]
+        }, {
+            "name": "Sanguinetti (II)",
+            "period": [1995.2, 2000.2]
+        }, {
+            "name": "Batlle",
+            "period": [2000.2, 2005.2]
+        }, {
+            "name": "Vazquez",
+            "period": [2005.2, 2010.2]
+        }, {
+            "name": "Jose Mujica",
+            "period": [2010.16, 2020]
+        }, {
+            "name": "Julio Maria Sanguinetti Coirolo",
+            "period": [1985.16, 1990.16]
+        }, {
+            "name": "Tabare Vazquez",
+            "period": [2005.16, 2010.16]
+        }]
+    },
+    "Egypt": {
+        "presidents": [{
+            "name": "Anwar Al Sadat",
+            "period": [1970.76, 1981.76]
+        }, {
+            "name": "Abdel Fattah el Sisi",
+            "period": [2014.43, 2020]
+        }, {
+            "name": "Mohamed Morsi",
+            "period": [2012.49, 2013.5]
+        }, {
+            "name": "Hosni Mubarak",
+            "period": [1981.78, 1987.78]
+        }, {
+            "name": "Hosni Mubarak",
+            "period": [1987.78, 1993.78]
+        }, {
+            "name": "Hosni Mubarak",
+            "period": [1993.78, 1999.78]
+        }, {
+            "name": "Hosni Mubarak",
+            "period": [1999.78, 2005.78]
+        }, {
+            "name": "Hosni Mubarak",
+            "period": [2005.78, 2011.11]
+        }, {
+            "name": "Muhammad Naguib",
+            "period": [1953.46, 1954.87]
+        }, {
+            "name": "Gamal Abdel Nasser",
+            "period": [1956.04, 1970.74]
+        }]
+    },
+    "Cuba": {
+        "presidents": [{
+            "name": "Fidel Castro",
+            "period": [1959.13, 2008.15]
+        }, {
+            "name": "Raul Castro",
+            "period": [2008.15, 2020]
+        }]
+    },
+    "India": {
+        "presidents": [{
+            "name": "Rajendra Prasad",
+            "period": [1950.07, 1962.36]
+        }, {
+            "name": "Sarvepalli Radhakrishnan",
+            "period": [1962.36, 1967.36]
+        }, {
+            "name": "Zakir Hussain",
+            "period": [1967.36, 1969.33]
+        }, {
+            "name": "V V Giri",
+            "period": [1969.64, 1974.64]
+        }, {
+            "name": "Fakhruddin Ali Ahmed",
+            "period": [1974.64, 1977.11]
+        }, {
+            "name": "Neelam Sanjiva Reddy",
+            "period": [1977.56, 1982.56]
+        }, {
+            "name": "Zail Singh",
+            "period": [1982.56, 1987.56]
+        }, {
+            "name": "Ramaswamy Venkataraman",
+            "period": [1987.56, 1992.56]
+        }, {
+            "name": "Shankar Dayal Sharma",
+            "period": [1992.56, 1997.56]
+        }, {
+            "name": "K R Narayanan",
+            "period": [1997.56, 2002.56]
+        }, {
+            "name": "Abdul Kalam",
+            "period": [2002.56, 2007.56]
+        }, {
+            "name": "Pratibha Patil",
+            "period": [2007.56, 2012.56]
+        }, {
+            "name": "Pranab Mukherjee",
+            "period": [2012.56, 2020]
+        }]
+    },
+    "Russian-Federation": {
+        "presidents": [{
+            "name": "Lenin",
+            "period": [1917.85, 1924.05]
+        }, {
+            "name": "Stalin",
+            "period": [1922.25, 1953.17]
+        }, {
+            "name": "Boris Yeltsin",
+            "period": [1931.52, 2000.0]
+        }, {
+            "name": "Vladimir Putin",
+            "period": [2000.0, 2000.35]
+        }, {
+            "name": "Vladimir Putin",
+            "period": [2000.35, 2008.35]
+        }, {
+            "name": "Vladimir Putin",
+            "period": [2012.35, 2020]
+        }, {
+            "name": "Dmitry Medvedev",
+            "period": [2008.35, 2020]
+        }]
+    },
+    "Peru": {
+        "presidents": [{
+            "name": "Alan Garcia",
+            "period": [1985.57, 1990.57]
+        }, {
+            "name": "Alan Garcia",
+            "period": [2006.57, 2011.57]
+        }, {
+            "name": "Alberto Fujimori",
+            "period": [1990.57, 1995.57]
+        }, {
+            "name": "Ollanta Humala",
+            "period": [2011.57, 2020]
+        }]
+    },
+    "Malaysia": {
+        "presidents": [{
+            "name": "Tunku Abdul Rahman",
+            "period": [1957.66, 1970.72]
+        }, {
+            "name": "Abdul Razak Hussein",
+            "period": [1970.72, 1976.04]
+        }, {
+            "name": "Hussein Onn",
+            "period": [1976.04, 1981.54]
+        }, {
+            "name": "Mahathir Mohamad",
+            "period": [1981.54, 2003.83]
+        }, {
+            "name": "Abdullah Ahmad Badawi",
+            "period": [2003.83, 2009.25]
+        }, {
+            "name": "Najib Razak",
+            "period": [2009.25, 2013.25]
+        }, {
+            "name": "Najib Razak",
+            "period": [2013.34, 2020]
+        }]
+    },
+    "Austria": {
+        "presidents": [{
+            "name": "Heinz Fischer",
+            "period": [2004.52, 2010.52]
+        }, {
+            "name": "Heinz Fischer",
+            "period": [2010.52, 2020]
+        }, {
+            "name": "Rudolf Kirchschlager",
+            "period": [1974.52, 1980.52]
+        }, {
+            "name": "Rudolf Kirchschlager",
+            "period": [1980.52, 1986.52]
+        }, {
+            "name": "Thomas Klestil",
+            "period": [1998.52, 2004.51]
+        }, {
+            "name": "Thomas Klestil",
+            "period": [1992.52, 1998.52]
+        }, {
+            "name": "Kurt Waldheim",
+            "period": [1986.52, 1992.52]
+        }]
+    },
+    "United-States": {
+        "presidents": [{
+            "name": "George Washington",
+            "period": [1789.33, 1797.17]
+        }, {
+            "name": "John Adams",
+            "period": [1797.17, 1801.17]
+        }, {
+            "name": "Thomas Jefferson",
+            "period": [1801.17, 1805.17]
+        }, {
+            "name": "Thomas Jefferson",
+            "period": [1805.17, 1809.17]
+        }, {
+            "name": "James Madison",
+            "period": [1809.17, 1813.17]
+        }, {
+            "name": "James Madison",
+            "period": [1813.17, 1817.17]
+        }, {
+            "name": "James Monroe",
+            "period": [1817.17, 1821.17]
+        }, {
+            "name": "James Monroe",
+            "period": [1821.17, 1825.17]
+        }, {
+            "name": "John Q Adams",
+            "period": [1825.17, 1829.17]
+        }, {
+            "name": "Andrew Jackson",
+            "period": [1829.17, 1832.17]
+        }, {
+            "name": "Andrew Jackson",
+            "period": [1832.17, 1837.17]
+        }, {
+            "name": "Martin Van Buren",
+            "period": [1837.17, 1841.17]
+        }, {
+            "name": "William Henry Harrison",
+            "period": [1841.17, 1841.25]
+        }, {
+            "name": "John Tyler",
+            "period": [1841.25, 1845.17]
+        }, {
+            "name": "James K Polk",
+            "period": [1845.17, 1849.17]
+        }, {
+            "name": "Zachary Taylor",
+            "period": [1849.17, 1850.52]
+        }, {
+            "name": "Millard Fillmore",
+            "period": [1850.52, 1853.17]
+        }, {
+            "name": "Franklin Pierce",
+            "period": [1853.17, 1857.17]
+        }, {
+            "name": "James Buchanan",
+            "period": [1857.17, 1861.17]
+        }, {
+            "name": "Lincoln",
+            "period": [1861.17, 1865.28]
+        }, {
+            "name": "Andrew Johnson",
+            "period": [1865.28, 1869.17]
+        }, {
+            "name": "Ulysses S Grant",
+            "period": [1869.17, 1873.17]
+        }, {
+            "name": "Ulysses S Grant",
+            "period": [1873.17, 1877.17]
+        }, {
+            "name": "Rutherford B Hayes",
+            "period": [1877.17, 1881.17]
+        }, {
+            "name": "James A Garfield",
+            "period": [1881.17, 1881.72]
+        }, {
+            "name": "Chester A Arthur",
+            "period": [1881.72, 1885.17]
+        }, {
+            "name": "Grover Cleveland",
+            "period": [1885.17, 1889.17]
+        }, {
+            "name": "Grover Cleveland",
+            "period": [1893.17, 1897.17]
+        }, {
+            "name": "Benjamin Harrison",
+            "period": [1889.17, 1893.17]
+        }, {
+            "name": "William McKinley",
+            "period": [1897.17, 1901.7]
+        }, {
+            "name": "Theodore Roosevelt",
+            "period": [1901.7, 1909.17]
+        }, {
+            "name": "William Howard Taft",
+            "period": [1909.17, 1913.17]
+        }, {
+            "name": "Woodrow Wilson",
+            "period": [1913.25, 1917.25]
+        }, {
+            "name": "Woodrow Wilson",
+            "period": [1917.25, 1921.25]
+        }, {
+            "name": "Warren G Harding",
+            "period": [1921.17, 1923.58]
+        }, {
+            "name": "Calvin Coolidge",
+            "period": [1923.58, 1925.17]
+        }, {
+            "name": "Calvin Coolidge",
+            "period": [1925.17, 1929.17]
+        }, {
+            "name": "Herbert Hoover",
+            "period": [1929.17, 1933.17]
+        }, {
+            "name": "Franklin D Roosevelt",
+            "period": [1933.17, 1945.28]
+        }, {
+            "name": "Truman",
+            "period": [1945.28, 1953.05]
+        }, {
+            "name": "Eisenhower",
+            "period": [1953.05, 1957.05]
+        }, {
+            "name": "Eisenhower",
+            "period": [1957.05, 1961.05]
+        }, {
+            "name": "Kennedy",
+            "period": [1961.05, 1963.89]
+        }, {
+            "name": "Lyndon B Johnson",
+            "period": [1963.89, 1965.05]
+        }, {
+            "name": "Lyndon B Johnson",
+            "period": [1965.05, 1969.05]
+        }, {
+            "name": "Nixon",
+            "period": [1969.05, 1974.6]
+        }, {
+            "name": "Gerald Ford",
+            "period": [1974.6, 1977.05]
+        }, {
+            "name": "Jimmy Carter",
+            "period": [1977.05, 1981.05]
+        }, {
+            "name": "Reagan",
+            "period": [1981.05, 1989.05]
+        }, {
+            "name": "George H W Bush",
+            "period": [1989.05, 1993.05]
+        }, {
+            "name": "Bill Clinton",
+            "period": [1993.05, 1997.05]
+        }, {
+            "name": "Bill Clinton",
+            "period": [1997.05, 2001.05]
+        }, {
+            "name": "George W Bush",
+            "period": [2001.05, 2005.05]
+        }, {
+            "name": "George W Bush",
+            "period": [2005.05, 2009.05]
+        }, {
+            "name": "Barack Obama",
+            "period": [2009.05, 2020]
+        }]
+    },
+    "Colombia": {
+        "presidents": [{
+            "name": "Cesar Gaviria",
+            "period": [1990.6, 1994.6]
+        }, {
+            "name": "Andres Pastrana Arango",
+            "period": [1998.6, 2002.6]
+        }, {
+            "name": "Ernesto Samper",
+            "period": [1994.6, 1998.6]
+        }, {
+            "name": "Juan Manuel Santos",
+            "period": [2010.6, 2020]
+        }, {
+            "name": "Alvaro Uribe",
+            "period": [2002.6, 2006.6]
+        }, {
+            "name": "Alvaro Uribe",
+            "period": [2006.6, 2010.6]
+        }]
+    },
+    "Greece": {
+        "presidents": [{
+            "name": "Konstantinos Karamanlis",
+            "period": [1990.34, 1995.35]
+        }, {
+            "name": "Konstantinos Karamanlis",
+            "period": [1980.37, 1985.19]
+        }, {
+            "name": "Konstantinos Stephanopoulos",
+            "period": [1995.19, 2005.19]
+        }, {
+            "name": "Karolos Papoulias",
+            "period": [2005.19, 2020]
+        }]
+    },
+    "Paraguay": {
+        "presidents": [{
+            "name": "Stroessner",
+            "period": [1954, 1989.1]
+        }, {
+            "name": "Pedotti",
+            "period": [1989.1, 1993.7]
+        }, {
+            "name": "Wasmosy",
+            "period": [1993.7, 1998.7]
+        }, {
+            "name": "Grau",
+            "period": [1998.7, 1999.3]
+        }, {
+            "name": "Horacio Cartes",
+            "period": [2013.62, 2020]
+        }, {
+            "name": "Nicanor Duarte",
+            "period": [2003.62, 2008.62]
+        }, {
+            "name": "Lugo",
+            "period": [2008.62, 2012.47]
+        }, {
+            "name": "Federico Franco",
+            "period": [2012.47, 2013.62]
+        }, {
+            "name": "Luis Angel Gonzalez Macchi",
+            "period": [1999.24, 2003.62]
+        }]
+    },
+    "Hungary": {
+        "presidents": [{
+            "name": "Arpad Goncz",
+            "period": [1990.59, 2000.59]
+        }, {
+            "name": "Ferenc Madl",
+            "period": [2000.59, 2005.59]
+        }, {
+            "name": "Janos Ader",
+            "period": [2012.36, 2020]
+        }]
+    },
+    "Nicaragua": {
+        "presidents": [{
+            "name": "Daniel Ortega",
+            "period": [1985.02, 1990.31]
+        }, {
+            "name": "Daniel Ortega",
+            "period": [2007.02, 2020]
+        }]
+    }
+}

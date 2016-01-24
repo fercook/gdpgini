@@ -1,4 +1,79 @@
-countries = {
+countries = {};
+allCountries = {};
+usedCountries = {};
+
+latinAmerica = ["Argentina", "Brazil", "Bolivia", "Chile", "Paraguay", "Uruguay"];
+
+function countryColor(country, year) {
+    var thecolor = "black"; // default
+    if (year!=null) { // requestin a period
+        countries[country].presidents.forEach(function (president, i) {
+            var period = president.period;
+            if (period[0] <= year && year < period[1]) {
+                if (countries[country].color == null) {
+                    thecolor = colorbrewer.Set1[9][i];
+                } else {
+                    if (i % 3 == 0) {
+                        thecolor = d3.rgb(countries[country].color).darker().toString(); //countries[country].color;
+                    } else if (i % 3 == 1) {
+                        thecolor = d3.rgb(countries[country].color).toString(); //countries[country].color;
+                    } else {
+                        thecolor = d3.rgb(countries[country].color).brighter().toString();
+                    }
+                }
+            }
+
+        });
+        //    var rgb = hexToRgb(thecolor);
+        //    var modifier = hexToRgb(countries[country].color);
+        //    thecolor=rgbToHex( mix(rgb,modifier) );
+    } else {
+        thecolor = countries[country].color;
+    }
+    return thecolor;
+}
+
+
+function mix(a, b) {
+    //return { r: Math.floor(a.r*b.r/255), g: Math.floor(a.g*b.g/255), b: Math.floor(a.b*b.b/255)}; //multiply
+    return {
+        r: overlay(a.r, b.r),
+        g: overlay(a.g, b.g),
+        b: overlay(a.b, b.b)
+    }
+}
+
+function overlay(blend, target) {
+    var Blend = blend / 255,
+        Target = target / 255;
+    var percent = 0.9;
+    return (Target > percent) ? Math.floor(255 * (1 - (1 - (Target - percent) / percent) * (1 - Blend))) : Math.floor(255 * ((Target / percent) * Blend));
+}
+
+function rgbToHex(color) {
+    return "#" + ((1 << 24) + (color.r << 16) + (color.g << 8) + color.b).toString(16).slice(1);
+}
+
+function hexToRgb(hex) {
+    // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+    var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+    hex = hex.replace(shorthandRegex, function (m, r, g, b) {
+        return r + r + g + g + b + b;
+    });
+
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+
+
+//// OLD data
+
+/* countries = {
     "Argentina": {
         presidents: [{
             name: "Alfonsin",
@@ -175,71 +250,4 @@ countries = {
     }
 };
 
-
-usedCountries = {};
-usedCountries["Argentina"]=countries["Argentina"];
-usedCountries["Brazil"]=countries["Brazil"];
-usedCountries["Uruguay"]=countries["Uruguay"];
-
-function countryColor(country, year) {
-    var thecolor = "black"; // default
-    countries[country].presidents.forEach(function (president, i) {
-        var period=president.period;
-        if (period[0] <= year && year < period[1]) {
-            thecolor = colorbrewer.Set1[9][i];
-            /* This is for using a quantitative scale with alternating colors...
-            if (i % 2 == 0) {
-                thecolor = countries[country].scale[i / 2];
-            } else {
-                var n = countries[country].scale.length / 2;
-                thecolor = countries[country].scale[n + (i - 1) / 2];
-            }
-            */
-            if (i % 3 == 0) {
-                thecolor = d3.rgb(countries[country].color).darker().toString(); //countries[country].color;
-            } else if (i % 3 == 1) {
-                thecolor = d3.rgb(countries[country].color).toString(); //countries[country].color;
-            }
-            else {
-                thecolor = d3.rgb(countries[country].color).brighter().toString();
-            }
-
-        }
-
-    });
-    var rgb = hexToRgb(thecolor);
-    var modifier = hexToRgb(countries[country].color);
-    thecolor=rgbToHex( mix(rgb,modifier) );
-    return thecolor;
-}
-
-
-function mix(a,b) {
-    //return { r: Math.floor(a.r*b.r/255), g: Math.floor(a.g*b.g/255), b: Math.floor(a.b*b.b/255)}; //multiply
-    return { r: overlay(a.r, b.r), g: overlay(a.g, b.g), b: overlay(a.b, b.b)}
-}
-
-function overlay(blend, target) {
-    var Blend=blend/255, Target=target/255;
-    var percent = 0.9;
-    return (Target > percent) ? Math.floor(255*(1 - (1-(Target-percent)/percent) * (1-Blend))) : Math.floor(255*((Target/percent) * Blend));
-}
-
-function rgbToHex(color) {
-    return "#" + ((1 << 24) + (color.r << 16) + (color.g << 8) + color.b).toString(16).slice(1);
-}
-
-function hexToRgb(hex) {
-    // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
-    var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-    hex = hex.replace(shorthandRegex, function(m, r, g, b) {
-        return r + r + g + g + b + b;
-    });
-
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16)
-    } : null;
-}
+*/
