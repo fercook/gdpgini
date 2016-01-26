@@ -107,6 +107,7 @@ function init() {
             allowAllCountries();
         }
         normalizeData();
+        fillCountryList();
         drawCharts();
     });
 
@@ -174,10 +175,8 @@ function allowOnlyLatinAmerica() {
     countries = {};
     latinAmerica.forEach(function (country) {
         countries[country] = allCountries[country];
+        usedCountries[country]= countries[country];
     });
-    usedCountries["Argentina"] = countries["Argentina"];
-    usedCountries["Brazil"] = countries["Brazil"];
-    usedCountries["Uruguay"] = countries["Uruguay"];
 
 }
 
