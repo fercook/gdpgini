@@ -16,25 +16,46 @@ function prepareData(gdps, ginis, settings, countryList) {
                    3) we had a Gini value many years ago (lastValidYear != year-1 && != initial_value)
                         --> insert interpolated data and mark end of hole
     */
-    var toErase=[]; // We are missing important data for this
+    var toErase = []; // We are missing important data for this
     for (var country in countryList) {
-        if (countryList[country].gdp==null){
-            toErase.push(country);
-        }
-        if (countryList[country].color==null) {
-            countryList[country].color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        ["gdp", "gini"].forEach(function (property) {
+            if (!countryList[country][property]) {
+                toErase.push(country);
+            } else { // check if empty
+                var hasSomething = Object.keys(countryList[country][property]).reduce(function (prev, cur) {
+                    if (!isNaN(+prev)) {
+                        return prev || (+countryList[country][property][cur] > 0)
+                    } else {
+                        return prev;
+                    };
+                }, false);
+                if (!hasSomething) {
+                    toErase.push(country);
+                }
+            }
+        });
+        if (!countryList[country].color) {
+            countryList[country].color = '#' + Math.floor(Math.random() * 16777215).toString(16);
         }
     }
-    toErase.forEach(function(country){
+    toErase.forEach(function (country) {
         delete countryList[country];
     });
     var flatdata = [];
     for (var country in countryList) {
         var lastValidYear = 0;
-        var minYear = d3.min( Object.keys(countryList[country].gdp), function(d){return +d});
-        minYear = Math.max(minYear, d3.min( Object.keys(countryList[country].gini), function(d){return +d}));
-        var maxYear = d3.max( Object.keys(countryList[country].gdp), function(d){return +d});
-        maxYear = Math.min(maxYear, d3.max( Object.keys(countryList[country].gini), function(d){return +d}));
+        var minYear = d3.min(Object.keys(countryList[country].gdp), function (d) {
+            return +d
+        });
+        minYear = Math.max(minYear, d3.min(Object.keys(countryList[country].gini), function (d) {
+            return +d
+        }));
+        var maxYear = d3.max(Object.keys(countryList[country].gdp), function (d) {
+            return +d
+        });
+        maxYear = Math.min(maxYear, d3.max(Object.keys(countryList[country].gini), function (d) {
+            return +d
+        }));
         for (var year = minYear; year <= maxYear; year++) {
             var gdp = +countryList[country].gdp[year];
             var gini = +countryList[country].gini[year];
@@ -89,7 +110,7 @@ function prepareData(gdps, ginis, settings, countryList) {
     return flatdata;
 }
 
-function normalizeData() {
+function normalizeData(flatdata) {
     if (options.percent) {
         flatdata.forEach(function (d) {
             d.y = d.dgini;
@@ -103,8 +124,8 @@ function normalizeData() {
     }
     if (options.normalize) {
         flatdata.forEach(function (d) {
-            d.x = d.gdp / countryList[d.country].refgdp;
-            d.y = d.gini / countryList[d.country].refgini;
+            d.x = d.gdp / allCountries[d.country].refgdp;
+            d.y = d.gini / allCountries[d.country].refgini;
         });
     }
 }
@@ -450,52 +471,45 @@ function makeCairoChart(div, title, flatdata, options) {
             .style("fill", "black")
             .style("font", "bold")
             .text(title);
-        // TODO: Add delete button delete thisIsObject[key];
-        caption.append("text")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("dx", 0)
-            .attr("dy", "0.35em")
-            .attr("class", "media-heading")
-            .style("text-anchor", "end")
-            .style("font-size", "16px")
-            .style("font", "bold")
-            .text("X").
-        on("click", function (d) {
-            delete usedCountries[title];
-            fillCountryList();
-            drawCharts();
-        });
+        
+        var cross = caption.append("g")
+                .attr("transform", "translate(-12,-12)")
+        .on("click", function (d) {
+                delete usedCountries[title];
+                fillCountryList();
+                drawCharts();
+            });
+        cross.append("path")
+            .attr("d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+            .attr("fill","#888");
+        cross.append("path").attr("d","M0 0h24v24H0z").attr("fill","none");
+        
     } else {
         var nn = 0,
-            deltaY = 12;
+            deltaY = 16;
         for (var country in usedCountries) {
             caption.append("text")
-                .attr("x", -12)
+                .attr("x", -15)
                 .attr("y", nn * deltaY)
                 .attr("dx", 0)
                 .attr("dy", "0.35em")
                 .attr("class", "media-heading")
                 .style("text-anchor", "end")
-                .style("font-size", "12px")
+                .style("font-size", "16px")
                 .style("fill", countryColor(country))
                 .style("font", "bold")
                 .text(country);
-            caption.append("text")
-                .attr("x", 0)
-                .attr("y", nn * deltaY)
-                .attr("dx", 0)
-                .attr("dy", "0.35em")
-                .attr("class", "media-heading")
-                .style("text-anchor", "end")
-                .style("font-size", "12px")
-                .style("font", "bold")
-                .text("X")
-                .on("click", function (d) {
-                    delete usedCountries[country];
-                    fillCountryList();
-                    drawCharts();
-                });
+            var cross = caption.append("g")
+                        .attr("transform", "translate(-12,"+(-11+nn*deltaY)+")")
+                        .on("click", function (d) {
+                            delete usedCountries[title];
+                            fillCountryList();
+                            drawCharts();
+                        });
+            cross.append("path")
+                .attr("d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
+                .attr("fill","#888");
+            cross.append("path").attr("d","M0 0h24v24H0z").attr("fill","none");            
             nn++;
         }
     }
@@ -546,13 +560,15 @@ function makeDirectionChart(flatdata, options) {
     var isScreenSmall = $(window).width() < 768;
     var orientation = isScreenSmall ? "V" : "H";
     var width = $(".multichart" + orientation).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
+
+
     var heightH = options.height() - options.margin.top - options.margin.bottom;
     var heightV = 800;
-    var height = isScreenSmall ? heightV : heightH;
+    var height = options.margin.top + 30 * Object.keys(usedCountries).length; //isScreenSmall ? heightV : heightH;
 
     var chart = d3.select(".multichart" + orientation).append("svg")
         .attr("width", width + options.margin.left + options.margin.right)
-        .attr("height", height + options.margin.top + options.margin.bottom + (isScreenSmall? 50:0) ) //just in case 50px more...
+        .attr("height", height + options.margin.top + options.margin.bottom + (isScreenSmall ? 50 : 0)) //just in case 50px more...
         .append("g")
         .attr("transform", function (d) {
             return "translate(" + options.margin.left + "," + options.margin.top + ")";
@@ -583,7 +599,7 @@ function makeDirectionChart(flatdata, options) {
             .data(Object.keys(usedCountries))
             .enter().append("g")
             .attr("transform", function (d) {
-                return "translate(" + (offset.x + matrix.w * cidx[d]+ matrix.w/2) + "," + (offset.y-5) + ")rotate(-90)";
+                return "translate(" + (offset.x + matrix.w * cidx[d] + matrix.w / 2) + "," + (offset.y - 5) + ")rotate(-90)";
             })
             .append("text")
             .attr("x", 0)
@@ -606,7 +622,7 @@ function makeDirectionChart(flatdata, options) {
             .tickFormat(d3.format(".0f"));
 
         chart.append("g")
-            .attr("transform", "translate("+offset.x+"," + 0 + ")")
+            .attr("transform", "translate(" + offset.x + "," + 0 + ")")
             .attr("class", "years")
             .call(yaxis);
 
@@ -651,7 +667,7 @@ function makeDirectionChart(flatdata, options) {
             .tickFormat(d3.format(".0f"));
 
         chart.append("g")
-            .attr("transform", "translate(0," + (options.margin.top+2) + ")")
+            .attr("transform", "translate(0," + (options.margin.top + 2) + ")")
             .attr("class", "years")
             .call(xaxis);
 

@@ -6,19 +6,21 @@ latinAmerica = ["Argentina", "Brazil", "Bolivia", "Chile", "Paraguay", "Uruguay"
 
 function countryColor(country, year) {
     var thecolor = "black"; // default
-    if (year!=null) { // requestin a period
+    if (!year) {
+        thecolor = countries[country].color;
+    } else { // requesting a period
         countries[country].presidents.forEach(function (president, i) {
             var period = president.period;
             if (period[0] <= year && year < period[1]) {
-                if (countries[country].color == null) {
+                if (!countries[country].color) {
                     thecolor = colorbrewer.Set1[9][i];
                 } else {
                     if (i % 3 == 0) {
-                        thecolor = d3.rgb(countries[country].color).darker().toString(); //countries[country].color;
+                        thecolor = d3.rgb(countries[country].color).darker().darker().toString(); //countries[country].color;
                     } else if (i % 3 == 1) {
                         thecolor = d3.rgb(countries[country].color).toString(); //countries[country].color;
                     } else {
-                        thecolor = d3.rgb(countries[country].color).brighter().toString();
+                        thecolor = d3.rgb(countries[country].color).brighter().brighter().toString();
                     }
                 }
             }
@@ -27,9 +29,7 @@ function countryColor(country, year) {
         //    var rgb = hexToRgb(thecolor);
         //    var modifier = hexToRgb(countries[country].color);
         //    thecolor=rgbToHex( mix(rgb,modifier) );
-    } else {
-        thecolor = countries[country].color;
-    }
+    } 
     return thecolor;
 }
 

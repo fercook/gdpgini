@@ -50,7 +50,7 @@
             "period": [2014.74, 2020]
         }]
     },
-    "Dominican-Republic": {
+    "Dominican Republic": {
         "presidents": [{
             "name": "Hipolito Mejia",
             "period": [2000.62, 2004.62]
@@ -200,7 +200,7 @@
             "period": [2013.27, 2020]
         }]
     },
-    "United-Kingdom": {
+    "United Kingdom": {
         "presidents": [{
             "name": "Robert Walpole",
             "period": [1721.25, 1742.11]
@@ -515,7 +515,7 @@
             "period": [2012.37, 2020]
         }]
     },
-    "Saudi-Arabia": {
+    "Saudi Arabia": {
         "presidents": [{
             "name": "Khalid of Saudi Arabia",
             "period": [1975.23, 1982.45]
@@ -692,7 +692,7 @@
             "period": [2005.3, 2007.04]
         }]
     },
-    "North-Korea": {
+    "North Korea": {
         "presidents": [{
             "name": "Kim Il sung",
             "period": [1949.49, 1994.52]
@@ -1097,7 +1097,7 @@
             "period": [2010.78, 2020]
         }]
     },
-    "Czech-Republic": {
+    "Czech Republic": {
         "presidents": [{
             "name": "Vaclav Havel",
             "period": [1993.09, 2003.09]
@@ -1202,7 +1202,7 @@
             "period": [2004.8, 2014.8]
         }]
     },
-    "Costa-Rica": {
+    "Costa Rica": {
         "presidents": [{
             "name": "Oscar Arias",
             "period": [2006.35, 2010.35]
@@ -1217,7 +1217,7 @@
             "period": [2014.35, 2020]
         }]
     },
-    "South-Africa": {
+    "South Africa": {
         "presidents": [{
             "name": "Charles Robberts Swart",
             "period": [1961.41, 1967.41]
@@ -1301,7 +1301,7 @@
             "period": [1994.92, 2000.92]
         }]
     },
-    "South-Korea": {
+    "South Korea": {
         "presidents": [{
             "name": "Kim Young sam",
             "period": [1993.15, 1998.15]
@@ -1439,7 +1439,7 @@
             "period": [2000.54, 2020]
         }]
     },
-    "New-Zealand": {
+    "New Zealand": {
         "presidents": [{
             "name": "Henry Sewell",
             "period": [1856.35, 1856.38]
@@ -1675,8 +1675,17 @@
     },
     "Uruguay": {
         "presidents": [{
+            "name": "Aparicio Méndez",
+            "period": [1976.7, 1981.7]
+        },{
+            "name": "Gregorio Conrado Álvarez",
+            "period": [1981.7, 1985.2]
+        },{
             "name": "Sanguinetti (I)",
             "period": [1985.2, 1990.2]
+        }, {
+            "name": "Julio Maria Sanguinetti Coirolo",
+            "period": [1985.16, 1990.16]
         }, {
             "name": "Lacalle",
             "period": [1990.2, 1995.2]
@@ -1692,9 +1701,6 @@
         }, {
             "name": "Jose Mujica",
             "period": [2010.16, 2020]
-        }, {
-            "name": "Julio Maria Sanguinetti Coirolo",
-            "period": [1985.16, 1990.16]
         }, {
             "name": "Tabare Vazquez",
             "period": [2005.16, 2010.16]
@@ -1784,7 +1790,7 @@
             "period": [2012.56, 2020]
         }]
     },
-    "Russian-Federation": {
+    "Russian Federation": {
         "presidents": [{
             "name": "Lenin",
             "period": [1917.85, 1924.05]
@@ -1871,7 +1877,7 @@
             "period": [1986.52, 1992.52]
         }]
     },
-    "United-States": {
+    "United States": {
         "presidents": [{
             "name": "George Washington",
             "period": [1789.33, 1797.17]
