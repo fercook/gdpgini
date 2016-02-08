@@ -21,7 +21,8 @@ var options = {
         return 1000 - this.margin.top - this.margin.bottom
     },
     separateCountries: true,
-    onlyLatinoAmerica: false
+    onlyLatinoAmerica: false,
+    joinedScales: false
 };
 
 function init() {
@@ -40,45 +41,40 @@ function init() {
         }
     }
     $("[name='presidentsMulti']").bootstrapSwitch();
-    $("[name='presidentsSeparate']").bootstrapSwitch();
-    $('input[name="presidentsSeparate"]').on('switchChange.bootstrapSwitch', function (event, state) {
-        $("[name='presidentsMulti']").bootstrapSwitch('toggleState', true);
-        switchPresidentOptions();
-        drawCharts();
-    });
     $('input[name="presidentsMulti"]').on('switchChange.bootstrapSwitch', function (event, state) {
-        $("[name='presidentsSeparate']").bootstrapSwitch('toggleState', true);
         switchPresidentOptions();
         drawCharts();
     });
 
+    $("[name='escalas']").bootstrapSwitch();
+    $('input[name="escalas"]').on('switchChange.bootstrapSwitch', function (event, state) {
+        options.joinedScales = !options.joinedScales;
+        drawCharts();
+    });
     // Separate charts into small multiples
     function switchSmallMultiples() {
         options.separateCountries = !options.separateCountries;
         if (options.separateCountries) {
             $("div[id=separatecountriesPanel]").show();
             $("div[id=multicountryPanel]").hide();
-            $(".depends").hide();
+            $(".optionMulti").show();
+            $(".optionSingle").hide();
             options.height = function () {
                 return 300 - this.margin.left - this.margin.right
             };
-            var d = document.getElementById("countrySelector");
-            d.className += " col-md-offset-3";
-        //    var d = document.getElementById("countrySelector2");
-        //    d.className += " col-md-offset-3";            
 
         } else {
             $("div[id=separatecountriesPanel]").hide();
             $("div[id=multicountryPanel]").show();
-            $(".depends").show();
+            $(".optionSingle").show();
+            $(".optionMulti").hide();
+            options.joinedScales = false;
             options.height = function () {
                 return 600 - this.margin.left - this.margin.right
             };
-            var d = document.getElementById("countrySelector");
-            d.className = "form-group col-md-3 ";
         }
     }
-    
+
     $("[name='multicountryMulti']").bootstrapSwitch();
     $("[name='multicountrySeparate']").bootstrapSwitch();
     $('input[name="multicountryMulti"]').on('switchChange.bootstrapSwitch', function (event, state) {
@@ -137,11 +133,11 @@ function init() {
         fillCountryList();
         drawCharts();
         dropdown[0].scrollIntoView();
-    });    
-    
+    });
+
 
     $("div[id=multicountryPanel]").hide();
-    $(".depends").hide();
+    $(".optionSingle").hide();
 
 }
 
@@ -163,7 +159,7 @@ function initColors() {
 function fillCountryList() {
     var dropdown = $(".countryList");
     var vals = [];
-    Object.keys(countries).forEach(function(country) {
+    Object.keys(countries).forEach(function (country) {
         if (!(country in usedCountries)) {
             vals.push(country);
         }
@@ -186,7 +182,7 @@ function allowOnlyLatinAmerica() {
     countries = {};
     latinAmerica.forEach(function (country) {
         countries[country] = allCountries[country];
-        usedCountries[country]= countries[country];
+        usedCountries[country] = countries[country];
     });
 
 }
@@ -195,7 +191,7 @@ function allowAllCountries() {
     usedCountries = {};
     countries = allCountries;
     latinAmerica.forEach(function (country) {
-        usedCountries[country]= countries[country];
+        usedCountries[country] = countries[country];
     });
 }
 
@@ -245,7 +241,7 @@ function drawCharts() {
     var tiling = [6, 4];
     for (var country in usedCountries) {
         oneCountryData = flatdata.filter(function (d) {
-            return  d.country == country;
+            return d.country == country;
         });
         var divName = country.replace(" ", "_");
         container.append("div")
@@ -277,4 +273,3 @@ function drawCharts() {
     }
     makeDirectionChart(directionCountries, options);
 }
-

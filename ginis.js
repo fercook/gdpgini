@@ -41,7 +41,7 @@ function prepareData(gdps, ginis, settings, countryList) {
     toErase.forEach(function (country) {
         delete countryList[country];
     });
-    var flatdata = [];
+    var data = [];
     for (var country in countryList) {
         var lastValidYear = 0;
         var minYear = d3.min(Object.keys(countryList[country].gdp), function (d) {
@@ -65,7 +65,7 @@ function prepareData(gdps, ginis, settings, countryList) {
                     for (var altyear = lastValidYear + 1; altyear < year; altyear++) {
                         var altgdp = +countryList[country].gdp[altyear];
                         var altgini = inigini + (gini - inigini) * (altyear - lastValidYear) / (1 + year - lastValidYear);
-                        flatdata.push({
+                        data.push({
                             "country": country,
                             "year": altyear,
                             "gdp": altgdp,
@@ -74,7 +74,7 @@ function prepareData(gdps, ginis, settings, countryList) {
                         });
                     }
                 }
-                flatdata.push({
+                data.push({
                     "country": country,
                     "year": year,
                     "gdp": gdp,
@@ -86,51 +86,51 @@ function prepareData(gdps, ginis, settings, countryList) {
         }
     }
 
-    flatdata.forEach(function (d) {
+    data.forEach(function (d) {
         if (d.year == settings.referenceYear) {
             countryList[d.country].refgdp = d.gdp;
             countryList[d.country].refgini = d.gini;
         }
     });
     var country = null;
-    for (var i = 0; i < flatdata.length; i++) {
-        if (flatdata[i].country != country) {
-            country = flatdata[i].country;
-            flatdata[i].dgdp = 0;
-            flatdata[i].dgini = 0;
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].country != country) {
+            country = data[i].country;
+            data[i].dgdp = 0;
+            data[i].dgini = 0;
         } else {
-            tempgdp = flatdata[i].gdp;
-            tempgini = flatdata[i].gini;
-            flatdata[i].dgdp = 100 * (flatdata[i].gdp / flatdata[i - 1].gdp - 1);
-            flatdata[i].dgini = 100 * (flatdata[i].gini / flatdata[i - 1].gini - 1);
+            tempgdp = data[i].gdp;
+            tempgini = data[i].gini;
+            data[i].dgdp = 100 * (data[i].gdp / data[i - 1].gdp - 1);
+            data[i].dgini = 100 * (data[i].gini / data[i - 1].gini - 1);
         }
     }
     //Print to copy
-    //console.log(flatdata);
-    return flatdata;
+    //console.log(data);
+    return data;
 }
 
-function normalizeData(flatdata) {
+function normalizeData(data) {
     if (options.percent) {
-        flatdata.forEach(function (d) {
+        data.forEach(function (d) {
             d.y = d.dgini;
             d.x = d.dgdp;
         });
     } else {
-        flatdata.forEach(function (d) {
+        data.forEach(function (d) {
             d.y = d.gini;
             d.x = d.gdp;
         });
     }
     if (options.normalize) {
-        flatdata.forEach(function (d) {
+        data.forEach(function (d) {
             d.x = d.gdp / allCountries[d.country].refgdp;
             d.y = d.gini / allCountries[d.country].refgini;
         });
     }
 }
 
-function positionLabels(flatdata, category, textdist) {
+function positionLabels(data, category, textdist) {
 
     function norm(vec) {
         var n = Math.sqrt(vec[0] * vec[0] + vec[1] * vec[1]);
@@ -146,25 +146,25 @@ function positionLabels(flatdata, category, textdist) {
     }
 
     var currentCategory = null;
-    for (var i = 0; i < flatdata.length; i++) {
+    for (var i = 0; i < data.length; i++) {
         var p1, p2;
-        var p = [textdist.x(flatdata[i].x), textdist.y(flatdata[i].y)];
-        if (flatdata[i][category] == currentCategory) {
-            p1 = norm(substract(p, [textdist.x(flatdata[i - 1].x), textdist.y(flatdata[i - 1].y)]));
+        var p = [textdist.x(data[i].x), textdist.y(data[i].y)];
+        if (data[i][category] == currentCategory) {
+            p1 = norm(substract(p, [textdist.x(data[i - 1].x), textdist.y(data[i - 1].y)]));
         } else {
             p1 = [0, 0];
         }
-        if (i < flatdata.length - 1 && flatdata[i + 1][category] == flatdata[i][category]) {
-            p2 = norm(substract(p, [textdist.x(flatdata[i + 1].x), textdist.y(flatdata[i + 1].y)]));
+        if (i < data.length - 1 && data[i + 1][category] == data[i][category]) {
+            p2 = norm(substract(p, [textdist.x(data[i + 1].x), textdist.y(data[i + 1].y)]));
         } else {
             p2 = [0, 0];
         }
         var pos = norm(add(p1, p2));
-        flatdata[i].text = {
+        data[i].text = {
             x: pos[0] * textdist.a,
             y: pos[1] * textdist.b
         };
-        currentCategory = flatdata[i][category];
+        currentCategory = data[i][category];
     }
 }
 
@@ -175,7 +175,7 @@ function splitLineIntoSegments(countryData) {
         var segment = [],
             period = president.period;
         for (var n = 0; n < countryData.length - 1; n++) {
-            if (countryData[n].year < period[0] && countryData[n + 1].year >= period[0]) { //start
+            if (countryData[n].year < period[0] && countryData[n + 1].year >= period[0]) { //start   n--[--*--*--]--*
                 var dt = period[0] - countryData[n].year;
                 var dx = dt * (countryData[n + 1].x - countryData[n].x);
                 var dy = dt * (countryData[n + 1].y - countryData[n].y);
@@ -185,14 +185,17 @@ function splitLineIntoSegments(countryData) {
                     year: dt + countryData[n].year,
                     president: president.name
                 }); //interpolate
-            } else if (countryData[n].year >= period[0] && countryData[n + 1].year < period[1]) { // middle
+            } else if (countryData[n].year >= period[0] && countryData[n + 1].year < period[1]) { // middle *--[--n--*--]--*
+                // WHY THIS CASE???? CANT UNDERSTAND IT...
+                countryData[n].president = president.name;
                 segment.push({
                     x: countryData[n].x,
                     y: countryData[n].y,
                     year: countryData[n].year,
                     president: president.name
                 });
-            } else if (countryData[n].year < period[1] && countryData[n + 1].year >= period[1]) { //end
+            } else if (countryData[n].year < period[1] && countryData[n + 1].year >= period[1]) { //end  *--[--*--n--]--*
+                countryData[n].president = president.name;
                 segment.push({
                     x: countryData[n].x,
                     y: countryData[n].y,
@@ -208,16 +211,18 @@ function splitLineIntoSegments(countryData) {
                     year: dt + countryData[n].year,
                     president: president.name
                 }); //interpolate
-            } else if (countryData[n].year > period[0] && countryData[n].year < period[1]) {
+            } else if (countryData[n].year > period[0] && countryData[n].year < period[1]) { // *--[--n--*--]--*
+                countryData[n].president = president.name;
                 segment.push({
                     x: countryData[n].x,
                     y: countryData[n].y,
                     year: countryData[n].year,
                     president: president.name
                 });
-            }
+            } 
         }
         if (countryData[countryData.length - 1].year <= period[1]) {
+            countryData[countryData.length - 1].president = president.name;
             segment.push({
                 x: countryData[countryData.length - 1].x,
                 y: countryData[countryData.length - 1].y,
@@ -230,17 +235,12 @@ function splitLineIntoSegments(countryData) {
     return segments;
 }
 
-function makeCairoChart(div, title, flatdata, options) {
-
-    var tooltip = d3.select("#" + div).append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-    tooltip.style('display', 'none');
+function makeCairoChart(div, title, data, options) {
 
     d3.selectAll("#" + div + " svg").remove();
     var width = $("#" + div).width() - options.margin.left - options.margin.right; //, height=$(".thumbnail").height();
     var height = options.height() - options.margin.top - options.margin.bottom;
-    svg = d3.select("#" + div).append("svg")
+    var svg = d3.select("#" + div).append("svg")
         .attr("width", width + options.margin.left + options.margin.right)
         .attr("height", height + options.margin.top + options.margin.bottom)
         .append("g")
@@ -248,37 +248,37 @@ function makeCairoChart(div, title, flatdata, options) {
             return "translate(" + options.margin.left + "," + options.margin.top + ")";
         });
 
-
-    x = d3.scale.linear()
+    var x = d3.scale.linear()
         .range([0, width]);
 
-    y = d3.scale.linear()
+    var y = d3.scale.linear()
         .range([height, 0]);
 
 
-    xaxis = d3.svg.axis()
+    var xaxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
         .ticks(7);
 
-    yaxis = d3.svg.axis()
+    var yaxis = d3.svg.axis()
         .scale(y)
         .orient("left");
 
     var offset = 0.02;
+    var varForRange = !options.joinedScales ? data : flatdata.filter(function (d) {return d.country in usedCountries;});
     x.domain([
-        (1 - offset) * d3.min(flatdata, function (d) {
+        (1 - offset) * d3.min(varForRange, function (d) {
             return d.x;
         }),
-        (1 + offset) * d3.max(flatdata, function (d) {
+        (1 + offset) * d3.max(varForRange, function (d) {
             return d.x;
         })
                     ]);
     y.domain([
-        (1 - offset) * d3.min(flatdata, function (d) {
+        (1 - offset) * d3.min(varForRange, function (d) {
             return d.y;
         }),
-        (1 + offset) * d3.max(flatdata, function (d) {
+        (1 + offset) * d3.max(varForRange, function (d) {
             return d.y;
         })
                     ]).nice();
@@ -295,7 +295,7 @@ function makeCairoChart(div, title, flatdata, options) {
             .interpolate("cardinal");
 
         for (var country in countries) {
-            var countryData = flatdata.filter(function (d) {
+            var countryData = data.filter(function (d) {
                 return d.country == country;
             });
             if (countryData.length > 0) {
@@ -305,7 +305,7 @@ function makeCairoChart(div, title, flatdata, options) {
                         svg.append("g").append("path")
                             .attr("d", lineFunction(segment))
                             .attr("stroke", function () {
-                                if (options.colorBy == "president") {
+                                if (options.colorBy == "president") {                                    
                                     return countryColor(country, segment[1].year);
                                 } else {
                                     return countryColor(country);
@@ -314,29 +314,7 @@ function makeCairoChart(div, title, flatdata, options) {
                             .classed(country, true)
                             .classed("passive", false)
                             .attr("stroke-width", 3)
-                            .attr("fill", "none")
-                            .on("mouseover", function () {
-                                // PRESISEGMENT
-                                var mouse = d3.mouse(this.parentNode);
-                                //showTooltip(mouse,
-                                tooltip.style('display', null);
-                                tooltip.html("<div>" + segment[1].president + "</div>")
-                                    .style("top", (mouse[1] - 20) + "px")
-                                    .style("left", function () {
-                                        if (mouse[0] + 25 + 50 > width) {
-                                            var newx = mouse[0] - 25 - 50;
-                                        } else {
-                                            var newx = mouse[0] + 25;
-                                        }
-                                        return newx + "px"
-                                    }) //(mouse[0]+radius/2+5)+"px")
-                                .transition()
-                                    .duration(200)
-                                    .style("opacity", 0.8);
-                            })
-                            .on("mouseout", function () {
-                                tooltip.style('display', 'none');
-                            });
+                            .attr("fill", "none");
                     }
 
                 });
@@ -356,8 +334,9 @@ function makeCairoChart(div, title, flatdata, options) {
         .attr("class", "y axis")
         .call(yaxis);
 
+    //Create little groups for circles and their labels
     var groups = svg.selectAll(".datagroups")
-        .data(flatdata)
+        .data(data)
         .enter().append("g")
         .attr("transform", function (d) {
             return "translate(" + x(d.x) + "," + y(d.y) + ")";
@@ -390,7 +369,7 @@ function makeCairoChart(div, title, flatdata, options) {
             }
 
         })
-        .style("stroke-width", 2)
+        .style("stroke-width", 2);
     /*      .on("mouseover",function(d) {
                     chart.selectAll("#rect_"+d.country + d.year)
                         .classed("highlight",true);
@@ -398,7 +377,6 @@ function makeCairoChart(div, title, flatdata, options) {
                         .transition(250)
                         .attr("r",6);
                 })
-            */
     .on("mouseout", function (d) {
         d3.selectAll("#rect_" + d.country + d.year)
             .classed("highlight", false);
@@ -414,10 +392,12 @@ function makeCairoChart(div, title, flatdata, options) {
             d3.selectAll(classes)
                 .classed("passive", true);
         });;
+*/
 
+    //Add year labels to the circles
     options.textdist.x = x;
     options.textdist.y = y;
-    positionLabels(flatdata, "country", options.textdist);
+    positionLabels(data, "country", options.textdist);
     groups.append("text")
         .attr("x", function (d) {
             return d.text.x
@@ -434,6 +414,79 @@ function makeCairoChart(div, title, flatdata, options) {
             return d.year;
         });
 
+    //Add a voronoi field to print the president name
+    var tooltipGroup = svg.append("g");
+    var tooltipBak = tooltipGroup.append("rect")
+        .attr("x", width / 2)
+        .attr("y", height / 2)
+        .attr("width", "40")
+        .attr("height", "20")
+        .style("fill", "#fff")
+        .style("opacity", "0.0");
+    var tooltipText = tooltipGroup.append("text")
+        .text("Lorem")
+        .attr("class", "tooltipText")
+        .attr("dy", "0.35em")
+        .style("text-anchor", "middle")
+        .style("font-size", "14px")
+        .style("fill", "#000")
+        .style("opacity", "0.0");
+
+    var voronoi = d3.geom.voronoi()
+        .x(function (d) {
+            return x(d.x);
+        })
+        .y(function (d) {
+            return y(d.y);
+        })
+        .clipExtent([[0, 0], [width, height]]);
+
+    var voronoiLabels = svg.append("g").attr("class", "voronoiLabels");
+
+    voronoiLabels.selectAll("voronoi")
+        .data(voronoi(data)) //Use vononoi() with your dataset inside
+    .enter().append("path")
+        .attr("d", function (d, i) {            
+            if (d) {return d.length>0 ? "M" + d.join("L") + "Z" : null;}
+        })
+        .datum(function (d, i) {
+            if (d) {return d.point};
+        })
+    //.style("stroke", "#6789AB") //for checking
+    .style("fill", "none")
+        .style("pointer-events", "all")
+        .on("mouseover", function (d) {
+            var mouse = [x(d.x), y(d.y)]; //d3.mouse(this.parentNode);
+            //showTooltip(mouse,
+            tooltipText.text(d.president).style("opacity", "0.8");
+            var bbox = tooltipText.node().getBBox();
+            var newx = (function () {
+                if (mouse[0] + bbox.width / 2 > width) {
+                    return width - bbox.width / 2;
+                } else if (mouse[0] - bbox.width / 2 < 0) {
+                    return mouse[0] + bbox.width / 2;
+                } else {
+                    return mouse[0];
+                }
+            })();
+            tooltipText
+                .attr("x", newx)
+                .attr("y", mouse[1])
+            tooltipBak
+                .attr("x", newx - bbox.width / 2)
+                .attr("y", mouse[1] - bbox.height / 2)
+                .attr("width", bbox.width)
+                .attr("height", bbox.height)
+                .style("opacity", "0.6");
+        })
+        .on("mouseout", function () {
+            tooltipText.style("opacity", "0.0");
+            tooltipBak.style("opacity", "0.0");
+        });
+
+
+
+    //Axes labels
     svg.append("text")
         .style("text-anchor", "middle")
         .attr("x", width / 2)
@@ -471,19 +524,19 @@ function makeCairoChart(div, title, flatdata, options) {
             .style("fill", "black")
             .style("font", "bold")
             .text(title);
-        
+
         var cross = caption.append("g")
-                .attr("transform", "translate(-12,-12)")
-        .on("click", function (d) {
+            .attr("transform", "translate(-12,-12)")
+            .on("click", function (d) {
                 delete usedCountries[title];
                 fillCountryList();
                 drawCharts();
             });
         cross.append("path")
             .attr("d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
-            .attr("fill","#888");
-        cross.append("path").attr("d","M0 0h24v24H0z").attr("fill","none");
-        
+            .attr("fill", "#888");
+        cross.append("path").attr("d", "M0 0h24v24H0z").attr("fill", "none");
+
     } else {
         var nn = 0,
             deltaY = 16;
@@ -500,23 +553,23 @@ function makeCairoChart(div, title, flatdata, options) {
                 .style("font", "bold")
                 .text(country);
             var cross = caption.append("g")
-                        .attr("transform", "translate(-12,"+(-11+nn*deltaY)+")")
-                        .on("click", function (d) {
-                            delete usedCountries[title];
-                            fillCountryList();
-                            drawCharts();
-                        });
+                .attr("transform", "translate(-12," + (-11 + nn * deltaY) + ")")
+                .on("click", function (d) {
+                    delete usedCountries[title];
+                    fillCountryList();
+                    drawCharts();
+                });
             cross.append("path")
                 .attr("d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z")
-                .attr("fill","#888");
-            cross.append("path").attr("d","M0 0h24v24H0z").attr("fill","none");            
+                .attr("fill", "#888");
+            cross.append("path").attr("d", "M0 0h24v24H0z").attr("fill", "none");
             nn++;
         }
     }
 
 }
 
-function makeDirectionChart(flatdata, options) {
+function makeDirectionChart(data, options) {
 
     function category(gdp, gini) {
         var cat = null;
@@ -547,10 +600,10 @@ function makeDirectionChart(flatdata, options) {
         return foo;
     }
 
-    var baseyear = d3.min(flatdata, function (d) {
+    var baseyear = d3.min(data, function (d) {
         return d.year
     });
-    var endyear = d3.max(flatdata, function (d) {
+    var endyear = d3.max(data, function (d) {
         return d.year
     });
 
@@ -590,7 +643,7 @@ function makeDirectionChart(flatdata, options) {
         matrix.h = (height - offset.x) / (endyear - baseyear + 1);
         matrix.w = Math.max(width / c, 228 / c);
         rectangles = chart.selectAll("rect")
-            .data(flatdata)
+            .data(data)
             .enter().append("g")
             .attr("transform", function (d) {
                 return "translate(" + (offset.x + matrix.w * cidx[d.country]) + "," + (offset.y + (d.year - baseyear) * matrix.h) + ")";
@@ -635,7 +688,7 @@ function makeDirectionChart(flatdata, options) {
         matrix.w = (width - offset.x) / (endyear - baseyear + 1);
         matrix.h = 30;
         rectangles = chart.selectAll("rect")
-            .data(flatdata)
+            .data(data)
             .enter().append("g")
             .attr("transform", function (d) {
                 return "translate(" + (offset.x + (d.year - baseyear) * matrix.w) + "," + (offset.y + matrix.h * cidx[d.country]) + ")";
