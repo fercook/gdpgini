@@ -8,7 +8,7 @@
             "period": [1985.3, 1990.2]
         }, {
             "name": "Fernando Collor de Mello",
-            "period": [1990.2, 1992.75]
+            "period": [1990.2, 1992.99]
         }, {
             "name": "Itamar Franco",
             "period": [1992.99, 1995.0]
@@ -1680,24 +1680,18 @@
         },{
             "name": "Gregorio Conrado Álvarez",
             "period": [1981.7, 1985.2]
-        },{
-            "name": "Sanguinetti (I)",
-            "period": [1985.2, 1990.2]
         }, {
-            "name": "Julio Maria Sanguinetti Coirolo",
+            "name": "Julio Maria Sanguinetti",
             "period": [1985.16, 1990.16]
         }, {
             "name": "Lacalle",
             "period": [1990.2, 1995.2]
         }, {
-            "name": "Sanguinetti (II)",
+            "name": "Julio Maria Sanguinetti",
             "period": [1995.2, 2000.2]
         }, {
             "name": "Batlle",
             "period": [2000.2, 2005.2]
-        }, {
-            "name": "Vazquez",
-            "period": [2005.2, 2010.2]
         }, {
             "name": "Jose Mujica",
             "period": [2010.16, 2020]

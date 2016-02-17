@@ -15,10 +15,10 @@ function countryColor(country, year) {
                 if (!countries[country].color) {
                     thecolor = colorbrewer.Set1[9][i];
                 } else {
-                    if (i % 3 == 0) {
+                    if (i % 2 == 0) {
                         thecolor = d3.rgb(countries[country].color).darker().darker().toString(); //countries[country].color;
-                    } else if (i % 3 == 1) {
-                        thecolor = d3.rgb(countries[country].color).toString(); //countries[country].color;
+                    } else if (i % 2 == 1) {
+                        thecolor = d3.rgb(countries[country].color).brighter().brighter().toString(); //countries[country].color;
                     } else {
                         thecolor = d3.rgb(countries[country].color).brighter().brighter().toString();
                     }
