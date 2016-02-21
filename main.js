@@ -22,8 +22,18 @@ var options = {
     },
     separateCountries: true,
     onlyLatinoAmerica: false,
-    joinedScales: false
+    joinedScales: false,
+    language: "es"
 };
+
+
+var messages = {
+    add: {
+        "es": "Agregar pa&iacute;s",
+        "en": "Add Country"
+    }
+
+}
 
 function init() {
 
@@ -168,7 +178,7 @@ function fillCountryList() {
     dropdown.empty();
     if (vals.length > 0) {
         dropdown.show();
-        dropdown.append('<option selected disabled value="base">Agregar pa&iacute;s</option>');
+        dropdown.append('<option selected disabled value="base">' + messages.add[options.language] + '</option>');
         $.each(vals, function (index, country) {
             dropdown.append("<option value='" + country + "'>" + country + "</option>");
         });
@@ -195,6 +205,7 @@ function allowAllCountries() {
     });
 }
 
+var flatdata;
 // Finally we do something
 queue()
     .defer(d3.csv, "data/GDP.csv")

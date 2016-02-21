@@ -1,0 +1,267 @@
+<html>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/colorbrewer.js"></script>
+<script src="data/countries.js"></script>
+<script src="ginis.js"></script>
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Bootstrap switch-->
+<link href="css/bootstrap-switch.min.css" rel="stylesheet">
+<script src="js/bootstrap-switch.min.js"></script>
+
+<style>
+</style>
+
+<head>
+</head>
+
+<body>
+    <!-- Facebook stuff-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+    <main id="content" role="main">
+        <div class="container-fluid">
+            <h1>Growth and inequality
+            </h1>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>We have previously seen how in <a href="http://www.elartefuncional.com/im/desigualdad.jpg">Brazil</a> and in <a href="https://thevizcorner.wordpress.com/2015/11/18/inequality-and-economic-growth-in-argentina/">Argentina</a> economic growth does not benefit everyone in the same way. We concluded that income distribution is more affected by the social policies of each government.</p>
+
+                                <p>However, the general trend is similar in both countries. Thus, we ask ourselves: Is there a regional effect in the evolution of economic and social indicators?</strong>
+                                    What happens in other countries and regions of the world?
+                                </p>
+
+                                <p>Let's compare...
+                                </p>
+                            </div>
+                            <div class="col-xs-6 col-md-3 small">
+                                <img src="images/legend_cairo_english.png" class="img-responsive center-block">
+
+                                <p>We measure the distribution of income with the  <a href="https://en.wikipedia.org/wiki/Gini_coefficient">Gini coefficient</a> (see footnotes)</p>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <img src="images/explicacion_direction_english.jpg" class="img-responsive center-block">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <form class="form-inline" role="form">
+                            <div class="checkbox h6 col-md-3 small">
+                                <label>
+                                    <input type="checkbox" class="form-control h6 small" checked="true" name="presidentsMulti"><strong> See presidential periods</strong>
+                                </label>
+                            </div>
+                            <div class="checkbox h6 col-md-3 small">
+                                <label>
+                                    <input type="checkbox" class="form-control" name="multicountryMulti"><strong>Make single chart</strong>
+                                </label>
+                            </div>
+                            <div class="checkbox optionMulti h6 col-md-3 small">
+                                <label>
+                                    <input type="checkbox" class="form-control" name="escalas"><strong>Use the same scales</strong>
+                                </label>
+                            </div>                            
+                            <div class="checkbox optionSingle h6 col-md-3 small">
+                                <label>
+                                    <input type="checkbox" class="form-control" name="reference"><strong>Use a reference year (2010)</strong>
+                                </label>
+                            </div>
+                            <div class="form-group col-md-3" id="countrySelector">
+                                <select class="btn-warning form-control countryList topSelector" style="width:100%;">
+                                    <option selected="" disabled="" value="base">Add countries</option>
+                                </select>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default" id="separatecountriesPanel">
+                    <div class="panel-body" id="separatecountries">
+
+                    </div>
+                </div>
+                <div class="panel panel-default" id="multicountryPanel">
+                    <div class="panel-body">
+
+                        <div class="row" id="multicountry">
+                            <div class="col-md-12 col-md-12">
+                                <div class="chart" id="generalDiv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Direction Plot -->
+                <div class="panel panel-default" id="directionPlot">
+                    <div class="panel-body">
+                        <div id="horizontalChart" class="col-md-12">
+                            <div class="row">
+                                <div class="col-sm-4 ">
+                                    <p>The charts above for Latin America show an economic and social improvement starting on 2002, although it is not immediate to see.</p>
+                                    <p>If instead we just focus on the direction of the change (year to year), we can hightlight the patterns we are searching for:
+                                    </p>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <img src="images/legend_english.png" class="center-block" width="100%" style="min-width: 160px; max-width: 200px">
+                                </div>
+
+
+                                <div class="col-sm-4">
+                                    <p>We see how  <strong>from 2002 to 2012 the economy grows and social inequality goes down for the whole region</strong> (briefly interrupted by the word financial crisis of 2009)</p>
+                                    <div class="form-group" id="countrySelector2">
+                                        <select class="btn-warning form-control countryList bottomSelector" style="width:100%;">
+                                            <option selected="" disabled="" value="base">Add countries</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-12">
+                                    <div class="multichartH"></div>
+                                </div>
+
+                            </div>
+                            <div class="row col-sm-12">
+
+                            </div>
+                        </div>
+                        <div id="verticalChart" class="col-md-12">
+
+                            <div class="col-xs-12">
+                                <div class="row">
+
+                                    <p>The charts above for Latin America show an economic and social improvement starting on 2002, although it is not immediate to see.</p>
+                                    <p>If instead we just focus on the direction of the change (year to year), we can hightlight the patterns we are searching for:
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <img src="images/legend_english.png" class="center-block" width="100%" style="min-width: 160px; max-width: 200px">
+                                </div>
+                                <div class="col-xs-12 row">
+
+                                    <p>We see how  <strong>from 2002 to 2012 the economy grows and social inequality goes down for the whole region</strong> (briefly interrupted by the word financial crisis of 2009)</p>
+                                    <div class="form-group" id="countrySelector2">
+                                        <select class="btn-warning form-control countryList bottomSelector" style="width:100%;">
+                                            <option selected="" disabled="" value="base">Add countries</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="multichartV"></div>
+                            </div>
+                        </div>
+
+                        <script src="main.js"></script>
+                        <script>options.language="en";drawCharts();
+                        </script>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+
+                    <!--Social linkies-->
+                    <div class="panel-footer">
+
+                        <div class="row">
+                            <p><strong>Notas:</strong>
+                            </p>
+                            <p>We measure inequality with the <a href="https://en.wikipedia.org/wiki/Gini_coefficient">Gini coefficient</a>, an estimation of how income is distributed among people in a country. A value of 100 would mean that a single person recieves all possible income, and a value of zero would mean that income is exactly the same for everybody.</p>
+                            <h6 class="small">Data source: <a href="http://data.worldbank.org/">The World Bank</a> and <a href="http://www.worldpresidentsdb.com/">WorldPresidentsDB</a>.</h6>
+                            <h6 class="small">Inspired on the work by <a href="http://www.thefunctionalart.com/p/about-author.html">Alberto Cairo</a></h6>
+                            <h6 class="small">To see the data, source code, or collaborate (there's missing years, presidents, countries, etc), go to <a href="http://github.com/fercook/gdpgini">this repository</a>.</h6>
+                        </div>
+                        <div class="row">
+                            <h6 class="small ">Created by the <a href="http://www.bsc.es/viz/">BSC Viz Team</a></h6>
+                            <div class="pull-right">
+                                <script src="https://apis.google.com/js/platform.js" async defer></script>
+                                <g:plus action="share"></g:plus>
+                            </div>
+
+                            <div class="pull-right">
+                                <a href="https://twitter.com/share" class="twitter-share-button" {count} data-url="http://www.bsc.es/viz/inequality/" data-text="Growth and inequality" data-via="thefercook">Tweet</a>
+                                <script>
+                                    ! function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');
+                                </script>
+                            </div>
+                            <div class="pull-right">
+                                <div class="fb-share-button" data-href="http://www.bsc.es/viz/inequality/" data-layout="button">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $(window).resize(drawCharts);
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65108876-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65108876-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
