@@ -8,7 +8,7 @@
             "period": [1985.3, 1990.2]
         }, {
             "name": "Fernando Collor de Mello",
-            "period": [1990.2, 1992.99]
+            "period": [1990.2, 1992.75]
         }, {
             "name": "Itamar Franco",
             "period": [1992.99, 1995.0]
@@ -650,7 +650,7 @@
             "period": [2001, 2002]
         }, {
             "name": "Sanchez de Lozada",
-            "period": [2002, 2003.79]
+            "period": [2002, 2003]
         }, {
             "name": "Carlos Mesa",
             "period": [2003.79, 2005.43]
@@ -1000,32 +1000,32 @@
     },
     "Germany": {
         "presidents": [{
+            "name": "Karl Carstens",
+            "period": [1979.5, 1984.49]
+        }, {
+            "name": "Joachim Gauck",
+            "period": [2012.21, 2020]
+        }, {
+            "name": "Roman Herzog",
+            "period": [1994.5, 1999.5]
+        }, {
             "name": "Theodor Heuss",
             "period": [1949.7, 1954.7]
         }, {
             "name": "Theodor Heuss",
             "period": [1954.7, 1959.7]
         }, {
-            "name": "Karl Carstens",
-            "period": [1979.5, 1984.49]
-        }, {
-            "name": "Richard von Weizsacker",
-            "period": [1984.5, 1994.49]
-        }, {
-            "name": "Roman Herzog",
-            "period": [1994.5, 1999.5]
+            "name": "Horst Kohler",
+            "period": [2004.5, 2010.41]
         }, {
             "name": "Johannes Rau",
             "period": [1999.5, 2004.5]
         }, {
-            "name": "Horst Kohler",
-            "period": [2004.5, 2010.41]
-        },  {
+            "name": "Richard von Weizsacker",
+            "period": [1984.5, 1994.49]
+        }, {
             "name": "Christian Wulff",
             "period": [2010.5, 2012.13]
-        }, {
-            "name": "Joachim Gauck",
-            "period": [2012.21, 2020]
         }]
     },
     "Poland": {
@@ -1051,23 +1051,23 @@
     },
     "Spain": {
         "presidents": [{
-            "name": "Francisco Franco",
-            "period": [1939.1, 1975.88]
-        }, {
-            "name": "Felipe Gonzalez",
-            "period": [1982.92, 1996.34]
-        }, {
             "name": "Jose Maria Aznar",
             "period": [1996.34, 2000.34]
         }, {
             "name": "Jose Maria Aznar",
             "period": [2000.34, 2004.29]
         }, {
-            "name": "Jose Luis Rodriguez Zapatero",
-            "period": [2004.29, 2011.97]
+            "name": "Francisco Franco",
+            "period": [1939.1, 1975.88]
+        }, {
+            "name": "Felipe Gonzalez",
+            "period": [1982.92, 1996.34]
         }, {
             "name": "Mariano Rajoy",
-            "period": [2011.97, 2015]
+            "period": [2011.97, 2020]
+        }, {
+            "name": "Jose Luis Rodriguez Zapatero",
+            "period": [2004.29, 2011.97]
         }]
     },
     "Ukraine": {
@@ -1675,26 +1675,26 @@
     },
     "Uruguay": {
         "presidents": [{
-            "name": "Aparicio Méndez",
-            "period": [1976.7, 1981.7]
-        },{
-            "name": "Gregorio Conrado Álvarez",
-            "period": [1981.7, 1985.2]
-        }, {
-            "name": "Julio Maria Sanguinetti",
-            "period": [1985.16, 1990.16]
+            "name": "Sanguinetti (I)",
+            "period": [1985.2, 1990.2]
         }, {
             "name": "Lacalle",
             "period": [1990.2, 1995.2]
         }, {
-            "name": "Julio Maria Sanguinetti",
+            "name": "Sanguinetti (II)",
             "period": [1995.2, 2000.2]
         }, {
             "name": "Batlle",
             "period": [2000.2, 2005.2]
         }, {
+            "name": "Vazquez",
+            "period": [2005.2, 2010.2]
+        }, {
             "name": "Jose Mujica",
             "period": [2010.16, 2020]
+        }, {
+            "name": "Julio Maria Sanguinetti Coirolo",
+            "period": [1985.16, 1990.16]
         }, {
             "name": "Tabare Vazquez",
             "period": [2005.16, 2010.16]
@@ -2094,9 +2094,6 @@
         }, {
             "name": "Nicanor Duarte",
             "period": [2003.62, 2008.62]
-        }, {
-            "name": "Lugo",
-            "period": [2008.62, 2012.47]
         }, {
             "name": "Federico Franco",
             "period": [2012.47, 2013.62]

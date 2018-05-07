@@ -7,7 +7,7 @@ var options = {
         b: 10
     },
     referenceYear: 2010,
-    colorBy: "country", //"president", //
+    colorBy: "president", //"president", //
     margin: {
         left: 40,
         right: 10,

@@ -1,620 +1,639 @@
-Country, Name, Start, End
-Brazil, Fernando Collor de Mello, 1990-03-15,1992-10-02
-Brazil, Itamar Franco, 1992-12-29,1995-01-01
-Brazil, Fernando Henrique Cardoso, 1995-01-01,1999-01-01
-Brazil, Fernando Henrique Cardoso, 1999-01-01,2003-01-01
-Brazil, Luiz Inacio Lula da Silva, 2003-01-01,2007-01-01
-Brazil, Luiz Inacio Lula da Silva, 2007-01-01,2011-01-01
-Brazil, Dilma Rousseff, 2011-01-01,Acting
-Afghanistan, Mohammad Najibullah, 1987-09-30,1992-04-16
-Afghanistan, Burhanuddin Rabbani, 2001-11-13,2001-12-22
-Afghanistan, Burhanuddin Rabbani, 1922-06-28,1996-09-27
-Afghanistan, Hamid Karzai, 2009-08-20,2014-09-29
-Afghanistan, Hamid Karzai, 2001-12-22,2004-12-07
-Afghanistan, Ashraf Ghani, 2014-09-29,Acting
-Dominican-Republic, Hipolito Mejia, 2000-08-16,2004-08-16
-Dominican-Republic, Leonel Fernandez, 2004-08-16,2012-08-16
-Dominican-Republic, Leonel Fernandez, 1996-08-16,2000-08-16
-Dominican-Republic, Danilo Medina, 2012-08-16,Acting
-Italy, Carlo Azeglio Ciampi, 1999-05-18,2006-05-15
-Italy, Francesco Cossiga, 1985-06-29,1992-04-28
-Italy, Enrico De Nicola, 1946-07-01,1948-05-11
-Italy, Luigi Einaudi, 1948-05-11,1955-05-11
-Italy, Giovanni Gronchi, 1955-05-11,1962-05-11
-Italy, Enrico Letta, 2013-04-28,2014-02-22
-Italy, Mario Monti, 2011-11-16,2013-04-28
-Italy, Benito Mussolini, 1922-10-31,1943-07-25
-Italy, Giorgio Napolitano, 2006-05-15,Acting
-Italy, Matteo Renzi, 2014-02-22,Acting
-Italy, Oscar Luigi Scalfaro, 1992-05-25,1999-05-15
-Bangladesh, AFM Ahsanuddin Chowdhury, 1982-03-27,1983-12-10
-Bangladesh, Hussain Muhammad Ershad, 1983-12-11,1990-12-06
-Bangladesh, Zillur Rahman, 2009-02-12,2013-03-20
-Bangladesh, Abdul Hamid, 2013-04-24,Acting
-Canada, John A Macdonald, 1878-10-17,1891-06-06
-Canada, Alexander Mackenzie, 1873-11-07,1878-10-08
-Canada, John Abbott, 1891-06-16,1892-11-24
-Canada, John Sparrow David Thompson, 1892-12-05,1894-12-12
-Canada, Mackenzie Bowell, 1894-12-21,1896-04-27
-Canada, Charles Tupper, 1896-05-01,1896-07-08
-Canada, Wilfrid Laurier, 1896-07-11,1911-10-06
-Canada, Robert Borden, 1911-10-10,1920-07-10
-Canada, Arthur Meighen, 1926-06-29,1926-09-25
-Canada, William Lyon Mackenzie King, 1921-12-29,1926-06-28
-Canada, Richard Bedford Bennett, 1930-08-07,1935-10-23
-Canada, Louis St Laurent, 1948-11-15,1957-06-21
-Canada, John Diefenbaker, 1957-06-21,1963-04-22
-Canada, Lester B Pearson, 1963-04-22,1968-04-20
-Canada, Pierre Trudeau, 1968-04-20,1979-06-04
-Canada, Joe Clark, 1979-06-04,1980-03-03
-Canada, John Turner, 1984-06-30,1984-09-17
-Canada, Brian Mulroney, 1984-09-17,1993-06-25
-Canada, Kim Campbell, 1993-06-25,1993-11-04
-Canada, Jean Chretien, 1993-11-04,2003-12-12
-Canada, Paul Martin, 2003-12-12,2006-02-06
-Canada, Stephen Harper, 2006-02-06,Acting
-United-Kingdom, Robert Walpole, 1721-04-04,1742-02-11
-United-Kingdom, Spencer Compton, 1742-02-16,1743-07-02
-United-Kingdom, Henry Pelham, 1743-08-27,1754-03-06
-United-Kingdom, Thomas Pelham Holles, 1757-07-02,1762-05-26
-United-Kingdom, Thomas Pelham Holles, 1754-03-16,1756-11-16
-United-Kingdom, William Cavendish, 1756-11-16,1757-06-25
-United-Kingdom, John Stuart, 1762-05-26,1763-04-08
-United-Kingdom, George Grenville, 1763-04-16,1765-07-13
-United-Kingdom, Charles Watson Wentworth, 1782-03-27,1782-07-01
-United-Kingdom, William Pitt the Elder, 1766-07-30,1768-10-14
-United-Kingdom, Augustus FitzRoy, 1768-10-14,1770-01-28
-United-Kingdom, Lord Frederick North, 1770-01-28,1782-03-22
-United-Kingdom, William Petty, 1782-07-04,1783-04-02
-United-Kingdom, William Cavendish Bentinck, 1807-03-31,1809-10-04
-United-Kingdom, William Cavendish Bentinck, 1783-04-02,1783-12-19
-United-Kingdom, William Pitt, 1804-05-10,1806-01-23
-United-Kingdom, William Pitt, 1783-12-19,1801-03-14
-United-Kingdom, Henry Addington, 1801-03-14,1804-05-10
-United-Kingdom, William Grenville, 1806-02-11,1807-03-31
-United-Kingdom, Spencer Perceval, 1809-10-04,1812-05-11
-United-Kingdom, Robert Jenkinson, 1812-06-08,1827-04-09
-United-Kingdom, George Canning, 1827-04-10,1827-08-08
-United-Kingdom, Frederick Robinson, 1827-08-31,1828-01-21
-United-Kingdom, Arthur Wellesley, 1828-01-22,1830-11-16
-United-Kingdom, Arthur Wellesley, 1834-11-14,1834-12-10
-United-Kingdom, Charles Grey, 1830-11-22,1834-07-16
-United-Kingdom, William Lamb, 1834-07-16,1834-11-14
-United-Kingdom, William Lamb, 1835-04-18,1841-08-30
-United-Kingdom, Robert Peel, 1841-08-30,1846-06-29
-United-Kingdom, Robert Peel, 1834-12-10,1835-04-08
-United-Kingdom, John Russell, 1865-10-29,1866-06-28
-United-Kingdom, John Russell, 1846-06-30,1852-02-23
-United-Kingdom, Edward Smith Stanley, 1866-06-28,1868-02-27
-United-Kingdom, Edward Smith Stanley, 1858-02-20,1859-06-11
-United-Kingdom, Edward Smith Stanley, 1852-02-23,1852-12-19
-United-Kingdom, George Hamilton Gordon, 1852-12-19,1855-01-30
-United-Kingdom, Henry John Temple, 1859-06-12,1865-10-18
-United-Kingdom, Henry John Temple, 1855-02-06,1858-02-19
-United-Kingdom, Benjamin Disraeli, 1874-02-20,1880-04-21
-United-Kingdom, Benjamin Disraeli, 1868-02-27,1868-12-01
-United-Kingdom, William Ewart Gladstone, 1892-08-15,1894-03-02
-United-Kingdom, William Ewart Gladstone, 1886-02-01,1886-07-20
-United-Kingdom, William Ewart Gladstone, 1880-04-23,1885-06-09
-United-Kingdom, William Ewart Gladstone, 1868-12-03,1874-02-17
-United-Kingdom, Robert Gascoyne Cecil, 1885-06-23,1886-01-28
-United-Kingdom, Robert Gascoyne Cecil, 1886-07-25,1892-08-11
-United-Kingdom, Robert Gascoyne Cecil, 1895-06-25,1902-07-11
-United-Kingdom, Archibald Primrose, 1894-03-05,1895-06-22
-United-Kingdom, Arthur Balfour, 1902-07-11,1905-12-05
-United-Kingdom, Henry Campbell Bannerman, 1905-12-05,1908-04-03
-United-Kingdom, Herbert Henry Asquith, 1908-04-05,1916-12-05
-United-Kingdom, David Lloyd George, 1916-12-07,1922-10-22
-United-Kingdom, Bonar Law, 1922-10-23,1923-05-22
-United-Kingdom, Stanley Baldwin, 1935-06-07,1937-05-28
-United-Kingdom, Stanley Baldwin, 1924-11-04,1929-06-05
-United-Kingdom, Stanley Baldwin, 1923-05-23,1924-01-16
-United-Kingdom, Ramsay MacDonald, 1929-06-05,1935-06-07
-United-Kingdom, Ramsay MacDonald, 1924-01-22,1924-11-04
-United-Kingdom, Neville Chamberlain, 1937-05-27,1940-05-10
-United-Kingdom, Winston Churchill, 1940-05-10,1945-05-23
-United-Kingdom, Clement Attlee, 1945-07-27,1951-10-26
-United-Kingdom, Anthony Eden, 1955-04-07,1957-01-09
-United-Kingdom, Harold Macmillan, 1957-01-11,1963-10-20
-United-Kingdom, Alec Douglas Home, 1963-10-20,1964-10-16
-United-Kingdom, Harold Wilson, 1974-03-04,1976-04-05
-United-Kingdom, Edward Heath, 1970-06-19,1974-03-04
-United-Kingdom, James Callaghan, 1976-04-05,1979-05-04
-United-Kingdom, Margaret Thatcher, 1979-05-04,1990-11-28
-United-Kingdom, John Major, 1990-11-28,1997-05-02
-United-Kingdom, Tony Blair, 1997-05-02,2007-06-27
-United-Kingdom, Gordon Brown, 2007-06-27,2010-05-11
-United-Kingdom, David Cameron, 2010-05-11,Acting
-Panama, Ricardo Martinelli, 2009-07-01,2014-07-01
-Panama, Mireya Moscoso, 1999-09-01,2004-09-01
-Panama, Martin Torrijos, 2004-09-01,2009-07-01
-Panama, Juan Carlos Varela, 2014-07-01,Acting
-Hungary, Arpad Goncz, 1990-08-04,2000-08-04
-Hungary, Ferenc Madl, 2000-08-04,2005-08-05
-Hungary, Janos Ader, 2012-05-10,Acting
-Singapore, Yusof bin Ishak, 1965-08-09,1970-11-23
-Singapore, Benjamin Sheares, 1971-01-02,1981-05-12
-Singapore, Devan Nair, 1981-10-23,1985-03-27
-Singapore, Wee Kim Wee, 1985-09-02,1993-09-01
-Singapore, Ong Teng Cheong, 1993-09-01,1999-08-31
-Singapore, S R Nathan, 1999-09-01,2011-08-31
-Singapore, Tony Tan, 2011-09-01,Acting
-France, Napoleon III, 1848-12-20,1852-12-02
-France, Adolphe Thiers, 1871-02-17,1873-05-24
-France, Patrice de Mac Mahon, 1873-05-24,1879-01-30
-France, Jules Grevy, 1879-01-30,1887-12-02
-France, Marie Francois Sadi Carnot, 1887-12-03,1894-06-25
-France, Jean Casimir Perier, 1894-06-27,1895-01-16
-France, Felix Faure, 1895-01-17,1899-02-16
-France, Emile Loubet, 1899-02-18,1906-02-18
-France, Armand Fallieres, 1906-02-18,1913-02-18
-France, Raymond Poincare, 1913-02-18,1920-02-18
-France, Paul Deschanel, 1920-02-18,1920-09-21
-France, Alexandre Millerand, 1920-09-23,1924-06-11
-France, Gaston Doumergue, 1924-06-13,1931-06-13
-France, Paul Doumer, 1931-06-13,1932-05-07
-France, Albert Francois Lebrun, 1932-05-10,1940-07-10
-France, Vincent Auriol, 1947-01-16,1954-01-16
-France, Rene Coty, 1954-01-16,1959-01-08
-France, Charles de Gaulle, 1959-01-08,1969-04-28
-France, Georges Pompidou, 1969-06-20,1974-04-02
-France, Valery Giscard d Estaing, 1974-05-27,1981-05-21
-France, Francois Mitterrand, 1981-05-21,1988-05-08
-France, Francois Mitterrand, 1988-05-08,1995-05-17
-France, Jacques Chirac, 1995-05-17,2002-05-17
-France, Jacques Chirac, 2002-05-17,2007-05-16
-France, Nicolas Sarkozy, 2007-05-16,2012-05-15
-France, Francois Hollande, 2012-05-15,Acting
-Saudi-Arabia, Khalid of Saudi Arabia, 1975-03-25,1982-06-13
-Saudi-Arabia, Fahd of Saudi Arabia, 1982-06-13,2005-08-01
-Saudi-Arabia, Abdullah of Saudi Arabia, 2005-08-01,Acting
-Slovakia, Michal Kovac, 1993-03-02,1998-03-02
-Slovakia, Rudolf Schuster, 1999-06-15,2004-06-15
-Slovakia, Ivan Gasparovic, 2004-06-15,2014-06-15
-Slovakia, Ivan Gasparovic, 1998-07-14,1998-10-30
-Slovakia, Andrej Kiska, 2014-06-15,Acting
-Ireland, Douglas Hyde, 1938-06-25,1945-06-24
-Ireland, Sean O Kelly, 1945-06-25,1959-06-24
-Ireland, Eamon de Valera, 1959-06-25,1973-06-24
-Ireland, Erskine Hamilton Childers, 1973-06-25,1974-11-17
-Ireland, Cearbhall O Dalaigh, 1974-12-19,1976-10-22
-Ireland, Patrick Hillery, 1976-12-03,1990-12-02
-Ireland, Mary Robinson, 1990-12-03,1997-09-12
-Ireland, Mary McAleese, 1997-11-11,2004-11-11
-Ireland, Mary McAleese, 2004-01-11,2011-11-10
-Ireland, Michael Higgins, 2011-11-11,Acting
-Palestine, Yasser Arafat, 1994-07-05,2004-11-11
-Palestine, Mahmoud Abbas, 2005-01-15,Acting
-Argentina, Raul Alfonsin, 1983-12-10,1989-07-08
-Argentina, Reynaldo Bignone, 1982-07-01,1983-12-10
-Argentina, Fernando de la Rua, 1999-12-10,2001-12-21
-Argentina, Eduardo Duhalde, 2002-01-02,2003-05-25
-Argentina, Cristina Fernandez de Kirchner, 2007-12-10,2011-12-10
-Argentina, Cristina Fernandez de Kirchner, 2011-12-10,Acting
-Argentina, Leopoldo Galtieri, 1981-12-22,1982-06-18
-Argentina, Nestor Kirchner, 2003-05-25,2007-12-10
-Argentina, Carlos Menem, 1989-07-08,1995-12-10
-Argentina, Carlos Menem, 1995-12-10,1999-12-10
-Argentina, Peron, 1946-06-04,1952-06-04
-Argentina, Isabel Peron, 1974-07-01,1976-03-24
-Argentina, Bernardino Rivadavia, 1826-02-08,1827-07-07
-Argentina, Jorge Rafael Videla, 1976-03-24,1981-03-29
-Bolivia, Carlos Mesa, 2003-10-17,2005-06-06
-Bolivia, Evo Morales, 2006-01-22,Acting
-Bolivia, Eduardo Rodriguez, 2005-06-09,2006-01-22
-Norway, Thorbjorn Jagland, 1996-10-25,1997-10-17
-Norway, Kjell Magne Bondevik, 2001-10-19,2005-10-17
-Norway, Jens Stoltenberg, 2005-10-17,2013-10-16
-Norway, Jens Stoltenberg, 2000-03-03,2001-10-19
-Norway, Erna Solberg, 2013-10-16,Acting
-Croatia, Franjo Tudman, 1990-05-30,1999-12-10
-Croatia, Stjepan Mesic, 2000-02-19,2010-02-19
-Croatia, Ivo Josipovic, 2010-02-19,Acting
-Ecuador, Rafael Correa, 2007-01-15,Acting
-Ecuador, Leon Febres Cordero, 1984-08-10,1988-08-10
-Ecuador, Alfredo Palacio, 2005-04-20,2007-01-15
-North-Korea, Kim Il sung, 1949-06-30,1994-07-08
-North-Korea, Kim Jong un, 2012-04-11,Acting
-North-Korea, Kim Jong il, 1993-04-09,2011-12-17
-Ghana, John Kufuor, 2001-01-07,2009-01-07
-Ghana, John Dramani Mahama, 2012-07-24,Acting
-Ghana, John Atta Mills, 2009-01-07,2012-07-24
-Israel, Moshe Katsav, 2000-08-01,2007-07-15
-Israel, Benjamin Netanyahu, 2009-03-31,2013-03-18
-Israel, Benjamin Netanyahu, 2013-03-18,Acting
-Israel, Ehud Olmert, 2006-01-04,2009-03-31
-Australia, Edmund Barton, 1901-01-01,1903-09-24
-Australia, Alfred Deakin, 1903-09-24,1904-04-27
-Australia, Alfred Deakin, 1905-07-05,1908-11-13
-Australia, Alfred Deakin, 1909-06-02,1910-04-29
-Australia, Chris Watson, 1904-04-27,1904-08-18
-Australia, George Reid, 1904-08-18,1905-07-05
-Australia, Andrew Fisher, 1908-11-13,1909-06-02
-Australia, Andrew Fisher, 1910-04-29,1913-06-24
-Australia, Andrew Fisher, 1914-09-17,1915-10-27
-Australia, Joseph Cook, 1913-06-24,1914-09-17
-Australia, Billy Hughes, 1915-10-27,1923-02-09
-Australia, Stanley Bruce, 1923-02-09,1929-10-22
-Australia, James Scullin, 1929-10-22,1932-01-06
-Australia, Joseph Lyons, 1932-01-06,1939-04-07
-Australia, Earle Page, 1039-04-07,1939-04-26
-Australia, Robert Menzies, 1939-04-26,1941-08-26
-Australia, Robert Menzies, 1949-12-19,1966-01-26
-Australia, Arthur Fadden, 1941-08-29,1931-10-07
-Australia, John Curtin, 1941-10-07,1945-07-05
-Australia, Frank Forde, 1945-07-06,1945-07-12
-Australia, Ben Chifley, 1945-07-13,1949-12-19
-Australia, Harold Holt, 1966-01-26,1967-12-17
-Australia, John McEwen, 1967-12-19,1968-01-10
-Australia, John Gorton, 1968-01-10,1971-03-10
-Australia, William McMahon, 1971-03-10,1972-12-05
-Australia, Gough Whitlam, 1972-12-05,1975-11-11
-Australia, Malcolm Fraser, 1975-11-11,1983-03-11
-Australia, Robert Hawke, 1983-03-11,1991-12-20
-Australia, Paul Keating, 1991-12-20,1996-03-11
-Australia, John Howard, 1996-03-11,2007-12-03
-Australia, Kevin Rudd, 2007-12-03,2010-06-24
-Australia, Julia Gillard, 2010-06-24,2013-06-27
-Australia, Tony Abbott, 2013-09-18,Acting
-Iran, Akbar Hashemi Rafsanjani, 1989-08-03,1993-08-03
-Iran, Akbar Hashemi Rafsanjani, 1993-08-03,1997-08-03
-Iran, Mohammad Khatami, 1997-08-03,2001-08-03
-Iran, Mohammad Khatami, 2001-08-03,2005-08-03
-Iran, Mahmoud Ahmadinejad, 2005-08-03,2013-08-03
-Iran, Hassan Rouhani, 2013-08-04,Acting
-Cuba, Fidel Castro, 1959-02-16,2008-02-24
-Cuba, Raul Castro, 2008-02-24,Acting
-Venezuela, Rafael Caldera, 1969-03-11,1974-03-11
-Venezuela, Rafael Caldera, 1994-02-02,1999-02-02
-Venezuela, Hugo Chavez, 1999-02-02,2001-01-10
-Venezuela, Hugo Chavez, 2001-01-10,2007-01-10
-Venezuela, Hugo Chavez, 2007-01-10,2013-01-10
-Venezuela, Hugo Chavez, 2013-01-10,2013-03-05
-Venezuela, Octavio Lepage, 1993-05-21,1993-06-05
-Venezuela, Nicolas Maduro, 2013-04-19,Acting
-Venezuela, Ramon Jose Velasquez, 1993-06-05,1994-02-02
-Guatemala, Oscar Berger, 2004-01-14,2008-01-14
-Guatemala, Otto Perez Molina, 2012-01-14,Acting
-Guatemala, Alfonso Portillo, 2000-01-14,2004-01-14
-China, Hu Jintao, 2002-11-15,2012-11-15
-China, Yang Shangkun, 1988-04-08,1993-03-27
-China, Xi Jinping, 2013-03-14,Acting
-China, Jiang Zemin, 1993-03-27,2003-03-15
-Chile, Patricio Aylwin, 1990-03-11,1994-03-11
-Chile, Michelle Bachelet, 2006-03-11,2010-03-11
-Chile, Michelle Bachelet, 2014-03-11,Acting
-Chile, Eduardo Frei Ruiz Tagle, 1994-03-11,2000-03-11
-Chile, Ricardo Lagos, 2000-03-11,2006-03-11
-Chile, Sebastian Pinera, 2010-03-11,2014-03-11
-Chile, Pinochet, 1974-06-27,1990-03-11
-Belgium, Herman Van Rompuy, 2008-12-30,2009-11-25
-Belgium, Yves Leterme, 2009-11-25,2011-12-06
-Belgium, Yves Leterme, 2008-03-20,2008-12-30
-Belgium, Elio Di Rupo, 2011-12-06,2014-10-11
-Belgium, Charles Michel, 2014-11-11,Acting
-Thailand, Thaksin Shinawatra, 2006-05-23,2006-09-19
-Thailand, Thaksin Shinawatra, 2001-02-09,2006-04-05
-Thailand, Abhisit Vejjajiva, 2008-12-17,2011-08-05
-Thailand, Yingluck Shinawatra, 2011-08-05,2014-05-07
-Thailand, Prayut Chan o cha, 2014-08-24,Acting
-Germany, Karl Carstens, 1979-07-01,1984-06-30
-Germany, Joachim Gauck, 2012-03-18,Acting
-Germany, Roman Herzog, 1994-07-01,1999-07-01
-Germany, Theodor Heuss, 1949-09-13,1954-09-13
-Germany, Theodor Heuss, 1954-09-13,1959-09-13
-Germany, Horst Kohler, 2004-07-01,2010-05-31
-Germany, Johannes Rau, 1999-07-01,2004-07-01
-Germany, Richard von Weizsacker, 1984-07-01,1994-06-30
-Germany, Christian Wulff, 2010-07-02,2012-02-17
-Philippines, Emilio Aguinaldo, 1897-03-22,1901-04-01
-Philippines, Manuel L Quezon, 1935-11-15,1944-08-01
-Philippines, Jose P Laurel, 1943-10-14,1945-08-17
-Philippines, Sergio Osmena, 1944-08-01,1946-05-28
-Philippines, Manuel Roxas, 1946-05-28,1948-04-15
-Philippines, Elpidio Quirino, 1948-04-17,1953-12-30
-Philippines, Ramon Magsaysay, 1953-12-30,1957-03-17
-Philippines, Carlos P Garcia, 1957-03-17,1961-12-30
-Philippines, Diosdado Macapagal, 1961-12-30,1965-12-30
-Philippines, Ferdinand Marcos, 1965-12-30,1986-02-25
-Philippines, Corazon Aquino, 1986-02-25,1992-06-30
-Philippines, Fidel V Ramos, 1992-06-30,1998-06-30
-Philippines, Joseph Estrada, 1998-06-30,2001-01-20
-Philippines, Gloria Macapagal Arroyo, 2001-01-20,2010-06-30
-Philippines, Benigno Aquino III, 2010-06-30,Acting
-Poland, Lech Kaczynski, 2005-12-23,2010-04-10
-Poland, Bronislaw Komorowski, 2010-08-06,Acting
-Poland, Bronislaw Komorowski, 2010-04-10,2010-07-08
-Poland, Aleksander Kwasniewski, 1995-12-23,2000-12-23
-Poland, Aleksander Kwasniewski, 2000-12-23,2005-12-23
-Poland, Lech Walesa, 1990-12-23,1995-12-23
-Spain, Jose Maria Aznar, 1996-05-04,2000-05-04
-Spain, Jose Maria Aznar, 2000-05-04,2004-04-17
-Spain, Francisco Franco, 1939-02-05,1975-11-20
-Spain, Felipe Gonzalez, 1982-12-01,1996-05-04
-Spain, Mariano Rajoy, 2011-12-21,Acting
-Spain, Jose Luis Rodriguez Zapatero, 2004-04-17,2011-12-21
-Ukraine, Leonid Kuchma, 1994-07-19,2005-01-23
-Ukraine, Viktor Yuschenko, 2005-01-23,2010-02-25
-Ukraine, Viktor Yanukovych, 2010-02-25,2014-02-22
-Ukraine, Petro Poroshenko, 2014-06-07,Acting
-Netherlands, Jan Peter Balkenende, 2002-07-22,2010-10-14
-Netherlands, Wim Kok, 1994-08-22,2002-07-22
-Netherlands, Mark Rutte, 2010-10-14,Acting
-Libya, Muammar Gaddafi, 1969-09-01,1977-03-02
-Libya, Muammar Gaddafi, 1977-03-02,1979-03-02
-Libya, Muammar Gaddafi, 1979-03-02,2011-08-23
-Libya, Mohammed Magariaf, 2012-08-09,2013-05-28
-Libya, Mustafa Abdul Jalil, 2011-03-05,2012-08-08
-Denmark, Anders Fogh Rasmussen, 2001-11-27,2009-04-05
-Denmark, Lars Lokke Rasmussen, 2009-04-05,2011-10-03
-Denmark, Helle Thorning Schmidt, 2011-10-03,2014-02-03
-Denmark, Helle Thorning Schmidt, 2014-02-03,Acting
-Turkey, Ismet Inonu, 1938-11-11,1950-05-22
-Turkey, Ahmet Necdet Sezer, 2000-05-16,2007-08-28
-Turkey, Abdullah Gul, 2007-08-28,2014-08-28
-Turkey, Recep Tayyip Erdogan, 2014-08-28,Acting
-Indonesia, Megawati Sukarnoputri, 2001-07-23,2004-10-20
-Indonesia, Joko Widodo, 2014-10-20,Acting
-Indonesia, Susilo Bambang Yudhoyono, 2004-10-20,2014-10-20
-Costa-Rica, Oscar Arias, 2006-05-08,2010-05-08
-Costa-Rica, Laura Chinchilla, 2010-05-08,2014-05-08
-Costa-Rica, Abel Pacheco, 2002-05-08,2006-05-08
-Costa-Rica, Luis Guillermo Solis, 2014-05-08,Acting
-Romania, Traian Basescu, 2012-08-27,Acting
-Romania, Traian Basescu, 2007-05-23,2012-07-10
-Romania, Traian Basescu, 2004-12-20,2007-04-20
-Romania, Ion Iliescu, 1990-05-20,1992-10-11
-Romania, Ion Iliescu, 1992-10-11,1996-11-29
-Romania, Ion Iliescu, 2000-12-20,2004-12-22
-South-Korea, Kim Young sam, 1993-02-25,1998-02-25
-South-Korea, Kim Dae jung, 1998-02-25,2003-02-25
-South-Korea, Roh Moo hyun, 2003-02-25,2008-02-25
-South-Korea, Lee Myung bak, 2008-02-25,Acting
-South-Korea, Park Geun hye, 2013-02-25,Acting
-Sweden, Stefan Lofven, 2014-10-03,Acting
-Sweden, Goran Persson, 1996-03-22,2006-10-06
-Sweden, Fredrik Reinfeldt, 2006-10-06,2014-10-03
-Vietnam, Tran Duc Luong, 1997-09-24,2006-06-26
-Vietnam, Nguyen Minh Triet, 2006-06-27,2011-07-25
-Vietnam, Truong Tan Sang, 2011-07-25,Acting
-Czech-Republic, Vaclav Havel, 1993-02-02,2003-02-02
-Czech-Republic, Vaclav Klaus, 2003-03-07,2013-03-07
-Czech-Republic, Milos Zeman, 2013-03-08,Acting
-Finland, Martti Ahtisaari, 1994-03-01,2000-03-01
-Finland, Tarja Halonen, 2000-03-01,2012-03-01
-Finland, Sauli Niinisto, 2012-03-01,Acting
-Japan, Yoshiro Mori, 2000-04-05,2000-07-04
-Japan, Yoshiro Mori, 2000-07-04,2001-04-26
-Japan, Junichiro Koizumi, 2001-04-26,2003-11-19
-Japan, Junichiro Koizumi, 2003-11-19,2005-09-21
-Japan, Junichiro Koizumi, 2005-09-21,2006-09-26
-Japan, Shinzo Abe, 2006-09-26,2007-09-26
-Japan, Shinzo Abe, 2012-12-26,Acting
-Japan, Yasuo Fukuda, 2007-09-26,2008-09-24
-Switzerland, Didier Burkhalter, 2014-01-01,Acting
-Switzerland, Micheline Calmy Rey, 2007-01-01,2008-01-01
-Switzerland, Micheline Calmy Rey, 2011-01-01,2011-12-31
-Switzerland, Pascal Couchepin, 2008-01-01,2008-12-31
-Switzerland, Pascal Couchepin, 1998-01-01,2009-11-01
-Switzerland, Pascal Couchepin, 2003-01-01,2003-12-31
-Switzerland, Moritz Leuenberger, 2001-01-01,2002-01-01
-Switzerland, Moritz Leuenberger, 2006-01-01,2007-01-01
-Switzerland, Ueli Maurer, 2013-01-10,2013-12-31
-Switzerland, Samuel Schmid, 2005-01-01,2006-01-01
-Syria, Nazim al Kudsi, 1961-12-12,1963-03-07
-Syria, Hafez al Assad, 1971-03-12,2000-06-10
-Syria, Bashar al Assad, 2000-07-17,Acting
-New-Zealand, Henry Sewell, 1856-05-07,1856-05-20
-New-Zealand, William Fox, 1856-05-20,1856-06-02
-New-Zealand, William Fox, 1861-07-12,1862-08-06
-New-Zealand, William Fox, 1869-06-28,1872-09-10
-New-Zealand, William Fox, 1873-03-03,1873-04-08
-New-Zealand, Edward Stafford, 1856-06-02,1861-07-12
-New-Zealand, Edward Stafford, 1865-10-16,1869-06-28
-New-Zealand, Edward Stafford, 1872-09-10,1872-10-11
-New-Zealand, Alfred Domett, 1862-08-06,1863-10-30
-New-Zealand, Frederick Whitaker, 1863-10-30,1864-11-24
-New-Zealand, Frederick Whitaker, 1882-04-21,1883-09-25
-New-Zealand, Frederick Weld, 1864-11-24,1865-10-16
-New-Zealand, George Marsden Waterhouse, 1872-10-11,1873-03-03
-New-Zealand, Julius Vogel, 1873-04-08,1875-07-06
-New-Zealand, Julius Vogel, 1876-02-15,1876-09-01
-New-Zealand, Daniel Pollen, 1875-07-06,1876-02-15
-New-Zealand, Harry Atkinson, 1876-09-01,1877-10-13
-New-Zealand, Harry Atkinson, 1883-09-25,1884-08-16
-New-Zealand, Harry Atkinson, 1884-08-28,1884-09-03
-New-Zealand, Harry Atkinson, 1887-10-08,1891-01-24
-New-Zealand, George Grey, 1877-10-13,1879-10-08
-New-Zealand, John Hall, 1879-10-08,1882-04-21
-New-Zealand, Robert Stout, 1884-08-16,1884-08-28
-New-Zealand, Robert Stout, 1884-09-03,1887-10-08
-New-Zealand, John Ballance, 1891-01-24,1893-04-27
-New-Zealand, Richard Seddon, 1893-04-27,1906-06-10
-New-Zealand, William Hall Jones, 1906-06-10,1906-08-06
-New-Zealand, Joseph Ward, 1906-08-06,1912-03-28
-New-Zealand, Joseph Ward, 1928-12-10,1930-05-28
-New-Zealand, Thomas Mackenzie, 1912-03-28,1912-07-10
-New-Zealand, William Massey, 1912-07-10,1925-05-10
-New-Zealand, Francis Bell, 1925-05-10,1925-05-30
-New-Zealand, Gordon Coates, 1925-05-30,1928-12-10
-New-Zealand, George Forbes, 1930-05-28,1935-12-06
-New-Zealand, Michael Savage, 1935-12-06,1940-03-27
-New-Zealand, Peter Fraser, 1940-03-27,1949-12-13
-New-Zealand, Sidney Holland, 1949-12-13,1957-09-20
-New-Zealand, Keith Holyoake, 1957-09-20,1957-12-12
-New-Zealand, Keith Holyoake, 1960-12-12,1972-02-07
-New-Zealand, Walter Nash, 1957-12-12,1960-12-12
-New-Zealand, Jack Marshall, 1972-02-07,1972-12-08
-New-Zealand, Norman Kirk, 1972-12-08,1974-08-31
-New-Zealand, Bill Rowling, 1974-09-06,1975-12-12
-New-Zealand, Robert Muldoon, 1975-12-12,1984-07-26
-New-Zealand, David Lange, 1984-07-26,1989-08-08
-New-Zealand, Geoffrey Palmer, 1989-08-08,1990-09-04
-New-Zealand, Mike Moore, 1990-09-04,1990-11-02
-New-Zealand, Jim Bolger, 1990-11-02,1991-12-08
-New-Zealand, Jenny Shipley, 1997-12-08,1999-12-05
-New-Zealand, Helen Clark, 1999-12-05,2008-11-19
-New-Zealand, John Key, 2008-11-19,Acting
-Pakistan, Iskander Mirza, 1956-03-23,1958-10-27
-Pakistan, Pervez Musharraf, 2001-06-20,2008-08-18
-Pakistan, Asif Ali Zardari, 2008-09-09,2013-09-08
-Pakistan, Mamnoon Hussain, 2013-09-09,Acting
-South-Africa, Charles Robberts Swart, 1961-05-31,1967-06-01
-South-Africa, Theophilus Ebenhaezer Donges, 1966-09-06,1966-09-13
-South-Africa, Jozua Francois Naude, 1967-06-01,1968-04-10
-South-Africa, Jacobus Johannes Fouche, 1968-04-10,1975-04-09
-South-Africa, Johannes de Klerk, 1975-04-09,1975-04-19
-South-Africa, Nicolaas Diederichs, 1975-04-19,1978-08-21
-South-Africa, B J Vorster, 1978-10-10,1979-06-04
-South-Africa, Marais Viljoen, 1979-06-04,1984-09-04
-South-Africa, Marais Viljoen, 1978-08-21,1978-10-10
-South-Africa, P W Botha, 1984-09-03,1989-08-15
-South-Africa, F W de Klerk, 1989-09-20,1994-05-09
-South-Africa, Nelson Mandela, 1994-04-27,1999-06-14
-South-Africa, Thabo Mbeki, 1999-06-16,2008-09-24
-South-Africa, Kgalema Motlanthe, 2008-09-25,2009-05-09
-South-Africa, Jacob Zuma, 2009-05-09,Acting
-Iraq, Muhammad Najib Ar Ruba i, 1958-07-14,1963-02-08
-Iraq, Abdul Salam Arif, 1963-02-08,1966-04-13
-Iraq, Abdul Rahman Arif, 1966-04-16,1968-07-17
-Iraq, Ahmed Hassan al Bakr, 1968-07-17,1979-07-16
-Iraq, Saddam Hussein, 1979-07-16,2003-04-09
-Iraq, Jalal Talabani, 2005-04-07,2014-07-24
-Iraq, Fuad Masum, 2014-07-24,Acting
-Portugal, Jorge Sampaio, 1996-03-09,2001-03-09
-Portugal, Jorge Sampaio, 2001-03-09,2006-03-09
-Portugal, Anibal Cavaco Silva, 2006-03-09,2011-03-09
-Portugal, Anibal Cavaco Silva, 2011-03-09,Acting
-Portugal, Mario Soares, 1986-03-09,1996-03-09
-Uruguay, Jose Mujica, 2010-03-01,Acting
-Uruguay, Julio Maria Sanguinetti Coirolo, 1985-03-01,1990-03-01
-Uruguay, Tabare Vazquez, 2005-03-01,2010-03-01
-Egypt, Anwar Al Sadat, 1970-10-05,1981-10-06
-Egypt, Abdel Fattah el Sisi, 2014-06-08,Acting
-Egypt, Mohamed Morsi, 2012-06-30,2013-07-03
-Egypt, Hosni Mubarak, 1981-10-14,1987-10-14
-Egypt, Hosni Mubarak, 1987-10-14,1993-10-14
-Egypt, Hosni Mubarak, 1993-10-14,1999-10-14
-Egypt, Hosni Mubarak, 1999-10-14,2005-10-14
-Egypt, Hosni Mubarak, 2005-10-14,2011-02-11
-Egypt, Muhammad Naguib, 1953-06-18,1954-11-14
-Egypt, Gamal Abdel Nasser, 1956-01-16,1970-09-28
-Mexico, Felipe Calderon, 2006-12-01,2012-11-30
-Mexico, Miguel de la Madrid, 1982-12-01,1988-12-01
-Mexico, Vicente Fox, 2000-12-01,2006-12-01
-Mexico, Enrique Pena Nieto, 2012-12-01,Acting
-Mexico, Carlos Salinas, 1988-12-01,1994-12-01
-Mexico, Ernesto Zedillo, 1994-12-01,2000-12-01
-India, Rajendra Prasad, 1950-01-26,1962-05-13
-India, Sarvepalli Radhakrishnan, 1962-05-13,1967-05-13
-India, Zakir Hussain, 1967-05-13,1969-05-03
-India, V V Giri, 1969-08-24,1974-08-24
-India, Fakhruddin Ali Ahmed, 1974-08-24,1977-02-11
-India, Neelam Sanjiva Reddy, 1977-07-25,1982-07-25
-India, Zail Singh, 1982-07-25,1987-07-25
-India, Ramaswamy Venkataraman, 1987-07-25,1992-07-25
-India, Shankar Dayal Sharma, 1992-07-25,1997-07-25
-India, K R Narayanan, 1997-07-25,2002-07-25
-India, Abdul Kalam, 2002-07-25,2007-07-25
-India, Pratibha Patil, 2007-07-25,2012-07-25
-India, Pranab Mukherjee, 2012-07-25,Acting
-Russian-Federation, Lenin, 1917-11-08,1924-01-21
-Russian-Federation, Stalin, 1922-04-03,1953-03-05
-Russian-Federation, Boris Yeltsin, 1931-07-10,1999-12-31
-Russian-Federation, Vladimir Putin, 1999-12-31,2000-05-07
-Russian-Federation, Vladimir Putin, 2000-05-07,2008-05-07
-Russian-Federation, Vladimir Putin, 2012-05-07,Acting
-Russian-Federation, Dmitry Medvedev, 2008-05-07,Acting
-Peru, Alan Garcia, 1985-07-28,1990-07-28
-Peru, Alan Garcia, 2006-07-28,2011-07-28
-Peru, Alberto Fujimori, 1990-07-28,1995-07-28
-Peru, Ollanta Humala, 2011-07-28,Acting
-Malaysia, Tunku Abdul Rahman, 1957-08-31,1970-09-22
-Malaysia, Abdul Razak Hussein, 1970-09-22,1976-01-14
-Malaysia, Hussein Onn, 1976-01-15,1981-07-16
-Malaysia, Mahathir Mohamad, 1981-07-16,2003-10-31
-Malaysia, Abdullah Ahmad Badawi, 2003-10-31,2009-04-03
-Malaysia, Najib Razak, 2009-04-03,2013-04-03
-Malaysia, Najib Razak, 2013-05-06,Acting
-Austria, Heinz Fischer, 2004-07-08,2010-07-08
-Austria, Heinz Fischer, 2010-07-08,Acting
-Austria, Rudolf Kirchschlager, 1974-07-08,1980-07-08
-Austria, Rudolf Kirchschlager, 1980-07-08,1986-07-08
-Austria, Thomas Klestil, 1998-07-08,2004-07-06
-Austria, Thomas Klestil, 1992-07-08,1998-07-08
-Austria, Kurt Waldheim, 1986-07-08,1992-07-08
-United-States, George Washington, 1789-04-30,1797-03-04
-United-States, John Adams, 1797-03-04,1801-03-04
-United-States, Thomas Jefferson, 1801-03-04,1805-03-04
-United-States, Thomas Jefferson, 1805-03-04,1809-03-04
-United-States, James Madison, 1809-03-04,1813-03-04
-United-States, James Madison, 1813-03-04,1817-03-04
-United-States, James Monroe, 1817-03-04,1821-03-04
-United-States, James Monroe, 1821-03-04,1825-03-04
-United-States, John Q Adams, 1825-03-04,1829-03-04
-United-States, Andrew Jackson, 1829-03-04,1832-03-04
-United-States, Andrew Jackson, 1832-03-04,1837-03-04
-United-States, Martin Van Buren, 1837-03-04,1841-03-04
-United-States, William Henry Harrison, 1841-03-04,1841-04-04
-United-States, John Tyler, 1841-04-04,1845-03-04
-United-States, James K Polk, 1845-03-04,1849-03-04
-United-States, Zachary Taylor, 1849-03-04,1850-07-09
-United-States, Millard Fillmore, 1850-07-09,1853-03-04
-United-States, Franklin Pierce, 1853-03-04,1857-03-04
-United-States, James Buchanan, 1857-03-04,1861-03-04
-United-States, Lincoln, 1861-03-04,1865-04-15
-United-States, Andrew Johnson, 1865-04-15,1869-03-04
-United-States, Ulysses S Grant, 1869-03-04,1873-03-04
-United-States, Ulysses S Grant, 1873-03-04,1877-03-04
-United-States, Rutherford B Hayes, 1877-03-04,1881-03-04
-United-States, James A Garfield, 1881-03-04,1881-09-19
-United-States, Chester A Arthur, 1881-09-19,1885-03-04
-United-States, Grover Cleveland, 1885-03-04,1889-03-04
-United-States, Grover Cleveland, 1893-03-04,1897-03-04
-United-States, Benjamin Harrison, 1889-03-04,1893-03-04
-United-States, William McKinley, 1897-03-04,1901-09-14
-United-States, Theodore Roosevelt, 1901-09-14,1909-03-04
-United-States, William Howard Taft, 1909-03-04,1913-03-04
-United-States, Woodrow Wilson, 1913-04-03,1917-04-03
-United-States, Woodrow Wilson, 1917-04-03,1921-04-03
-United-States, Warren G Harding, 1921-03-04,1923-08-02
-United-States, Calvin Coolidge, 1923-08-02,1925-03-04
-United-States, Calvin Coolidge, 1925-03-04,1929-03-04
-United-States, Herbert Hoover, 1929-03-04,1933-03-04
-United-States, Franklin D Roosevelt, 1933-03-04,1945-04-12
-United-States, Truman, 1945-04-12,1953-01-20
-United-States, Eisenhower, 1953-01-20,1957-01-20
-United-States, Eisenhower, 1957-01-20,1961-01-20
-United-States, Kennedy, 1961-01-20,1963-11-22
-United-States, Lyndon B Johnson, 1963-11-22,1965-01-20
-United-States, Lyndon B Johnson, 1965-01-20,1969-01-20
-United-States, Nixon, 1969-01-20,1974-08-09
-United-States, Gerald Ford, 1974-08-09,1977-01-20
-United-States, Jimmy Carter, 1977-01-20,1981-01-20
-United-States, Reagan, 1981-01-20,1989-01-20
-United-States, George H W Bush, 1989-01-20,1993-01-20
-United-States, Bill Clinton, 1993-01-20,1997-01-20
-United-States, Bill Clinton, 1997-01-20,2001-01-20
-United-States, George W Bush, 2001-01-20,2005-01-20
-United-States, George W Bush, 2005-01-20,2009-01-20
-United-States, Barack Obama, 2009-01-20,Acting
-Colombia, Cesar Gaviria, 1990-08-07,1994-08-07
-Colombia, Andres Pastrana Arango, 1998-08-07,2002-08-07
-Colombia, Ernesto Samper, 1994-08-07,1998-08-07
-Colombia, Juan Manuel Santos, 2010-08-07,Acting
-Colombia, Alvaro Uribe, 2002-08-07,2006-08-07
-Colombia, Alvaro Uribe, 2006-08-07,2010-08-07
-Greece, Konstantinos Karamanlis, 1990-05-05,1995-05-10
-Greece, Konstantinos Karamanlis, 1980-05-15,1985-03-10
-Greece, Konstantinos Stephanopoulos, 1995-03-10,2005-03-12
-Greece, Karolos Papoulias, 2005-03-12,Acting
-Paraguay, Horacio Cartes, 2013-08-15,Acting
-Paraguay, Nicanor Duarte, 2003-08-15,2008-08-14
-Paraguay, Federico Franco, 2012-06-22,2013-08-15
-Paraguay, Luis Angel Gonzalez Macchi, 1999-03-29,2003-08-15
-Kenya, Jomo Kenyatta, 1964-12-12,1978-08-22
-Kenya, Daniel arap Moi, 1978-08-22,2002-12-30
-Kenya, Mwai Kibaki, 2002-12-30,2013-04-09
-Kenya, Uhuru Kenyatta, 2013-04-09,Acting
-Nicaragua, Daniel Ortega, 1985-01-10,1990-04-25
-Nicaragua, Daniel Ortega, 2007-01-10,Acting
+Country, Name, Start, End, Full Name, Web reference
+Brazil, Fernando Collor de Mello, 1990-03-15,1992-10-02, President Fernando Collor de Mello, http://www.worldpresidentsdb.com/Fernando-Collor-de-Mello/
+Brazil, Itamar Franco, 1992-12-29,1995-01-01, President Itamar Franco, http://www.worldpresidentsdb.com/Itamar-Franco/
+Brazil, Fernando Henrique Cardoso, 1995-01-01,1999-01-01, President Fernando Henrique Cardoso, http://www.worldpresidentsdb.com/Fernando-Henrique-Cardoso/
+Brazil, Fernando Henrique Cardoso, 1999-01-01,2003-01-01, President Fernando Henrique Cardoso, http://www.worldpresidentsdb.com/Fernando-Henrique-Cardoso/
+Brazil, Luiz Inacio Lula da Silva, 2003-01-01,2007-01-01, President Luiz Inacio Lula da Silva, http://www.worldpresidentsdb.com/Luiz-Inacio-Lula-da-Silva/
+Brazil, Luiz Inacio Lula da Silva, 2007-01-01,2011-01-01, President Luiz Inacio Lula da Silva, http://www.worldpresidentsdb.com/Luiz-Inacio-Lula-da-Silva/
+Brazil, Dilma Rousseff, 2011-01-01,2016-08-31, President Dilma Rousseff, http://www.worldpresidentsdb.com/Dilma-Rousseff/
+Brazil, Michel Temer, 2016-09-01,Acting, President Michel Temer, http://www.worldpresidentsdb.com/BYHAND!!!/
+Afghanistan, Mohammad Najibullah, 1987-09-30,1992-04-16, President Mohammad Najibullah, http://www.worldpresidentsdb.com/Mohammad-Najibullah/
+Afghanistan, Burhanuddin Rabbani, 2001-11-13,2001-12-22, President Burhanuddin Rabbani, http://www.worldpresidentsdb.com/Burhanuddin-Rabbani/
+Afghanistan, Burhanuddin Rabbani, 1922-06-28,1996-09-27, President Burhanuddin Rabbani, http://www.worldpresidentsdb.com/Burhanuddin-Rabbani/
+Afghanistan, Hamid Karzai, 2009-08-20,2014-09-29, Dictator Hamid Karzai, http://www.worldpresidentsdb.com/Hamid-Karzai/
+Afghanistan, Hamid Karzai, 2001-12-22,2004-12-07, Dictator Hamid Karzai, http://www.worldpresidentsdb.com/Hamid-Karzai/
+Afghanistan, Ashraf Ghani, 2014-09-29,Acting, President Ashraf Ghani, http://www.worldpresidentsdb.com/Ashraf-Ghani/
+Italy, Carlo Azeglio Ciampi, 1999-05-18,2006-05-15, President Carlo Azeglio Ciampi, http://www.worldpresidentsdb.com/Carlo-Azeglio-Ciampi/
+Italy, Francesco Cossiga, 1985-06-29,1992-04-28, President Francesco Cossiga, http://www.worldpresidentsdb.com/Francesco-Cossiga/
+Italy, Enrico De Nicola, 1946-07-01,1948-05-11, President Enrico De Nicola, http://www.worldpresidentsdb.com/Enrico-De-Nicola/
+Italy, Luigi Einaudi, 1948-05-11,1955-05-11, President Luigi Einaudi, http://www.worldpresidentsdb.com/Luigi-Einaudi/
+Italy, Giovanni Gronchi, 1955-05-11,1962-05-11, President Giovanni Gronchi, http://www.worldpresidentsdb.com/Giovanni-Gronchi/
+Italy, Enrico Letta, 2013-04-28,2014-02-22, Prime Minister Enrico Letta, http://www.worldpresidentsdb.com/Enrico-Letta/
+Italy, Mario Monti, 2011-11-16,2013-04-28, Prime Minister Mario Monti, http://www.worldpresidentsdb.com/Mario-Monti/
+Italy, Benito Mussolini, 1922-10-31,1943-07-25, Prime Minister Benito Mussolini, http://www.worldpresidentsdb.com/Benito-Mussolini/
+Italy, Giorgio Napolitano, 2006-05-15,Acting, President Giorgio Napolitano, http://www.worldpresidentsdb.com/Giorgio-Napolitano/
+Italy, Matteo Renzi, 2014-02-22,Acting, Prime Minister Matteo Renzi, http://www.worldpresidentsdb.com/Matteo-Renzi/
+Italy, Oscar Luigi Scalfaro, 1992-05-25,1999-05-15, President Oscar Luigi Scalfaro, http://www.worldpresidentsdb.com/Oscar-Luigi-Scalfaro/
+Bangladesh, AFM Ahsanuddin Chowdhury, 1982-03-27,1983-12-10, President AFM Ahsanuddin Chowdhury, http://www.worldpresidentsdb.com/AFM-Ahsanuddin-Chowdhury/
+Bangladesh, Hussain Muhammad Ershad, 1983-12-11,1990-12-06, President Hussain Muhammad Ershad, http://www.worldpresidentsdb.com/Hussain-Muhammad-Ershad/
+Bangladesh, Zillur Rahman, 2009-02-12,2013-03-20, President Zillur Rahman, http://www.worldpresidentsdb.com/Zillur-Rahman/
+Bangladesh, Abdul Hamid, 2013-04-24,Acting, President Abdul Hamid, http://www.worldpresidentsdb.com/Abdul-Hamid/
+Canada, John A Macdonald, 1878-10-17,1891-06-06, Prime Minister John A Macdonald, http://www.worldpresidentsdb.com/John-A-Macdonald/
+Canada, Alexander Mackenzie, 1873-11-07,1878-10-08, Prime Minister Alexander Mackenzie, http://www.worldpresidentsdb.com/Alexander-Mackenzie/
+Canada, John Abbott, 1891-06-16,1892-11-24, Prime Minister John Abbott, http://www.worldpresidentsdb.com/John-Abbott/
+Canada, John Sparrow David Thompson, 1892-12-05,1894-12-12, Prime Minister John Sparrow David Thompson, http://www.worldpresidentsdb.com/John-Sparrow-David-Thompson/
+Canada, Mackenzie Bowell, 1894-12-21,1896-04-27, Prime Minister Mackenzie Bowell, http://www.worldpresidentsdb.com/Mackenzie-Bowell/
+Canada, Charles Tupper, 1896-05-01,1896-07-08, Prime Minister Charles Tupper, http://www.worldpresidentsdb.com/Charles-Tupper/
+Canada, Wilfrid Laurier, 1896-07-11,1911-10-06, Prime Minister Wilfrid Laurier, http://www.worldpresidentsdb.com/Wilfrid-Laurier/
+Canada, Robert Borden, 1911-10-10,1920-07-10, Prime Minister Robert Borden, http://www.worldpresidentsdb.com/Robert-Borden/
+Canada, Arthur Meighen, 1926-06-29,1926-09-25, Prime Minister Arthur Meighen, http://www.worldpresidentsdb.com/Arthur-Meighen/
+Canada, William Lyon Mackenzie King, 1921-12-29,1926-06-28, Prime Minister William Lyon Mackenzie King, http://www.worldpresidentsdb.com/William-Lyon-Mackenzie-King/
+Canada, Richard Bedford Bennett, 1930-08-07,1935-10-23, Prime Minister Richard Bedford Bennett, http://www.worldpresidentsdb.com/Richard-Bedford-Bennett/
+Canada, Louis St Laurent, 1948-11-15,1957-06-21, Prime Minister Louis St Laurent, http://www.worldpresidentsdb.com/Louis-St-Laurent/
+Canada, John Diefenbaker, 1957-06-21,1963-04-22, Prime Minister John Diefenbaker, http://www.worldpresidentsdb.com/John-Diefenbaker/
+Canada, Lester B Pearson, 1963-04-22,1968-04-20, Prime Minister Lester B Pearson, http://www.worldpresidentsdb.com/Lester-B-Pearson/
+Canada, Pierre Trudeau, 1968-04-20,1979-06-04, Prime Minister Pierre Trudeau, http://www.worldpresidentsdb.com/Pierre-Trudeau/
+Canada, Joe Clark, 1979-06-04,1980-03-03, Prime Minister Joe Clark, http://www.worldpresidentsdb.com/Joe-Clark/
+Canada, John Turner, 1984-06-30,1984-09-17, Prime Minister John Turner, http://www.worldpresidentsdb.com/John-Turner/
+Canada, Brian Mulroney, 1984-09-17,1993-06-25, Prime Minister Brian Mulroney, http://www.worldpresidentsdb.com/Brian-Mulroney/
+Canada, Kim Campbell, 1993-06-25,1993-11-04, Prime Minister Kim Campbell, http://www.worldpresidentsdb.com/Kim-Campbell/
+Canada, Jean Chretien, 1993-11-04,2003-12-12, Prime Minister Jean Chretien, http://www.worldpresidentsdb.com/Jean-Chretien/
+Canada, Paul Martin, 2003-12-12,2006-02-06, Prime Minister Paul Martin, http://www.worldpresidentsdb.com/Paul-Martin/
+Canada, Stephen Harper, 2006-02-06,2015-11-04, Prime Minister Stephen Harper, http://www.worldpresidentsdb.com/Stephen-Harper/
+Canada, Justin Trudeau, 2015-11-04,Acting, Prime Minister Justin Truedau, http://www.worldpresidentsdb.com/Justin-Trudeau/
+Panama, Ricardo Martinelli, 2009-07-01,2014-07-01, President Ricardo Martinelli, http://www.worldpresidentsdb.com/Ricardo-Martinelli/
+Panama, Mireya Moscoso, 1999-09-01,2004-09-01, President Mireya Moscoso, http://www.worldpresidentsdb.com/Mireya-Moscoso/
+Panama, Martin Torrijos, 2004-09-01,2009-07-01, President Martin Torrijos, http://www.worldpresidentsdb.com/Martin-Torrijos/
+Panama, Juan Carlos Varela, 2014-07-01,Acting, President Juan Carlos Varela, http://www.worldpresidentsdb.com/Juan-Carlos-Varela/
+Hungary, Arpad Goncz, 1990-08-04,2000-08-04, President Arpad Goncz, http://www.worldpresidentsdb.com/Arpad-Goncz/
+Hungary, Ferenc Madl, 2000-08-04,2005-08-05, President Ferenc Madl, http://www.worldpresidentsdb.com/Ferenc-Madl/
+Hungary, Janos Ader, 2012-05-10,Acting, President Janos Ader, http://www.worldpresidentsdb.com/Janos-Ader/
+Costa Rica, Oscar Arias, 2006-05-08,2010-05-08, President Oscar Arias, http://www.worldpresidentsdb.com/Oscar-Arias/
+Costa Rica, Laura Chinchilla, 2010-05-08,2014-05-08, President Laura Chinchilla, http://www.worldpresidentsdb.com/Laura-Chinchilla/
+Costa Rica, Abel Pacheco, 2002-05-08,2006-05-08, President Abel Pacheco, http://www.worldpresidentsdb.com/Abel-Pacheco/
+Costa Rica, Luis Guillermo Solis, 2014-05-08,Acting, President Luis Guillermo Solis, http://www.worldpresidentsdb.com/Luis-Guillermo-Solis/
+France, Napoleon III, 1848-12-20,1852-12-02, President Napoleon III, http://www.worldpresidentsdb.com/Napoleon-III/
+France, Adolphe Thiers, 1871-02-17,1873-05-24, President Adolphe Thiers, http://www.worldpresidentsdb.com/Adolphe-Thiers/
+France, Patrice de Mac Mahon, 1873-05-24,1879-01-30, President Patrice de Mac Mahon, http://www.worldpresidentsdb.com/Patrice-de-Mac-Mahon/
+France, Jules Grevy, 1879-01-30,1887-12-02, President Jules Grevy, http://www.worldpresidentsdb.com/Jules-Grevy/
+France, Marie Francois Sadi Carnot, 1887-12-03,1894-06-25, President Marie Francois Sadi Carnot, http://www.worldpresidentsdb.com/Marie-Francois-Sadi-Carnot/
+France, Jean Casimir Perier, 1894-06-27,1895-01-16, President Jean Casimir Perier, http://www.worldpresidentsdb.com/Jean-Casimir-Perier/
+France, Felix Faure, 1895-01-17,1899-02-16, President Felix Faure, http://www.worldpresidentsdb.com/Felix-Faure/
+France, Emile Loubet, 1899-02-18,1906-02-18, President Emile Loubet, http://www.worldpresidentsdb.com/Emile-Loubet/
+France, Armand Fallieres, 1906-02-18,1913-02-18, President Armand Fallieres, http://www.worldpresidentsdb.com/Armand-Fallieres/
+France, Raymond Poincare, 1913-02-18,1920-02-18, President Raymond Poincare, http://www.worldpresidentsdb.com/Raymond-Poincare/
+France, Paul Deschanel, 1920-02-18,1920-09-21, President Paul Deschanel, http://www.worldpresidentsdb.com/Paul-Deschanel/
+France, Alexandre Millerand, 1920-09-23,1924-06-11, President Alexandre Millerand, http://www.worldpresidentsdb.com/Alexandre-Millerand/
+France, Gaston Doumergue, 1924-06-13,1931-06-13, President Gaston Doumergue, http://www.worldpresidentsdb.com/Gaston-Doumergue/
+France, Paul Doumer, 1931-06-13,1932-05-07, President Paul Doumer, http://www.worldpresidentsdb.com/Paul-Doumer/
+France, Albert Francois Lebrun, 1932-05-10,1940-07-10, President Albert Francois Lebrun, http://www.worldpresidentsdb.com/Albert-Francois-Lebrun/
+France, Vincent Auriol, 1947-01-16,1954-01-16, President Vincent Auriol, http://www.worldpresidentsdb.com/Vincent-Auriol/
+France, Rene Coty, 1954-01-16,1959-01-08, President Rene Coty, http://www.worldpresidentsdb.com/Rene-Coty/
+France, Charles de Gaulle, 1959-01-08,1969-04-28, President Charles de Gaulle, http://www.worldpresidentsdb.com/Charles-de-Gaulle/
+France, Georges Pompidou, 1969-06-20,1974-04-02, President Georges Pompidou, http://www.worldpresidentsdb.com/Georges-Pompidou/
+France, Valery Giscard d Estaing, 1974-05-27,1981-05-21, President Valery Giscard d Estaing, http://www.worldpresidentsdb.com/Valery-Giscard-d-Estaing/
+France, Francois Mitterrand, 1981-05-21,1988-05-08, President Francois Mitterrand, http://www.worldpresidentsdb.com/Francois-Mitterrand/
+France, Francois Mitterrand, 1988-05-08,1995-05-17, President Francois Mitterrand, http://www.worldpresidentsdb.com/Francois-Mitterrand/
+France, Jacques Chirac, 1995-05-17,2002-05-17, President Jacques Chirac, http://www.worldpresidentsdb.com/Jacques-Chirac/
+France, Jacques Chirac, 2002-05-17,2007-05-16, President Jacques Chirac, http://www.worldpresidentsdb.com/Jacques-Chirac/
+France, Nicolas Sarkozy, 2007-05-16,2012-05-15, President Nicolas Sarkozy, http://www.worldpresidentsdb.com/Nicolas-Sarkozy/
+France, Francois Hollande, 2012-05-15,2017-05-14, President Francois Hollande, http://www.worldpresidentsdb.com/Francois-Hollande/
+France, Emmanuel Macron, 2017-05-14,Acting, President Emmanuel Macron, http://www.worldpresidentsdb.com/Francois-Hollande/
+Slovakia, Michal Kovac, 1993-03-02,1998-03-02, President Michal Kovac, http://www.worldpresidentsdb.com/Michal-Kovac/
+Slovakia, Rudolf Schuster, 1999-06-15,2004-06-15, President Rudolf Schuster, http://www.worldpresidentsdb.com/Rudolf-Schuster/
+Slovakia, Ivan Gasparovic, 2004-06-15,2014-06-15, President Ivan Gasparovic, http://www.worldpresidentsdb.com/Ivan-Gasparovic/
+Slovakia, Ivan Gasparovic, 1998-07-14,1998-10-30, President Ivan Gasparovic, http://www.worldpresidentsdb.com/Ivan-Gasparovic/
+Slovakia, Andrej Kiska, 2014-06-15,Acting, President Andrej Kiska, http://www.worldpresidentsdb.com/Andrej-Kiska/
+Ireland, Douglas Hyde, 1938-06-25,1945-06-24, President Douglas Hyde, http://www.worldpresidentsdb.com/Douglas-Hyde/
+Ireland, Sean O Kelly, 1945-06-25,1959-06-24, President Sean O Kelly, http://www.worldpresidentsdb.com/Sean-O-Kelly/
+Ireland, Eamon de Valera, 1959-06-25,1973-06-24, President Eamon de Valera, http://www.worldpresidentsdb.com/Eamon-de-Valera/
+Ireland, Erskine Hamilton Childers, 1973-06-25,1974-11-17, President Erskine Hamilton Childers, http://www.worldpresidentsdb.com/Erskine-Hamilton-Childers/
+Ireland, Cearbhall O Dalaigh, 1974-12-19,1976-10-22, President Cearbhall O Dalaigh, http://www.worldpresidentsdb.com/Cearbhall-O-Dalaigh/
+Ireland, Patrick Hillery, 1976-12-03,1990-12-02, President Patrick Hillery, http://www.worldpresidentsdb.com/Patrick-Hillery/
+Ireland, Mary Robinson, 1990-12-03,1997-09-12, President Mary Robinson, http://www.worldpresidentsdb.com/Mary-Robinson/
+Ireland, Mary McAleese, 1997-11-11,2004-11-11, President Mary McAleese, http://www.worldpresidentsdb.com/Mary-McAleese/
+Ireland, Mary McAleese, 2004-01-11,2011-11-10, President Mary McAleese, http://www.worldpresidentsdb.com/Mary-McAleese/
+Ireland, Michael Higgins, 2011-11-11,Acting, President Michael Higgins, http://www.worldpresidentsdb.com/Michael-Higgins/
+Palestine, Yasser Arafat, 1994-07-05,2004-11-11, President Yasser Arafat, http://www.worldpresidentsdb.com/Yasser-Arafat/
+Palestine, Mahmoud Abbas, 2005-01-15,Acting, President Mahmoud Abbas, http://www.worldpresidentsdb.com/Mahmoud-Abbas/
+Argentina, Raul Alfonsin, 1983-12-10,1989-07-08, President Raul Alfonsin, http://www.worldpresidentsdb.com/Raul-Alfonsin/
+Argentina, Reynaldo Bignone, 1982-07-01,1983-12-10, Dictator Reynaldo Bignone, http://www.worldpresidentsdb.com/Reynaldo-Bignone/
+Argentina, Fernando de la Rua, 1999-12-10,2001-12-21, President Fernando de la Rua, http://www.worldpresidentsdb.com/Fernando-de-la-Rua/
+Argentina, Eduardo Duhalde, 2002-01-02,2003-05-25, President Eduardo Duhalde, http://www.worldpresidentsdb.com/Eduardo-Duhalde/
+Argentina, Cristina Fernandez de Kirchner, 2007-12-10,2011-12-10, President Cristina Fernandez de Kirchner, http://www.worldpresidentsdb.com/Cristina-Fernandez-de-Kirchner/
+Argentina, Cristina Fernandez de Kirchner, 2011-12-10,2015-12-10, President Cristina Fernandez de Kirchner, http://www.worldpresidentsdb.com/Cristina-Fernandez-de-Kirchner/
+Argentina, Mauricio Macri, 2015-12-10,Acting, President Mauricio Macri, http://www.worldpresidentsdb.com/xxx/
+Argentina, Leopoldo Galtieri, 1981-12-22,1982-06-18, Dictator Leopoldo Galtieri, http://www.worldpresidentsdb.com/Leopoldo-Galtieri/
+Argentina, Nestor Kirchner, 2003-05-25,2007-12-10, President Nestor Kirchner, http://www.worldpresidentsdb.com/Nestor-Kirchner/
+Argentina, Carlos Menem, 1989-07-08,1995-12-10, President Carlos Menem, http://www.worldpresidentsdb.com/Carlos-Menem/
+Argentina, Carlos Menem, 1995-12-10,1999-12-10, President Carlos Menem, http://www.worldpresidentsdb.com/Carlos-Menem/
+Argentina, Peron, 1946-06-04,1952-06-04, President Peron, http://www.worldpresidentsdb.com/Peron/
+Argentina, Isabel Peron, 1974-07-01,1976-03-24, President Isabel Peron, http://www.worldpresidentsdb.com/Isabel-Peron/
+Argentina, Bernardino Rivadavia, 1826-02-08,1827-07-07, President Bernardino Rivadavia, http://www.worldpresidentsdb.com/Bernardino-Rivadavia/
+Argentina, Jorge Rafael Videla, 1976-03-24,1981-03-29, Dictator Jorge Rafael Videla, http://www.worldpresidentsdb.com/Jorge-Rafael-Videla/
+Bolivia, Carlos Mesa, 2003-10-17,2005-06-06, President Carlos Mesa, http://www.worldpresidentsdb.com/Carlos-Mesa/
+Bolivia, Evo Morales, 2006-01-22,Acting, President Evo Morales, http://www.worldpresidentsdb.com/Evo-Morales/
+Bolivia, Eduardo Rodriguez, 2005-06-09,2006-01-22, President Eduardo Rodriguez, http://www.worldpresidentsdb.com/Eduardo-Rodriguez/
+Norway, Thorbjorn Jagland, 1996-10-25,1997-10-17, Prime Minister Thorbjorn Jagland, http://www.worldpresidentsdb.com/Thorbjorn-Jagland/
+Norway, Kjell Magne Bondevik, 2001-10-19,2005-10-17, Prime Minister Kjell Magne Bondevik, http://www.worldpresidentsdb.com/Kjell-Magne-Bondevik/
+Norway, Jens Stoltenberg, 2005-10-17,2013-10-16, Prime Minister Jens Stoltenberg, http://www.worldpresidentsdb.com/Jens-Stoltenberg/
+Norway, Jens Stoltenberg, 2000-03-03,2001-10-19, Prime Minister Jens Stoltenberg, http://www.worldpresidentsdb.com/Jens-Stoltenberg/
+Norway, Erna Solberg, 2013-10-16,Acting, Prime Minister Erna Solberg, http://www.worldpresidentsdb.com/Erna-Solberg/
+Ecuador, Rafael Correa, 2007-01-15,Acting, President Rafael Correa, http://www.worldpresidentsdb.com/Rafael-Correa/
+Ecuador, Leon Febres Cordero, 1984-08-10,1988-08-10, President Leon Febres Cordero, http://www.worldpresidentsdb.com/Leon-Febres-Cordero/
+Ecuador, Alfredo Palacio, 2005-04-20,2007-01-15, President Alfredo Palacio, http://www.worldpresidentsdb.com/Alfredo-Palacio/
+Czech Republic, Vaclav Havel, 1993-02-02,2003-02-02, President Vaclav Havel, http://www.worldpresidentsdb.com/Vaclav-Havel/
+Czech Republic, Vaclav Klaus, 2003-03-07,2013-03-07, President Vaclav Klaus, http://www.worldpresidentsdb.com/Vaclav-Klaus/
+Czech Republic, Milos Zeman, 2013-03-08,Acting, President Milos Zeman, http://www.worldpresidentsdb.com/Milos-Zeman/
+Ghana, John Kufuor, 2001-01-07,2009-01-07, President John Kufuor, http://www.worldpresidentsdb.com/John-Kufuor/
+Ghana, John Dramani Mahama, 2012-07-24,Acting, President John Dramani Mahama, http://www.worldpresidentsdb.com/John-Dramani-Mahama/
+Ghana, John Atta Mills, 2009-01-07,2012-07-24, President John Atta Mills, http://www.worldpresidentsdb.com/John-Atta-Mills/
+Saudi Arabia, Khalid of Saudi Arabia, 1975-03-25,1982-06-13, King Khalid of Saudi Arabia, http://www.worldpresidentsdb.com/Khalid-of-Saudi-Arabia/
+Saudi Arabia, Fahd of Saudi Arabia, 1982-06-13,2005-08-01, King Fahd of Saudi Arabia, http://www.worldpresidentsdb.com/Fahd-of-Saudi-Arabia/
+Saudi Arabia, Abdullah of Saudi Arabia, 2005-08-01,2015-01-23, King Abdullah of Saudi Arabia, http://www.worldpresidentsdb.com/Abdullah-of-Saudi-Arabia/
+Saudi Arabia, King Salman of Saudi Arabia, 2015-01-23,Acting, King Salman of Saudi Arabia, http://www.worldpresidentsdb.com/Abdullah-of-Saudi-Arabia/
+Australia, Edmund Barton, 1901-01-01,1903-09-24, Prime Minister Edmund Barton, http://www.worldpresidentsdb.com/Edmund-Barton/
+Australia, Alfred Deakin, 1903-09-24,1904-04-27, Prime Minister Alfred Deakin, http://www.worldpresidentsdb.com/Alfred-Deakin/
+Australia, Alfred Deakin, 1905-07-05,1908-11-13, Prime Minister Alfred Deakin, http://www.worldpresidentsdb.com/Alfred-Deakin/
+Australia, Alfred Deakin, 1909-06-02,1910-04-29, Prime Minister Alfred Deakin, http://www.worldpresidentsdb.com/Alfred-Deakin/
+Australia, Chris Watson, 1904-04-27,1904-08-18, Prime Minister Chris Watson, http://www.worldpresidentsdb.com/Chris-Watson/
+Australia, George Reid, 1904-08-18,1905-07-05, Prime Minister George Reid, http://www.worldpresidentsdb.com/George-Reid/
+Australia, Andrew Fisher, 1908-11-13,1909-06-02, Prime Minister Andrew Fisher, http://www.worldpresidentsdb.com/Andrew-Fisher/
+Australia, Andrew Fisher, 1910-04-29,1913-06-24, Prime Minister Andrew Fisher, http://www.worldpresidentsdb.com/Andrew-Fisher/
+Australia, Andrew Fisher, 1914-09-17,1915-10-27, Prime Minister Andrew Fisher, http://www.worldpresidentsdb.com/Andrew-Fisher/
+Australia, Joseph Cook, 1913-06-24,1914-09-17, Prime Minister Joseph Cook, http://www.worldpresidentsdb.com/Joseph-Cook/
+Australia, Billy Hughes, 1915-10-27,1923-02-09, Prime Minister Billy Hughes, http://www.worldpresidentsdb.com/Billy-Hughes/
+Australia, Stanley Bruce, 1923-02-09,1929-10-22, Prime Minister Stanley Bruce, http://www.worldpresidentsdb.com/Stanley-Bruce/
+Australia, James Scullin, 1929-10-22,1932-01-06, Prime Minister James Scullin, http://www.worldpresidentsdb.com/James-Scullin/
+Australia, Joseph Lyons, 1932-01-06,1939-04-07, Prime Minister Joseph Lyons, http://www.worldpresidentsdb.com/Joseph-Lyons/
+Australia, Earle Page, 1039-04-07,1939-04-26, Prime Minister Earle Page, http://www.worldpresidentsdb.com/Earle-Page/
+Australia, Robert Menzies, 1939-04-26,1941-08-26, Prime Minister Robert Menzies, http://www.worldpresidentsdb.com/Robert-Menzies/
+Australia, Robert Menzies, 1949-12-19,1966-01-26, Prime Minister Robert Menzies, http://www.worldpresidentsdb.com/Robert-Menzies/
+Australia, Arthur Fadden, 1941-08-29,1931-10-07, Prime Minister Arthur Fadden, http://www.worldpresidentsdb.com/Arthur-Fadden/
+Australia, John Curtin, 1941-10-07,1945-07-05, Prime Minister John Curtin, http://www.worldpresidentsdb.com/John-Curtin/
+Australia, Frank Forde, 1945-07-06,1945-07-12, Prime Minister Frank Forde, http://www.worldpresidentsdb.com/Frank-Forde/
+Australia, Ben Chifley, 1945-07-13,1949-12-19, Prime Minister Ben Chifley, http://www.worldpresidentsdb.com/Ben-Chifley/
+Australia, Harold Holt, 1966-01-26,1967-12-17, Prime Minister Harold Holt, http://www.worldpresidentsdb.com/Harold-Holt/
+Australia, John McEwen, 1967-12-19,1968-01-10, Prime Minister John McEwen, http://www.worldpresidentsdb.com/John-McEwen/
+Australia, John Gorton, 1968-01-10,1971-03-10, Prime Minister John Gorton, http://www.worldpresidentsdb.com/John-Gorton/
+Australia, William McMahon, 1971-03-10,1972-12-05, Prime Minister William McMahon, http://www.worldpresidentsdb.com/William-McMahon/
+Australia, Gough Whitlam, 1972-12-05,1975-11-11, Prime Minister Gough Whitlam, http://www.worldpresidentsdb.com/Gough-Whitlam/
+Australia, Malcolm Fraser, 1975-11-11,1983-03-11, Prime Minister Malcolm Fraser, http://www.worldpresidentsdb.com/Malcolm-Fraser/
+Australia, Robert Hawke, 1983-03-11,1991-12-20, Prime Minister Robert Hawke, http://www.worldpresidentsdb.com/Robert-Hawke/
+Australia, Paul Keating, 1991-12-20,1996-03-11, Prime Minister Paul Keating, http://www.worldpresidentsdb.com/Paul-Keating/
+Australia, John Howard, 1996-03-11,2007-12-03, Prime Minister John Howard, http://www.worldpresidentsdb.com/John-Howard/
+Australia, Kevin Rudd, 2007-12-03,2010-06-24, Prime Minister Kevin Rudd, http://www.worldpresidentsdb.com/Kevin-Rudd/
+Australia, Julia Gillard, 2010-06-24,2013-06-27, Prime Minister Julia Gillard, http://www.worldpresidentsdb.com/Julia-Gillard/
+Australia, Tony Abbott, 2013-09-18,2015-09-15, Prime Minister Tony Abbott, http://www.worldpresidentsdb.com/Tony-Abbott/
+Australia, Malcolm Turnbull, 2015-09-15,Acting, Prime Minister Malcolm Turnbull, http://www.worldpresidentsdb.com/Tony-Abbott/
+Iran, Akbar Hashemi Rafsanjani, 1989-08-03,1993-08-03, President Akbar Hashemi Rafsanjani, http://www.worldpresidentsdb.com/Akbar-Hashemi-Rafsanjani/
+Iran, Akbar Hashemi Rafsanjani, 1993-08-03,1997-08-03, President Akbar Hashemi Rafsanjani, http://www.worldpresidentsdb.com/Akbar-Hashemi-Rafsanjani/
+Iran, Mohammad Khatami, 1997-08-03,2001-08-03, President Mohammad Khatami, http://www.worldpresidentsdb.com/Mohammad-Khatami/
+Iran, Mohammad Khatami, 2001-08-03,2005-08-03, President Mohammad Khatami, http://www.worldpresidentsdb.com/Mohammad-Khatami/
+Iran, Mahmoud Ahmadinejad, 2005-08-03,2013-08-03, President Mahmoud Ahmadinejad, http://www.worldpresidentsdb.com/Mahmoud-Ahmadinejad/
+Iran, Hassan Rouhani, 2013-08-04,Acting, President Hassan Rouhani, http://www.worldpresidentsdb.com/Hassan-Rouhani/
+Cuba, Fidel Castro, 1959-02-16,2008-02-24, President Fidel Castro, http://www.worldpresidentsdb.com/Fidel-Castro/
+Cuba, Raul Castro, 2008-02-24,Acting, Dictator Raul Castro, http://www.worldpresidentsdb.com/Raul-Castro/
+Venezuela, Rafael Caldera, 1969-03-11,1974-03-11, President Rafael Caldera, http://www.worldpresidentsdb.com/Rafael-Caldera/
+Venezuela, Rafael Caldera, 1994-02-02,1999-02-02, President Rafael Caldera, http://www.worldpresidentsdb.com/Rafael-Caldera/
+Venezuela, Hugo Chavez, 1999-02-02,2001-01-10, President Hugo Chavez, http://www.worldpresidentsdb.com/Hugo-Chavez/
+Venezuela, Hugo Chavez, 2001-01-10,2007-01-10, President Hugo Chavez, http://www.worldpresidentsdb.com/Hugo-Chavez/
+Venezuela, Hugo Chavez, 2007-01-10,2013-01-10, President Hugo Chavez, http://www.worldpresidentsdb.com/Hugo-Chavez/
+Venezuela, Hugo Chavez, 2013-01-10,2013-03-05, President Hugo Chavez, http://www.worldpresidentsdb.com/Hugo-Chavez/
+Venezuela, Octavio Lepage, 1993-05-21,1993-06-05, President Octavio Lepage, http://www.worldpresidentsdb.com/Octavio-Lepage/
+Venezuela, Nicolas Maduro, 2013-04-19,Acting, President Nicolas Maduro, http://www.worldpresidentsdb.com/Nicolas-Maduro/
+Venezuela, Ramon Jose Velasquez, 1993-06-05,1994-02-02, President Ramon Jose Velasquez, http://www.worldpresidentsdb.com/Ramon-Jose-Velasquez/
+Guatemala, Oscar Berger, 2004-01-14,2008-01-14, President Oscar Berger, http://www.worldpresidentsdb.com/Oscar-Berger/
+Guatemala, Otto Perez Molina, 2012-01-14,Acting, President Otto Perez Molina, http://www.worldpresidentsdb.com/Otto-Perez-Molina/
+Guatemala, Alfonso Portillo, 2000-01-14,2004-01-14, President Alfonso Portillo, http://www.worldpresidentsdb.com/Alfonso-Portillo/
+China, Hu Jintao, 2002-11-15,2012-11-15, President Hu Jintao, http://www.worldpresidentsdb.com/Hu-Jintao/
+China, Yang Shangkun, 1988-04-08,1993-03-27, President Yang Shangkun, http://www.worldpresidentsdb.com/Yang-Shangkun/
+China, Xi Jinping, 2013-03-14,Acting, President Xi Jinping, http://www.worldpresidentsdb.com/Xi-Jinping/
+China, Jiang Zemin, 1993-03-27,2003-03-15, President Jiang Zemin, http://www.worldpresidentsdb.com/Jiang-Zemin/
+Chile, Patricio Aylwin, 1990-03-11,1994-03-11, President Patricio Aylwin, http://www.worldpresidentsdb.com/Patricio-Aylwin/
+Chile, Michelle Bachelet, 2006-03-11,2010-03-11, President Michelle Bachelet, http://www.worldpresidentsdb.com/Michelle-Bachelet/
+Chile, Michelle Bachelet, 2014-03-11,Acting, President Michelle Bachelet, http://www.worldpresidentsdb.com/Michelle-Bachelet/
+Chile, Eduardo Frei Ruiz Tagle, 1994-03-11,2000-03-11, President Eduardo Frei Ruiz Tagle, http://www.worldpresidentsdb.com/Eduardo-Frei-Ruiz-Tagle/
+Chile, Ricardo Lagos, 2000-03-11,2006-03-11, President Ricardo Lagos, http://www.worldpresidentsdb.com/Ricardo-Lagos/
+Chile, Sebastian Pinera, 2010-03-11,2014-03-11, President Sebastian Pinera, http://www.worldpresidentsdb.com/Sebastian-Pinera/
+Chile, Pinochet, 1974-06-27,1990-03-11, President Pinochet, http://www.worldpresidentsdb.com/Pinochet/
+Belgium, Herman Van Rompuy, 2008-12-30,2009-11-25, Prime Minister Herman Van Rompuy, http://www.worldpresidentsdb.com/Herman-Van-Rompuy/
+Belgium, Yves Leterme, 2009-11-25,2011-12-06, Prime Minister Yves Leterme, http://www.worldpresidentsdb.com/Yves-Leterme/
+Belgium, Yves Leterme, 2008-03-20,2008-12-30, Prime Minister Yves Leterme, http://www.worldpresidentsdb.com/Yves-Leterme/
+Belgium, Elio Di Rupo, 2011-12-06,2014-10-11, Prime Minister Elio Di Rupo, http://www.worldpresidentsdb.com/Elio-Di-Rupo/
+Belgium, Charles Michel, 2014-11-11,Acting, Prime Minister Charles Michel, http://www.worldpresidentsdb.com/Charles-Michel/
+Thailand, Thaksin Shinawatra, 2006-05-23,2006-09-19, Prime Minister Thaksin Shinawatra, http://www.worldpresidentsdb.com/Thaksin-Shinawatra/
+Thailand, Thaksin Shinawatra, 2001-02-09,2006-04-05, Prime Minister Thaksin Shinawatra, http://www.worldpresidentsdb.com/Thaksin-Shinawatra/
+Thailand, Abhisit Vejjajiva, 2008-12-17,2011-08-05, Prime Minister Abhisit Vejjajiva, http://www.worldpresidentsdb.com/Abhisit-Vejjajiva/
+Thailand, Yingluck Shinawatra, 2011-08-05,2014-05-07, Prime Minister Yingluck Shinawatra, http://www.worldpresidentsdb.com/Yingluck-Shinawatra/
+Thailand, Prayut Chan o cha, 2014-08-24,Acting, Prime Minister Prayut Chan o cha, http://www.worldpresidentsdb.com/Prayut-Chan-o-cha/
+Dominican Republic, Hipolito Mejia, 2000-08-16,2004-08-16, President Hipolito Mejia, http://www.worldpresidentsdb.com/Hipolito-Mejia/
+Dominican Republic, Leonel Fernandez, 2004-08-16,2012-08-16, President Leonel Fernandez, http://www.worldpresidentsdb.com/Leonel-Fernandez/
+Dominican Republic, Leonel Fernandez, 1996-08-16,2000-08-16, President Leonel Fernandez, http://www.worldpresidentsdb.com/Leonel-Fernandez/
+Dominican Republic, Danilo Medina, 2012-08-16,Acting, President Danilo Medina, http://www.worldpresidentsdb.com/Danilo-Medina/
+Germany, Karl Carstens, 1979-07-01,1984-06-30, President Karl Carstens, http://www.worldpresidentsdb.com/Karl-Carstens/
+Germany, Joachim Gauck, 2012-03-18,Acting, President Joachim Gauck, http://www.worldpresidentsdb.com/Joachim-Gauck/
+Germany, Roman Herzog, 1994-07-01,1999-07-01, President Roman Herzog, http://www.worldpresidentsdb.com/Roman-Herzog/
+Germany, Theodor Heuss, 1949-09-13,1954-09-13, President Theodor Heuss, http://www.worldpresidentsdb.com/Theodor-Heuss/
+Germany, Theodor Heuss, 1954-09-13,1959-09-13, President Theodor Heuss, http://www.worldpresidentsdb.com/Theodor-Heuss/
+Germany, Horst Kohler, 2004-07-01,2010-05-31, President Horst Kohler, http://www.worldpresidentsdb.com/Horst-Kohler/
+Germany, Johannes Rau, 1999-07-01,2004-07-01, President Johannes Rau, http://www.worldpresidentsdb.com/Johannes-Rau/
+Germany, Richard von Weizsacker, 1984-07-01,1994-06-30, President Richard von Weizsacker, http://www.worldpresidentsdb.com/Richard-von-Weizsacker/
+Germany, Christian Wulff, 2010-07-02,2012-02-17, President Christian Wulff, http://www.worldpresidentsdb.com/Christian-Wulff/
+Philippines, Emilio Aguinaldo, 1897-03-22,1901-04-01, President Emilio Aguinaldo, http://www.worldpresidentsdb.com/Emilio-Aguinaldo/
+Philippines, Manuel L Quezon, 1935-11-15,1944-08-01, President Manuel L Quezon, http://www.worldpresidentsdb.com/Manuel-L-Quezon/
+Philippines, Jose P Laurel, 1943-10-14,1945-08-17, President Jose P Laurel, http://www.worldpresidentsdb.com/Jose-P-Laurel/
+Philippines, Sergio Osmena, 1944-08-01,1946-05-28, President Sergio Osmena, http://www.worldpresidentsdb.com/Sergio-Osmena/
+Philippines, Manuel Roxas, 1946-05-28,1948-04-15, President Manuel Roxas, http://www.worldpresidentsdb.com/Manuel-Roxas/
+Philippines, Elpidio Quirino, 1948-04-17,1953-12-30, President Elpidio Quirino, http://www.worldpresidentsdb.com/Elpidio-Quirino/
+Philippines, Ramon Magsaysay, 1953-12-30,1957-03-17, President Ramon Magsaysay, http://www.worldpresidentsdb.com/Ramon-Magsaysay/
+Philippines, Carlos P Garcia, 1957-03-17,1961-12-30, President Carlos P Garcia, http://www.worldpresidentsdb.com/Carlos-P-Garcia/
+Philippines, Diosdado Macapagal, 1961-12-30,1965-12-30, President Diosdado Macapagal, http://www.worldpresidentsdb.com/Diosdado-Macapagal/
+Philippines, Ferdinand Marcos, 1965-12-30,1986-02-25, President Ferdinand Marcos, http://www.worldpresidentsdb.com/Ferdinand-Marcos/
+Philippines, Corazon Aquino, 1986-02-25,1992-06-30, President Corazon Aquino, http://www.worldpresidentsdb.com/Corazon-Aquino/
+Philippines, Fidel V Ramos, 1992-06-30,1998-06-30, President Fidel V Ramos, http://www.worldpresidentsdb.com/Fidel-V-Ramos/
+Philippines, Joseph Estrada, 1998-06-30,2001-01-20, President Joseph Estrada, http://www.worldpresidentsdb.com/Joseph-Estrada/
+Philippines, Gloria Macapagal Arroyo, 2001-01-20,2010-06-30, President Gloria Macapagal Arroyo, http://www.worldpresidentsdb.com/Gloria-Macapagal-Arroyo/
+Philippines, Benigno Aquino III, 2010-06-30,2016-06-30, President Benigno Aquino III, http://www.worldpresidentsdb.com/Benigno-Aquino-III/
+Philippines, Rodrigo Duterte, 2016-06-30,Acting, President Duterte, http://www.worldpresidentsdb.com/Benigno-Aquino-III/
+Poland, Lech Kaczynski, 2005-12-23,2010-04-10, President Lech Kaczynski, http://www.worldpresidentsdb.com/Lech-Kaczynski/
+Poland, Bronislaw Komorowski, 2010-08-06,Acting, President Bronislaw Komorowski, http://www.worldpresidentsdb.com/Bronislaw-Komorowski/
+Poland, Bronislaw Komorowski, 2010-04-10,2010-07-08, President Bronislaw Komorowski, http://www.worldpresidentsdb.com/Bronislaw-Komorowski/
+Poland, Aleksander Kwasniewski, 1995-12-23,2000-12-23, President Aleksander Kwasniewski, http://www.worldpresidentsdb.com/Aleksander-Kwasniewski/
+Poland, Aleksander Kwasniewski, 2000-12-23,2005-12-23, President Aleksander Kwasniewski, http://www.worldpresidentsdb.com/Aleksander-Kwasniewski/
+Poland, Lech Walesa, 1990-12-23,1995-12-23, President Lech Walesa, http://www.worldpresidentsdb.com/Lech-Walesa/
+Spain, Jose Maria Aznar, 1996-05-04,2000-05-04, Prime Minister Jose Maria Aznar, http://www.worldpresidentsdb.com/Jose-Maria-Aznar/
+Spain, Jose Maria Aznar, 2000-05-04,2004-04-17, Prime Minister Jose Maria Aznar, http://www.worldpresidentsdb.com/Jose-Maria-Aznar/
+Spain, Francisco Franco, 1939-02-05,1975-11-20, Dictator Francisco Franco, http://www.worldpresidentsdb.com/Francisco-Franco/
+Spain, Felipe Gonzalez, 1982-12-01,1996-05-04, Prime Minister Felipe Gonzalez, http://www.worldpresidentsdb.com/Felipe-Gonzalez/
+Spain, Mariano Rajoy, 2011-12-21,Acting, Prime Minister Mariano Rajoy, http://www.worldpresidentsdb.com/Mariano-Rajoy/
+Spain, Jose Luis Rodriguez Zapatero, 2004-04-17,2011-12-21, Prime Minister Jose Luis Rodriguez Zapatero, http://www.worldpresidentsdb.com/Jose-Luis-Rodriguez-Zapatero/
+Ukraine, Leonid Kuchma, 1994-07-19,2005-01-23, President Leonid Kuchma, http://www.worldpresidentsdb.com/Leonid-Kuchma/
+Ukraine, Viktor Yuschenko, 2005-01-23,2010-02-25, President Viktor Yuschenko, http://www.worldpresidentsdb.com/Viktor-Yuschenko/
+Ukraine, Viktor Yanukovych, 2010-02-25,2014-02-22, President Viktor Yanukovych, http://www.worldpresidentsdb.com/Viktor-Yanukovych/
+Ukraine, Petro Poroshenko, 2014-06-07,Acting, President Petro Poroshenko, http://www.worldpresidentsdb.com/Petro-Poroshenko/
+Singapore, Yusof bin Ishak, 1965-08-09,1970-11-23, President Yusof bin Ishak, http://www.worldpresidentsdb.com/Yusof-bin-Ishak/
+Singapore, Benjamin Sheares, 1971-01-02,1981-05-12, President Benjamin Sheares, https://en.wikipedia.org/wiki/Benjamin_Sheares
+Singapore, Devan Nair, 1981-10-23,1985-03-27, President Devan Nair, http://www.worldpresidentsdb.com/Devan-Nair/
+Singapore, Wee Kim Wee, 1985-09-02,1993-09-01, President Wee Kim Wee, http://www.worldpresidentsdb.com/Wee-Kim-Wee/
+Singapore, Ong Teng Cheong, 1993-09-01,1999-08-31, President Ong Teng Cheong, http://www.worldpresidentsdb.com/Ong-Teng-Cheong/
+Singapore, S R Nathan, 1999-09-01,2011-08-31, President S R Nathan, http://www.worldpresidentsdb.com/S-R-Nathan/
+Singapore, Tony Tan, 2011-09-01,Acting, President Tony Tan, http://www.worldpresidentsdb.com/Tony-Tan/
+Netherlands, Jan Peter Balkenende, 2002-07-22,2010-10-14, Prime Minister Jan Peter Balkenende, http://www.worldpresidentsdb.com/Jan-Peter-Balkenende/
+Netherlands, Wim Kok, 1994-08-22,2002-07-22, Prime Minister Wim Kok, http://www.worldpresidentsdb.com/Wim-Kok/
+Netherlands, Mark Rutte, 2010-10-14,Acting, Prime Minister Mark Rutte, http://www.worldpresidentsdb.com/Mark-Rutte/
+Libya, Muammar Gaddafi, 1969-09-01,1977-03-02, Dictator Muammar Gaddafi, http://www.worldpresidentsdb.com/Muammar-Gaddafi/
+Libya, Muammar Gaddafi, 1977-03-02,1979-03-02, Dictator Muammar Gaddafi, http://www.worldpresidentsdb.com/Muammar-Gaddafi/
+Libya, Muammar Gaddafi, 1979-03-02,2011-08-23, Dictator Muammar Gaddafi, http://www.worldpresidentsdb.com/Muammar-Gaddafi/
+Libya, Mohammed Magariaf, 2012-08-09,2013-05-28, President Mohammed Magariaf, http://www.worldpresidentsdb.com/Mohammed-Magariaf/
+Libya, Mustafa Abdul Jalil, 2011-03-05,2012-08-08, President Mustafa Abdul Jalil, http://www.worldpresidentsdb.com/Mustafa-Abdul-Jalil/
+Mexico, Felipe Calderon, 2006-12-01,2012-11-30, President Felipe Calderon, http://www.worldpresidentsdb.com/Felipe-Calderon/
+Mexico, Miguel de la Madrid, 1982-12-01,1988-12-01, President Miguel de la Madrid, http://www.worldpresidentsdb.com/Miguel-de-la-Madrid/
+Mexico, Vicente Fox, 2000-12-01,2006-12-01, President Vicente Fox, http://www.worldpresidentsdb.com/Vicente-Fox/
+Mexico, Enrique Pena Nieto, 2012-12-01,Acting, President Enrique Pena Nieto, http://www.worldpresidentsdb.com/Enrique-Pena-Nieto/
+Mexico, Carlos Salinas, 1988-12-01,1994-12-01, President Carlos Salinas, http://www.worldpresidentsdb.com/Carlos-Salinas/
+Mexico, Ernesto Zedillo, 1994-12-01,2000-12-01, President Ernesto Zedillo, http://www.worldpresidentsdb.com/Ernesto-Zedillo/
+Denmark, Anders Fogh Rasmussen, 2001-11-27,2009-04-05, Prime Minister Anders Fogh Rasmussen, http://www.worldpresidentsdb.com/Anders-Fogh-Rasmussen/
+Denmark, Lars Lokke Rasmussen, 2009-04-05,2011-10-03, Prime Minister Lars Lokke Rasmussen, http://www.worldpresidentsdb.com/Lars-Lokke-Rasmussen/
+Denmark, Helle Thorning Schmidt, 2011-10-03,2014-02-03, Prime Minister Helle Thorning Schmidt, http://www.worldpresidentsdb.com/Helle-Thorning-Schmidt/
+Denmark, Helle Thorning Schmidt, 2014-02-03,Acting, Prime Minister Helle Thorning Schmidt, http://www.worldpresidentsdb.com/Helle-Thorning-Schmidt/
+Turkey, Ismet Inonu, 1938-11-11,1950-05-22, President Ismet Inonu, http://www.worldpresidentsdb.com/Ismet-Inonu/
+Turkey, Ahmet Necdet Sezer, 2000-05-16,2007-08-28, President Ahmet Necdet Sezer, http://www.worldpresidentsdb.com/Ahmet-Necdet-Sezer/
+Turkey, Abdullah Gul, 2007-08-28,2014-08-28, President Abdullah Gul, http://www.worldpresidentsdb.com/Abdullah-Gul/
+Turkey, Recep Tayyip Erdogan, 2014-08-28,Acting, President Recep Tayyip Erdogan, http://www.worldpresidentsdb.com/Recep-Tayyip-Erdogan/
+Indonesia, Megawati Sukarnoputri, 2001-07-23,2004-10-20, President Megawati Sukarnoputri, http://www.worldpresidentsdb.com/Megawati-Sukarnoputri/
+Indonesia, Joko Widodo, 2014-10-20,Acting, President Joko Widodo, http://www.worldpresidentsdb.com/Joko-Widodo/
+Indonesia, Susilo Bambang Yudhoyono, 2004-10-20,2014-10-20, President Susilo Bambang Yudhoyono, http://www.worldpresidentsdb.com/Susilo-Bambang-Yudhoyono/
+Israel, Moshe Katsav, 2000-08-01,2007-07-15, President Moshe Katsav, http://www.worldpresidentsdb.com/Moshe-Katsav/
+Israel, Benjamin Netanyahu, 2009-03-31,2013-03-18, Prime Minister Benjamin Netanyahu, http://www.worldpresidentsdb.com/Benjamin-Netanyahu/
+Israel, Benjamin Netanyahu, 2013-03-18,Acting, Prime Minister Benjamin Netanyahu, http://www.worldpresidentsdb.com/Benjamin-Netanyahu/
+Israel, Ehud Olmert, 2006-01-04,2009-03-31, Prime Minister Ehud Olmert, https://es.wikipedia.org/wiki/Ehud_Olmert
+North Korea, Kim Il sung, 1949-06-30,1994-07-08, Dictator Kim Il sung, http://www.worldpresidentsdb.com/Kim-Il-sung/
+North Korea, Kim Jong un, 2012-04-11,Acting, Dictator Kim Jong un, http://www.worldpresidentsdb.com/Kim-Jong-un/
+North Korea, Kim Jong il, 1993-04-09,2011-12-17, Dictator Kim Jong il, http://www.worldpresidentsdb.com/Kim-Jong-il/
+Russian Federation, Lenin, 1917-11-08,1924-01-21, President Lenin, http://www.worldpresidentsdb.com/Lenin/
+Russian Federation, Stalin, 1922-04-03,1953-03-05, General Secretary Stalin, http://www.worldpresidentsdb.com/Stalin/
+Russian Federation, Boris Yeltsin, 1931-07-10,1999-12-31, President Boris Yeltsin, http://www.worldpresidentsdb.com/Boris-Yeltsin/
+Russian Federation, Vladimir Putin, 1999-12-31,2000-05-07, President Vladimir Putin, http://www.worldpresidentsdb.com/Vladimir-Putin/
+Russian Federation, Vladimir Putin, 2000-05-07,2008-05-07, President Vladimir Putin, http://www.worldpresidentsdb.com/Vladimir-Putin/
+Russian Federation, Vladimir Putin, 2012-05-07,Acting, President Vladimir Putin, http://www.worldpresidentsdb.com/Vladimir-Putin/
+Russian Federation, Dmitry Medvedev, 2008-05-07,Acting, President Dmitry Medvedev, http://www.worldpresidentsdb.com/Dmitry-Medvedev/
+Sweden, Stefan Lofven, 2014-10-03,Acting, Prime Minister Stefan Lofven, http://www.worldpresidentsdb.com/Stefan-Lofven/
+Sweden, Goran Persson, 1996-03-22,2006-10-06, Prime Minister Goran Persson, http://www.worldpresidentsdb.com/Goran-Persson/
+Sweden, Fredrik Reinfeldt, 2006-10-06,2014-10-03, Prime Minister Fredrik Reinfeldt, http://www.worldpresidentsdb.com/Fredrik-Reinfeldt/
+Vietnam, Tran Duc Luong, 1997-09-24,2006-06-26, President Tran Duc Luong, http://www.worldpresidentsdb.com/Tran-Duc-Luong/
+Vietnam, Nguyen Minh Triet, 2006-06-27,2011-07-25, Dictator Nguyen Minh Triet, http://www.worldpresidentsdb.com/Nguyen-Minh-Triet/
+Vietnam, Truong Tan Sang, 2011-07-25,Acting, President Truong Tan Sang, http://www.worldpresidentsdb.com/Truong-Tan-Sang/
+Croatia, Franjo Tudman, 1990-05-30,1999-12-10, President Franjo Tudman, http://www.worldpresidentsdb.com/Franjo-Tudman/
+Croatia, Stjepan Mesic, 2000-02-19,2010-02-19, President Stjepan Mesic, http://www.worldpresidentsdb.com/Stjepan-Mesic/
+Croatia, Ivo Josipovic, 2010-02-19,Acting, President Ivo Josipovic, http://www.worldpresidentsdb.com/Ivo-Josipovic/
+Finland, Martti Ahtisaari, 1994-03-01,2000-03-01, President Martti Ahtisaari, http://www.worldpresidentsdb.com/Martti-Ahtisaari/
+Finland, Tarja Halonen, 2000-03-01,2012-03-01, President Tarja Halonen, http://www.worldpresidentsdb.com/Tarja-Halonen/
+Finland, Sauli Niinisto, 2012-03-01,Acting, President Sauli Niinisto, http://www.worldpresidentsdb.com/Sauli-Niinisto/
+Japan, Yoshiro Mori, 2000-04-05,2000-07-04, Prime Minister Yoshiro Mori, http://www.worldpresidentsdb.com/Yoshiro-Mori/
+Japan, Yoshiro Mori, 2000-07-04,2001-04-26, Prime Minister Yoshiro Mori, http://www.worldpresidentsdb.com/Yoshiro-Mori/
+Japan, Junichiro Koizumi, 2001-04-26,2003-11-19, Prime Minister Junichiro Koizumi, http://www.worldpresidentsdb.com/Junichiro-Koizumi/
+Japan, Junichiro Koizumi, 2003-11-19,2005-09-21, Prime Minister Junichiro Koizumi, http://www.worldpresidentsdb.com/Junichiro-Koizumi/
+Japan, Junichiro Koizumi, 2005-09-21,2006-09-26, Prime Minister Junichiro Koizumi, http://www.worldpresidentsdb.com/Junichiro-Koizumi/
+Japan, Shinzo Abe, 2006-09-26,2007-09-26, Prime Minister Shinzo Abe, http://www.worldpresidentsdb.com/Shinzo-Abe/
+Japan, Shinzo Abe, 2012-12-26,Acting, Prime Minister Shinzo Abe, http://www.worldpresidentsdb.com/Shinzo-Abe/
+Japan, Yasuo Fukuda, 2007-09-26,2008-09-24, Prime Minister Yasuo Fukuda, http://www.worldpresidentsdb.com/Yasuo-Fukuda/
+Switzerland, Johann Schneider Ammann, 2016-01-01,2016-12-31, President Johann Schneider Ammann, http://www.worldpresidentsdb.com/Didier-Burkhalter/
+Switzerland, Simonetta Sommaruga, 2015-01-01,2015-12-31, President Simonetta Sommaruga, http://www.worldpresidentsdb.com/Didier-Burkhalter/
+Switzerland, Doris Leuthard, 2017-01-01,Acting, President Doris Leuthard, http://www.worldpresidentsdb.com/Didier-Burkhalter/
+Switzerland, Didier Burkhalter, 2014-01-01,2014-12-31, President Didier Burkhalter, http://www.worldpresidentsdb.com/Didier-Burkhalter/
+Switzerland, Micheline Calmy Rey, 2007-01-01,2008-01-01, President Micheline Calmy Rey, http://www.worldpresidentsdb.com/Micheline-Calmy-Rey/
+Switzerland, Micheline Calmy Rey, 2011-01-01,2011-12-31, President Micheline Calmy Rey, http://www.worldpresidentsdb.com/Micheline-Calmy-Rey/
+Switzerland, Pascal Couchepin, 2008-01-01,2008-12-31, President Pascal Couchepin, http://www.worldpresidentsdb.com/Pascal-Couchepin/
+Switzerland, Pascal Couchepin, 1998-01-01,2009-11-01, President Pascal Couchepin, http://www.worldpresidentsdb.com/Pascal-Couchepin/
+Switzerland, Pascal Couchepin, 2003-01-01,2003-12-31, President Pascal Couchepin, http://www.worldpresidentsdb.com/Pascal-Couchepin/
+Switzerland, Moritz Leuenberger, 2001-01-01,2002-01-01, President Moritz Leuenberger, http://www.worldpresidentsdb.com/Moritz-Leuenberger/
+Switzerland, Moritz Leuenberger, 2006-01-01,2007-01-01, President Moritz Leuenberger, http://www.worldpresidentsdb.com/Moritz-Leuenberger/
+Switzerland, Ueli Maurer, 2013-01-10,2013-12-31, President Ueli Maurer, http://www.worldpresidentsdb.com/Ueli-Maurer/
+Switzerland, Samuel Schmid, 2005-01-01,2006-01-01, President Samuel Schmid, http://www.worldpresidentsdb.com/Samuel-Schmid/
+Syria, Nazim al Kudsi, 1961-12-12,1963-03-07, President Nazim al Kudsi, http://www.worldpresidentsdb.com/Nazim-al-Kudsi/
+Syria, Hafez al Assad, 1971-03-12,2000-06-10, President Hafez al Assad, http://www.worldpresidentsdb.com/Hafez-al-Assad/
+Syria, Bashar al Assad, 2000-07-17,Acting, Dictator Bashar al Assad, http://www.worldpresidentsdb.com/Bashar-al-Assad/
+New Zealand, Henry Sewell, 1856-05-07,1856-05-20, Prime Minister Henry Sewell, http://www.worldpresidentsdb.com/Henry-Sewell/
+New Zealand, William Fox, 1856-05-20,1856-06-02, Prime Minister William Fox, http://www.worldpresidentsdb.com/William-Fox/
+New Zealand, William Fox, 1861-07-12,1862-08-06, Prime Minister William Fox, http://www.worldpresidentsdb.com/William-Fox/
+New Zealand, William Fox, 1869-06-28,1872-09-10, Prime Minister William Fox, http://www.worldpresidentsdb.com/William-Fox/
+New Zealand, William Fox, 1873-03-03,1873-04-08, Prime Minister William Fox, http://www.worldpresidentsdb.com/William-Fox/
+New Zealand, Edward Stafford, 1856-06-02,1861-07-12, Prime Minister Edward Stafford, http://www.worldpresidentsdb.com/Edward-Stafford/
+New Zealand, Edward Stafford, 1865-10-16,1869-06-28, Prime Minister Edward Stafford, http://www.worldpresidentsdb.com/Edward-Stafford/
+New Zealand, Edward Stafford, 1872-09-10,1872-10-11, Prime Minister Edward Stafford, http://www.worldpresidentsdb.com/Edward-Stafford/
+New Zealand, Alfred Domett, 1862-08-06,1863-10-30, Prime Minister Alfred Domett, http://www.worldpresidentsdb.com/Alfred-Domett/
+New Zealand, Frederick Whitaker, 1863-10-30,1864-11-24, Prime Minister Frederick Whitaker, http://www.worldpresidentsdb.com/Frederick-Whitaker/
+New Zealand, Frederick Whitaker, 1882-04-21,1883-09-25, Prime Minister Frederick Whitaker, http://www.worldpresidentsdb.com/Frederick-Whitaker/
+New Zealand, Frederick Weld, 1864-11-24,1865-10-16, Prime Minister Frederick Weld, http://www.worldpresidentsdb.com/Frederick-Weld/
+New Zealand, George Marsden Waterhouse, 1872-10-11,1873-03-03, Prime Minister George Marsden Waterhouse, http://www.worldpresidentsdb.com/George-Marsden-Waterhouse/
+New Zealand, Julius Vogel, 1873-04-08,1875-07-06, Prime Minister Julius Vogel, http://www.worldpresidentsdb.com/Julius-Vogel/
+New Zealand, Julius Vogel, 1876-02-15,1876-09-01, Prime Minister Julius Vogel, http://www.worldpresidentsdb.com/Julius-Vogel/
+New Zealand, Daniel Pollen, 1875-07-06,1876-02-15, Prime Minister Daniel Pollen, http://www.worldpresidentsdb.com/Daniel-Pollen/
+New Zealand, Harry Atkinson, 1876-09-01,1877-10-13, Prime Minister Harry Atkinson, http://www.worldpresidentsdb.com/Harry-Atkinson/
+New Zealand, Harry Atkinson, 1883-09-25,1884-08-16, Prime Minister Harry Atkinson, http://www.worldpresidentsdb.com/Harry-Atkinson/
+New Zealand, Harry Atkinson, 1884-08-28,1884-09-03, Prime Minister Harry Atkinson, http://www.worldpresidentsdb.com/Harry-Atkinson/
+New Zealand, Harry Atkinson, 1887-10-08,1891-01-24, Prime Minister Harry Atkinson, http://www.worldpresidentsdb.com/Harry-Atkinson/
+New Zealand, George Grey, 1877-10-13,1879-10-08, Prime Minister George Grey, http://www.worldpresidentsdb.com/George-Grey/
+New Zealand, John Hall, 1879-10-08,1882-04-21, Prime Minister John Hall, http://www.worldpresidentsdb.com/John-Hall/
+New Zealand, Robert Stout, 1884-08-16,1884-08-28, Prime Minister Robert Stout, http://www.worldpresidentsdb.com/Robert-Stout/
+New Zealand, Robert Stout, 1884-09-03,1887-10-08, Prime Minister Robert Stout, http://www.worldpresidentsdb.com/Robert-Stout/
+New Zealand, John Ballance, 1891-01-24,1893-04-27, Prime Minister John Ballance, http://www.worldpresidentsdb.com/John-Ballance/
+New Zealand, Richard Seddon, 1893-04-27,1906-06-10, Prime Minister Richard Seddon, http://www.worldpresidentsdb.com/Richard-Seddon/
+New Zealand, William Hall Jones, 1906-06-10,1906-08-06, Prime Minister William Hall Jones, http://www.worldpresidentsdb.com/William-Hall-Jones/
+New Zealand, Joseph Ward, 1906-08-06,1912-03-28, Prime Minister Joseph Ward, http://www.worldpresidentsdb.com/Joseph-Ward/
+New Zealand, Joseph Ward, 1928-12-10,1930-05-28, Prime Minister Joseph Ward, http://www.worldpresidentsdb.com/Joseph-Ward/
+New Zealand, Thomas Mackenzie, 1912-03-28,1912-07-10, Prime Minister Thomas Mackenzie, http://www.worldpresidentsdb.com/Thomas-Mackenzie/
+New Zealand, William Massey, 1912-07-10,1925-05-10, Prime Minister William Massey, http://www.worldpresidentsdb.com/William-Massey/
+New Zealand, Francis Bell, 1925-05-10,1925-05-30, Prime Minister Francis Bell, http://www.worldpresidentsdb.com/Francis-Bell/
+New Zealand, Gordon Coates, 1925-05-30,1928-12-10, Prime Minister Gordon Coates, http://www.worldpresidentsdb.com/Gordon-Coates/
+New Zealand, George Forbes, 1930-05-28,1935-12-06, Prime Minister George Forbes, http://www.worldpresidentsdb.com/George-Forbes/
+New Zealand, Michael Savage, 1935-12-06,1940-03-27, Prime Minister Michael Savage, http://www.worldpresidentsdb.com/Michael-Savage/
+New Zealand, Peter Fraser, 1940-03-27,1949-12-13, Prime Minister Peter Fraser, http://www.worldpresidentsdb.com/Peter-Fraser/
+New Zealand, Sidney Holland, 1949-12-13,1957-09-20, Prime Minister Sidney Holland, http://www.worldpresidentsdb.com/Sidney-Holland/
+New Zealand, Keith Holyoake, 1957-09-20,1957-12-12, Prime Minister Keith Holyoake, http://www.worldpresidentsdb.com/Keith-Holyoake/
+New Zealand, Keith Holyoake, 1960-12-12,1972-02-07, Prime Minister Keith Holyoake, http://www.worldpresidentsdb.com/Keith-Holyoake/
+New Zealand, Walter Nash, 1957-12-12,1960-12-12, Prime Minister Walter Nash, http://www.worldpresidentsdb.com/Walter-Nash/
+New Zealand, Jack Marshall, 1972-02-07,1972-12-08, Prime Minister Jack Marshall, http://www.worldpresidentsdb.com/Jack-Marshall/
+New Zealand, Norman Kirk, 1972-12-08,1974-08-31, Prime Minister Norman Kirk, http://www.worldpresidentsdb.com/Norman-Kirk/
+New Zealand, Bill Rowling, 1974-09-06,1975-12-12, Prime Minister Bill Rowling, http://www.worldpresidentsdb.com/Bill-Rowling/
+New Zealand, Robert Muldoon, 1975-12-12,1984-07-26, Prime Minister Robert Muldoon, http://www.worldpresidentsdb.com/Robert-Muldoon/
+New Zealand, David Lange, 1984-07-26,1989-08-08, Prime Minister David Lange, http://www.worldpresidentsdb.com/David-Lange/
+New Zealand, Geoffrey Palmer, 1989-08-08,1990-09-04, Prime Minister Geoffrey Palmer, http://www.worldpresidentsdb.com/Geoffrey-Palmer/
+New Zealand, Mike Moore, 1990-09-04,1990-11-02, Prime Minister Mike Moore, http://www.worldpresidentsdb.com/Mike-Moore/
+New Zealand, Jim Bolger, 1990-11-02,1991-12-08, Prime Minister Jim Bolger, http://www.worldpresidentsdb.com/Jim-Bolger/
+New Zealand, Jenny Shipley, 1997-12-08,1999-12-05, Prime Minister Jenny Shipley, http://www.worldpresidentsdb.com/Jenny-Shipley/
+New Zealand, Helen Clark, 1999-12-05,2008-11-19, Prime Minister Helen Clark, http://www.worldpresidentsdb.com/Helen-Clark/
+New Zealand, John Key, 2008-11-19,2016-12-12, Prime Minister John Key, http://www.worldpresidentsdb.com/John-Key/
+New Zealand, Bill English, 2016-12-12,2008-11-19, Prime Minister Bill English, http://www.worldpresidentsdb.com/Helen-Clark/
+New Zealand, Jacinda Ardern, 2017-10-26,Acting, Prime Minister Jacinda Ardern, http://www.worldpresidentsdb.com/John-Key/
+Pakistan, Iskander Mirza, 1956-03-23,1958-10-27, President Iskander Mirza, http://www.worldpresidentsdb.com/Iskander-Mirza/
+Pakistan, Pervez Musharraf, 2001-06-20,2008-08-18, President Pervez Musharraf, http://www.worldpresidentsdb.com/Pervez-Musharraf/
+Pakistan, Asif Ali Zardari, 2008-09-09,2013-09-08, President Asif Ali Zardari, http://www.worldpresidentsdb.com/Asif-Ali-Zardari/
+Pakistan, Mamnoon Hussain, 2013-09-09,Acting, President Mamnoon Hussain, http://www.worldpresidentsdb.com/Mamnoon-Hussain/
+Romania, Klaus Iohannis, 2014-12-21,Acting, President Klaus Iohannis, http://www.worldpresidentsdb.com/Traian-Basescu/
+Romania, Traian Basescu, 2012-08-27,2014-12-21, President Traian Basescu, http://www.worldpresidentsdb.com/Traian-Basescu/
+Romania, Traian Basescu, 2007-05-23,2012-07-10, President Traian Basescu, http://www.worldpresidentsdb.com/Traian-Basescu/
+Romania, Traian Basescu, 2004-12-20,2007-04-20, President Traian Basescu, http://www.worldpresidentsdb.com/Traian-Basescu/
+Romania, Ion Iliescu, 1990-05-20,1992-10-11, President Ion Iliescu, http://www.worldpresidentsdb.com/Ion-Iliescu/
+Romania, Ion Iliescu, 1992-10-11,1996-11-29, President Ion Iliescu, http://www.worldpresidentsdb.com/Ion-Iliescu/
+Romania, Ion Iliescu, 2000-12-20,2004-12-22, President Ion Iliescu, http://www.worldpresidentsdb.com/Ion-Iliescu/
+Iraq, Muhammad Najib Ar Ruba i, 1958-07-14,1963-02-08, President Muhammad Najib Ar Ruba i, http://www.worldpresidentsdb.com/Muhammad-Najib-Ar-Ruba-i/
+Iraq, Abdul Salam Arif, 1963-02-08,1966-04-13, President Abdul Salam Arif, http://www.worldpresidentsdb.com/Abdul-Salam-Arif/
+Iraq, Abdul Rahman Arif, 1966-04-16,1968-07-17, President Abdul Rahman Arif, http://www.worldpresidentsdb.com/Abdul-Rahman-Arif/
+Iraq, Ahmed Hassan al Bakr, 1968-07-17,1979-07-16, President Ahmed Hassan al Bakr, http://www.worldpresidentsdb.com/Ahmed-Hassan-al-Bakr/
+Iraq, Saddam Hussein, 1979-07-16,2003-04-09, President Saddam Hussein, http://www.worldpresidentsdb.com/Saddam-Hussein/
+Iraq, Jalal Talabani, 2005-04-07,2014-07-24, Dictator Jalal Talabani, http://www.worldpresidentsdb.com/Jalal-Talabani/
+Iraq, Fuad Masum, 2014-07-24,Acting, President Fuad Masum, http://www.worldpresidentsdb.com/Fuad-Masum/
+Portugal, Jorge Sampaio, 1996-03-09,2001-03-09, President Jorge Sampaio, http://www.worldpresidentsdb.com/Jorge-Sampaio/
+Portugal, Jorge Sampaio, 2001-03-09,2006-03-09, President Jorge Sampaio, http://www.worldpresidentsdb.com/Jorge-Sampaio/
+Portugal, Anibal Cavaco Silva, 2006-03-09,2011-03-09, President Anibal Cavaco Silva, http://www.worldpresidentsdb.com/Anibal-Cavaco-Silva/
+Portugal, Anibal Cavaco Silva, 2011-03-09,2015-03-09, President Anibal Cavaco Silva, http://www.worldpresidentsdb.com/Anibal-Cavaco-Silva/
+Portugal, Marcelo Rebelo de Sousa, 2016-03-09,Acting, President Marcelo Rebelo de Sousa, http://www.worldpresidentsdb.com/Anibal-Cavaco-Silva/
+Portugal, Mario Soares, 1986-03-09,1996-03-09, President Mario Soares, http://www.worldpresidentsdb.com/Mario-Soares/
+Portugal, Mario Soares, 1986-03-09,1996-03-09, President Mario Soares, http://www.worldpresidentsdb.com/Mario-Soares/
+South Africa, Charles Robberts Swart, 1961-05-31,1967-06-01, President Charles Robberts Swart, http://www.worldpresidentsdb.com/Charles-Robberts-Swart/
+South Africa, Theophilus Ebenhaezer Donges, 1966-09-06,1966-09-13, President Theophilus Ebenhaezer Donges, http://www.worldpresidentsdb.com/Theophilus-Ebenhaezer-Donges/
+South Africa, Jozua Francois Naude, 1967-06-01,1968-04-10, President Jozua Francois Naude, http://www.worldpresidentsdb.com/Jozua-Francois-Naude/
+South Africa, Jacobus Johannes Fouche, 1968-04-10,1975-04-09, President Jacobus Johannes Fouche, http://www.worldpresidentsdb.com/Jacobus-Johannes-Fouche/
+South Africa, Johannes de Klerk, 1975-04-09,1975-04-19, President Johannes de Klerk, http://www.worldpresidentsdb.com/Johannes-de-Klerk/
+South Africa, Nicolaas Diederichs, 1975-04-19,1978-08-21, President Nicolaas Diederichs, http://www.worldpresidentsdb.com/Nicolaas-Diederichs/
+South Africa, B J Vorster, 1978-10-10,1979-06-04, President B J Vorster, http://www.worldpresidentsdb.com/B-J-Vorster/
+South Africa, Marais Viljoen, 1979-06-04,1984-09-04, President Marais Viljoen, http://www.worldpresidentsdb.com/Marais-Viljoen/
+South Africa, Marais Viljoen, 1978-08-21,1978-10-10, President Marais Viljoen, http://www.worldpresidentsdb.com/Marais-Viljoen/
+South Africa, P W Botha, 1984-09-03,1989-08-15, President P W Botha, http://www.worldpresidentsdb.com/P-W-Botha/
+South Africa, F W de Klerk, 1989-09-20,1994-05-09, President F W de Klerk, http://www.worldpresidentsdb.com/F-W-de-Klerk/
+South Africa, Nelson Mandela, 1994-04-27,1999-06-14, President Nelson Mandela, http://www.worldpresidentsdb.com/Nelson-Mandela/
+South Africa, Thabo Mbeki, 1999-06-16,2008-09-24, President Thabo Mbeki, http://www.worldpresidentsdb.com/Thabo-Mbeki/
+South Africa, Kgalema Motlanthe, 2008-09-25,2009-05-09, President Kgalema Motlanthe, http://www.worldpresidentsdb.com/Kgalema-Motlanthe/
+South Africa, Jacob Zuma, 2009-05-09,Acting, President Jacob Zuma, http://www.worldpresidentsdb.com/Jacob-Zuma/
+Egypt, Anwar Al Sadat, 1970-10-05,1981-10-06, President Anwar Al Sadat, http://www.worldpresidentsdb.com/Anwar-Al-Sadat/
+Egypt, Abdel Fattah el Sisi, 2014-06-08,Acting, President Abdel Fattah el Sisi, http://www.worldpresidentsdb.com/Abdel-Fattah-el-Sisi/
+Egypt, Mohamed Morsi, 2012-06-30,2013-07-03, President Mohamed Morsi, http://www.worldpresidentsdb.com/Mohamed-Morsi/
+Egypt, Hosni Mubarak, 1981-10-14,1987-10-14, Dictator Hosni Mubarak, http://www.worldpresidentsdb.com/Hosni-Mubarak/
+Egypt, Hosni Mubarak, 1987-10-14,1993-10-14, Dictator Hosni Mubarak, http://www.worldpresidentsdb.com/Hosni-Mubarak/
+Egypt, Hosni Mubarak, 1993-10-14,1999-10-14, Dictator Hosni Mubarak, http://www.worldpresidentsdb.com/Hosni-Mubarak/
+Egypt, Hosni Mubarak, 1999-10-14,2005-10-14, Dictator Hosni Mubarak, http://www.worldpresidentsdb.com/Hosni-Mubarak/
+Egypt, Hosni Mubarak, 2005-10-14,2011-02-11, Dictator Hosni Mubarak, http://www.worldpresidentsdb.com/Hosni-Mubarak/
+Egypt, Muhammad Naguib, 1953-06-18,1954-11-14, President Muhammad Naguib, http://www.worldpresidentsdb.com/Muhammad-Naguib/
+Egypt, Gamal Abdel Nasser, 1956-01-16,1970-09-28, President Gamal Abdel Nasser, http://www.worldpresidentsdb.com/Gamal-Abdel-Nasser/
+Nicaragua, Daniel Ortega, 1985-01-10,1990-04-25, President Daniel Ortega, http://www.worldpresidentsdb.com/Daniel-Ortega/
+Nicaragua, Daniel Ortega, 2007-01-10,Acting, President Daniel Ortega, http://www.worldpresidentsdb.com/Daniel-Ortega/
+Uruguay, Jose Mujica, 2010-03-01,Acting, President Jose Mujica, http://www.worldpresidentsdb.com/Jose-Mujica/
+Uruguay, Julio Maria Sanguinetti Coirolo, 1985-03-01,1990-03-01, President Julio Maria Sanguinetti Coirolo, http://www.worldpresidentsdb.com/Julio-Maria-Sanguinetti-Coirolo/
+Uruguay, Tabare Vazquez, 2005-03-01,2010-03-01, President Tabare Vazquez, http://www.worldpresidentsdb.com/Tabare-Vazquez/
+India, Rajendra Prasad, 1950-01-26,1962-05-13, President Rajendra Prasad, http://www.worldpresidentsdb.com/Rajendra-Prasad/
+India, Sarvepalli Radhakrishnan, 1962-05-13,1967-05-13, President Sarvepalli Radhakrishnan, http://www.worldpresidentsdb.com/Sarvepalli-Radhakrishnan/
+India, Zakir Hussain, 1967-05-13,1969-05-03, President Zakir Hussain, http://www.worldpresidentsdb.com/Zakir-Hussain/
+India, V V Giri, 1969-08-24,1974-08-24, President V V Giri, http://www.worldpresidentsdb.com/V-V-Giri/
+India, Fakhruddin Ali Ahmed, 1974-08-24,1977-02-11, President Fakhruddin Ali Ahmed, http://www.worldpresidentsdb.com/Fakhruddin-Ali-Ahmed/
+India, Neelam Sanjiva Reddy, 1977-07-25,1982-07-25, President Neelam Sanjiva Reddy, http://www.worldpresidentsdb.com/Neelam-Sanjiva-Reddy/
+India, Zail Singh, 1982-07-25,1987-07-25, President Zail Singh, http://www.worldpresidentsdb.com/Zail-Singh/
+India, Ramaswamy Venkataraman, 1987-07-25,1992-07-25, President Ramaswamy Venkataraman, http://www.worldpresidentsdb.com/Ramaswamy-Venkataraman/
+India, Shankar Dayal Sharma, 1992-07-25,1997-07-25, President Shankar Dayal Sharma, http://www.worldpresidentsdb.com/Shankar-Dayal-Sharma/
+India, K R Narayanan, 1997-07-25,2002-07-25, President K R Narayanan, http://www.worldpresidentsdb.com/K-R-Narayanan/
+India, Abdul Kalam, 2002-07-25,2007-07-25, President Abdul Kalam, http://www.worldpresidentsdb.com/Abdul-Kalam/
+India, Pratibha Patil, 2007-07-25,2012-07-25, President Pratibha Patil, http://www.worldpresidentsdb.com/Pratibha-Patil/
+India, Pranab Mukherjee, 2012-07-25,2017-07-25, President Pranab Mukherjee, http://www.worldpresidentsdb.com/Pranab-Mukherjee/
+India, Ram Nath Kovind, 2017-07-25,Acting, President Ram Nath Kovind, http://www.worldpresidentsdb.com/Pranab-Mukherjee/
+Peru, Alan Garcia, 1985-07-28,1990-07-28, President Alan Garcia, http://www.worldpresidentsdb.com/Alan-Garcia/
+Peru, Alan Garcia, 2006-07-28,2011-07-28, President Alan Garcia, http://www.worldpresidentsdb.com/Alan-Garcia/
+Peru, Alberto Fujimori, 1990-07-28,1995-07-28, President Alberto Fujimori, http://www.worldpresidentsdb.com/Alberto-Fujimori/
+Peru, Ollanta Humala, 2011-07-28,Acting, President Ollanta Humala, http://www.worldpresidentsdb.com/Ollanta-Humala/
+United Kingdom, Robert Walpole, 1721-04-04,1742-02-11, Prime Minister Robert Walpole, http://www.worldpresidentsdb.com/Robert-Walpole/
+United Kingdom, Spencer Compton, 1742-02-16,1743-07-02, Prime Minister Spencer Compton, http://www.worldpresidentsdb.com/Spencer-Compton/
+United Kingdom, Henry Pelham, 1743-08-27,1754-03-06, Prime Minister Henry Pelham, http://www.worldpresidentsdb.com/Henry-Pelham/
+United Kingdom, Thomas Pelham Holles, 1757-07-02,1762-05-26, Prime Minister Thomas Pelham Holles, http://www.worldpresidentsdb.com/Thomas-Pelham-Holles/
+United Kingdom, Thomas Pelham Holles, 1754-03-16,1756-11-16, Prime Minister Thomas Pelham Holles, http://www.worldpresidentsdb.com/Thomas-Pelham-Holles/
+United Kingdom, William Cavendish, 1756-11-16,1757-06-25, Prime Minister William Cavendish, http://www.worldpresidentsdb.com/William-Cavendish/
+United Kingdom, John Stuart, 1762-05-26,1763-04-08, Prime Minister John Stuart, http://www.worldpresidentsdb.com/John-Stuart/
+United Kingdom, George Grenville, 1763-04-16,1765-07-13, Prime Minister George Grenville, http://www.worldpresidentsdb.com/George-Grenville/
+United Kingdom, Charles Watson Wentworth, 1782-03-27,1782-07-01, Prime Minister Charles Watson Wentworth, http://www.worldpresidentsdb.com/Charles-Watson-Wentworth/
+United Kingdom, William Pitt the Elder, 1766-07-30,1768-10-14, Prime Minister William Pitt the Elder, http://www.worldpresidentsdb.com/William-Pitt-the-Elder/
+United Kingdom, Augustus FitzRoy, 1768-10-14,1770-01-28, Prime Minister Augustus FitzRoy, http://www.worldpresidentsdb.com/Augustus-FitzRoy/
+United Kingdom, Lord Frederick North, 1770-01-28,1782-03-22, Prime Minister Lord Frederick North, http://www.worldpresidentsdb.com/Lord-Frederick-North/
+United Kingdom, William Petty, 1782-07-04,1783-04-02, Prime Minister William Petty, http://www.worldpresidentsdb.com/William-Petty/
+United Kingdom, William Cavendish Bentinck, 1807-03-31,1809-10-04, Prime Minister William Cavendish Bentinck, http://www.worldpresidentsdb.com/William-Cavendish-Bentinck/
+United Kingdom, William Cavendish Bentinck, 1783-04-02,1783-12-19, Prime Minister William Cavendish Bentinck, http://www.worldpresidentsdb.com/William-Cavendish-Bentinck/
+United Kingdom, William Pitt, 1804-05-10,1806-01-23, Prime Minister William Pitt, http://www.worldpresidentsdb.com/William-Pitt/
+United Kingdom, William Pitt, 1783-12-19,1801-03-14, Prime Minister William Pitt, http://www.worldpresidentsdb.com/William-Pitt/
+United Kingdom, Henry Addington, 1801-03-14,1804-05-10, Prime Minister Henry Addington, http://www.worldpresidentsdb.com/Henry-Addington/
+United Kingdom, William Grenville, 1806-02-11,1807-03-31, Prime Minister William Grenville, http://www.worldpresidentsdb.com/William-Grenville/
+United Kingdom, Spencer Perceval, 1809-10-04,1812-05-11, Prime Minister Spencer Perceval, http://www.worldpresidentsdb.com/Spencer-Perceval/
+United Kingdom, Robert Jenkinson, 1812-06-08,1827-04-09, Prime Minister Robert Jenkinson, http://www.worldpresidentsdb.com/Robert-Jenkinson/
+United Kingdom, George Canning, 1827-04-10,1827-08-08, Prime Minister George Canning, http://www.worldpresidentsdb.com/George-Canning/
+United Kingdom, Frederick Robinson, 1827-08-31,1828-01-21, Prime Minister Frederick Robinson, http://www.worldpresidentsdb.com/Frederick-Robinson/
+United Kingdom, Arthur Wellesley, 1828-01-22,1830-11-16, Prime Minister Arthur Wellesley, http://www.worldpresidentsdb.com/Arthur-Wellesley/
+United Kingdom, Arthur Wellesley, 1834-11-14,1834-12-10, Prime Minister Arthur Wellesley, http://www.worldpresidentsdb.com/Arthur-Wellesley/
+United Kingdom, Charles Grey, 1830-11-22,1834-07-16, Prime Minister Charles Grey, http://www.worldpresidentsdb.com/Charles-Grey/
+United Kingdom, William Lamb, 1834-07-16,1834-11-14, Prime Minister William Lamb, http://www.worldpresidentsdb.com/William-Lamb/
+United Kingdom, William Lamb, 1835-04-18,1841-08-30, Prime Minister William Lamb, http://www.worldpresidentsdb.com/William-Lamb/
+United Kingdom, Robert Peel, 1841-08-30,1846-06-29, Prime Minister Robert Peel, http://www.worldpresidentsdb.com/Robert-Peel/
+United Kingdom, Robert Peel, 1834-12-10,1835-04-08, Prime Minister Robert Peel, http://www.worldpresidentsdb.com/Robert-Peel/
+United Kingdom, John Russell, 1865-10-29,1866-06-28, Prime Minister John Russell, http://www.worldpresidentsdb.com/John-Russell/
+United Kingdom, John Russell, 1846-06-30,1852-02-23, Prime Minister John Russell, http://www.worldpresidentsdb.com/John-Russell/
+United Kingdom, Edward Smith Stanley, 1866-06-28,1868-02-27, Prime Minister Edward Smith Stanley, http://www.worldpresidentsdb.com/Edward-Smith-Stanley/
+United Kingdom, Edward Smith Stanley, 1858-02-20,1859-06-11, Prime Minister Edward Smith Stanley, http://www.worldpresidentsdb.com/Edward-Smith-Stanley/
+United Kingdom, Edward Smith Stanley, 1852-02-23,1852-12-19, Prime Minister Edward Smith Stanley, http://www.worldpresidentsdb.com/Edward-Smith-Stanley/
+United Kingdom, George Hamilton Gordon, 1852-12-19,1855-01-30, Prime Minister George Hamilton Gordon, http://www.worldpresidentsdb.com/George-Hamilton-Gordon/
+United Kingdom, Henry John Temple, 1859-06-12,1865-10-18, Prime Minister Henry John Temple, http://www.worldpresidentsdb.com/Henry-John-Temple/
+United Kingdom, Henry John Temple, 1855-02-06,1858-02-19, Prime Minister Henry John Temple, http://www.worldpresidentsdb.com/Henry-John-Temple/
+United Kingdom, Benjamin Disraeli, 1874-02-20,1880-04-21, Prime Minister Benjamin Disraeli, http://www.worldpresidentsdb.com/Benjamin-Disraeli/
+United Kingdom, Benjamin Disraeli, 1868-02-27,1868-12-01, Prime Minister Benjamin Disraeli, http://www.worldpresidentsdb.com/Benjamin-Disraeli/
+United Kingdom, William Ewart Gladstone, 1892-08-15,1894-03-02, Prime Minister William Ewart Gladstone, http://www.worldpresidentsdb.com/William-Ewart-Gladstone/
+United Kingdom, William Ewart Gladstone, 1886-02-01,1886-07-20, Prime Minister William Ewart Gladstone, http://www.worldpresidentsdb.com/William-Ewart-Gladstone/
+United Kingdom, William Ewart Gladstone, 1880-04-23,1885-06-09, Prime Minister William Ewart Gladstone, http://www.worldpresidentsdb.com/William-Ewart-Gladstone/
+United Kingdom, William Ewart Gladstone, 1868-12-03,1874-02-17, Prime Minister William Ewart Gladstone, http://www.worldpresidentsdb.com/William-Ewart-Gladstone/
+United Kingdom, Robert Gascoyne Cecil, 1885-06-23,1886-01-28, Prime Minister Robert Gascoyne Cecil, http://www.worldpresidentsdb.com/Robert-Gascoyne-Cecil/
+United Kingdom, Robert Gascoyne Cecil, 1886-07-25,1892-08-11, Prime Minister Robert Gascoyne Cecil, http://www.worldpresidentsdb.com/Robert-Gascoyne-Cecil/
+United Kingdom, Robert Gascoyne Cecil, 1895-06-25,1902-07-11, Prime Minister Robert Gascoyne Cecil, http://www.worldpresidentsdb.com/Robert-Gascoyne-Cecil/
+United Kingdom, Archibald Primrose, 1894-03-05,1895-06-22, Prime Minister Archibald Primrose, http://www.worldpresidentsdb.com/Archibald-Primrose/
+United Kingdom, Arthur Balfour, 1902-07-11,1905-12-05, Prime Minister Arthur Balfour, http://www.worldpresidentsdb.com/Arthur-Balfour/
+United Kingdom, Henry Campbell Bannerman, 1905-12-05,1908-04-03, Prime Minister Henry Campbell Bannerman, http://www.worldpresidentsdb.com/Henry-Campbell-Bannerman/
+United Kingdom, Herbert Henry Asquith, 1908-04-05,1916-12-05, Prime Minister Herbert Henry Asquith, http://www.worldpresidentsdb.com/Herbert-Henry-Asquith/
+United Kingdom, David Lloyd George, 1916-12-07,1922-10-22, Prime Minister David Lloyd George, http://www.worldpresidentsdb.com/David-Lloyd-George/
+United Kingdom, Bonar Law, 1922-10-23,1923-05-22, Prime Minister Bonar Law, http://www.worldpresidentsdb.com/Bonar-Law/
+United Kingdom, Stanley Baldwin, 1935-06-07,1937-05-28, Prime Minister Stanley Baldwin, http://www.worldpresidentsdb.com/Stanley-Baldwin/
+United Kingdom, Stanley Baldwin, 1924-11-04,1929-06-05, Prime Minister Stanley Baldwin, http://www.worldpresidentsdb.com/Stanley-Baldwin/
+United Kingdom, Stanley Baldwin, 1923-05-23,1924-01-16, Prime Minister Stanley Baldwin, http://www.worldpresidentsdb.com/Stanley-Baldwin/
+United Kingdom, Ramsay MacDonald, 1929-06-05,1935-06-07, Prime Minister Ramsay MacDonald, http://www.worldpresidentsdb.com/Ramsay-MacDonald/
+United Kingdom, Ramsay MacDonald, 1924-01-22,1924-11-04, Prime Minister Ramsay MacDonald, http://www.worldpresidentsdb.com/Ramsay-MacDonald/
+United Kingdom, Neville Chamberlain, 1937-05-27,1940-05-10, Prime Minister Neville Chamberlain, http://www.worldpresidentsdb.com/Neville-Chamberlain/
+United Kingdom, Winston Churchill, 1940-05-10,1945-05-23, Prime Minister Winston Churchill, http://www.worldpresidentsdb.com/Winston-Churchill/
+United Kingdom, Clement Attlee, 1945-07-27,1951-10-26, Prime Minister Clement Attlee, http://www.worldpresidentsdb.com/Clement-Attlee/
+United Kingdom, Anthony Eden, 1955-04-07,1957-01-09, Prime Minister Anthony Eden, http://www.worldpresidentsdb.com/Anthony-Eden/
+United Kingdom, Harold Macmillan, 1957-01-11,1963-10-20, Prime Minister Harold Macmillan, http://www.worldpresidentsdb.com/Harold-Macmillan/
+United Kingdom, Alec Douglas Home, 1963-10-20,1964-10-16, Prime Minister Alec Douglas Home, http://www.worldpresidentsdb.com/Alec-Douglas-Home/
+United Kingdom, Harold Wilson, 1974-03-04,1976-04-05, Prime Minister Harold Wilson, http://www.worldpresidentsdb.com/Harold-Wilson/
+United Kingdom, Edward Heath, 1970-06-19,1974-03-04, Prime Minister Edward Heath, http://www.worldpresidentsdb.com/Edward-Heath/
+United Kingdom, James Callaghan, 1976-04-05,1979-05-04, Prime Minister James Callaghan, http://www.worldpresidentsdb.com/James-Callaghan/
+United Kingdom, Margaret Thatcher, 1979-05-04,1990-11-28, Prime Minister Margaret Thatcher, http://www.worldpresidentsdb.com/Margaret-Thatcher/
+United Kingdom, John Major, 1990-11-28,1997-05-02, Prime Minister John Major, http://www.worldpresidentsdb.com/John-Major/
+United Kingdom, Tony Blair, 1997-05-02,2007-06-27, Prime Minister Tony Blair, http://www.worldpresidentsdb.com/Tony-Blair/
+United Kingdom, Gordon Brown, 2007-06-27,2010-05-11, Prime Minister Gordon Brown, http://www.worldpresidentsdb.com/Gordon-Brown/
+United Kingdom, David Cameron, 2010-05-11,2016-07-13, Prime Minister David Cameron, http://www.worldpresidentsdb.com/David-Cameron/
+United Kingdom, Theresa May, 2016-07-13,Acting, Prime Minister Theresa May, http://www.worldpresidentsdb.com/David-Cameron/
+Malaysia, Tunku Abdul Rahman, 1957-08-31,1970-09-22, Prime Minister Tunku Abdul Rahman, http://www.worldpresidentsdb.com/Tunku-Abdul-Rahman/
+Malaysia, Abdul Razak Hussein, 1970-09-22,1976-01-14, Prime Minister Abdul Razak Hussein, http://www.worldpresidentsdb.com/Abdul-Razak-Hussein/
+Malaysia, Hussein Onn, 1976-01-15,1981-07-16, Prime Minister Hussein Onn, http://www.worldpresidentsdb.com/Hussein-Onn/
+Malaysia, Mahathir Mohamad, 1981-07-16,2003-10-31, Prime Minister Mahathir Mohamad, http://www.worldpresidentsdb.com/Mahathir-Mohamad/
+Malaysia, Abdullah Ahmad Badawi, 2003-10-31,2009-04-03, Prime Minister Abdullah Ahmad Badawi, http://www.worldpresidentsdb.com/Abdullah-Ahmad-Badawi/
+Malaysia, Najib Razak, 2009-04-03,2013-04-03, Prime Minister Najib Razak, http://www.worldpresidentsdb.com/Najib-Razak/
+Malaysia, Najib Razak, 2013-05-06,Acting, Prime Minister Najib Razak, http://www.worldpresidentsdb.com/Najib-Razak/
+Austria, Heinz Fischer, 2004-07-08,2010-07-08, President Heinz Fischer, http://www.worldpresidentsdb.com/Heinz-Fischer/
+Austria, Heinz Fischer, 2010-07-08,Acting, President Heinz Fischer, http://www.worldpresidentsdb.com/Heinz-Fischer/
+Austria, Rudolf Kirchschlager, 1974-07-08,1980-07-08, President Rudolf Kirchschlager, http://www.worldpresidentsdb.com/Rudolf-Kirchschlager/
+Austria, Rudolf Kirchschlager, 1980-07-08,1986-07-08, President Rudolf Kirchschlager, http://www.worldpresidentsdb.com/Rudolf-Kirchschlager/
+Austria, Thomas Klestil, 1998-07-08,2004-07-06, President Thomas Klestil, http://www.worldpresidentsdb.com/Thomas-Klestil/
+Austria, Thomas Klestil, 1992-07-08,1998-07-08, President Thomas Klestil, http://www.worldpresidentsdb.com/Thomas-Klestil/
+Austria, Kurt Waldheim, 1986-07-08,1992-07-08, President Kurt Waldheim, http://www.worldpresidentsdb.com/Kurt-Waldheim/
+Colombia, Cesar Gaviria, 1990-08-07,1994-08-07, President Cesar Gaviria, http://www.worldpresidentsdb.com/Cesar-Gaviria/
+Colombia, Andres Pastrana Arango, 1998-08-07,2002-08-07, President Andres Pastrana Arango, http://www.worldpresidentsdb.com/Andres-Pastrana-Arango/
+Colombia, Ernesto Samper, 1994-08-07,1998-08-07, President Ernesto Samper, http://www.worldpresidentsdb.com/Ernesto-Samper/
+Colombia, Juan Manuel Santos, 2010-08-07,Acting, President Juan Manuel Santos, http://www.worldpresidentsdb.com/Juan-Manuel-Santos/
+Colombia, Alvaro Uribe, 2002-08-07,2006-08-07, President Alvaro Uribe, http://www.worldpresidentsdb.com/Alvaro-Uribe/
+Colombia, Alvaro Uribe, 2006-08-07,2010-08-07, President Alvaro Uribe, http://www.worldpresidentsdb.com/Alvaro-Uribe/
+Greece, Konstantinos Karamanlis, 1990-05-05,1995-05-10, President Konstantinos Karamanlis, http://www.worldpresidentsdb.com/Konstantinos-Karamanlis/
+Greece, Konstantinos Karamanlis, 1980-05-15,1985-03-10, President Konstantinos Karamanlis, http://www.worldpresidentsdb.com/Konstantinos-Karamanlis/
+Greece, Konstantinos Stephanopoulos, 1995-03-10,2005-03-12, President Konstantinos Stephanopoulos, http://www.worldpresidentsdb.com/Konstantinos-Stephanopoulos/
+Greece, Karolos Papoulias, 2005-03-12,Acting, President Karolos Papoulias, http://www.worldpresidentsdb.com/Karolos-Papoulias/
+Paraguay, Horacio Cartes, 2013-08-15,Acting, President Horacio Cartes, http://www.worldpresidentsdb.com/Horacio-Cartes/
+Paraguay, Nicanor Duarte, 2003-08-15,2008-08-14, President Nicanor Duarte, http://www.worldpresidentsdb.com/Nicanor-Duarte/
+Paraguay, Federico Franco, 2012-06-22,2013-08-15, President Federico Franco, http://www.worldpresidentsdb.com/Federico-Franco/
+Paraguay, Luis Angel Gonzalez Macchi, 1999-03-29,2003-08-15, President Luis Angel Gonzalez Macchi, http://www.worldpresidentsdb.com/Luis-Angel-Gonzalez-Macchi/
+Kenya, Jomo Kenyatta, 1964-12-12,1978-08-22, President Jomo Kenyatta, http://www.worldpresidentsdb.com/Jomo-Kenyatta/
+Kenya, Daniel arap Moi, 1978-08-22,2002-12-30, President Daniel arap Moi, http://www.worldpresidentsdb.com/Daniel-arap-Moi/
+Kenya, Mwai Kibaki, 2002-12-30,2013-04-09, President Mwai Kibaki, http://www.worldpresidentsdb.com/Mwai-Kibaki/
+Kenya, Uhuru Kenyatta, 2013-04-09,Acting, President Uhuru Kenyatta, http://www.worldpresidentsdb.com/Uhuru-Kenyatta/
+South Korea, Kim Young sam, 1993-02-25,1998-02-25, President Kim Young sam, http://www.worldpresidentsdb.com/Kim-Young-sam/
+South Korea, Kim Dae jung, 1998-02-25,2003-02-25, President Kim Dae jung, http://www.worldpresidentsdb.com/Kim-Dae-jung/
+South Korea, Roh Moo hyun, 2003-02-25,2008-02-25, President Roh Moo hyun, http://www.worldpresidentsdb.com/Roh-Moo-hyun/
+South Korea, Lee Myung bak, 2008-02-25,Acting, President Lee Myung bak, http://www.worldpresidentsdb.com/Lee-Myung-bak/
+South Korea, Park Geun hye, 2013-02-25,2017-03-10, President Park Geun hye, http://www.worldpresidentsdb.com/Park-Geun-hye/
+South Korea, Moon Jae In, 2017-03-10,Acting, President Moon Jae In, http://www.worldpresidentsdb.com/Park-Geun-hye/
+United States, George Washington, 1789-04-30,1797-03-04, President George Washington, http://www.worldpresidentsdb.com/George-Washington/
+United States, John Adams, 1797-03-04,1801-03-04, President John Adams, http://www.worldpresidentsdb.com/John-Adams/
+United States, Thomas Jefferson, 1801-03-04,1805-03-04, President Thomas Jefferson, http://www.worldpresidentsdb.com/Thomas-Jefferson/
+United States, Thomas Jefferson, 1805-03-04,1809-03-04, President Thomas Jefferson, http://www.worldpresidentsdb.com/Thomas-Jefferson/
+United States, James Madison, 1809-03-04,1813-03-04, President James Madison, http://www.worldpresidentsdb.com/James-Madison/
+United States, James Madison, 1813-03-04,1817-03-04, President James Madison, http://www.worldpresidentsdb.com/James-Madison/
+United States, James Monroe, 1817-03-04,1821-03-04, President James Monroe, http://www.worldpresidentsdb.com/James-Monroe/
+United States, James Monroe, 1821-03-04,1825-03-04, President James Monroe, http://www.worldpresidentsdb.com/James-Monroe/
+United States, John Q Adams, 1825-03-04,1829-03-04, President John Q Adams, http://www.worldpresidentsdb.com/John-Q-Adams/
+United States, Andrew Jackson, 1829-03-04,1832-03-04, President Andrew Jackson, http://www.worldpresidentsdb.com/Andrew-Jackson/
+United States, Andrew Jackson, 1832-03-04,1837-03-04, President Andrew Jackson, http://www.worldpresidentsdb.com/Andrew-Jackson/
+United States, Martin Van Buren, 1837-03-04,1841-03-04, President Martin Van Buren, http://www.worldpresidentsdb.com/Martin-Van-Buren/
+United States, William Henry Harrison, 1841-03-04,1841-04-04, President William Henry Harrison, http://www.worldpresidentsdb.com/William-Henry-Harrison/
+United States, John Tyler, 1841-04-04,1845-03-04, President John Tyler, http://www.worldpresidentsdb.com/John-Tyler/
+United States, James K Polk, 1845-03-04,1849-03-04, President James K Polk, http://www.worldpresidentsdb.com/James-K-Polk/
+United States, Zachary Taylor, 1849-03-04,1850-07-09, President Zachary Taylor, http://www.worldpresidentsdb.com/Zachary-Taylor/
+United States, Millard Fillmore, 1850-07-09,1853-03-04, President Millard Fillmore, http://www.worldpresidentsdb.com/Millard-Fillmore/
+United States, Franklin Pierce, 1853-03-04,1857-03-04, President Franklin Pierce, http://www.worldpresidentsdb.com/Franklin-Pierce/
+United States, James Buchanan, 1857-03-04,1861-03-04, President James Buchanan, http://www.worldpresidentsdb.com/James-Buchanan/
+United States, Lincoln, 1861-03-04,1865-04-15, President Lincoln, http://www.worldpresidentsdb.com/Lincoln/
+United States, Andrew Johnson, 1865-04-15,1869-03-04, President Andrew Johnson, http://www.worldpresidentsdb.com/Andrew-Johnson/
+United States, Ulysses S Grant, 1869-03-04,1873-03-04, President Ulysses S Grant, http://www.worldpresidentsdb.com/Ulysses-S-Grant/
+United States, Ulysses S Grant, 1873-03-04,1877-03-04, President Ulysses S Grant, http://www.worldpresidentsdb.com/Ulysses-S-Grant/
+United States, Rutherford B Hayes, 1877-03-04,1881-03-04, President Rutherford B Hayes, http://www.worldpresidentsdb.com/Rutherford-B-Hayes/
+United States, James A Garfield, 1881-03-04,1881-09-19, President James A Garfield, http://www.worldpresidentsdb.com/James-A-Garfield/
+United States, Chester A Arthur, 1881-09-19,1885-03-04, President Chester A Arthur, http://www.worldpresidentsdb.com/Chester-A-Arthur/
+United States, Grover Cleveland, 1885-03-04,1889-03-04, President Grover Cleveland, http://www.worldpresidentsdb.com/Grover-Cleveland/
+United States, Grover Cleveland, 1893-03-04,1897-03-04, President Grover Cleveland, http://www.worldpresidentsdb.com/Grover-Cleveland/
+United States, Benjamin Harrison, 1889-03-04,1893-03-04, President Benjamin Harrison, http://www.worldpresidentsdb.com/Benjamin-Harrison/
+United States, William McKinley, 1897-03-04,1901-09-14, President William McKinley, http://www.worldpresidentsdb.com/William-McKinley/
+United States, Theodore Roosevelt, 1901-09-14,1909-03-04, President Theodore Roosevelt, http://www.worldpresidentsdb.com/Theodore-Roosevelt/
+United States, William Howard Taft, 1909-03-04,1913-03-04, President William Howard Taft, http://www.worldpresidentsdb.com/William-Howard-Taft/
+United States, Woodrow Wilson, 1913-04-03,1917-04-03, President Woodrow Wilson, http://www.worldpresidentsdb.com/Woodrow-Wilson/
+United States, Woodrow Wilson, 1917-04-03,1921-04-03, President Woodrow Wilson, http://www.worldpresidentsdb.com/Woodrow-Wilson/
+United States, Warren G Harding, 1921-03-04,1923-08-02, President Warren G Harding, http://www.worldpresidentsdb.com/Warren-G-Harding/
+United States, Calvin Coolidge, 1923-08-02,1925-03-04, President Calvin Coolidge, http://www.worldpresidentsdb.com/Calvin-Coolidge/
+United States, Calvin Coolidge, 1925-03-04,1929-03-04, President Calvin Coolidge, http://www.worldpresidentsdb.com/Calvin-Coolidge/
+United States, Herbert Hoover, 1929-03-04,1933-03-04, President Herbert Hoover, http://www.worldpresidentsdb.com/Herbert-Hoover/
+United States, Franklin D Roosevelt, 1933-03-04,1945-04-12, President Franklin D Roosevelt, http://www.worldpresidentsdb.com/Franklin-D-Roosevelt/
+United States, Truman, 1945-04-12,1953-01-20, President Truman, http://www.worldpresidentsdb.com/Truman/
+United States, Eisenhower, 1953-01-20,1957-01-20, President Eisenhower, http://www.worldpresidentsdb.com/Eisenhower/
+United States, Eisenhower, 1957-01-20,1961-01-20, President Eisenhower, http://www.worldpresidentsdb.com/Eisenhower/
+United States, Kennedy, 1961-01-20,1963-11-22, President Kennedy, http://www.worldpresidentsdb.com/Kennedy/
+United States, Lyndon B Johnson, 1963-11-22,1965-01-20, President Lyndon B Johnson, http://www.worldpresidentsdb.com/Lyndon-B-Johnson/
+United States, Lyndon B Johnson, 1965-01-20,1969-01-20, President Lyndon B Johnson, http://www.worldpresidentsdb.com/Lyndon-B-Johnson/
+United States, Nixon, 1969-01-20,1974-08-09, President Nixon, http://www.worldpresidentsdb.com/Nixon/
+United States, Gerald Ford, 1974-08-09,1977-01-20, President Gerald Ford, http://www.worldpresidentsdb.com/Gerald-Ford/
+United States, Jimmy Carter, 1977-01-20,1981-01-20, President Jimmy Carter, http://www.worldpresidentsdb.com/Jimmy-Carter/
+United States, Reagan, 1981-01-20,1989-01-20, President Reagan, http://www.worldpresidentsdb.com/Reagan/
+United States, George H W Bush, 1989-01-20,1993-01-20, President George H W Bush, http://www.worldpresidentsdb.com/George-H-W-Bush/
+United States, Bill Clinton, 1993-01-20,1997-01-20, President Bill Clinton, http://www.worldpresidentsdb.com/Bill-Clinton/
+United States, Bill Clinton, 1997-01-20,2001-01-20, President Bill Clinton, http://www.worldpresidentsdb.com/Bill-Clinton/
+United States, George W Bush, 2001-01-20,2005-01-20, President George W Bush, http://www.worldpresidentsdb.com/George-W-Bush/
+United States, George W Bush, 2005-01-20,2009-01-20, President George W Bush, http://www.worldpresidentsdb.com/George-W-Bush/
+United States, Barack Obama, 2009-01-20,2017-01-20, President Barack Obama, http://www.worldpresidentsdb.com/Barack-Obama/
+United States, Donald Trump, 2017-01-20,Acting, President Donald Trump, http://www.worldpresidentsdb.com/Barack-Obama/

@@ -45,16 +45,16 @@ function prepareData(gdps, ginis, settings, countryList) {
     for (var country in countryList) {
         var lastValidYear = 0;
         var minYear = d3.min(Object.keys(countryList[country].gdp), function (d) {
-            return +d
+            return +d>0 && +countryList[country].gdp[d]>0 ? +d : null;
         });
         minYear = Math.max(minYear, d3.min(Object.keys(countryList[country].gini), function (d) {
-            return +d
+            return +d>0 && +countryList[country].gini[d]>0 ? +d : null;
         }));
         var maxYear = d3.max(Object.keys(countryList[country].gdp), function (d) {
-            return +d
+            return +d>0 && +countryList[country].gdp[d]>0 ? +d : null;
         });
         maxYear = Math.min(maxYear, d3.max(Object.keys(countryList[country].gini), function (d) {
-            return +d
+            return +d>0 && +countryList[country].gini[d]>0 ? +d : null;
         }));
         for (var year = minYear; year <= maxYear; year++) {
             var gdp = +countryList[country].gdp[year];
