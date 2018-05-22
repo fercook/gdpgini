@@ -65,42 +65,51 @@
             "period": [2012.62, 2020]
         }]
     },
-    "Italy": {
-        "presidents": [{
-            "name": "Carlo Azeglio Ciampi",
-            "period": [1999.38, 2006.37]
-        }, {
-            "name": "Francesco Cossiga",
-            "period": [1985.49, 1992.32]
-        }, {
-            "name": "Enrico De Nicola",
-            "period": [1946.5, 1948.36]
-        }, {
-            "name": "Luigi Einaudi",
-            "period": [1948.36, 1955.36]
-        }, {
-            "name": "Giovanni Gronchi",
-            "period": [1955.36, 1962.36]
-        }, {
-            "name": "Enrico Letta",
-            "period": [2013.32, 2014.14]
-        }, {
-            "name": "Mario Monti",
-            "period": [2011.87, 2013.32]
-        }, {
-            "name": "Benito Mussolini",
-            "period": [1922.83, 1943.56]
-        }, {
-            "name": "Giorgio Napolitano",
-            "period": [2006.37, 2020]
-        }, {
-            "name": "Matteo Renzi",
-            "period": [2014.14, 2020]
-        }, {
-            "name": "Oscar Luigi Scalfaro",
-            "period": [1992.4, 1999.37]
-        }]
-    },
+    'Italy': {
+        'presidents': [{
+            'name': 'Alcide De Gasperi','period': [1946.53, 1953.63]
+        },{'name': 'Giuseppe Pella', 'period': [1953.63, 1954.05]},
+{'name': 'Amintore Fanfani', 'period': [1954.05, 1954.11]},
+{'name': 'Mario Scelba', 'period': [1954.11, 1955.51]},
+{'name': 'Antonio Segni', 'period': [1955.51, 1957.38]},
+{'name': 'Adone Zoli', 'period': [1957.38, 1958.5]},
+{'name': 'Amintore Fanfani', 'period': [1958.5, 1959.13]},
+{'name': 'Antonio Segni', 'period': [1959.13, 1960.23]},
+{'name': 'Fernando Tambroni', 'period': [1960.23, 1960.57]},
+{'name': 'Amintore Fanfani', 'period': [1960.57, 1963.47]},
+{'name': 'Giovanni Leone', 'period': [1963.47, 1963.93]},
+{'name': 'Aldo Moro', 'period': [1963.47, 1968.48]},
+{'name': ' Giovanni Leone', 'period': [1968.48, 1968.95]},
+{'name': 'Mariano Rumor', 'period': [1968.95, 1970.6]},
+{'name': 'Emilio Colombo', 'period': [1970.6, 1972.13]},
+{'name': 'Giulio Andreotti', 'period': [1972.13, 1973.51]},
+{'name': 'Mariano Rumor', 'period': [1973.51, 1974.9]},
+{'name': 'Aldo Moro', 'period': [1974.9, 1976.58]},
+{'name': 'Giulio Andreotti', 'period': [1976.58, 1979.59]},
+{'name': 'Francesco Cossiga', 'period': [1979.59, 1980.8]},
+{'name': 'Arnaldo Forlani', 'period': [1980.8, 1981.49]},
+{'name': 'Giovanni Spadolini', 'period': [1981.49, 1982.92]},
+{'name': 'Amintore Fanfani', 'period': [1982.92, 1983.59]},
+{'name': 'Bettino Craxi', 'period': [1983.59, 1987.29]},
+{'name': 'Amintore Fanfani', 'period': [1987.29, 1987.57]},
+{'name': 'Giovanni Goria', 'period': [1987.57, 1988.28]},
+{'name': 'Ciriaco De Mita', 'period': [1988.28, 1989.56]},
+{'name': 'Giulio Andreotti', 'period': [1989.56, 1992.49]},
+{'name': 'Giuliano Amato', 'period': [1992.49, 1993.32]},
+{'name': 'Carlo Azeglio Ciampi', 'period': [1993.32, 1994.36]},
+{'name': 'Silvio Berlusconi', 'period': [1994.36, 1995.05]},
+{'name': 'Lamberto Dini', 'period': [1995.05, 1996.38]},
+{'name': 'Romano Prodi', 'period': [1996.38, 1998.8]},
+{'name': "Massimo D'Alema", 'period': [1998.8, 2000.32]},
+{'name': 'Giuliano Amato', 'period': [2000.32, 2001.44]},
+{'name': 'Silvio Berlusconi', 'period': [2001.44, 2006.37]},
+{'name': 'Romano Prodi', 'period': [2006.37, 2008.35]},
+{'name': 'Silvio Berlusconi', 'period': [2008.35, 2011.88]},
+{'name': 'Mario Monti', 'period': [2011.88, 2013.32]},
+{'name': 'Enrico Letta', 'period': [2013.32, 2014.14]},
+{'name': 'Matteo Renzi', 'period': [2014.13, 2016.95]},
+{'name': 'Paolo Gentiloni', 'period': [2016.95]}
+    ]},
     "Bangladesh": {
         "presidents": [{
             "name": "AFM Ahsanuddin Chowdhury",
