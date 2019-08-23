@@ -1,5 +1,5 @@
 # Cairo Charts
-Connected scatter plots showing the GDP vs GINI were first used by Alberto Cairo.
+Connected scatter plots showing the GDP vs GINI were first used by Alberto Cairo ([shown here](https://www.amazon.com/The-Functional-Art-introduction-visualization/dp/0321834739)).
 This is a single webpage showing how to use them for multiple countries ([site](http://www.bsc.es/viz/gini/))
 
 Hace falta ayuda para rellenar los períodos presidenciales para todos los países (actualmente solo están los 6 paises del cono sur). Para esto hay que arreglar/revisar/completar [este fichero](https://github.com/fercook/gdpgini/blob/master/data/presidents/presidents.csv)
